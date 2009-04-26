@@ -8,6 +8,7 @@
 //  Version 0.7
 
 #import <Cocoa/Cocoa.h>
+#import "NSString+Base64.h"
 
 @interface ORSSession : NSObject <NSCopying> {
 

@@ -76,95 +76,95 @@
 		
 		range = [string rangeOfString:@"&laquo;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&laquo;"
+			return [string stringByReplacingOccurrencesOfString:@"&laquo;"
 													withString:@"«"];
 		range = [string rangeOfString:@"&not;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&not;"
+			return [string stringByReplacingOccurrencesOfString:@"&not;"
 													withString:@"¬"];
 		range = [string rangeOfString:@"&curren;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&curren;"
+			return [string stringByReplacingOccurrencesOfString:@"&curren;"
 													withString:@"¤"];
 		range = [string rangeOfString:@"&macr;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&macr;"
+			return [string stringByReplacingOccurrencesOfString:@"&macr;"
 													withString:@"¯"];
 		range = [string rangeOfString:@"&deg;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&deg;"
+			return [string stringByReplacingOccurrencesOfString:@"&deg;"
 													withString:@"°"];
 		range = [string rangeOfString:@"&plusmn;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&plusmn;"
+			return [string stringByReplacingOccurrencesOfString:@"&plusmn;"
 													withString:@""];
 		range = [string rangeOfString:@"&uml;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&uml;"
+			return [string stringByReplacingOccurrencesOfString:@"&uml;"
 													withString:@"¨"];
 		range = [string rangeOfString:@"&ordf;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&ordf;"
+			return [string stringByReplacingOccurrencesOfString:@"&ordf;"
 													withString:@"ª"];
 		range = [string rangeOfString:@"&sup3;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&sup3;"
+			return [string stringByReplacingOccurrencesOfString:@"&sup3;"
 													withString:@"³"];
 		range = [string rangeOfString:@"&acute;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&acute;"
+			return [string stringByReplacingOccurrencesOfString:@"&acute;"
 													withString:@"´"];
 		range = [string rangeOfString:@"&micro;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&micro;"
+			return [string stringByReplacingOccurrencesOfString:@"&micro;"
 													withString:@"µ"];
 		range = [string rangeOfString:@"&para;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&para;"
+			return [string stringByReplacingOccurrencesOfString:@"&para;"
 													withString:@"¶"];
 		range = [string rangeOfString:@"&middot;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&middot;"
+			return [string stringByReplacingOccurrencesOfString:@"&middot;"
 													withString:@"·"];
 		range = [string rangeOfString:@"&cedil;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&cedil;"
+			return [string stringByReplacingOccurrencesOfString:@"&cedil;"
 													withString:@"¸"];
 		range = [string rangeOfString:@"&sup1;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&sup1;"
+			return [string stringByReplacingOccurrencesOfString:@"&sup1;"
 													withString:@"¹"];
 		range = [string rangeOfString:@"&ordm;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&ordm;"
+			return [string stringByReplacingOccurrencesOfString:@"&ordm;"
 													withString:@"º"];
 		range = [string rangeOfString:@"&raquo;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&raquo;"
+			return [string stringByReplacingOccurrencesOfString:@"&raquo;"
 													withString:@"»"];
 		range = [string rangeOfString:@"&frac14;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&frac14;"
+			return [string stringByReplacingOccurrencesOfString:@"&frac14;"
 													withString:@"¼"];
 		range = [string rangeOfString:@"&frac12;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&frac12;"
+			return [string stringByReplacingOccurrencesOfString:@"&frac12;"
 													withString:@"¹"];
 		range = [string rangeOfString:@"&frac34;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&frac34;"
+			return [string stringByReplacingOccurrencesOfString:@"&frac34;"
 													withString:@"¾"];
 		range = [string rangeOfString:@"&iquest;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&iquest;"
+			return [string stringByReplacingOccurrencesOfString:@"&iquest;"
 													withString:@"¿"];
 		range = [string rangeOfString:@"&#8217;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&#8217;"
+			return [string stringByReplacingOccurrencesOfString:@"&#8217;"
 													withString:@"’"];
 		range = [string rangeOfString:@"&iexcl;"];
 		if (range.location != NSNotFound)
-			return [string stringByReplacingOccurencesOfString:@"&iexcl;"
+			return [string stringByReplacingOccurrencesOfString:@"&iexcl;"
 													withString:@"¡"];
 		
 		return string;

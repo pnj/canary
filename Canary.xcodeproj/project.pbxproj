@@ -26,6 +26,8 @@
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
 		0535A4EF0F48A3A700513DC7 /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */; };
 		053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */; };
+		053FB6960FA48FFD00DA370E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FB6950FA48FFD00DA370E /* NSString+Base64.m */; };
+		053FB6C50FA4944500DA370E /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 053FB6C40FA4944500DA370E /* base64.c */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
 		0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */; };
 		0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */; };
@@ -139,6 +141,10 @@
 		0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSCanaryController+Growl.h"; sourceTree = "<group>"; };
 		053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBoolTransformer.h; sourceTree = "<group>"; };
 		053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBoolTransformer.m; sourceTree = "<group>"; };
+		053FB6940FA48FFD00DA370E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		053FB6950FA48FFD00DA370E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		053FB6C30FA4944500DA370E /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		053FB6C40FA4944500DA370E /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
 		0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryStatusView.h; sourceTree = "<group>"; };
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
 		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
@@ -290,6 +296,10 @@
 				0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */,
 				05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */,
 				05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */,
+				053FB6C30FA4944500DA370E /* base64.h */,
+				053FB6C40FA4944500DA370E /* base64.c */,
+				053FB6940FA48FFD00DA370E /* NSString+Base64.h */,
+				053FB6950FA48FFD00DA370E /* NSString+Base64.m */,
 			);
 			name = "Twitter Engine";
 			sourceTree = "<group>";
@@ -680,6 +690,8 @@
 				05E21C000F532EC90027A864 /* ORSSnipURLShortener.m in Sources */,
 				05E21CAD0F5343BB0027A864 /* ORSTrimShortener.m in Sources */,
 				05E21CE00F5349600027A864 /* ORSUrlborgShortener.m in Sources */,
+				053FB6960FA48FFD00DA370E /* NSString+Base64.m in Sources */,
+				053FB6C50FA4944500DA370E /* base64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

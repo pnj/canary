@@ -39,8 +39,10 @@
 					synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
-		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		//NSMutableString *requestURL = [NSMutableString 
+		//	stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		NSMutableString *requestURL = [NSMutableString
+					stringWithFormat:@"https://twitter.com/"];
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
@@ -52,15 +54,21 @@
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:encodedRequestURL]
-				cachePolicy:NSURLRequestUseProtocolCachePolicy
+				cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 										timeoutInterval:48.0];
 	
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
-		[request addValue:@"0.6" 
+		[request addValue:@"0.7.1" 
 	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
-		[request addValue:@"http://macsphere.wordpress.com/" 
+		[request addValue:@"http://www.canaryapp.com/" 
 			forHTTPHeaderField:@"X-Twitter-Client-URL"];
+		
+		NSString *creds = [NSString stringWithFormat:@"%@:%@", userID, password];
+		
+		[request addValue: 
+		 [NSString stringWithFormat:@"Basic %@", [creds base64Encoding]] 
+		  forHTTPHeaderField:@"Authorization"];
 	
 		// Setting the request method (except GET - doesn't need to be specified
 		// explicitly)
@@ -103,8 +111,10 @@
 							 synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
-		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		//NSMutableString *requestURL = [NSMutableString 
+		//	stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		NSMutableString *requestURL = [NSMutableString
+									   stringWithFormat:@"https://twitter.com/"];
 		
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
@@ -112,15 +122,21 @@
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:requestURL]
-				cachePolicy:NSURLRequestUseProtocolCachePolicy
+				cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 										timeoutInterval:48.0];
 		
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
-		[request addValue:@"0.6" 
+		[request addValue:@"0.7.1" 
 	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
-		[request addValue:@"http://macsphere.wordpress.com/" 
+		[request addValue:@"http://www.canaryapp.com/" 
 	   forHTTPHeaderField:@"X-Twitter-Client-URL"];
+		
+		NSString *creds = [NSString stringWithFormat:@"%@:%@", userID, password];
+		
+		[request addValue: 
+		 [NSString stringWithFormat:@"Basic %@", [creds base64Encoding]] 
+	   forHTTPHeaderField:@"Authorization"];
 		
 		// Setting the request method (except GET - doesn't need to be specified
 		// explicitly)
@@ -165,8 +181,10 @@
 					  synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
-		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		//NSMutableString *requestURL = [NSMutableString 
+		//	stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		NSMutableString *requestURL = [NSMutableString
+									   stringWithFormat:@"https://twitter.com/"];
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
@@ -178,15 +196,21 @@
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:encodedRequestURL]
-				cachePolicy:NSURLRequestUseProtocolCachePolicy
+				cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 					timeoutInterval:48.0];
 	
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
-		[request addValue:@"0.6" 
+		[request addValue:@"0.7.1" 
 	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
-		[request addValue:@"http://macsphere.wordpress.com/" 
-			forHTTPHeaderField:@"X-Twitter-Client-URL"];
+		[request addValue:@"http://www.canaryapp.com/" 
+	   forHTTPHeaderField:@"X-Twitter-Client-URL"];
+		
+		NSString *creds = [NSString stringWithFormat:@"%@:%@", userID, password];
+		
+		[request addValue: 
+		 [NSString stringWithFormat:@"Basic %@", [creds base64Encoding]] 
+	   forHTTPHeaderField:@"Authorization"];
 	
 		// Setting the request method (except GET - doesn't need to be specified
 		// explicitly)
@@ -268,6 +292,7 @@
 // is called when the server requests (additional) authentication.
 - (void) connection:(NSURLConnection *)connection
 didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+	NSLog(@"Authenticating...");
 	@synchronized(self) {
 		if ([challenge previousFailureCount] == 0) {
 			NSURLCredential *newCredential = [NSURLCredential 
