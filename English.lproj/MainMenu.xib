@@ -462,7 +462,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													</object>
 												</object>
 											</object>
-											<int key="NSSelectedIndex">14</int>
 											<bool key="NSPullDown">YES</bool>
 											<int key="NSPreferredEdge">2</int>
 											<bool key="NSUsesItemFromMenu">YES</bool>
@@ -3208,7 +3207,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													</object>
 												</object>
 											</object>
-											<int key="NSSelectedIndex">11</int>
 											<bool key="NSPullDown">YES</bool>
 											<int key="NSPreferredEdge">2</int>
 											<bool key="NSUsesItemFromMenu">YES</bool>
@@ -3626,7 +3624,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													</object>
 												</object>
 											</object>
-											<int key="NSSelectedIndex">11</int>
 											<bool key="NSPullDown">YES</bool>
 											<int key="NSPreferredEdge">2</int>
 											<bool key="NSUsesItemFromMenu">YES</bool>
