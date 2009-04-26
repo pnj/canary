@@ -319,43 +319,44 @@ sender {
 	} else {
 		[self changeToUsernames];
 	}
-	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
+	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Freunde"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
 			//[self setStatuses:cacheManager.followingStatusCache];
 			self.statuses = cacheManager.followingStatusCache;
 		}
 		[self getFriendsTimeline];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Replies"]) {
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Replies"] 
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Repliken"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.repliesStatusCache count] > 0) {
 			self.statuses = cacheManager.repliesStatusCache;
 		}
 		[self getReplies];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Public"]) {
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Public"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Öffentlich"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.publicStatusCache count] > 0) {
 			self.statuses = cacheManager.publicStatusCache;
 		}
 		[self getPublicTimeline];
-	} else if ([timelineButton.titleOfSelectedItem
-			   isEqualToString:@"Favorites"]) {
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Favorites"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Favoriten"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.favoritesStatusCache count] > 0) {
 			self.statuses = cacheManager.favoritesStatusCache;
 		}
 		[self getFavorites];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Archive"]) {
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Archive"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Archiv"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[cacheManager.archiveStatusCache count] > 0) {
 			self.statuses = cacheManager.archiveStatusCache;
 		}
 		[self getUserTimeline];
-	}  else if ([timelineButton.titleOfSelectedItem
-				 isEqualToString:@"Received messages"]) {
+	}  else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Received messages"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Empfangene Nachrichten"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[[cacheManager receivedMessagesCache] count] > 0) {
 			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
@@ -365,8 +366,8 @@ sender {
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
 		[statusBarButton setHidden:YES];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Sent messages"]) {
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Gesendete Nachrichten"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[cacheManager.sentMessagesCache count] > 0) {
 			self.sentDirectMessages = cacheManager.sentMessagesCache;
@@ -2107,19 +2108,23 @@ sender {
 - (float) timelineRefreshPeriod {
 	NSString *timelineRefreshPeriodString = (NSString *)[defaults 
 									objectForKey:@"CanaryRefreshPeriod"];
-	if ([timelineRefreshPeriodString isEqualToString:@"Manually"])
+	if ([timelineRefreshPeriodString isEqualToString:@"Manually"] ||
+		[timelineRefreshPeriodString isEqualToString:@"Manuell"])
 		return -1.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every minute"])
+	else if ([timelineRefreshPeriodString isEqualToString:@"Every minute"] ||
+			 [timelineRefreshPeriodString isEqualToString:@"Minütlich"])
 		return 60.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every two minutes"])
+	else if ([timelineRefreshPeriodString isEqualToString:@"Every two minutes"] ||
+			 [timelineRefreshPeriodString isEqualToString:@"Alle zwei Minuten"])
 		return 120.0;
-	else if ([timelineRefreshPeriodString 
-			  isEqualToString:@"Every three minutes"])
+	else if ([timelineRefreshPeriodString isEqualToString:@"Every three minutes"] ||
+			 [timelineRefreshPeriodString isEqualToString:@"Alle drei Minuten"])
 		return 180.0;
-	else if ([timelineRefreshPeriodString 
-			  isEqualToString:@"Every five minutes"])
+	else if ([timelineRefreshPeriodString isEqualToString:@"Every five minutes"] ||
+			 [timelineRefreshPeriodString isEqualToString:@"Alle fünf Minuten"])
 		return 300.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every ten minutes"])
+	else if ([timelineRefreshPeriodString isEqualToString:@"Every ten minutes"] ||
+			 [timelineRefreshPeriodString isEqualToString:@"Alle zehn Minuten"])
 		return 600.0;
 	else
 		return -1.0;

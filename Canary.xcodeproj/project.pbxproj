@@ -335,6 +335,10 @@
 		053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Copyright and license info.rtf"; sourceTree = "<group>"; };
 		053FB9980FA4D4B300DA370E /* Growl License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl License.txt"; sourceTree = "<group>"; };
 		053FB9990FA4D4B300DA370E /* Sparkle License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sparkle License.txt"; sourceTree = "<group>"; };
+		053FB9D60FA4E15900DA370E /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/About.xib; sourceTree = "<group>"; };
+		053FB9DC0FA4E1FF00DA370E /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/LoginWindow.xib; sourceTree = "<group>"; };
+		053FB9E20FA4E2A600DA370E /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/Preferences.xib; sourceTree = "<group>"; };
+		053FB9E80FA4E37D00DA370E /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryStatusView.h; sourceTree = "<group>"; };
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
 		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
@@ -1135,6 +1139,7 @@
 			children = (
 				050996CF0EEAF806005848B8 /* English */,
 				05A5D82D0F05469500B596A9 /* Greek */,
+				053FB9DC0FA4E1FF00DA370E /* German */,
 			);
 			name = LoginWindow.xib;
 			sourceTree = "<group>";
@@ -1143,6 +1148,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				056DC7080ECB64D800B9F0BB /* English */,
+				053FB9D60FA4E15900DA370E /* German */,
 			);
 			name = About.xib;
 			sourceTree = "<group>";
@@ -1175,6 +1181,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0592EA670EA26342002AC429 /* English */,
+				053FB9E20FA4E2A600DA370E /* German */,
 			);
 			name = Preferences.xib;
 			sourceTree = "<group>";
@@ -1183,6 +1190,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				05EE98340ED5F86600A860AC /* English */,
+				053FB9E80FA4E37D00DA370E /* German */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

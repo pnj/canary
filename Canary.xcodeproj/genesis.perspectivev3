@@ -234,8 +234,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,16 +271,25 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>080E96DDFE201D6D7F000001</string>
+								<string>05DF56720E3E60DE00B8B4DE</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>05EE98480ED601E500A860AC</string>
+								<string>05E8A27D0ECB7308008743A4</string>
+								<string>05171DF50F1BECE000CA9812</string>
+								<string>050996D10EEAF80D005848B8</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>30</integer>
+									<integer>28</integer>
+									<integer>18</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {272, 597}}</string>
+							<string>{{0, 58}, {272, 597}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -310,12 +317,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.h</string>
+								<string>ORSCanaryController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.h</string>
+										<string>ORSCanaryController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>053FB99F0FA4D4BC00DA370E</string>
+										<string>053FBA2F0FA4F1B400DA370E</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -346,7 +355,6 @@
 											<string>05845BC10F59A823006F7306</string>
 											<string>057E322C0F92006D0055B843</string>
 											<string>057E331B0F9292DD0055B843</string>
-											<string>055B86510FA202FA001EB430</string>
 											<string>053FB6E30FA4B74C00DA370E</string>
 											<string>053FB6E40FA4B74C00DA370E</string>
 											<string>053FB6E50FA4B74C00DA370E</string>
@@ -431,14 +439,17 @@
 											<string>053FB7E80FA4C81D00DA370E</string>
 											<string>053FB7E90FA4C81D00DA370E</string>
 											<string>053FB7EA0FA4C81D00DA370E</string>
-											<string>053FB7EB0FA4C81D00DA370E</string>
 											<string>053FB7EC0FA4C81D00DA370E</string>
 											<string>053FB7ED0FA4C81D00DA370E</string>
 											<string>053FB7EE0FA4C81D00DA370E</string>
 											<string>053FB7EF0FA4C81D00DA370E</string>
 											<string>053FB7F00FA4C81D00DA370E</string>
-											<string>053FB7F10FA4C81D00DA370E</string>
-											<string>053FB98F0FA4D48800DA370E</string>
+											<string>053FB9BC0FA4DFD900DA370E</string>
+											<string>053FB9EF0FA4E56100DA370E</string>
+											<string>053FBA010FA4E72100DA370E</string>
+											<string>053FBA220FA4F0B800DA370E</string>
+											<string>053FBA230FA4F0B800DA370E</string>
+											<string>053FBA240FA4F0B800DA370E</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -779,6 +790,18 @@
 											<string>053FB81B0FA4C81D00DA370E</string>
 											<string>053FB81C0FA4C81D00DA370E</string>
 											<string>053FB81D0FA4C81D00DA370E</string>
+											<string>053FB9BE0FA4DFD900DA370E</string>
+											<string>053FB9BF0FA4DFD900DA370E</string>
+											<string>053FB9C00FA4DFD900DA370E</string>
+											<string>053FB9CD0FA4E0C600DA370E</string>
+											<string>053FB9F10FA4E56100DA370E</string>
+											<string>053FBA030FA4E72100DA370E</string>
+											<string>053FBA100FA4ED0800DA370E</string>
+											<string>053FBA110FA4ED0800DA370E</string>
+											<string>053FBA120FA4ED0800DA370E</string>
+											<string>053FBA250FA4F0B800DA370E</string>
+											<string>053FBA260FA4F0B800DA370E</string>
+											<string>053FBA270FA4F0B800DA370E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
