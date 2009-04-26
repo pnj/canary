@@ -1,6 +1,12 @@
 // !$*UTF8*$!
 {
 	0505600B0EAB48A500FC28C3 /* ORSSession.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSSession.h;
+		path = /Users/genesis/Projects/Canary/source/ORSSession.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1264}}";
 			sepNavSelRange = "{1274, 0}";
@@ -8,6 +14,12 @@
 		};
 	};
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSSession.m;
+		path = /Users/genesis/Projects/Canary/source/ORSSession.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1459, 110}\";\n            s = 0;\n        },\n                {\n            r = \"{1626, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{8659, 605}\";\n            s = 0;\n        },\n                {\n            r = \"{9378, 102}\";\n            s = 0;\n        },\n                {\n            r = \"{9627, 133}\";\n            s = 0;\n        },\n                {\n            r = \"{9898, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{10171, 147}\";\n            s = 0;\n        },\n                {\n            r = \"{11258, 200}\";\n            s = 0;\n        },\n                {\n            r = \"{11625, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{11858, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{12139, 1311}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 13458}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {1015, 4784}}";
@@ -17,6 +29,12 @@
 		};
 	};
 	0505623C0EABB39800FC28C3 /* ORSTwitterEngine+HelpAndAccountAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "ORSTwitterEngine+HelpAndAccountAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+HelpAndAccountAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
 			sepNavSelRange = "{1304, 0}";
@@ -25,6 +43,12 @@
 		};
 	};
 	0505623D0EABB39800FC28C3 /* ORSTwitterEngine+HelpAndAccountAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "ORSTwitterEngine+HelpAndAccountAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+HelpAndAccountAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1569, 348}\";\n            s = 0;\n        },\n                {\n            r = \"{2005, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{2426, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{2820, 247}\";\n            s = 0;\n        },\n                {\n            r = \"{3131, 245}\";\n            s = 0;\n        },\n                {\n            r = \"{3450, 279}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3737}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
@@ -33,6 +57,12 @@
 		};
 	};
 	050562510EABC89400FC28C3 /* ORSTwitterEngine+FavoritesAndDMAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "ORSTwitterEngine+FavoritesAndDMAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+FavoritesAndDMAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 800}}";
 			sepNavSelRange = "{1304, 0}";
@@ -40,6 +70,12 @@
 		};
 	};
 	050562520EABC89400FC28C3 /* ORSTwitterEngine+FavoritesAndDMAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "ORSTwitterEngine+FavoritesAndDMAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+FavoritesAndDMAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 3776}}";
 			sepNavSelRange = "{1304, 0}";
@@ -48,6 +84,12 @@
 		};
 	};
 	050562580EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "ORSTwitterEngine+UserAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+UserAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 912}}";
 			sepNavSelRange = "{1294, 0}";
@@ -55,6 +97,12 @@
 		};
 	};
 	050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "ORSTwitterEngine+UserAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+UserAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 5040}}";
 			sepNavSelRange = "{1294, 0}";
@@ -63,6 +111,12 @@
 		};
 	};
 	0505632B0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "ORSTwitterEngine+StatusAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+StatusAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 880}}";
 			sepNavSelRange = "{1296, 0}";
@@ -70,6 +124,12 @@
 		};
 	};
 	0505632C0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "ORSTwitterEngine+StatusAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/ORSTwitterEngine+StatusAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 4608}}";
 			sepNavSelRange = "{1296, 0}";
@@ -77,6 +137,12 @@
 		};
 	};
 	0507E6FE0EED88A000559018 /* ORSTwitPicDispatcher.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSTwitPicDispatcher.h;
+		path = /Users/genesis/Projects/Canary/source/ORSTwitPicDispatcher.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
 			sepNavSelRange = "{48, 0}";
@@ -84,6 +150,12 @@
 		};
 	};
 	0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSTwitPicDispatcher.m;
+		path = /Users/genesis/Projects/Canary/source/ORSTwitPicDispatcher.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1514, 3525}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5047}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 636}}";
@@ -92,6 +164,12 @@
 		};
 	};
 	0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryDragView.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryDragView.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 720}}";
 			sepNavSelRange = "{39, 0}";
@@ -99,6 +177,12 @@
 		};
 	};
 	0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryDragView.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryDragView.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1378, 460}\";\n            s = 0;\n        },\n                {\n            r = \"{2654, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{2801, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{2890, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{3004, 44}\";\n            s = 0;\n        },\n                {\n            r = \"{3111, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{3530, 52}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3590}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1204}}";
@@ -107,6 +191,12 @@
 		};
 	};
 	0507EABD0EF2CA8400559018 /* ORSCanaryCollectionView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryCollectionView.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryCollectionView.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 608}}";
 			sepNavSelRange = "{45, 0}";
@@ -114,6 +204,12 @@
 		};
 	};
 	0507EABE0EF2CA8400559018 /* ORSCanaryCollectionView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryCollectionView.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryCollectionView.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1393, 772}\";\n            s = 0;\n        },\n                {\n            r = \"{2187, 14}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2209}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
@@ -122,6 +218,12 @@
 		};
 	};
 	0507EEB20EF461C600559018 /* dsa_pub.pem */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text;
+		name = dsa_pub.pem;
+		path = /Users/genesis/Projects/Canary/source/dsa_pub.pem;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
 			sepNavSelRange = "{0, 0}";
@@ -129,6 +231,12 @@
 		};
 	};
 	050996D40EEAF88C005848B8 /* ORSCanaryLoginController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryLoginController.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryLoginController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 832}}";
 			sepNavSelRange = "{55, 0}";
@@ -137,6 +245,12 @@
 		};
 	};
 	050996D50EEAF88C005848B8 /* ORSCanaryLoginController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryLoginController.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryLoginController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1423, 229}\";\n            s = 0;\n        },\n                {\n            r = \"{1775, 225}\";\n            s = 0;\n        },\n                {\n            r = \"{2074, 449}\";\n            s = 0;\n        },\n                {\n            r = \"{2656, 380}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6987}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 2388}}";
@@ -146,6 +260,12 @@
 		};
 	};
 	0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "ORSCanaryController+Growl.m";
+		path = "/Users/genesis/Projects/Canary/source/ORSCanaryController+Growl.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1416, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{1567, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{1725, 107}\";\n            s = 0;\n        },\n                {\n            r = \"{1956, 1357}\";\n            s = 0;\n        },\n                {\n            r = \"{3424, 1430}\";\n            s = 0;\n        },\n                {\n            r = \"{4962, 1526}\";\n            s = 0;\n        },\n                {\n            r = \"{6664, 1392}\";\n            s = 0;\n        },\n                {\n            r = \"{8173, 1144}\";\n            s = 0;\n        },\n                {\n            r = \"{9418, 1181}\";\n            s = 0;\n        },\n                {\n            r = \"{10657, 1304}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 11969}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1012}}";
@@ -154,6 +274,12 @@
 		};
 	};
 	0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "ORSCanaryController+Growl.h";
+		path = "/Users/genesis/Projects/Canary/source/ORSCanaryController+Growl.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 736}}";
 			sepNavSelRange = "{1281, 0}";
@@ -229,6 +355,12 @@
 		sourceTree = "<absolute>";
 	};
 	053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSScreenNameToBoolTransformer.h;
+		path = /Users/genesis/Projects/Canary/source/ORSScreenNameToBoolTransformer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
 			sepNavSelRange = "{1286, 0}";
@@ -236,6 +368,12 @@
 		};
 	};
 	053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSScreenNameToBoolTransformer.m;
+		path = /Users/genesis/Projects/Canary/source/ORSScreenNameToBoolTransformer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 816}}";
 			sepNavSelRange = "{102, 0}";
@@ -433,6 +571,12 @@
 		vrLoc = 2490;
 	};
 	053FB6940FA48FFD00DA370E /* NSString+Base64.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "NSString+Base64.h";
+		path = "/Users/genesis/Projects/Canary/source/NSString+Base64.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
 			sepNavSelRange = "{61, 0}";
@@ -440,6 +584,12 @@
 		};
 	};
 	053FB6950FA48FFD00DA370E /* NSString+Base64.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "NSString+Base64.m";
+		path = "/Users/genesis/Projects/Canary/source/NSString+Base64.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 684}}";
 			sepNavSelRange = "{61, 0}";
@@ -825,6 +975,12 @@
 		vrLoc = 0;
 	};
 	053FB6C30FA4944500DA370E /* base64.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = base64.h;
+		path = /Users/genesis/Projects/Canary/source/base64.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
 			sepNavSelRange = "{0, 0}";
@@ -832,6 +988,12 @@
 		};
 	};
 	053FB6C40FA4944500DA370E /* base64.c */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.c;
+		name = base64.c;
+		path = /Users/genesis/Projects/Canary/source/base64.c;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1015, 2448}}";
 			sepNavSelRange = "{0, 0}";
@@ -5092,7 +5254,1390 @@
 		vrLen = 2599;
 		vrLoc = 75871;
 	};
+	053FBA340FA50E7C00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 26";
+		rLen = 0;
+		rLoc = 1283;
+		rType = 0;
+		vrLen = 1582;
+		vrLoc = 3;
+	};
+	053FBA350FA50EB500DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0573D7050DA66396002D1CCF /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 848}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1485}";
+		};
+	};
+	053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1416}";
+		};
+	};
+	053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 5184}}";
+			sepNavSelRange = "{1846, 0}";
+			sepNavVisRange = "{1301, 956}";
+		};
+	};
+	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 9952}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1726}";
+		};
+	};
+	053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 5556}}";
+			sepNavSelRange = "{1320, 0}";
+			sepNavVisRange = "{0, 1516}";
+		};
+	};
+	053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {659, 736}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1301}";
+		};
+	};
+	053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 736}}";
+			sepNavSelRange = "{1338, 0}";
+			sepNavVisRange = "{0, 1688}";
+			sepNavWindowFrame = "{{15, 62}, {1223, 711}}";
+		};
+	};
+	053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 36452}}";
+			sepNavSelRange = "{1346, 0}";
+			sepNavVisRange = "{0, 1276}";
+		};
+	};
+	053FBA460FA50EF200DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0573D7050DA66396002D1CCF /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBA470FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1576;
+		vrLoc = 0;
+	};
+	053FBA480FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1485;
+		vrLoc = 0;
+	};
+	053FBA490FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 0;
+	};
+	053FBA4A0FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1726;
+		vrLoc = 0;
+	};
+	053FBA4B0FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1616;
+		vrLoc = 0;
+	};
+	053FBA4C0FA50EF200DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0573D7050DA66396002D1CCF /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBA4D0FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1576;
+		vrLoc = 0;
+	};
+	053FBA4E0FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1485;
+		vrLoc = 0;
+	};
+	053FBA4F0FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 0;
+	};
+	053FBA500FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1726;
+		vrLoc = 0;
+	};
+	053FBA510FA50EF200DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1616;
+		vrLoc = 0;
+	};
+	053FBA550FA50FA900DA370E /* ORSCanaryStatusView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {659, 528}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1278}";
+		};
+	};
+	053FBA570FA50FA900DA370E /* ORSCanaryUnderlinedButtonCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {659, 496}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1288}";
+		};
+	};
+	053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {659, 560}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1281}";
+		};
+	};
+	053FBA630FA50FA900DA370E /* ORSDateDifferenceFormatter.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {659, 2032}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1285}";
+		};
+	};
+	053FBA6D0FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1301;
+		vrLoc = 0;
+	};
+	053FBA6E0FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA550FA50FA900DA370E /* ORSCanaryStatusView.h */;
+		name = "ORSCanaryStatusView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1278;
+		vrLoc = 0;
+	};
+	053FBA6F0FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA630FA50FA900DA370E /* ORSDateDifferenceFormatter.m */;
+		name = "ORSDateDifferenceFormatter.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBA700FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA570FA50FA900DA370E /* ORSCanaryUnderlinedButtonCell.h */;
+		name = "ORSCanaryUnderlinedButtonCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1288;
+		vrLoc = 0;
+	};
+	053FBA710FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA720FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1715;
+		vrLoc = 0;
+	};
+	053FBA730FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1715;
+		vrLoc = 0;
+	};
+	053FBA740FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1301;
+		vrLoc = 0;
+	};
+	053FBA750FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA550FA50FA900DA370E /* ORSCanaryStatusView.h */;
+		name = "ORSCanaryStatusView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1278;
+		vrLoc = 0;
+	};
+	053FBA760FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA630FA50FA900DA370E /* ORSDateDifferenceFormatter.m */;
+		name = "ORSDateDifferenceFormatter.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBA770FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA570FA50FA900DA370E /* ORSCanaryUnderlinedButtonCell.h */;
+		name = "ORSCanaryUnderlinedButtonCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1288;
+		vrLoc = 0;
+	};
+	053FBA780FA50FEA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA830FA510BC00DA370E /* NSString+Base64.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 684}}";
+			sepNavSelRange = "{1397, 43}";
+			sepNavVisRange = "{520, 1080}";
+		};
+	};
+	053FBA880FA510D600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA890FA510D600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA8A0FA510D600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA8B0FA510D600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 784}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1322}";
+		};
+	};
+	053FBA920FA5115500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA930FA5115500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBA940FA5115500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA950FA5115500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA620FA50FA900DA370E /* ORSCanaryTextFieldCell.h */;
+		name = "ORSCanaryTextFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBA960FA5115500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1904}}";
+			sepNavSelRange = "{5052, 0}";
+			sepNavVisRange = "{3602, 1459}";
+		};
+	};
+	053FBAB50FA511DE00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAB60FA511DE00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAB70FA511DE00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAC10FA5121E00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAC20FA5121E00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAC30FA5121E00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 1136}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1285}";
+		};
+	};
+	053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 1184}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1284}";
+		};
+	};
+	053FBAD80FA5128900DA370E /* ORSTrimShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 816}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1281}";
+		};
+	};
+	053FBAE30FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAE40FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */;
+		name = "ORSShortenerFactory.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 0;
+	};
+	053FBAE50FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAD80FA5128900DA370E /* ORSTrimShortener.h */;
+		name = "ORSTrimShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBAE60FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBAE70FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAE80FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 0;
+	};
+	053FBAE90FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */;
+		name = "ORSShortenerFactory.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 0;
+	};
+	053FBAEA0FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAD80FA5128900DA370E /* ORSTrimShortener.h */;
+		name = "ORSTrimShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	053FBAEB0FA512AA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBAEF0FA5139300DA370E /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 410}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 287}";
+		};
+	};
+	053FBAF00FA5139300DA370E /* Canary_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 410}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 301}";
+		};
+	};
+	053FBAF20FA5140400DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBAF30FA5140400DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBAF40FA5140400DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBAF50FA5143600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBC1C0FA5155400DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBC230FA5159700DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1577;
+		vrLoc = 0;
+	};
+	053FBC650FA5163E00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1577;
+		vrLoc = 0;
+	};
+	053FBC6C0FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBC6D0FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAEF0FA5139300DA370E /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	053FBC6E0FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAF00FA5139300DA370E /* Canary_Prefix.pch */;
+		name = "Canary_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	053FBC6F0FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */;
+		name = "BWToolkit License.rtf: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1476;
+		vrLoc = 0;
+	};
+	053FBC700FA5174F00DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 053FBC660FA516A600DA370E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBC710FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */;
+		name = "ORSAbstractShortener.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	053FBC720FA5174F00DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 053FBC660FA516A600DA370E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBC730FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAEF0FA5139300DA370E /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	053FBC740FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAF00FA5139300DA370E /* Canary_Prefix.pch */;
+		name = "Canary_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	053FBC750FA5174F00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */;
+		name = "BWToolkit License.rtf: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1476;
+		vrLoc = 0;
+	};
+	053FBC760FA5174F00DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 053FBC660FA516A600DA370E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBC8C0FA51C1300DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 053FBC660FA516A600DA370E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBC8D0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 43";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 956;
+		vrLoc = 1301;
+	};
+	053FBC8E0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 0;
+	};
+	053FBC8F0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 1446;
+		vrLoc = 0;
+	};
+	053FBC900FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 28";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1460;
+		vrLoc = 1020;
+	};
+	053FBC910FA51C1300DA370E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 053FBC660FA516A600DA370E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/genesis/Projects/Canary/source/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	053FBC920FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 36;
+		rLoc = 29804;
+		rType = 0;
+		vrLen = 906;
+		vrLoc = 29220;
+	};
+	053FBC930FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 9133;
+	};
+	053FBC940FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 36;
+		rLoc = 29804;
+		rType = 0;
+		vrLen = 906;
+		vrLoc = 29002;
+	};
+	053FBC950FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 810;
+		vrLoc = 9049;
+	};
+	053FBC960FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 21;
+		rLoc = 29811;
+		rType = 0;
+		vrLen = 811;
+		vrLoc = 29423;
+	};
+	053FBC970FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 233";
+		rLen = 53;
+		rLoc = 8118;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 7613;
+	};
+	053FBC980FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 951;
+		vrLoc = 5406;
+	};
+	053FBC990FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 21;
+		rLoc = 29811;
+		rType = 0;
+		vrLen = 906;
+		vrLoc = 29220;
+	};
+	053FBC9A0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 233";
+		rLen = 56;
+		rLoc = 8118;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 7806;
+	};
+	053FBC9B0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 925;
+		vrLoc = 9601;
+	};
+	053FBC9C0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 21;
+		rLoc = 29811;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 29281;
+	};
+	053FBC9D0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 233";
+		rLen = 56;
+		rLoc = 8118;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 8677;
+	};
+	053FBC9E0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 52";
+		rLen = 0;
+		rLoc = 2110;
+		rType = 0;
+		vrLen = 918;
+		vrLoc = 1770;
+	};
+	053FBC9F0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 867;
+	};
+	053FBCA00FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 769";
+		rLen = 21;
+		rLoc = 29811;
+		rType = 0;
+		vrLen = 944;
+		vrLoc = 29220;
+	};
+	053FBCA10FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 44";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 1255;
+	};
+	053FBCA20FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCA30FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 29";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 648;
+	};
+	053FBCA40FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 44";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 1381;
+	};
+	053FBCA50FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 29";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1368;
+		vrLoc = 781;
+	};
+	053FBCA60FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCA70FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 949;
+		vrLoc = 648;
+	};
+	053FBCA80FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 43";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 1381;
+	};
+	053FBCA90FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCAA0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 43";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 1381;
+	};
+	053FBCAB0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 29";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1168;
+		vrLoc = 781;
+	};
+	053FBCAC0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCAD0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 648;
+	};
+	053FBCAE0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCAF0FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 648;
+	};
+	053FBCB00FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCB10FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 43";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 1381;
+	};
+	053FBCB20FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 28";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1069;
+		vrLoc = 1173;
+	};
+	053FBCB30FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCB40FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 43";
+		rLen = 0;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 956;
+		vrLoc = 1301;
+	};
+	053FBCB50FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 34";
+		rLen = 49;
+		rLoc = 1422;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 787;
+	};
+	053FBCB60FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 1023;
+		vrLoc = 2283;
+	};
+	053FBCB70FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 0;
+	};
+	053FBCB80FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 28";
+		rLen = 0;
+		rLoc = 1320;
+		rType = 0;
+		vrLen = 1446;
+		vrLoc = 0;
+	};
+	053FBCB90FA51C1300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 29";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1412;
+		vrLoc = 0;
+	};
+	053FBCC10FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 29";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1276;
+		vrLoc = 0;
+	};
+	053FBCC20FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA830FA510BC00DA370E /* NSString+Base64.m */;
+		name = "NSString+Base64.m: 33";
+		rLen = 43;
+		rLoc = 1397;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 520;
+	};
+	053FBCC30FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "warning: control reaches end of non-void function";
+		fRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */;
+		rLen = 1;
+		rLoc = 115;
+		rType = 1;
+	};
+	053FBCC40FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 29";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1276;
+		vrLoc = 0;
+	};
+	053FBCC50FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA830FA510BC00DA370E /* NSString+Base64.m */;
+		name = "NSString+Base64.m: 33";
+		rLen = 43;
+		rLoc = 1397;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 520;
+	};
+	053FBCC60FA51D8600DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */;
+		name = "ORSTwitPicDispatcher.m: 115";
+		rLen = 0;
+		rLoc = 5052;
+		rType = 0;
+		vrLen = 1138;
+		vrLoc = 3602;
+	};
+	053FBCC70FA51D9500DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */;
+		name = "ORSTwitPicDispatcher.m: 115";
+		rLen = 0;
+		rLoc = 5052;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 4244;
+	};
+	053FBCCC0FA51DAA00DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */;
+		name = "ORSTwitPicDispatcher.m: 115";
+		rLen = 0;
+		rLoc = 5052;
+		rType = 0;
+		vrLen = 1145;
+		vrLoc = 3894;
+	};
+	053FBCCF0FA51DE300DA370E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */;
+		name = "ORSTwitPicDispatcher.m: 115";
+		rLen = 0;
+		rLoc = 5052;
+		rType = 0;
+		vrLen = 1459;
+		vrLoc = 3602;
+	};
 	0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryStatusView.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryStatusView.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 608}}";
 			sepNavSelRange = "{41, 0}";
@@ -5100,6 +6645,12 @@
 		};
 	};
 	0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryStatusView.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryStatusView.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1397, 14}\";\n            s = 0;\n        },\n                {\n            r = \"{2366, 23}\";\n            s = 0;\n        },\n                {\n            r = \"{2411, 23}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2442}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1120}}";
@@ -5108,6 +6659,12 @@
 		};
 	};
 	0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryCollectionViewItem.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryCollectionViewItem.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
 			sepNavSelRange = "{49, 0}";
@@ -5115,6 +6672,12 @@
 		};
 	};
 	0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryCollectionViewItem.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryCollectionViewItem.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
 			sepNavSelRange = "{49, 0}";
@@ -5122,6 +6685,12 @@
 		};
 	};
 	0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryUnderlinedButtonCell.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryUnderlinedButtonCell.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{51, 0}";
@@ -5129,6 +6698,12 @@
 		};
 	};
 	0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryUnderlinedButtonCell.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryUnderlinedButtonCell.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1421, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{1519, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{1671, 10}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1689}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -5137,6 +6712,12 @@
 		};
 	};
 	0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSBitlyShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSBitlyShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
 			sepNavSelRange = "{1682, 0}";
@@ -5145,6 +6726,12 @@
 		};
 	};
 	0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSBitlyShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSBitlyShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1508, 360}\";\n            s = 0;\n        },\n                {\n            r = \"{2096, 993}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3097}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -5153,6 +6740,12 @@
 		};
 	};
 	0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCligsShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCligsShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
 			sepNavSelRange = "{1682, 0}";
@@ -5160,6 +6753,12 @@
 		};
 	};
 	0555A4D60EAA1E4D00B126BC /* ORSCligsShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCligsShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCligsShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1508, 387}\";\n            s = 0;\n        },\n                {\n            r = \"{2123, 402}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2533}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -5168,6 +6767,12 @@
 		};
 	};
 	0555A5130EAA2F7E00B126BC /* ORSAdjixShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSAdjixShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSAdjixShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 880}}";
 			sepNavSelRange = "{1281, 0}";
@@ -5175,6 +6780,12 @@
 		};
 	};
 	0555A5140EAA2F7E00B126BC /* ORSAdjixShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSAdjixShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSAdjixShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1508, 236}\";\n            s = 0;\n        },\n                {\n            r = \"{1972, 984}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2964}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -5183,6 +6794,12 @@
 		};
 	};
 	0555A5190EAA38AC00B126BC /* ORSShortenerFactory.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSShortenerFactory.h;
+		path = /Users/genesis/Projects/Canary/source/ORSShortenerFactory.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1392}}";
 			sepNavSelRange = "{2440, 0}";
@@ -5191,6 +6808,12 @@
 		};
 	};
 	0555A51A0EAA38AC00B126BC /* ORSShortenerFactory.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSShortenerFactory.m;
+		path = /Users/genesis/Projects/Canary/source/ORSShortenerFactory.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1492, 657}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2157}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
@@ -5199,6 +6822,12 @@
 		};
 	};
 	0555A51C0EAA3B4700B126BC /* ORSShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 944}}";
 			sepNavSelRange = "{962, 0}";
@@ -5342,6 +6971,12 @@
 		sourceTree = "<absolute>";
 	};
 	0555A65F0EAA509E00B126BC /* ORSIsgdShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSIsgdShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSIsgdShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 944}}";
 			sepNavSelRange = "{1679, 0}";
@@ -5349,12 +6984,25 @@
 		};
 	};
 	0555A6600EAA509E00B126BC /* ORSIsgdShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSIsgdShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSIsgdShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1505, 560}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2073}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
 			sepNavSelRange = "{95, 0}";
 			sepNavVisRange = "{3, 1511}";
 		};
+	};
+	0558A2990E9A68DD000EC2B2 /* Canary.icns */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.icns;
+		name = Canary.icns;
+		path = /Users/genesis/Projects/Canary/source/Canary.icns;
+		sourceTree = "<absolute>";
 	};
 	0558A2B20E9A840D000EC2B2 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -5395,6 +7043,12 @@
 		sourceTree = "<absolute>";
 	};
 	0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "NSString+ORSCanaryAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/NSString+ORSCanaryAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{1283, 0}";
@@ -5402,10 +7056,16 @@
 		};
 	};
 	0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "NSString+ORSCanaryAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/NSString+ORSCanaryAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 3120}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 3136}}";
 			sepNavSelRange = "{1283, 0}";
-			sepNavVisRange = "{3, 1660}";
+			sepNavVisRange = "{3, 1582}";
 		};
 	};
 	055B86510FA202FA001EB430 /* PlistBookmark */ = {
@@ -6510,6 +8170,12 @@
 		vrLoc = 3118;
 	};
 	055D60820DB6485000ED2B41 /* ORSTinyURLShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSTinyURLShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSTinyURLShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 944}}";
 			sepNavSelRange = "{1682, 0}";
@@ -6517,6 +8183,12 @@
 		};
 	};
 	055D60830DB6485000ED2B41 /* ORSTinyURLShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSTinyURLShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSTinyURLShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1514, 576}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2098}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
@@ -6529,6 +8201,12 @@
 		fRef = 0592EA7F0EA265F9002AC429 /* Canary.png */;
 	};
 	056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSDateDifferenceFormatter.h;
+		path = /Users/genesis/Projects/Canary/source/ORSDateDifferenceFormatter.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 672}}";
 			sepNavSelRange = "{48, 0}";
@@ -6536,6 +8214,12 @@
 		};
 	};
 	056BD17D0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSDateDifferenceFormatter.m;
+		path = /Users/genesis/Projects/Canary/source/ORSDateDifferenceFormatter.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{3770, 14}\";\n            s = 0;\n        },\n                {\n            r = \"{3912, 122}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4042}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 2176}}";
@@ -6544,6 +8228,12 @@
 		};
 	};
 	056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryAboutController.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryAboutController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
 			sepNavSelRange = "{55, 0}";
@@ -6551,6 +8241,12 @@
 		};
 	};
 	056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryAboutController.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryAboutController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1489, 150}\";\n            s = 0;\n        },\n                {\n            r = \"{1679, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{1887, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1963, 410}\";\n            s = 0;\n        },\n                {\n            r = \"{2399, 445}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2852}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 720}}";
@@ -6641,6 +8337,12 @@
 		indexTemplatePath = "";
 	};
 	0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/NSXMLNode+ORSTwitterStatusAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 832}}";
 			sepNavSelRange = "{85, 0}";
@@ -6649,6 +8351,12 @@
 		};
 	};
 	0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/NSXMLNode+ORSTwitterStatusAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1531, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{1832, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{2004, 349}\";\n            s = 0;\n        },\n                {\n            r = \"{2426, 218}\";\n            s = 0;\n        },\n                {\n            r = \"{2691, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{2807, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{2929, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{3060, 134}\";\n            s = 0;\n        },\n                {\n            r = \"{3279, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{3441, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{3605, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{3748, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{3863, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{3994, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{4127, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{4263, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{4412, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{4541, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{4669, 139}\";\n            s = 0;\n        },\n                {\n            r = \"{4903, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{5064, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{5257, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5399}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1408}}";
@@ -6657,6 +8365,12 @@
 		};
 	};
 	0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/NSMutableAttributedString+ORSCanaryAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1518, 344}\";\n            s = 0;\n        },\n                {\n            r = \"{1986, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{2471, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2935, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{3399, 1294}\";\n            s = 0;\n        },\n                {\n            r = \"{4775, 1169}\";\n            s = 0;\n        },\n                {\n            r = \"{6016, 1189}\";\n            s = 0;\n        },\n                {\n            r = \"{7269, 1233}\";\n            s = 0;\n        },\n                {\n            r = \"{8566, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{9874, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{11183, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{12492, 1246}\";\n            s = 0;\n        },\n                {\n            r = \"{13802, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{15161, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 23391}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 4592}}";
@@ -6666,6 +8380,12 @@
 		};
 	};
 	0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/NSMutableAttributedString+ORSCanaryAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 768}}";
 			sepNavSelRange = "{1300, 0}";
@@ -6673,6 +8393,12 @@
 		};
 	};
 	0573D6DB0DA662C1002D1CCF /* ORSTwitterEngine.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSTwitterEngine.m;
+		path = /Users/genesis/Projects/Canary/source/ORSTwitterEngine.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 11764}}";
 			sepNavSelRange = "{1280, 0}";
@@ -6681,6 +8407,12 @@
 		};
 	};
 	0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSTwitterEngine.h;
+		path = /Users/genesis/Projects/Canary/source/ORSTwitterEngine.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1776}}";
 			sepNavSelRange = "{1280, 0}";
@@ -6688,6 +8420,12 @@
 		};
 	};
 	0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryTextFieldCell.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryTextFieldCell.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1484, 1068}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2559}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
@@ -6697,6 +8435,12 @@
 		};
 	};
 	0573D6DF0DA662D3002D1CCF /* ORSCanaryTextFieldCell.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryTextFieldCell.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryTextFieldCell.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
 			sepNavSelRange = "{44, 0}";
@@ -6704,23 +8448,41 @@
 		};
 	};
 	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryController.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2365, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{2578, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{2791, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{2844, 1898}\";\n            s = 0;\n        },\n                {\n            r = \"{4766, 3649}\";\n            s = 0;\n        },\n                {\n            r = \"{8459, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{10049, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{10538, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{10692, 438}\";\n            s = 0;\n        },\n                {\n            r = \"{11175, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{14214, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{14689, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{16786, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{17250, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{17485, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{17679, 5238}\";\n            s = 0;\n        },\n                {\n            r = \"{23009, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{23545, 4876}\";\n            s = 0;\n        },\n                {\n            r = \"{28524, 1381}\";\n            s = 0;\n        },\n                {\n            r = \"{30014, 1397}\";\n            s = 0;\n        },\n                {\n            r = \"{31472, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{31825, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{32207, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{32541, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{32865, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{33247, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{33595, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{33960, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{34198, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{34443, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{34711, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{35277, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{35530, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{36297, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{38201, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{38516, 2297}\";\n            s = 0;\n        },\n                {\n            r = \"{41278, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{42697, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{44966, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{45764, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{46036, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{46306, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{46594, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{47156, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{47498, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{47657, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{47862, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{48065, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{48314, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{48604, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{48958, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{49142, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{49409, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{49529, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{49804, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{50437, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{52209, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{52972, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{53432, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{54005, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{55112, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{56163, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{57065, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{57881, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{58737, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{59274, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{59666, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{60063, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{60461, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{60861, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{61277, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{61880, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{64201, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{65393, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{66549, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{66756, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{66973, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{67242, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{67913, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{68126, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{68274, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{68717, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{69217, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{71197, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{71720, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{72147, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{72853, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{73559, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{74225, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{74920, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{75081, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{77197, 408}\";\n            s = 0;\n        },\n                {\n            r = \"{77676, 791}\";\n            s = 0;\n        },\n                {\n            r = \"{78581, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{78727, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{79181, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{79553, 881}\";\n            s = 0;\n        },\n                {\n            r = \"{80552, 397}\";\n            s = 0;\n        },\n                {\n            r = \"{80976, 19}\";\n            s = 0;\n        },\n                {\n            r = \"{81114, 416}\";\n            s = 0;\n        },\n                {\n            r = \"{81571, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{81711, 380}\";\n            s = 0;\n        },\n                {\n            r = \"{82128, 29}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 82165}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {721, 8660}}";
-			sepNavSelRange = "{17005, 0}";
-			sepNavVisRange = "{15819, 1402}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2365, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{2578, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{2791, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{2844, 1898}\";\n            s = 0;\n        },\n                {\n            r = \"{4766, 3649}\";\n            s = 0;\n        },\n                {\n            r = \"{8459, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{10049, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{10538, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{10692, 438}\";\n            s = 0;\n        },\n                {\n            r = \"{11175, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{14214, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{14689, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{16786, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{17250, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{17485, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{17679, 5238}\";\n            s = 0;\n        },\n                {\n            r = \"{23009, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{23545, 4876}\";\n            s = 0;\n        },\n                {\n            r = \"{28524, 1381}\";\n            s = 0;\n        },\n                {\n            r = \"{30014, 1397}\";\n            s = 0;\n        },\n                {\n            r = \"{31472, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{31825, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{32207, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{32541, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{32865, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{33247, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{33595, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{33960, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{34198, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{34443, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{34711, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{35277, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{35530, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{36297, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{38201, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{38516, 2297}\";\n            s = 0;\n        },\n                {\n            r = \"{41278, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{42697, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{44966, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{45764, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{46036, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{46306, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{46594, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{47156, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{47498, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{47657, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{47862, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{48065, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{48314, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{48604, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{48958, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{49142, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{49409, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{49529, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{49804, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{50437, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{52209, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{52972, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{53432, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{54005, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{55112, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{56163, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{57065, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{57881, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{58737, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{59274, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{59666, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{60063, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{60461, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{60861, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{61277, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{61880, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{64201, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{65393, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{66549, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{66756, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{66973, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{67242, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{67913, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{68126, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{68274, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{68717, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{69217, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{71197, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{71720, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{72147, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{72853, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{73559, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{74225, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{74920, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{75081, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{75266, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{77676, 791}\";\n            s = 0;\n        },\n                {\n            r = \"{78581, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{78727, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{79181, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{79553, 881}\";\n            s = 0;\n        },\n                {\n            r = \"{81571, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{82128, 29}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 82165}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1015, 8736}}";
+			sepNavSelRange = "{3487, 0}";
+			sepNavVisRange = "{3255, 479}";
 			sepNavWindowFrame = "{{670, 67}, {765, 711}}";
 		};
 	};
 	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryController.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 5200}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 5168}}";
 			sepNavSelRange = "{842, 0}";
-			sepNavVisRange = "{0, 1646}";
+			sepNavVisRange = "{0, 1559}";
 			sepNavWindowFrame = "{{16, 67}, {765, 711}}";
 		};
 	};
 	0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCredentialsManager.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCredentialsManager.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1489, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{2006, 522}\";\n            s = 0;\n        },\n                {\n            r = \"{2678, 445}\";\n            s = 0;\n        },\n                {\n            r = \"{3273, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{3774, 502}\";\n            s = 0;\n        },\n                {\n            r = \"{4416, 626}\";\n            s = 0;\n        },\n                {\n            r = \"{5124, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{5343, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5485}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
@@ -6730,6 +8492,12 @@
 		};
 	};
 	0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCredentialsManager.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCredentialsManager.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1696}}";
 			sepNavSelRange = "{130, 0}";
@@ -6738,6 +8506,12 @@
 		};
 	};
 	0573D7050DA66396002D1CCF /* Info.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = /Users/genesis/Projects/Canary/source/Info.plist;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {628, 966}}";
 			sepNavSelRange = "{837, 0}";
@@ -6747,12 +8521,25 @@
 		};
 	};
 	0573D71F0DA66483002D1CCF /* English */ = {
+		isa = PBXFileReference;
+		fileEncoding = 10;
+		lastKnownFileType = text.plist.strings;
+		name = English;
+		path = /Users/genesis/Projects/Canary/source/English.lproj/InfoPlist.strings;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1015, 180}}";
 			sepNavSelRange = "{102, 0}";
 			sepNavVisRange = "{0, 102}";
 			sepNavVisRect = "{{0, 0}, {702, 997}}";
 		};
+	};
+	057E320C0F9113040055B843 /* LightGradient.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = LightGradient.png;
+		path = /Users/genesis/Projects/Canary/source/LightGradient.png;
+		sourceTree = "<absolute>";
 	};
 	057E322A0F91FA590055B843 /* License.rtf */ = {
 		isa = PBXFileReference;
@@ -9487,6 +11274,12 @@
 		vrLoc = 4398;
 	};
 	05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSAsyncTwitPicDispatcher.h;
+		path = /Users/genesis/Projects/Canary/source/ORSAsyncTwitPicDispatcher.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
 			sepNavSelRange = "{53, 0}";
@@ -9494,6 +11287,12 @@
 		};
 	};
 	05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSAsyncTwitPicDispatcher.m;
+		path = /Users/genesis/Projects/Canary/source/ORSAsyncTwitPicDispatcher.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 2544}}";
 			sepNavSelRange = "{53, 0}";
@@ -9511,6 +11310,12 @@
 		vrLoc = 0;
 	};
 	058530B60F2933E4003DB512 /* iTunes.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = iTunes.h;
+		path = /Users/genesis/Projects/Canary/source/iTunes.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 7744}}";
 			sepNavSelRange = "{6705, 0}";
@@ -9518,11 +11323,24 @@
 			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
+	0591A9340EC8DFDE00BF3CAD /* bitly.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = bitly.png;
+		path = /Users/genesis/Projects/Canary/source/bitly.png;
+		sourceTree = "<absolute>";
+	};
 	0591A9400EC8E0DA00BF3CAD /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 0591A9340EC8DFDE00BF3CAD /* bitly.png */;
 	};
 	0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryPreferencesController.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryPreferencesController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 992}}";
 			sepNavSelRange = "{61, 0}";
@@ -9530,6 +11348,12 @@
 		};
 	};
 	0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryPreferencesController.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryPreferencesController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1553, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{1761, 188}\";\n            s = 0;\n        },\n                {\n            r = \"{1988, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{2049, 99}\";\n            s = 0;\n        },\n                {\n            r = \"{2208, 434}\";\n            s = 0;\n        },\n                {\n            r = \"{2668, 510}\";\n            s = 0;\n        },\n                {\n            r = \"{3230, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{3334, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{3449, 1238}\";\n            s = 0;\n        },\n                {\n            r = \"{4721, 550}\";\n            s = 0;\n        },\n                {\n            r = \"{5306, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{5616, 160}\";\n            s = 0;\n        },\n                {\n            r = \"{5820, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{5982, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{6224, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{6414, 210}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6632}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1220}}";
@@ -9539,6 +11363,12 @@
 		};
 	};
 	0592E7800EA13701002AC429 /* ORSUpdateDispatcher.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSUpdateDispatcher.h;
+		path = /Users/genesis/Projects/Canary/source/ORSUpdateDispatcher.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 736}}";
 			sepNavSelRange = "{1283, 0}";
@@ -9547,6 +11377,12 @@
 		};
 	};
 	0592E7810EA13701002AC429 /* ORSUpdateDispatcher.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSUpdateDispatcher.m;
+		path = /Users/genesis/Projects/Canary/source/ORSUpdateDispatcher.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1405, 109}\";\n            s = 0;\n        },\n                {\n            r = \"{1558, 1774}\";\n            s = 0;\n        },\n                {\n            r = \"{3391, 292}\";\n            s = 0;\n        },\n                {\n            r = \"{3738, 303}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4049}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -9555,11 +11391,24 @@
 			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
 		};
 	};
+	0592EA7F0EA265F9002AC429 /* Canary.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = Canary.png;
+		path = /Users/genesis/Projects/Canary/source/Canary.png;
+		sourceTree = "<absolute>";
+	};
 	0592EA9B0EA276FD002AC429 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 0592EA7F0EA265F9002AC429 /* Canary.png */;
 	};
 	05A5D9AE0F065A8200B596A9 /* ORSAbstractShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSAbstractShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSAbstractShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1264}}";
 			sepNavSelRange = "{1526, 0}";
@@ -9567,6 +11416,12 @@
 		};
 	};
 	05A5D9AF0F065A8200B596A9 /* ORSAbstractShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSAbstractShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSAbstractShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1545, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1778, 403}\";\n            s = 0;\n        },\n                {\n            r = \"{2444, 449}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2901}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 736}}";
@@ -9575,6 +11430,12 @@
 		};
 	};
 	05A681420F35B5D80021D8AD /* ORSFilter.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSFilter.h;
+		path = /Users/genesis/Projects/Canary/source/ORSFilter.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 688}}";
 			sepNavSelRange = "{30, 0}";
@@ -9582,6 +11443,12 @@
 		};
 	};
 	05A681430F35B5D80021D8AD /* ORSFilter.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSFilter.m;
+		path = /Users/genesis/Projects/Canary/source/ORSFilter.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 912}}";
 			sepNavSelRange = "{30, 0}";
@@ -9589,6 +11456,12 @@
 		};
 	};
 	05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSFilterTransformer.h;
+		path = /Users/genesis/Projects/Canary/source/ORSFilterTransformer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
 			sepNavSelRange = "{41, 0}";
@@ -9596,6 +11469,12 @@
 		};
 	};
 	05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSFilterTransformer.m;
+		path = /Users/genesis/Projects/Canary/source/ORSFilterTransformer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1384, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{1459, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{1514, 1161}\";\n            s = 0;\n        },\n                {\n            r = \"{2720, 852}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3580}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -9604,6 +11483,12 @@
 		};
 	};
 	05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSFilterArrayTransformer.h;
+		path = /Users/genesis/Projects/Canary/source/ORSFilterArrayTransformer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
 			sepNavSelRange = "{46, 0}";
@@ -9611,6 +11496,12 @@
 		};
 	};
 	05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSFilterArrayTransformer.m;
+		path = /Users/genesis/Projects/Canary/source/ORSFilterArrayTransformer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1399, 29}\";\n            s = 0;\n        },\n                {\n            r = \"{1469, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{1524, 347}\";\n            s = 0;\n        },\n                {\n            r = \"{1916, 405}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2329}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -9687,6 +11578,12 @@
 		sourceTree = "<absolute>";
 	};
 	05C60A8A0F485A65002B59D0 /* ORSImageView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSImageView.h;
+		path = /Users/genesis/Projects/Canary/source/ORSImageView.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{34, 0}";
@@ -9694,6 +11591,12 @@
 		};
 	};
 	05C60A8B0F485A65002B59D0 /* ORSImageView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSImageView.m;
+		path = /Users/genesis/Projects/Canary/source/ORSImageView.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
 			sepNavSelRange = "{34, 0}";
@@ -9701,6 +11604,12 @@
 		};
 	};
 	05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryNewStatusTextFieldCell.h;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryNewStatusTextFieldCell.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 608}}";
 			sepNavSelRange = "{50, 0}";
@@ -9709,6 +11618,12 @@
 		};
 	};
 	05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryNewStatusTextFieldCell.m;
+		path = /Users/genesis/Projects/Canary/source/ORSCanaryNewStatusTextFieldCell.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1441, 218}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1667}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
@@ -9718,6 +11633,12 @@
 		};
 	};
 	05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSTimelineCacheManager.h;
+		path = /Users/genesis/Projects/Canary/source/ORSTimelineCacheManager.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1152}}";
 			sepNavSelRange = "{1298, 0}";
@@ -9725,6 +11646,12 @@
 		};
 	};
 	05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSTimelineCacheManager.m;
+		path = /Users/genesis/Projects/Canary/source/ORSTimelineCacheManager.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1847, 1031}\";\n            s = 0;\n        },\n                {\n            r = \"{2906, 479}\";\n            s = 0;\n        },\n                {\n            r = \"{3513, 1917}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5438}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 768}}";
@@ -9751,6 +11678,12 @@
 		sourceTree = "<absolute>";
 	};
 	05D6EEC50EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xml;
+		name = "Growl Registration Ticket.growlRegDict";
+		path = "/Users/genesis/Projects/Canary/source/Growl Registration Ticket.growlRegDict";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1015, 272}}";
 			sepNavSelRange = "{444, 0}";
@@ -9758,6 +11691,12 @@
 		};
 	};
 	05E21BFE0F532EC90027A864 /* ORSSnipURLShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSSnipURLShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSSnipURLShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
 			sepNavSelRange = "{1682, 0}";
@@ -9765,6 +11704,12 @@
 		};
 	};
 	05E21BFF0F532EC90027A864 /* ORSSnipURLShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSSnipURLShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSSnipURLShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1514, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{1800, 563}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2371}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -9773,6 +11718,12 @@
 		};
 	};
 	05E21CAB0F5343BB0027A864 /* ORSTrimShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSTrimShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSTrimShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
 			sepNavSelRange = "{1669, 0}";
@@ -9780,6 +11731,12 @@
 		};
 	};
 	05E21CAC0F5343BB0027A864 /* ORSTrimShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSTrimShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSTrimShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1505, 467}\";\n            s = 0;\n        },\n                {\n            r = \"{2200, 624}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2832}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 656}}";
@@ -9788,6 +11745,12 @@
 		};
 	};
 	05E21CDE0F5349600027A864 /* ORSUrlborgShortener.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSUrlborgShortener.h;
+		path = /Users/genesis/Projects/Canary/source/ORSUrlborgShortener.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 944}}";
 			sepNavSelRange = "{1682, 0}";
@@ -9795,6 +11758,12 @@
 		};
 	};
 	05E21CDF0F5349600027A864 /* ORSUrlborgShortener.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSUrlborgShortener.m;
+		path = /Users/genesis/Projects/Canary/source/ORSUrlborgShortener.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1514, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{1800, 837}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2644}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
@@ -9803,6 +11772,12 @@
 		};
 	};
 	05E246390EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = "NSXMLNode+ORSTwitterDMAdditions.h";
+		path = "/Users/genesis/Projects/Canary/source/NSXMLNode+ORSTwitterDMAdditions.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 848}}";
 			sepNavSelRange = "{81, 0}";
@@ -9811,6 +11786,12 @@
 		};
 	};
 	05E2463A0EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = "NSXMLNode+ORSTwitterDMAdditions.m";
+		path = "/Users/genesis/Projects/Canary/source/NSXMLNode+ORSTwitterDMAdditions.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1819, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{1951, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{2097, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{2254, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{2395, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{2534, 71}\";\n            s = 0;\n        },\n                {\n            r = \"{2683, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{2846, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{2992, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{3139, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{3296, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{3445, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{3593, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{3751, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{3923, 87}\";\n            s = 0;\n        },\n                {\n            r = \"{4078, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{4234, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{4400, 81}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4489}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1504}}";
@@ -9871,11 +11852,11 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					20,
-					164,
+					157,
 					20,
-					163,
-					163,
-					163,
+					155,
+					155,
+					155,
 					20,
 				);
 				PBXFileTableDataSourceColumnsKey = (
@@ -9936,7 +11917,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					543,
+					505,
 					20,
 					48,
 					43,
@@ -10010,7 +11991,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					503,
+					465,
 					60,
 					20,
 					48,
@@ -10512,6 +12493,129 @@
 			053FBA2D0FA4F19500DA370E /* PBXTextBookmark */ = 053FBA2D0FA4F19500DA370E /* PBXTextBookmark */;
 			053FBA2E0FA4F19F00DA370E /* PBXTextBookmark */ = 053FBA2E0FA4F19F00DA370E /* PBXTextBookmark */;
 			053FBA2F0FA4F1B400DA370E /* PBXTextBookmark */ = 053FBA2F0FA4F1B400DA370E /* PBXTextBookmark */;
+			053FBA340FA50E7C00DA370E /* PBXTextBookmark */ = 053FBA340FA50E7C00DA370E /* PBXTextBookmark */;
+			053FBA350FA50EB500DA370E /* PlistBookmark */ = 053FBA350FA50EB500DA370E /* PlistBookmark */;
+			053FBA460FA50EF200DA370E /* PlistBookmark */ = 053FBA460FA50EF200DA370E /* PlistBookmark */;
+			053FBA470FA50EF200DA370E /* PBXTextBookmark */ = 053FBA470FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA480FA50EF200DA370E /* PBXTextBookmark */ = 053FBA480FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA490FA50EF200DA370E /* PBXTextBookmark */ = 053FBA490FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA4A0FA50EF200DA370E /* PBXTextBookmark */ = 053FBA4A0FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA4B0FA50EF200DA370E /* PBXTextBookmark */ = 053FBA4B0FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA4C0FA50EF200DA370E /* PlistBookmark */ = 053FBA4C0FA50EF200DA370E /* PlistBookmark */;
+			053FBA4D0FA50EF200DA370E /* PBXTextBookmark */ = 053FBA4D0FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA4E0FA50EF200DA370E /* PBXTextBookmark */ = 053FBA4E0FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA4F0FA50EF200DA370E /* PBXTextBookmark */ = 053FBA4F0FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA500FA50EF200DA370E /* PBXTextBookmark */ = 053FBA500FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA510FA50EF200DA370E /* PBXTextBookmark */ = 053FBA510FA50EF200DA370E /* PBXTextBookmark */;
+			053FBA6D0FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA6D0FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA6E0FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA6E0FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA6F0FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA6F0FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA700FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA700FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA710FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA710FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA720FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA720FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA730FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA730FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA740FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA740FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA750FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA750FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA760FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA760FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA770FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA770FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA780FA50FEA00DA370E /* PBXTextBookmark */ = 053FBA780FA50FEA00DA370E /* PBXTextBookmark */;
+			053FBA880FA510D600DA370E /* PBXTextBookmark */ = 053FBA880FA510D600DA370E /* PBXTextBookmark */;
+			053FBA890FA510D600DA370E /* PBXTextBookmark */ = 053FBA890FA510D600DA370E /* PBXTextBookmark */;
+			053FBA8A0FA510D600DA370E /* PBXTextBookmark */ = 053FBA8A0FA510D600DA370E /* PBXTextBookmark */;
+			053FBA8B0FA510D600DA370E /* PBXTextBookmark */ = 053FBA8B0FA510D600DA370E /* PBXTextBookmark */;
+			053FBA920FA5115500DA370E /* PBXTextBookmark */ = 053FBA920FA5115500DA370E /* PBXTextBookmark */;
+			053FBA930FA5115500DA370E /* PBXTextBookmark */ = 053FBA930FA5115500DA370E /* PBXTextBookmark */;
+			053FBA940FA5115500DA370E /* PBXTextBookmark */ = 053FBA940FA5115500DA370E /* PBXTextBookmark */;
+			053FBA950FA5115500DA370E /* PBXTextBookmark */ = 053FBA950FA5115500DA370E /* PBXTextBookmark */;
+			053FBA960FA5115500DA370E /* PBXTextBookmark */ = 053FBA960FA5115500DA370E /* PBXTextBookmark */;
+			053FBAB50FA511DE00DA370E /* PBXTextBookmark */ = 053FBAB50FA511DE00DA370E /* PBXTextBookmark */;
+			053FBAB60FA511DE00DA370E /* PBXTextBookmark */ = 053FBAB60FA511DE00DA370E /* PBXTextBookmark */;
+			053FBAB70FA511DE00DA370E /* PBXTextBookmark */ = 053FBAB70FA511DE00DA370E /* PBXTextBookmark */;
+			053FBAC10FA5121E00DA370E /* PBXTextBookmark */ = 053FBAC10FA5121E00DA370E /* PBXTextBookmark */;
+			053FBAC20FA5121E00DA370E /* PBXTextBookmark */ = 053FBAC20FA5121E00DA370E /* PBXTextBookmark */;
+			053FBAC30FA5121E00DA370E /* PBXTextBookmark */ = 053FBAC30FA5121E00DA370E /* PBXTextBookmark */;
+			053FBAE30FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE30FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE40FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE40FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE50FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE50FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE60FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE60FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE70FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE70FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE80FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE80FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAE90FA512AA00DA370E /* PBXTextBookmark */ = 053FBAE90FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAEA0FA512AA00DA370E /* PBXTextBookmark */ = 053FBAEA0FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAEB0FA512AA00DA370E /* PBXTextBookmark */ = 053FBAEB0FA512AA00DA370E /* PBXTextBookmark */;
+			053FBAF20FA5140400DA370E /* PBXTextBookmark */ = 053FBAF20FA5140400DA370E /* PBXTextBookmark */;
+			053FBAF30FA5140400DA370E /* PBXTextBookmark */ = 053FBAF30FA5140400DA370E /* PBXTextBookmark */;
+			053FBAF40FA5140400DA370E /* PBXTextBookmark */ = 053FBAF40FA5140400DA370E /* PBXTextBookmark */;
+			053FBAF50FA5143600DA370E /* PBXTextBookmark */ = 053FBAF50FA5143600DA370E /* PBXTextBookmark */;
+			053FBC1C0FA5155400DA370E /* PBXTextBookmark */ = 053FBC1C0FA5155400DA370E /* PBXTextBookmark */;
+			053FBC230FA5159700DA370E /* PBXTextBookmark */ = 053FBC230FA5159700DA370E /* PBXTextBookmark */;
+			053FBC650FA5163E00DA370E /* PBXTextBookmark */ = 053FBC650FA5163E00DA370E /* PBXTextBookmark */;
+			053FBC6C0FA5174F00DA370E /* PBXTextBookmark */ = 053FBC6C0FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC6D0FA5174F00DA370E /* PBXTextBookmark */ = 053FBC6D0FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC6E0FA5174F00DA370E /* PBXTextBookmark */ = 053FBC6E0FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC6F0FA5174F00DA370E /* PBXTextBookmark */ = 053FBC6F0FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC700FA5174F00DA370E /* PlistBookmark */ = 053FBC700FA5174F00DA370E /* PlistBookmark */;
+			053FBC710FA5174F00DA370E /* PBXTextBookmark */ = 053FBC710FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC720FA5174F00DA370E /* PlistBookmark */ = 053FBC720FA5174F00DA370E /* PlistBookmark */;
+			053FBC730FA5174F00DA370E /* PBXTextBookmark */ = 053FBC730FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC740FA5174F00DA370E /* PBXTextBookmark */ = 053FBC740FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC750FA5174F00DA370E /* PBXTextBookmark */ = 053FBC750FA5174F00DA370E /* PBXTextBookmark */;
+			053FBC760FA5174F00DA370E /* PlistBookmark */ = 053FBC760FA5174F00DA370E /* PlistBookmark */;
+			053FBC8C0FA51C1300DA370E /* PlistBookmark */ = 053FBC8C0FA51C1300DA370E /* PlistBookmark */;
+			053FBC8D0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC8D0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC8E0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC8E0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC8F0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC8F0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC900FA51C1300DA370E /* PBXTextBookmark */ = 053FBC900FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC910FA51C1300DA370E /* PlistBookmark */ = 053FBC910FA51C1300DA370E /* PlistBookmark */;
+			053FBC920FA51C1300DA370E /* PBXTextBookmark */ = 053FBC920FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC930FA51C1300DA370E /* PBXTextBookmark */ = 053FBC930FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC940FA51C1300DA370E /* PBXTextBookmark */ = 053FBC940FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC950FA51C1300DA370E /* PBXTextBookmark */ = 053FBC950FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC960FA51C1300DA370E /* PBXTextBookmark */ = 053FBC960FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC970FA51C1300DA370E /* PBXTextBookmark */ = 053FBC970FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC980FA51C1300DA370E /* PBXTextBookmark */ = 053FBC980FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC990FA51C1300DA370E /* PBXTextBookmark */ = 053FBC990FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9A0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9A0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9B0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9B0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9C0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9C0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9D0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9D0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9E0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9E0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBC9F0FA51C1300DA370E /* PBXTextBookmark */ = 053FBC9F0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA00FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA00FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA10FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA10FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA20FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA20FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA30FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA30FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA40FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA40FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA50FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA50FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA60FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA60FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA70FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA70FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA80FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA80FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCA90FA51C1300DA370E /* PBXTextBookmark */ = 053FBCA90FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAA0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAA0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAB0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAB0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAC0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAC0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAD0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAD0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAE0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAE0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCAF0FA51C1300DA370E /* PBXTextBookmark */ = 053FBCAF0FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB00FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB00FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB10FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB10FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB20FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB20FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB30FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB30FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB40FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB40FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB50FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB50FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB60FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB60FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB70FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB70FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB80FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB80FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCB90FA51C1300DA370E /* PBXTextBookmark */ = 053FBCB90FA51C1300DA370E /* PBXTextBookmark */;
+			053FBCC10FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC10FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC20FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC20FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC30FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC30FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC40FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC40FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC50FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC50FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC60FA51D8600DA370E /* PBXTextBookmark */ = 053FBCC60FA51D8600DA370E /* PBXTextBookmark */;
+			053FBCC70FA51D9500DA370E /* PBXTextBookmark */ = 053FBCC70FA51D9500DA370E /* PBXTextBookmark */;
+			053FBCCC0FA51DAA00DA370E /* PBXTextBookmark */ = 053FBCCC0FA51DAA00DA370E /* PBXTextBookmark */;
+			053FBCCF0FA51DE300DA370E /* PBXTextBookmark */ = 053FBCCF0FA51DE300DA370E /* PBXTextBookmark */;
 			0555A5FF0EAA45DA00B126BC = 0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */;
 			0555A6010EAA45DA00B126BC = 0555A6010EAA45DA00B126BC /* PBXTextBookmark */;
 			0555A6040EAA45DA00B126BC = 0555A6040EAA45DA00B126BC /* PBXTextBookmark */;
@@ -10925,14 +13029,13 @@
 			SYMROOT = /Users/genesis/Projects/Canary/build;
 		};
 	};
-	29B97316FDCFA39411CA2CEA /* main.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
-			sepNavSelRange = "{161, 0}";
-			sepNavVisRange = "{0, 287}";
-		};
-	};
 	32CA4F630368D1EE00C91783 /* Canary_Prefix.pch */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Canary_Prefix.pch;
+		path = /Users/genesis/Projects/Canary/source/Canary_Prefix.pch;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
 			sepNavSelRange = "{245, 0}";

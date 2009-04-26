@@ -26,6 +26,7 @@
 //  IN THE SOFTWARE.
 
 #import "ORSCanaryController.h"
+#import "ORSCanaryController+Growl.h"
 
 @implementation ORSCanaryController
 

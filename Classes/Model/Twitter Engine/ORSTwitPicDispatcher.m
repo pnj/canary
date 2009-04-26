@@ -112,6 +112,7 @@
 		return [(NSXMLNode *)[[root nodesForXPath:@".//mediaurl" 
 			error:&nodeError] objectAtIndex:0] stringValue];
 	}
+	return NULL;
 }
 
 @end
