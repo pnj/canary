@@ -275,6 +275,7 @@
 		051A4B700E7ACC770040D9F3 /* Twitter Engine */ = {
 			isa = PBXGroup;
 			children = (
+				053FB6E10FA4B61200DA370E /* Base64 Encoding */,
 				05E247600EC3764700410548 /* NSXMLNodeAdditions */,
 				0505600B0EAB48A500FC28C3 /* ORSSession.h */,
 				0505600C0EAB48A500FC28C3 /* ORSSession.m */,
@@ -296,12 +297,19 @@
 				0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */,
 				05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */,
 				05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */,
+			);
+			name = "Twitter Engine";
+			sourceTree = "<group>";
+		};
+		053FB6E10FA4B61200DA370E /* Base64 Encoding */ = {
+			isa = PBXGroup;
+			children = (
 				053FB6C30FA4944500DA370E /* base64.h */,
 				053FB6C40FA4944500DA370E /* base64.c */,
 				053FB6940FA48FFD00DA370E /* NSString+Base64.h */,
 				053FB6950FA48FFD00DA370E /* NSString+Base64.m */,
 			);
-			name = "Twitter Engine";
+			name = "Base64 Encoding";
 			sourceTree = "<group>";
 		};
 		0555A4320EAA190700B126BC /* URL Shorteners */ = {
