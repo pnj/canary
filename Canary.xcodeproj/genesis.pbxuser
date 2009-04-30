@@ -1,23 +1,13 @@
 // !$*UTF8*$!
 {
-	0516B0A20FA535C30043AEC5 /* PBXTextBookmark */ = {
+	0516B0DE0FA630F20043AEC5 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 43";
 		rLen = 0;
 		rLoc = 1846;
 		rType = 0;
-		vrLen = 1646;
-		vrLoc = 0;
-	};
-	0516B0A30FA535C30043AEC5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
-		name = "ORSCanaryController.h: 43";
-		rLen = 0;
-		rLoc = 1846;
-		rType = 0;
-		vrLen = 1598;
+		vrLen = 1559;
 		vrLoc = 0;
 	};
 	05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
@@ -106,7 +96,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 5168}}";
 			sepNavSelRange = "{1846, 0}";
-			sepNavVisRange = "{0, 1598}";
+			sepNavVisRange = "{0, 1559}";
 		};
 	};
 	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
@@ -364,6 +354,13 @@
 			sepNavVisRange = "{3602, 1459}";
 		};
 	};
+	053FBAAA0FA511A900DA370E /* ORSSession.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1232}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1275}";
+		};
+	};
 	053FBAB60FA511DE00DA370E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 053FBA8D0FA510FE00DA370E /* NSXMLNode+ORSTwitterStatusAdditions.h */;
@@ -561,16 +558,6 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	053FBC8D0FA51C1300DA370E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
-		name = "ORSCanaryController.h: 43";
-		rLen = 0;
-		rLoc = 1846;
-		rType = 0;
-		vrLen = 956;
-		vrLoc = 1301;
-	};
 	053FBC8E0FA51C1300DA370E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
@@ -660,16 +647,6 @@
 		rType = 0;
 		vrLen = 496;
 		vrLoc = 4244;
-	};
-	053FBCE10FA5327700DA370E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
-		name = "ORSCanaryController.h: 43";
-		rLen = 0;
-		rLoc = 1846;
-		rType = 0;
-		vrLen = 1646;
-		vrLoc = 0;
 	};
 	0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -933,6 +910,16 @@
 		vrLen = 2023;
 		vrLoc = 4398;
 	};
+	058EF8C50FA9D34D002A8EED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAAA0FA511A900DA370E /* ORSSession.h */;
+		name = "ORSSession.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 0;
+	};
 	05A951F10E8959F6000B98BC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05A951F20E8959F6000B98BC /* NSRange.h */;
@@ -991,6 +978,26 @@
 		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/Headers/AERegistry.h;
 		sourceTree = "<absolute>";
 	};
+	05CA0D410FA9D03D00E4FA6C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAAA0FA511A900DA370E /* ORSSession.h */;
+		name = "ORSSession.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1422;
+		vrLoc = 1456;
+	};
+	05CA0D600FA9D12000E4FA6C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAAA0FA511A900DA370E /* ORSSession.h */;
+		name = "ORSSession.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 0;
+	};
 	05D6EEBF0EDB439F00CBC4B6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05D6EEC00EDB439F00CBC4B6 /* GrowlApplicationBridge.h */;
@@ -1009,7 +1016,7 @@
 		sourceTree = "<absolute>";
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 0573D6C10DA6626D002D1CCF /* Canary */;
 		activeSDKPreference = macosx10.5;
 		activeTarget = 8D1107260486CEB800E47090 /* Canary */;
@@ -1209,12 +1216,11 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 262485434;
-			PBXWorkspaceStateSaveDate = 262485434;
+			PBXPerProjectTemplateStateSaveDate = 262787641;
+			PBXWorkspaceStateSaveDate = 262787641;
 		};
 		perUserProjectItems = {
-			0516B0A20FA535C30043AEC5 /* PBXTextBookmark */ = 0516B0A20FA535C30043AEC5 /* PBXTextBookmark */;
-			0516B0A30FA535C30043AEC5 /* PBXTextBookmark */ = 0516B0A30FA535C30043AEC5 /* PBXTextBookmark */;
+			0516B0DE0FA630F20043AEC5 = 0516B0DE0FA630F20043AEC5 /* PBXTextBookmark */;
 			05372D9D0E7EE8CC008ABD85 = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DA20E7EE8CC008ABD85 = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DAB0E7EE8CC008ABD85 = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;
@@ -1252,7 +1258,6 @@
 			053FBC740FA5174F00DA370E = 053FBC740FA5174F00DA370E /* PBXTextBookmark */;
 			053FBC750FA5174F00DA370E = 053FBC750FA5174F00DA370E /* PBXTextBookmark */;
 			053FBC8C0FA51C1300DA370E = 053FBC8C0FA51C1300DA370E /* PlistBookmark */;
-			053FBC8D0FA51C1300DA370E = 053FBC8D0FA51C1300DA370E /* PBXTextBookmark */;
 			053FBC8E0FA51C1300DA370E = 053FBC8E0FA51C1300DA370E /* PBXTextBookmark */;
 			053FBC8F0FA51C1300DA370E = 053FBC8F0FA51C1300DA370E /* PBXTextBookmark */;
 			053FBC920FA51C1300DA370E = 053FBC920FA51C1300DA370E /* PBXTextBookmark */;
@@ -1262,7 +1267,6 @@
 			053FBCC20FA51D8600DA370E = 053FBCC20FA51D8600DA370E /* PBXTextBookmark */;
 			053FBCC50FA51D8600DA370E = 053FBCC50FA51D8600DA370E /* PBXTextBookmark */;
 			053FBCC70FA51D9500DA370E = 053FBCC70FA51D9500DA370E /* PBXTextBookmark */;
-			053FBCE10FA5327700DA370E = 053FBCE10FA5327700DA370E /* PBXTextBookmark */;
 			0555A5FF0EAA45DA00B126BC = 0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */;
 			0555A6010EAA45DA00B126BC = 0555A6010EAA45DA00B126BC /* PBXTextBookmark */;
 			0555A6040EAA45DA00B126BC = 0555A6040EAA45DA00B126BC /* PBXTextBookmark */;
@@ -1274,15 +1278,18 @@
 			0558A30A0E9AAF3B000EC2B2 = 0558A30A0E9AAF3B000EC2B2 /* PBXTextBookmark */;
 			0558A32B0E9AAF3B000EC2B2 = 0558A32B0E9AAF3B000EC2B2 /* PBXTextBookmark */;
 			05845BC10F59A823006F7306 = 05845BC10F59A823006F7306 /* PBXTextBookmark */;
+			058EF8C50FA9D34D002A8EED /* PBXTextBookmark */ = 058EF8C50FA9D34D002A8EED /* PBXTextBookmark */;
 			05A951F10E8959F6000B98BC = 05A951F10E8959F6000B98BC /* PBXTextBookmark */;
 			05A951F50E8959F6000B98BC = 05A951F50E8959F6000B98BC /* PBXTextBookmark */;
 			05C60A720F482FA8002B59D0 = 05C60A720F482FA8002B59D0 /* PBXTextBookmark */;
+			05CA0D410FA9D03D00E4FA6C = 05CA0D410FA9D03D00E4FA6C /* PBXTextBookmark */;
+			05CA0D600FA9D12000E4FA6C = 05CA0D600FA9D12000E4FA6C /* PBXTextBookmark */;
 			05D6EEBF0EDB439F00CBC4B6 = 05D6EEBF0EDB439F00CBC4B6 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 0573D6D30DA66271002D1CCF /* Source Control */;
 		userBuildSettings = {
 			OBJROOT = "$(SYMROOT)";
-			SYMROOT = /Users/genesis/Projects/Canary/build;
+			SYMROOT = "/Users/genesis/Projects/Ocean Road Software/Canary/build";
 		};
 	};
 	8D1107260486CEB800E47090 /* Canary */ = {

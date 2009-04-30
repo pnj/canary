@@ -234,8 +234,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,16 +271,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>080E96DDFE201D6D7F000001</string>
-								<string>05DF56720E3E60DE00B8B4DE</string>
+								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>2</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>8</integer>
+									<integer>7</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -319,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.h</string>
+								<string>ORSSession.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.h</string>
+										<string>ORSSession.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0516B0A30FA535C30043AEC5</string>
+										<string>058EF8C50FA9D34D002A8EED</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -365,7 +360,8 @@
 											<string>053FBCC10FA51D8600DA370E</string>
 											<string>053FBCC20FA51D8600DA370E</string>
 											<string>053FBCC70FA51D9500DA370E</string>
-											<string>0516B0A20FA535C30043AEC5</string>
+											<string>0516B0DE0FA630F20043AEC5</string>
+											<string>05CA0D600FA9D12000E4FA6C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -412,21 +408,23 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {744, 610}}</string>
+								<string>{{0, 0}, {744, 427}}</string>
 								<key>RubberWindowFrame</key>
 								<string>259 122 1021 656 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>610pt</string>
+							<string>427pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>183pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -437,7 +435,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {744, -27}}</string>
+										<string>{{10, 27}, {744, 156}}</string>
 										<key>RubberWindowFrame</key>
 										<string>259 122 1021 656 0 0 1280 778 </string>
 									</dict>
@@ -521,11 +519,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0516B0A40FA535C30043AEC5</string>
+				<string>058EF8C60FA9D34D002A8EED</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>0516B0A50FA535C30043AEC5</string>
+				<string>058EF8C70FA9D34D002A8EED</string>
 				<string>0573D6CD0DA66271002D1CCF</string>
-				<string>0516B0A60FA535C30043AEC5</string>
+				<string>058EF8C80FA9D34D002A8EED</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -707,7 +705,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/genesis/Projects/Canary/source/Canary.xcodeproj</string>
+		<string>/Users/genesis/Projects/Ocean Road Software/Canary/source/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>259 122 1021 656 0 0 1280 778 </string>
