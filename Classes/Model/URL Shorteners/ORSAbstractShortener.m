@@ -29,44 +29,67 @@
 
 @implementation ORSAbstractShortener
 
-// This method is abstract. When this is implemented, it returns the 
-// shortened URL that corresponds to the given original URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
+// This method returns the generated (shortened) URL that corresponds to the 
+// given (original) URL.
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
 	return NULL;
 }
 
-// This should be used by all concrete classes that implement generateURLFrom:.
-// It generates the actual request that is sent to the remote server.
-- (NSString *) generateURLFromRequestURL:(NSString *)requestURL {
-	NSURLRequest *request = [NSURLRequest 
-		requestWithURL:[NSURL URLWithString:requestURL]
-			cachePolicy:NSURLRequestUseProtocolCachePolicy
-				timeoutInterval:21.0];
+// This should be used by all concrete classes that implement 
+// shortURLFromOriginalURL:. It generates the actual request that is sent to the 
+// remote server and returns the shortened URL data. In some cases, the 
+// shortener might not actually return the shortened URL, but a whole bunch of 
+// XML tags.
+- (NSData *) shortURLDataFromRequestURL:(NSString *)requestURL {
+	NSURLRequest *request = 
+	[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]
+					 cachePolicy:NSURLRequestUseProtocolCachePolicy
+				 timeoutInterval:21.0];
 	NSURLResponse *response = nil;
 	NSError *error = nil;
-	return [[NSString alloc] initWithData:[NSURLConnection 
-		sendSynchronousRequest:request 
-			returningResponse:&response 
-					error:&error]
-					encoding:NSASCIIStringEncoding];
+	return [NSURLConnection sendSynchronousRequest:request 
+								 returningResponse:&response 
+											 error:&error];
 }
 
-// This should be used by all concrete classes that implement generateURLFrom:
-// and would like to send POST requests. It generates the actual request that 
-// is sent to the remote server.
-- (NSString *) generateURLFromPostRequestURL:(NSString *)requestURL {
-	NSMutableURLRequest *request = [NSMutableURLRequest
-		requestWithURL:[NSURL URLWithString:requestURL]
-			cachePolicy:NSURLRequestUseProtocolCachePolicy
-				timeoutInterval:21.0];
+// This should be used by all concrete classes that implement 
+// shortURLFromOriginalURL: and would like to send POST requests. It generates 
+// the actual request that is sent to the remote server and returns the 
+// shortened URL data. In some cases, the shortener might not actually return 
+// the shortened URL, but a whole bunch of XML tags.
+- (NSData *) shortURLDataFromPostRequestURL:(NSString *)requestURL {
+	NSMutableURLRequest *request = 
+	[NSMutableURLRequest requestWithURL:[NSURL URLWithString:requestURL]
+							cachePolicy:NSURLRequestUseProtocolCachePolicy
+						timeoutInterval:21.0];
 	[request setHTTPMethod:@"POST"];
 	NSURLResponse *response = nil;
 	NSError *error = nil;
-	return [[NSString alloc] initWithData:[NSURLConnection 
-		sendSynchronousRequest:request 
-			returningResponse:&response 
-				error:&error]
-					encoding:NSASCIIStringEncoding];
+	return [NSURLConnection sendSynchronousRequest:request 
+								 returningResponse:&response 
+											 error:&error];
+}
+
+// This should be used by all concrete classes that implement 
+// shortURLFromOriginalURL:. It generates the actual request that is sent to the 
+// remote server and returns the shortened URL string. In some cases, the 
+// shortener might not actually return the shortened URL, but a whole bunch of 
+// XML tags.
+- (NSString *) shortURLStringFromRequestURL:(NSString *)requestURL {
+	return [[NSString alloc] 
+			initWithData:[self shortURLDataFromRequestURL:requestURL]
+			encoding:NSASCIIStringEncoding];
+}
+
+// This should be used by all concrete classes that implement 
+// shortURLFromOriginalURL: and would like to send POST requests. It generates 
+// the actual request that is sent to the remote server and returns the 
+// shortened URL string. In some cases, the shortener might not actually return 
+// the shortened URL, but a whole bunch of XML tags.
+- (NSString *) shortURLStringFromPostRequestURL:(NSString *)requestURL {
+	return [[NSString alloc] 
+			initWithData:[self shortURLDataFromPostRequestURL:requestURL]
+			encoding:NSASCIIStringEncoding];
 }
 
 @end

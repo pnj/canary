@@ -31,21 +31,21 @@
 
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	if ([defaults boolForKey:@"TrimUseAuthenticationCredentials"]) {
-		return [self generateAuthenticatedURLFrom:originalURL];
+		return [self shortURLFromAuthenticatedURL:originalURL];
 	} else {
 		NSString *requestURL = [NSString 
 			stringWithFormat:@"http://api.tr.im/api/trim_simple?url=%@", 
 								originalURL];
-		return [[super generateURLFromRequestURL:requestURL] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+		return [[super shortURLStringFromRequestURL:requestURL] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	}
 }
 
 // This method returns the generated (shortened) URL that corresponds to the
-// given (original) URL using the specified set of authentication credentials.
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+// given (original) URL using a specified set of authentication credentials.
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *username = [defaults stringForKey:@"TrimUsername"];
 	NSString *password = [defaults stringForKey:@"TrimPassword"];
@@ -60,7 +60,7 @@
 		[requestURL appendFormat:@"&password=%@", password];
 	}
 	
-	return [[super generateURLFromRequestURL:requestURL] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	return [[super shortURLStringFromRequestURL:requestURL] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 @end

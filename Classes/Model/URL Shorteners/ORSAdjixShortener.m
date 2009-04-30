@@ -31,17 +31,13 @@
 
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
-	/*NSString *requestURL = [NSString 
-		stringWithFormat:@"http://api.adjix.com/shrinkLink?url=%@", 
-							originalURL];
-	return [super generateURLFromRequestURL:requestURL]; */
-	return [self generateAuthenticatedURLFrom:originalURL];
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
+	return [self shortURLFromAuthenticatedURL:originalURL];
 }
 
 // This method returns the generated (shortened) URL that corresponds to the
-// given (original) URL using the specified set of authentication credentials.
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+// given (original) URL using a specified set of authentication credentials.
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *partnerID = [defaults stringForKey:@"AdjixPartnerID"];
 	NSString *partnerEmail = [defaults stringForKey:@"AdjixPartnerEmail"];
@@ -71,7 +67,7 @@
 		[requestURL appendString:@"&ultraShort=y"];
 	}
 	
-	return [super generateURLFromRequestURL:requestURL];
+	return [super shortURLStringFromRequestURL:requestURL];
 }
 
 @end

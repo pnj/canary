@@ -31,20 +31,20 @@
 
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	if ([defaults boolForKey:@"BitlyUseAuthenticationCredentials"]) {
-		return [self generateAuthenticatedURLFrom:originalURL];
+		return [self shortURLFromAuthenticatedURL:originalURL];
 	} else {
 		NSString *requestURL = [NSString 
 			stringWithFormat:@"http://bit.ly/api?url=%@", originalURL];
-		return [super generateURLFromRequestURL:requestURL];
+		return [super shortURLStringFromRequestURL:requestURL];
 	}
 }
 
 // This method returns the generated (shortened) URL that corresponds to the
-// given (original) URL using the specified set of authentication credentials.
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+// given (original) URL using a specified set of authentication credentials.
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *username = [defaults stringForKey:@"BitlyUsername"];
 	NSString *apiKey = [defaults stringForKey:@"BitlyAPIKey"];
@@ -60,7 +60,7 @@
 	
 	NSError *error, *documentError = NULL;
 	NSXMLDocument *xmlDocument = [[NSXMLDocument alloc] initWithXMLString:[super 
-		generateURLFromRequestURL:requestURL] options:NSXMLDocumentTidyXML
+		shortURLStringFromRequestURL:requestURL] options:NSXMLDocumentTidyXML
 				error:&documentError];
 	NSXMLNode *mainNode = (NSXMLNode *)[xmlDocument rootElement];
 	NSArray *nodes = [mainNode nodesForXPath:@".//results/nodeKeyVal/shortUrl" error:&error];

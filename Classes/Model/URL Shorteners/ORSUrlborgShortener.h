@@ -50,11 +50,17 @@
 }
 
 /*!
- @method getShortener:
+ @method shortURLFromOriginalURL:
  Returns the URL shortener that corresponds to the given shortener type.
  */
-- (NSString *) generateURLFrom:(NSString *)originalURL;
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL;
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL;
+
+/*
+ @method shortURLFromAuthenticatedURL:
+ This method returns the generated (shortened) URL that corresponds to the
+ given (original) URL using a specified set of authentication credentials.
+ */
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL;
 
 @end
 

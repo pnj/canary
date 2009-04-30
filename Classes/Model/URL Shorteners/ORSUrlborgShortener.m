@@ -31,13 +31,13 @@
 
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
-	return [self generateAuthenticatedURLFrom:originalURL];
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
+	return [self shortURLFromAuthenticatedURL:originalURL];
 }
 
 // This method returns the generated (shortened) URL that corresponds to the
-// given (original) URL using the specified set of authentication credentials.
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+// given (original) URL using a specified set of authentication credentials.
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *apiKey = [defaults stringForKey:@"UrlborgAPIKey"];
 	NSMutableString *requestURL = [NSMutableString 
@@ -50,7 +50,7 @@
 	
 	NSError *error, *documentError = NULL;
 	NSXMLDocument *xmlDocument = [[NSXMLDocument alloc] initWithXMLString:[super 
-		generateURLFromRequestURL:requestURL] options:NSXMLDocumentTidyXML
+		shortURLStringFromRequestURL:requestURL] options:NSXMLDocumentTidyXML
 			error:&documentError];
 	NSXMLNode *mainNode = (NSXMLNode *)[xmlDocument rootElement];
 	NSArray *nodes = [mainNode nodesForXPath:@".//s_url" error:&error];

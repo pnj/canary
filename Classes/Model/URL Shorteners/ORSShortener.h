@@ -34,8 +34,6 @@
  @updated 2008-10-18
  */
 
-#import <Cocoa/Cocoa.h>
-
 /*!
  @protocol ORSShortener
  @group URL Shorteners
@@ -49,10 +47,19 @@
 @required
 
 /*!
- @method generateURLFrom:
+ @method shortURLFromOriginalURL:
  This method returns the generated (shortened) URL that corresponds to the given
  (original) URL.
  */
-- (NSString *) generateURLFrom:(NSString *)originalURL;
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL;
+
+@optional
+
+/*
+ @method shortURLFromAuthenticatedURL:
+ This method returns the generated (shortened) URL that corresponds to the
+ given (original) URL using a specified set of authentication credentials.
+ */
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL;
 
 @end

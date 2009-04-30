@@ -944,7 +944,7 @@ sender {
 				hasPrefix:@"http://"]) {
 		[editor copy:self];
 		[editor replaceCharactersInRange:editor.selectedRange 
-			withString:[urlShortener generateURLFrom:[editor.string 
+			withString:[urlShortener shortURLFromOriginalURL:[editor.string 
 								substringWithRange:editor.selectedRange]]];
 		[self controlTextDidChange:nil];
 	}
@@ -2224,7 +2224,7 @@ sender {
 							boolValue] == YES) {
 					NSString *shortenedURL = [[ORSCanaryController 
 						sharedController].urlShortener 
-											  generateURLFrom:originalString];
+											  shortURLFromOriginalURL:originalString];
 					[self insertStringTokenInNewStatusTextField:shortenedURL];
 				} else {
 					[self insertStringTokenInNewStatusTextField:originalString];

@@ -679,8 +679,8 @@
 		0555A7180EAA612300B126BC /* Credentials Manager */ = {
 			isa = PBXGroup;
 			children = (
-				053FBAEC0FA512C600DA370E /* ORSCredentialsManager.m */,
 				053FBAED0FA512C600DA370E /* ORSCredentialsManager.h */,
+				053FBAEC0FA512C600DA370E /* ORSCredentialsManager.m */,
 			);
 			name = "Credentials Manager";
 			sourceTree = "<group>";

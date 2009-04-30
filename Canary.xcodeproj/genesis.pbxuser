@@ -96,7 +96,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 5168}}";
 			sepNavSelRange = "{1846, 0}";
-			sepNavVisRange = "{0, 1559}";
+			sepNavVisRange = "{0, 1646}";
 		};
 	};
 	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
@@ -347,6 +347,13 @@
 		vrLen = 1281;
 		vrLoc = 0;
 	};
+	053FBA970FA511A900DA370E /* ORSAsyncTwitPicDispatcher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 704}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1485}";
+		};
+	};
 	053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 1904}}";
@@ -354,11 +361,18 @@
 			sepNavVisRange = "{3602, 1459}";
 		};
 	};
+	053FBAA80FA511A900DA370E /* ORSSession.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 6000}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1502}";
+		};
+	};
 	053FBAAA0FA511A900DA370E /* ORSSession.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 1232}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1275}";
+			sepNavVisRange = "{0, 1492}";
 		};
 	};
 	053FBAB60FA511DE00DA370E /* PBXTextBookmark */ = {
@@ -373,9 +387,79 @@
 	};
 	053FBAC40FA5128900DA370E /* ORSAbstractShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {711, 1136}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1285}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1536}}";
+			sepNavSelRange = "{3102, 231}";
+			sepNavVisRange = "{2043, 1367}";
+		};
+	};
+	053FBAC50FA5128900DA370E /* ORSAbstractShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1392}}";
+			sepNavSelRange = "{3063, 0}";
+			sepNavVisRange = "{2088, 1370}";
+		};
+	};
+	053FBAC60FA5128900DA370E /* ORSAdjixShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{685, 0}";
+			sepNavVisRange = "{0, 1539}";
+		};
+	};
+	053FBAC70FA5128900DA370E /* ORSAdjixShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1168}}";
+			sepNavSelRange = "{445, 0}";
+			sepNavVisRange = "{0, 1695}";
+		};
+	};
+	053FBAC80FA5128900DA370E /* ORSBitlyShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 1539}";
+		};
+	};
+	053FBAC90FA5128900DA370E /* ORSBitlyShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1152}}";
+			sepNavSelRange = "{201, 0}";
+			sepNavVisRange = "{0, 1719}";
+		};
+	};
+	053FBACA0FA5128900DA370E /* ORSCligsShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{182, 0}";
+			sepNavVisRange = "{0, 1539}";
+		};
+	};
+	053FBACB0FA5128900DA370E /* ORSCligsShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 960}}";
+			sepNavSelRange = "{365, 0}";
+			sepNavVisRange = "{0, 1708}";
+		};
+	};
+	053FBACC0FA5128900DA370E /* ORSIsgdShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 880}}";
+			sepNavSelRange = "{276, 0}";
+			sepNavVisRange = "{0, 1537}";
+		};
+	};
+	053FBACD0FA5128900DA370E /* ORSIsgdShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 768}}";
+			sepNavSelRange = "{440, 0}";
+			sepNavVisRange = "{0, 1710}";
+		};
+	};
+	053FBACE0FA5128900DA370E /* ORSShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{1738, 96}";
+			sepNavVisRange = "{782, 1127}";
 		};
 	};
 	053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */ = {
@@ -385,11 +469,60 @@
 			sepNavVisRange = "{0, 1284}";
 		};
 	};
+	053FBAD10FA5128900DA370E /* ORSSnipURLShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{526, 0}";
+			sepNavVisRange = "{0, 1540}";
+		};
+	};
+	053FBAD20FA5128900DA370E /* ORSSnipURLShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 896}}";
+			sepNavSelRange = "{529, 0}";
+			sepNavVisRange = "{0, 1660}";
+		};
+	};
+	053FBAD30FA5128900DA370E /* ORSTinyURLShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 880}}";
+			sepNavSelRange = "{594, 0}";
+			sepNavVisRange = "{0, 1540}";
+		};
+	};
+	053FBAD40FA5128900DA370E /* ORSTinyURLShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 784}}";
+			sepNavSelRange = "{758, 0}";
+			sepNavVisRange = "{0, 1686}";
+		};
+	};
+	053FBAD50FA5128900DA370E /* ORSTrimShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1056}}";
+			sepNavSelRange = "{785, 0}";
+			sepNavVisRange = "{0, 1715}";
+		};
+	};
+	053FBAD60FA5128900DA370E /* ORSUrlborgShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{654, 0}";
+			sepNavVisRange = "{0, 1540}";
+		};
+	};
+	053FBAD70FA5128900DA370E /* ORSUrlborgShortener.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 976}}";
+			sepNavSelRange = "{877, 0}";
+			sepNavVisRange = "{0, 1660}";
+		};
+	};
 	053FBAD80FA5128900DA370E /* ORSTrimShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {668, 816}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1281}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 912}}";
+			sepNavSelRange = "{646, 0}";
+			sepNavVisRange = "{0, 1532}";
 		};
 	};
 	053FBAE30FA512AA00DA370E /* PBXTextBookmark */ = {
@@ -1216,8 +1349,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 262787641;
-			PBXWorkspaceStateSaveDate = 262787641;
+			PBXPerProjectTemplateStateSaveDate = 262808684;
+			PBXWorkspaceStateSaveDate = 262808684;
 		};
 		perUserProjectItems = {
 			0516B0DE0FA630F20043AEC5 = 0516B0DE0FA630F20043AEC5 /* PBXTextBookmark */;
@@ -1278,7 +1411,7 @@
 			0558A30A0E9AAF3B000EC2B2 = 0558A30A0E9AAF3B000EC2B2 /* PBXTextBookmark */;
 			0558A32B0E9AAF3B000EC2B2 = 0558A32B0E9AAF3B000EC2B2 /* PBXTextBookmark */;
 			05845BC10F59A823006F7306 = 05845BC10F59A823006F7306 /* PBXTextBookmark */;
-			058EF8C50FA9D34D002A8EED /* PBXTextBookmark */ = 058EF8C50FA9D34D002A8EED /* PBXTextBookmark */;
+			058EF8C50FA9D34D002A8EED = 058EF8C50FA9D34D002A8EED /* PBXTextBookmark */;
 			05A951F10E8959F6000B98BC = 05A951F10E8959F6000B98BC /* PBXTextBookmark */;
 			05A951F50E8959F6000B98BC = 05A951F50E8959F6000B98BC /* PBXTextBookmark */;
 			05C60A720F482FA8002B59D0 = 05C60A720F482FA8002B59D0 /* PBXTextBookmark */;

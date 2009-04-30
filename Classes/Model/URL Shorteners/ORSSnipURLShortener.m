@@ -31,13 +31,13 @@
 
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
-- (NSString *) generateURLFrom:(NSString *)originalURL {
-	return [self generateAuthenticatedURLFrom:originalURL];
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL {
+	return [self shortURLFromAuthenticatedURL:originalURL];
 }
 
 // This method returns the generated (shortened) URL that corresponds to the
-// given (original) URL using the specified set of authentication credentials.
-- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+// given (original) URL using a specified set of authentication credentials.
+- (NSString *) shortURLFromAuthenticatedURL:(NSString *)originalURL {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *username = [defaults stringForKey:@"SnipURLUsername"];
 	NSString *apiKey = [defaults stringForKey:@"SnipURLAPIKey"];
@@ -52,7 +52,7 @@
 		[requestURL appendFormat:@"&snipapi=%@", apiKey];
 	}
 	
-	return [super generateURLFromPostRequestURL:requestURL];
+	return [super shortURLStringFromPostRequestURL:requestURL];
 }
 
 @end

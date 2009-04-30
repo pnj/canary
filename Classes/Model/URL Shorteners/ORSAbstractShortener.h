@@ -52,26 +52,50 @@
 }
 
 /*!
- @method getShortener:
- Returns the URL shortener that corresponds to the given shortener type. This
- method is abstract and if not overloaded (by a concrete URL shortener) returns
- NULL.
+ @method shortURLFromOriginalURL:
+ This method returns the generated (shortened) URL that corresponds to the given
+ (original) URL.
  */
-- (NSString *) generateURLFrom:(NSString *)originalURL;
+- (NSString *) shortURLFromOriginalURL:(NSString *)originalURL;
 
 /*!
- @method generateURLFromRequestURL:
- This should be used by all concrete classes that implement generateURLFrom:. It
- generates the actual request that is sent to the remote server.
+ @method shortURLDataFromRequestURL:
+ This should be used by all concrete classes that implement 
+ shortURLFromOriginalURL:. It generates the actual request that is sent to the 
+ remote server and returns the shortened URL data. In some cases, the 
+ shortener might not actually return the shortened URL, but a whole bunch of XML 
+ tags.
  */
-- (NSString *) generateURLFromRequestURL:(NSString *)requestURL;
+- (NSData *) shortURLDataFromRequestURL:(NSString *)requestURL;
 
 /*!
- @method generateURLFromPostRequestURL:
- This should be used by all concrete classes that implement generateURLFrom: and 
- would like to send POST requests. It generates the actual request that is sent 
- to the remote server.
+ @method shortURLDataFromPostRequestURL:
+ This should be used by all concrete classes that implement 
+ shortURLFromOriginalURL: and would like to send POST requests. It generates the 
+ actual request that is sent to the remote server and returns the shortened URL 
+ data. In some cases, the shortener might not actually return the shortened URL, 
+ but a whole bunch of XML tags.
  */
-- (NSString *) generateURLFromPostRequestURL:(NSString *)requestURL;
+- (NSData *) shortURLDataFromPostRequestURL:(NSString *)requestURL;
+
+/*!
+ @method shortURLStringFromRequestURL:
+ This should be used by all concrete classes that implement 
+ shortURLFromOriginalURL:. It generates the actual request that is sent to the 
+ remote server and returns the shortened URL string. In some cases, the 
+ shortener might not actually return the shortened URL, but a whole bunch of XML 
+ tags.
+ */
+- (NSString *) shortURLStringFromRequestURL:(NSString *)requestURL;
+
+/*!
+ @method shortURLStringFromPostRequestURL:
+ This should be used by all concrete classes that implement 
+ shortURLFromOriginalURL: and would like to send POST requests. It generates the 
+ actual request that is sent to the remote server and returns the shortened URL 
+ string. In some cases, the shortener might not actually return the shortened
+ URL, but a whole bunch of XML tags.
+ */
+- (NSString *) shortURLStringFromPostRequestURL:(NSString *)requestURL;
 
 @end
