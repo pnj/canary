@@ -34,7 +34,6 @@
  @updated 2009-02-24
  */
 
-#import <Cocoa/Cocoa.h>
 #import "ORSAbstractShortener.h"
 
 /*!

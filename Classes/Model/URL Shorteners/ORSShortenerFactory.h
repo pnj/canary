@@ -34,7 +34,6 @@
  @updated 2008-10-18
  */
 
-#import <Cocoa/Cocoa.h>
 #import "ORSShortener.h"
 #import "ORSAdjixShortener.h"
 #import "ORSBitlyShortener.h"
