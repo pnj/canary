@@ -1977,13 +1977,13 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<reference key="NSSupport" ref="1017135163"/>
 										<reference key="NSControlView" ref="710854905"/>
 										<int key="NSButtonFlags">-926138113</int>
-										<int key="NSButtonFlags2">163</int>
+										<int key="NSButtonFlags2">268435619</int>
 										<object class="NSCustomResource" key="NSNormalImage" id="949380981">
 											<string key="NSClassName">NSImage</string>
 											<string key="NSResourceName">filterTemplate</string>
 										</object>
 										<string key="NSAlternateContents"/>
-										<string key="NSKeyEquivalent"/>
+										<string key="NSKeyEquivalent">f</string>
 										<int key="NSPeriodicDelay">400</int>
 										<int key="NSPeriodicInterval">75</int>
 									</object>
