@@ -114,6 +114,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 					forKey:@"CanaryShowScreenNames"];
 	[appDefaults setObject:[NSArray array]
 					forKey:@"CanaryFilters"];
+	[appDefaults setObject:[NSNumber numberWithBool:YES]
+					forKey:@"CanaryUseAutocomplete"];
 	[defaults registerDefaults:appDefaults];
 }
 
@@ -1071,6 +1073,10 @@ sender {
 	int charsLeft = maxChars - charsWritten;
 	[charsLeftIndicator setIntValue:charsWritten];
 	
+	// Autocomplete
+	if ([defaults boolForKey:@"CanaryUseAutocomplete"])
+		[self performAutocomplete];
+	
 	if ([newStatusTextField.stringValue hasPrefix:@"d "] ||
 		[newStatusTextField.stringValue hasPrefix:@"D "]) {
 		[tweetButton setTitle:@"Message!"];
@@ -1130,6 +1136,414 @@ sender {
 				[tweetButton setTitle:@"Tweet!"];
 		}
 	}
+}
+
+- (void) performAutocomplete {
+	NSRange range;
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"love "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+			stringByReplacingOccurrencesOfString:@"love " 
+									  withString:@"♥ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"plane "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"plane " 
+										  withString:@"✈ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"smile "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"smile " 
+										  withString:@"☺ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@":) "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@":) " 
+										  withString:@"☺ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@":-) "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@":-) " 
+										  withString:@"☺ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"music "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"music " 
+										  withString:@"♬ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"boxtick "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"boxtick " 
+										  withString:@"☑ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"spade "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"spade " 
+										  withString:@"♠ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"phone "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"phone " 
+										  withString:@"☎ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"darksmile "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"darksmile " 
+										  withString:@"☻ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"song "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"song " 
+										  withString:@"♫ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"box "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"box " 
+										  withString:@"☒ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"whitespade "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"whitespade " 
+										  withString:@"♤ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"carrot "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"carrot " 
+										  withString:@"☤ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"sad "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"sad " 
+										  withString:@"☹ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@":( "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@":( " 
+										  withString:@"☹ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@":-( "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@":-( " 
+										  withString:@"☹ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"note "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"note " 
+										  withString:@"♪ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"female "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"female " 
+										  withString:@"♀ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"star "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"star " 
+										  withString:@"✩ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"letter "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"letter " 
+										  withString:@"✉ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"pirate "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"pirate " 
+										  withString:@"☠ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"tick "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"tick " 
+										  withString:@"✔ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"male "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"male " 
+										  withString:@"♂ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"darkstar "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"darkstar " 
+										  withString:@"★ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"cross "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"cross " 
+										  withString:@"✖ "];
+	
+	
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"cook "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"cook " 
+										  withString:@"♨ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"cloud "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"cloud " 
+										  withString:@"☁ "];
+	range = [newStatusTextField.stringValue rangeOfString:@"peaceout "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"peaceout " 
+										  withString:@"✌ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"king "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"king " 
+										  withString:@"♛ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"rose "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"rose " 
+										  withString:@"❁ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"islam "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"islam " 
+										  withString:@"☪ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"umbrella "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"umbrella " 
+										  withString:@"☂ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"pen "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"pen " 
+										  withString:@"✏ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"bishop "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"bishop " 
+										  withString:@"♝ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"flower "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"flower " 
+										  withString:@"❀ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"tools "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"tools " 
+										  withString:@"☭ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"snowman "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue
+							stringByReplacingOccurrencesOfString:@"snowman " 
+										  withString:@"☃ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"-> "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"-> " 
+										  withString:@"☛ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"darkknight "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"darkknight " 
+										  withString:@"♞ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"darkflower "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"darkflower " 
+										  withString:@"✿ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"peace "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"peace " 
+										  withString:@"☮ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"sun "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"sun " 
+										  withString:@"☼ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"<- "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"<- " 
+										  withString:@"☚ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"knight "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"knight " 
+										  withString:@"♘ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"ying "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"ying " 
+										  withString:@"☯ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"christ "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue									stringByReplacingOccurrencesOfString:@"christ " 
+										  withString:@"✝ "];
+	
+	
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"moon "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"moon " 
+										  withString:@"☾ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"up "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"up " 
+										  withString:@"☝ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"rook "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"rook " 
+										  withString:@"♖ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"snow "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"snow " 
+										  withString:@"✽ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"comet "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"comet " 
+										  withString:@"☄ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"down "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"down " 
+										  withString:@"☟ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"pawn "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"pawn " 
+										  withString:@"♟ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"prince "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"prince " 
+										  withString:@"☥ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"cut "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"cut " 
+										  withString:@"✂ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"write "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"write " 
+										  withString:@"✍ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"queen "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"queen " 
+										  withString:@"♕ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"copy "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"copy " 
+										  withString:@"© "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"tm "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"tm " 
+										  withString:@"™ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"euro "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"euro " 
+										  withString:@"€ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"<< "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"<< " 
+										  withString:@"« "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@">> "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@">> " 
+										  withString:@"» "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"yen "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"yen " 
+										  withString:@"¥ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"wheel "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"wheel " 
+										  withString:@"✇ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"recycle "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"recycle " 
+										  withString:@"♺ "];
+	
+	range = [newStatusTextField.stringValue rangeOfString:@"radioactive "];
+	if (range.location != NSNotFound)
+		newStatusTextField.stringValue = [newStatusTextField.stringValue 
+							stringByReplacingOccurrencesOfString:@"radioactive " 
+										  withString:@"☢ "];
 }
 
 // Delegate: Changes the green bar and enables/disables the tweet button.
