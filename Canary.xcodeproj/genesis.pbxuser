@@ -60,6 +60,34 @@
 		vrLen = 1597;
 		vrLoc = 29;
 	};
+	0508EF810FDAA84E00826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */;
+		name = "ORSShortenerFactory.h: 24";
+		rLen = 0;
+		rLoc = 1133;
+		rType = 0;
+		vrLen = 1597;
+		vrLoc = 29;
+	};
+	0508EF820FDAA84E00826B32 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0508EF660FDA96D100826B32 /* filterTemplate.pdf */;
+	};
+	0508EF830FDAA84E00826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */;
+		name = "ORSShortenerFactory.h: 24";
+		rLen = 0;
+		rLoc = 1133;
+		rType = 0;
+		vrLen = 1597;
+		vrLoc = 29;
+	};
+	0508EF840FDAA84E00826B32 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0508EF660FDA96D100826B32 /* filterTemplate.pdf */;
+	};
 	05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05372D9E0E7EE8CC008ABD85 /* unistd.h */;
@@ -609,8 +637,8 @@
 	};
 	053FBACF0FA5128900DA370E /* ORSShortenerFactory.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 1184}}";
-			sepNavSelRange = "{2207, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 1232}}";
+			sepNavSelRange = "{1133, 0}";
 			sepNavVisRange = "{29, 1597}";
 		};
 	};
@@ -1982,6 +2010,10 @@
 			0508EF230FDA6B1300826B32 /* PBXTextBookmark */ = 0508EF230FDA6B1300826B32 /* PBXTextBookmark */;
 			0508EF290FDA6E3900826B32 /* PBXTextBookmark */ = 0508EF290FDA6E3900826B32 /* PBXTextBookmark */;
 			0508EF2B0FDA6E5000826B32 /* PBXTextBookmark */ = 0508EF2B0FDA6E5000826B32 /* PBXTextBookmark */;
+			0508EF810FDAA84E00826B32 /* PBXTextBookmark */ = 0508EF810FDAA84E00826B32 /* PBXTextBookmark */;
+			0508EF820FDAA84E00826B32 /* PBXBookmark */ = 0508EF820FDAA84E00826B32 /* PBXBookmark */;
+			0508EF830FDAA84E00826B32 /* PBXTextBookmark */ = 0508EF830FDAA84E00826B32 /* PBXTextBookmark */;
+			0508EF840FDAA84E00826B32 /* PBXBookmark */ = 0508EF840FDAA84E00826B32 /* PBXBookmark */;
 			05372D9D0E7EE8CC008ABD85 = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DA20E7EE8CC008ABD85 = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DAB0E7EE8CC008ABD85 = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;

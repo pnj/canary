@@ -273,14 +273,11 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -302,7 +299,7 @@
 							<real>255</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>258 122 1021 656 0 0 1280 778 </string>
+						<string>0 122 1021 656 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSShortenerFactory.h</string>
+								<string>filterTemplate.pdf</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +323,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSShortenerFactory.h</string>
+										<string>filterTemplate.pdf</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0508EF2B0FDA6E5000826B32</string>
+										<string>0508EF840FDAA84E00826B32</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -390,7 +387,8 @@
 											<string>053F6C760FC9551500545407</string>
 											<string>053836E80FCAFAD4003C199E</string>
 											<string>053836E90FCAFAD4003C199E</string>
-											<string>0508EF290FDA6E3900826B32</string>
+											<string>0508EF810FDAA84E00826B32</string>
+											<string>0508EF820FDAA84E00826B32</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -450,6 +448,7 @@
 											<string>056DCDAB0FB4399F00023D78</string>
 											<string>056DCDAC0FB4399F00023D78</string>
 											<string>053F6C780FC9551500545407</string>
+											<string>0508EF830FDAA84E00826B32</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -465,7 +464,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {744, 610}}</string>
 								<key>RubberWindowFrame</key>
-								<string>258 122 1021 656 0 0 1280 778 </string>
+								<string>0 122 1021 656 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -490,7 +489,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {744, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>258 122 1021 656 0 0 1280 778 </string>
+										<string>0 122 1021 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -761,7 +760,7 @@
 		<string>/Users/genesis/Projects/Ocean Road Software/Canary/source/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>258 122 1021 656 0 0 1280 778 </string>
+	<string>0 122 1021 656 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

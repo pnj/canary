@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0508EF670FDA96D100826B32 /* filterTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0508EF660FDA96D100826B32 /* filterTemplate.pdf */; };
 		053FB99A0FA4D4B300DA370E /* BWToolkit License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */; };
 		053FB99B0FA4D4B300DA370E /* Canary License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9960FA4D4B300DA370E /* Canary License.rtf */; };
 		053FB99C0FA4D4B300DA370E /* Copyright and license info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */; };
@@ -207,6 +208,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0508EF660FDA96D100826B32 /* filterTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = filterTemplate.pdf; sourceTree = "<group>"; };
 		053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "BWToolkit License.rtf"; sourceTree = "<group>"; };
 		053FB9960FA4D4B300DA370E /* Canary License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Canary License.rtf"; sourceTree = "<group>"; };
 		053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Copyright and license info.rtf"; sourceTree = "<group>"; };
@@ -697,6 +699,7 @@
 				053FBAFC0FA514E100DA370E /* email.png */,
 				053FBAFD0FA514E100DA370E /* error.png */,
 				053FBAFE0FA514E100DA370E /* fave_star.png */,
+				0508EF660FDA96D100826B32 /* filterTemplate.pdf */,
 				053FBAFF0FA514E100DA370E /* Gradient1.png */,
 				053FBB000FA514E100DA370E /* Gradient2.png */,
 				053FBB010FA514E100DA370E /* information.png */,
@@ -1074,6 +1077,7 @@
 				053FBC190FA5154000DA370E /* MainMenu.xib in Resources */,
 				053FBC1A0FA5154000DA370E /* Preferences.xib in Resources */,
 				053FBC1B0FA5154000DA370E /* About.xib in Resources */,
+				0508EF670FDA96D100826B32 /* filterTemplate.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
