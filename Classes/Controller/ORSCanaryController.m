@@ -27,6 +27,7 @@
 
 #import "ORSCanaryController.h"
 #import "ORSCanaryController+Growl.h"
+#include <math.h>
 
 @implementation ORSCanaryController
 
@@ -273,6 +274,18 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[viewMenu insertItem:[NSMenuItem separatorItem] atIndex:6];
 	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
 						 forItem:filterMenuItem];
+	
+	NSArray *placeholders = [NSArray arrayWithObjects:@"compose a haiku »", 
+		@"vent some steam »", @"compile a eulogy »", 
+		@"scribble your pithy words »", @"scrawl an incantation »", 
+		@"write a polemic »", @"write stuff »", @"formulate an opinion »", 
+		@"drop a line »", @"register your sentiment »",
+		@"stay in touch with your fans »", @"compose a song »", nil];
+	srandom([NSDate timeIntervalSinceReferenceDate]);
+	NSInteger rNumb = random() % 12;
+	[[newStatusTextField cell] setPlaceholderString:[placeholders 
+													 objectAtIndex:rNumb]];
+	NSLog(@"%i", rNumb);
 }
 
 // Delegate: calls all the necessary methods when the app starts

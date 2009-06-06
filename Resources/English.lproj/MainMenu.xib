@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="205"/>
+			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -919,7 +919,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="290869276">
+								<object class="NSMenuItem" id="130915286">
 									<reference key="NSMenu" ref="789758025"/>
 									<bool key="NSIsDisabled">YES</bool>
 									<bool key="NSIsSeparator">YES</bool>
@@ -929,7 +929,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="735535262">
+								<object class="NSMenuItem" id="86886742">
 									<reference key="NSMenu" ref="789758025"/>
 									<string key="NSTitle">Use Autocomplete</string>
 									<string key="NSKeyEquiv"/>
@@ -5943,10 +5943,10 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: values.CanaryUseAutocomplete</string>
-						<reference key="source" ref="735535262"/>
+						<reference key="source" ref="86886742"/>
 						<reference key="destination" ref="1000155356"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="735535262"/>
+							<reference key="NSSource" ref="86886742"/>
 							<reference key="NSDestination" ref="1000155356"/>
 							<string key="NSLabel">value: values.CanaryUseAutocomplete</string>
 							<string key="NSBinding">value</string>
@@ -6063,8 +6063,8 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="652841018"/>
 							<reference ref="846523083"/>
 							<reference ref="144513254"/>
-							<reference ref="735535262"/>
-							<reference ref="290869276"/>
+							<reference ref="86886742"/>
+							<reference ref="130915286"/>
 						</object>
 						<reference key="parent" ref="952259628"/>
 					</object>
@@ -8135,12 +8135,12 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2306</int>
-						<reference key="object" ref="735535262"/>
+						<reference key="object" ref="86886742"/>
 						<reference key="parent" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2307</int>
-						<reference key="object" ref="290869276"/>
+						<reference key="object" ref="130915286"/>
 						<reference key="parent" ref="789758025"/>
 					</object>
 				</object>
