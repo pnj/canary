@@ -237,7 +237,7 @@
 		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 430";
 		rLen = 0;
-		rLoc = 15045;
+		rLoc = 15441;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 14215;
@@ -381,7 +381,7 @@
 		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 430";
 		rLen = 0;
-		rLoc = 15045;
+		rLoc = 15441;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 14483;
@@ -421,7 +421,7 @@
 		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 430";
 		rLen = 0;
-		rLoc = 15045;
+		rLoc = 15441;
 		rType = 0;
 		vrLen = 1532;
 		vrLoc = 15849;
@@ -601,7 +601,7 @@
 		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 430";
 		rLen = 0;
-		rLoc = 15045;
+		rLoc = 15441;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 14215;
@@ -736,6 +736,86 @@
 		vrLen = 1382;
 		vrLoc = 10639;
 	};
+	0508EFD40FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 319";
+		rLen = 0;
+		rLoc = 11795;
+		rType = 0;
+		vrLen = 1334;
+		vrLoc = 9397;
+	};
+	0508EFD50FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 0;
+	};
+	0508EFD60FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1381;
+		vrLoc = 6795;
+	};
+	0508EFD70FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 430";
+		rLen = 0;
+		rLoc = 15441;
+		rType = 0;
+		vrLen = 1267;
+		vrLoc = 14278;
+	};
+	0508EFD80FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 319";
+		rLen = 0;
+		rLoc = 11795;
+		rType = 0;
+		vrLen = 1334;
+		vrLoc = 9397;
+	};
+	0508EFD90FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 0;
+	};
+	0508EFDA0FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1381;
+		vrLoc = 6795;
+	};
+	0508EFDB0FDAE16400826B32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 97";
+		rLen = 0;
+		rLoc = 4102;
+		rType = 0;
+		vrLen = 1030;
+		vrLoc = 3274;
+	};
 	05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05372D9E0E7EE8CC008ABD85 /* unistd.h */;
@@ -863,7 +943,7 @@
 	};
 	053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 576}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1416}";
 		};
@@ -877,9 +957,9 @@
 	};
 	053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 3088}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 3136}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{6860, 1316}";
+			sepNavVisRange = "{6795, 1381}";
 		};
 	};
 	053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */ = {
@@ -891,9 +971,9 @@
 	};
 	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 10144}}";
-			sepNavSelRange = "{15045, 0}";
-			sepNavVisRange = "{14215, 1330}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 10560}}";
+			sepNavSelRange = "{4102, 0}";
+			sepNavVisRange = "{3274, 1030}";
 		};
 	};
 	053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */ = {
@@ -923,7 +1003,7 @@
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{11952, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{12115, 2820}\";\n            s = 0;\n        },\n                {\n            r = \"{14991, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{15466, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{17563, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{18027, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{18262, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{18456, 5238}\";\n            s = 0;\n        },\n                {\n            r = \"{23786, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{24322, 4876}\";\n            s = 0;\n        },\n                {\n            r = \"{29301, 1381}\";\n            s = 0;\n        },\n                {\n            r = \"{30791, 1397}\";\n            s = 0;\n        },\n                {\n            r = \"{32249, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{32602, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{32984, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{33318, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{33642, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{34024, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{34372, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{34737, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{34975, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{35220, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{35488, 467}\";\n            s = 0;\n        },\n                {\n            r = \"{36062, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{36315, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{37082, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{38986, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{42154, 35}\";\n            s = 0;\n        },\n                {\n            r = \"{42319, 35}\";\n            s = 0;\n        },\n                {\n            r = \"{42479, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{43898, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{46167, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{46965, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{47237, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{47507, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{47795, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{48357, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{48699, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{48858, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{49063, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{49266, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{49515, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{49805, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{50159, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{50343, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{50610, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{50730, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{51005, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{51638, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{53410, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{54173, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{54633, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{55206, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{56313, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{57364, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{58266, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{59082, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{59938, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{60475, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{60867, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{61264, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{61662, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{62062, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{62478, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{63081, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{65402, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{66594, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{67750, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{67957, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{68174, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{68443, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{69114, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{69238, 50}\";\n            s = 0;\n        },\n                {\n            r = \"{69327, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{69475, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{69918, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{70418, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{72398, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{72921, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{73348, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{74054, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{74760, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{75426, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{76121, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{76282, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{76467, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{77196, 1103}\";\n            s = 0;\n        },\n                {\n            r = \"{78398, 408}\";\n            s = 0;\n        },\n                {\n            r = \"{78877, 791}\";\n            s = 0;\n        },\n                {\n            r = \"{79782, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{79928, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{80382, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{80754, 889}\";\n            s = 0;\n        },\n                {\n            r = \"{81761, 397}\";\n            s = 0;\n        },\n                {\n            r = \"{82185, 19}\";\n            s = 0;\n        },\n                {\n            r = \"{82323, 416}\";\n            s = 0;\n        },\n                {\n            r = \"{82780, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{82920, 380}\";\n            s = 0;\n        },\n                {\n            r = \"{83337, 29}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 83374}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {683, 11088}}";
 			sepNavSelRange = "{11795, 0}";
-			sepNavVisRange = "{10639, 1316}";
+			sepNavVisRange = "{9397, 1334}";
 		};
 	};
 	053FBA400FA50EC700DA370E /* iTunes.h */ = {
@@ -2820,6 +2900,14 @@
 			0508EFCB0FDAD87700826B32 /* PBXTextBookmark */ = 0508EFCB0FDAD87700826B32 /* PBXTextBookmark */;
 			0508EFCF0FDAD9DA00826B32 /* PBXTextBookmark */ = 0508EFCF0FDAD9DA00826B32 /* PBXTextBookmark */;
 			0508EFD10FDAD9FE00826B32 /* PBXTextBookmark */ = 0508EFD10FDAD9FE00826B32 /* PBXTextBookmark */;
+			0508EFD40FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD40FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFD50FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD50FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFD60FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD60FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFD70FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD70FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFD80FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD80FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFD90FDAE16400826B32 /* PBXTextBookmark */ = 0508EFD90FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFDA0FDAE16400826B32 /* PBXTextBookmark */ = 0508EFDA0FDAE16400826B32 /* PBXTextBookmark */;
+			0508EFDB0FDAE16400826B32 /* PBXTextBookmark */ = 0508EFDB0FDAE16400826B32 /* PBXTextBookmark */;
 			05372D9D0E7EE8CC008ABD85 = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DA20E7EE8CC008ABD85 = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DAB0E7EE8CC008ABD85 = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;

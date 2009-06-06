@@ -89,6 +89,18 @@
 			return [substring substringToIndex:charsetRange.location];
 		}
 	}
+	
+	range = [string rangeOfString:@"https://"];
+	if (range.location != NSNotFound) {
+		NSString *substring = [string substringFromIndex:range.location];
+		NSRange charsetRange = [substring 
+						rangeOfCharacterFromSet:[self httpDelimitingCharset]];
+		if (charsetRange.location == NSNotFound) {
+			return substring;
+		} else {
+			return [substring substringToIndex:charsetRange.location];
+		}
+	}
 
 	range = [string rangeOfString:@"www."];
 	if (range.location == 0) {

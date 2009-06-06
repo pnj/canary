@@ -273,12 +273,13 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>05DF56720E3E60DE00B8B4DE</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>12</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -320,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.m</string>
+								<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.m</string>
+										<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0508EFD10FDAD9FE00826B32</string>
+										<string>0508EFDB0FDAE16400826B32</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -345,7 +346,6 @@
 											<string>0555A61E0EAA469400B126BC</string>
 											<string>05D6EEBF0EDB439F00CBC4B6</string>
 											<string>05845BC10F59A823006F7306</string>
-											<string>053FBA490FA50EF200DA370E</string>
 											<string>053FBA6F0FA50FEA00DA370E</string>
 											<string>053FBA700FA50FEA00DA370E</string>
 											<string>053FBAE30FA512AA00DA370E</string>
@@ -398,15 +398,16 @@
 											<string>0508EF950FDAD40500826B32</string>
 											<string>0508EF960FDAD40500826B32</string>
 											<string>0508EF970FDAD40500826B32</string>
-											<string>0508EF980FDAD40500826B32</string>
 											<string>0508EF990FDAD40500826B32</string>
-											<string>0508EF9A0FDAD40500826B32</string>
 											<string>0508EF9B0FDAD40500826B32</string>
 											<string>0508EF9C0FDAD40500826B32</string>
 											<string>0508EF9D0FDAD40500826B32</string>
 											<string>0508EF9E0FDAD40500826B32</string>
 											<string>0508EF9F0FDAD40500826B32</string>
-											<string>0508EFA00FDAD40500826B32</string>
+											<string>0508EFD40FDAE16400826B32</string>
+											<string>0508EFD50FDAE16400826B32</string>
+											<string>0508EFD60FDAE16400826B32</string>
+											<string>0508EFD70FDAE16400826B32</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -505,6 +506,9 @@
 											<string>0508EFC40FDAD40500826B32</string>
 											<string>0508EFC50FDAD40500826B32</string>
 											<string>0508EFC60FDAD40500826B32</string>
+											<string>0508EFD80FDAE16400826B32</string>
+											<string>0508EFD90FDAE16400826B32</string>
+											<string>0508EFDA0FDAE16400826B32</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
