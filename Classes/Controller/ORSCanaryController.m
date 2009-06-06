@@ -294,12 +294,30 @@ sender {
 - (IBAction) sendUpdate:sender {
 	if ([twitterEngine sessionUserID]) {
 		// Counter readjustment
-		previousUpdateText = [[newStatusTextField stringValue] copy];
 		[charsLeftIndicator setIntValue:0];
 		[charsLeftIndicator setMaxValue:140];
 		[charsLeftIndicator setCriticalValue:140];
 		[charsLeftIndicator setWarningValue:125];
-		[updateDispatcher addMessage:[newStatusTextField stringValue]];
+		
+		// Commands
+		if ([newStatusTextField.stringValue hasPrefix:@"%f "]) {
+			[self createFriendshipWithUser:
+				[newStatusTextField.stringValue substringFromIndex:3]];
+		} else if ([newStatusTextField.stringValue hasPrefix:@"%l "]) {
+			[self destroyFriendshipWithUser:
+				[newStatusTextField.stringValue substringFromIndex:3]];
+		} else if ([newStatusTextField.stringValue hasPrefix:@"%b "]) {
+			[self showUserBlockAlertSheet:
+				[newStatusTextField.stringValue substringFromIndex:3]];
+		} else if ([newStatusTextField.stringValue hasPrefix:@"%u "]) {
+			[self unblockUserWithID:
+				[newStatusTextField.stringValue substringFromIndex:3]];
+		} else {
+			previousUpdateText = [[newStatusTextField stringValue] copy];
+			[updateDispatcher addMessage:[newStatusTextField stringValue]];
+		}
+		newStatusTextField.stringValue = @"";
+		[self updateNewStatusTextField];
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 	}
@@ -1089,6 +1107,15 @@ sender {
 			else
 				[tweetButton setEnabled:YES];
 		}
+	// Commands
+	} else if ([newStatusTextField.stringValue hasPrefix:@"%f "]) {
+		[tweetButton setTitle:@"Follow"];
+	} else if ([newStatusTextField.stringValue hasPrefix:@"%l "]) {
+		[tweetButton setTitle:@"Leave"];
+	} else if ([newStatusTextField.stringValue hasPrefix:@"%b "]) {
+		[tweetButton setTitle:@"Block"];
+	} else if ([newStatusTextField.stringValue hasPrefix:@"%u "]) {
+		[tweetButton setTitle:@"Unblock"];
 	} else {
 		[charsLeftIndicator setMaxValue:(maxChars*((charsWritten/maxChars)+1))];
 		[charsLeftIndicator setCriticalValue:(maxChars*((charsWritten/maxChars)+1))];
