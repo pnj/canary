@@ -108,9 +108,14 @@
 		NSRange charsetRange = [substring 
 			rangeOfCharacterFromSet:[self httpDelimitingCharset]];
 		if (charsetRange.location == NSNotFound) {
-			return substring;
+			if ([substring length] > 10) {
+				return substring;
+			}
 		} else {
-			return [substring substringToIndex:charsetRange.location];
+			if ([[substring substringToIndex:charsetRange.location] 
+					length] > 10) {
+				return [substring substringToIndex:charsetRange.location];
+			}
 		}
 	}
 	
