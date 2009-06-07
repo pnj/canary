@@ -333,7 +333,8 @@ sender {
 		}
 		newStatusTextField.stringValue = @"";
 		[self updateNewStatusTextField];
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Sending data to Twitter..."];
 		[indicator startAnimation:self];
 	}
 }
@@ -618,9 +619,9 @@ sender {
 	if ([newStatusTextField.stringValue isEqualToString:@"d "]) {
 		[newStatusTextField setStringValue:@""];
 	}
-	
+	[statusBarTextField setHidden:YES];
+	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	[self controlTextDidChange:note];
 }
 
@@ -636,8 +637,9 @@ sender {
 	}
 	
 	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
+	[statusBarTextField setHidden:YES];
+	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 }
 
@@ -760,8 +762,9 @@ sender {
 			connectionErrorShown = NO;
 		}
 	}
+	[statusBarTextField setHidden:YES];
+	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	[self controlTextDidChange:note];
 }
 
@@ -801,8 +804,9 @@ sender {
 	
 	//[self performSelectorInBackground:@selector(postStatusUpdatesSent:) withObject:note];
 	[self postStatusUpdatesSent:note];
+	[statusBarTextField setHidden:YES];
+	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	[self controlTextDidChange:nil];
 }
 
@@ -827,13 +831,15 @@ sender {
 		[cache insertObject:note.object atIndex:0];
 		self.sentDirectMessages = cache;
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
+		[statusBarTextField setHidden:YES];
+		[statusBarTextField setStringValue:@""];
 		[indicator stopAnimation:self];
-		[charsLeftIndicator setHidden:NO];
 	}
 
 	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
+	[statusBarTextField setHidden:YES];
+	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	
 	NSString *msg = [NSString stringWithFormat:@"Direct message sent"];
 	[statusBarTextField setStringValue:msg];
@@ -854,7 +860,8 @@ sender {
 // Gets the friends timeline
 - (void) getFriendsTimeline {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFollowingCall) {
 			[twitterEngine getFriendsTimeline];
@@ -868,7 +875,8 @@ sender {
 // Gets the user timeline
 - (void) getUserTimeline {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstArchiveCall) {
 			[twitterEngine getUserTimelineForUser:twitterEngine.sessionUserID];
@@ -882,7 +890,8 @@ sender {
 // Gets the public timeline
 - (void) getPublicTimeline {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstPublicCall) {
 			[twitterEngine getPublicTimeline];
@@ -896,7 +905,8 @@ sender {
 // Gets the replies
 - (void) getReplies {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstRepliesCall) {
 			[twitterEngine getReplies];
@@ -910,7 +920,8 @@ sender {
 // Gets the favorites
 - (void) getFavorites {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFavoriteCall) {
 			[twitterEngine getFavoritesForUser:twitterEngine.sessionUserID];
@@ -924,7 +935,8 @@ sender {
 // Gets the received messages
 - (void) getReceivedMessages {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstReceivedMessagesCall) {
 			[twitterEngine getReceivedDMs];
@@ -938,7 +950,8 @@ sender {
 // Gets the sent messages
 - (void) getSentMessages {
 	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setHidden:YES];
+		[statusBarTextField setHidden:NO];
+		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
 		[indicator startAnimation:self];
 		if (cacheManager.firstSentMessagesCall) {
 			[twitterEngine getSentDMs];
@@ -1829,7 +1842,6 @@ sender {
 							userInfo:nil repeats:NO];
 	connectionErrorShown = YES;
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 }
 
 // Shows the server response when there is an error
@@ -1846,15 +1858,12 @@ sender {
 		if (statusCode == 503) {
 			[statusBarTextField setStringValue:@"Twitter is overloaded"];
 			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
 		} else if (statusCode == 502) {
 			[statusBarTextField setStringValue:@"Twitter is down"];
 			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
 		} else if (statusCode == 500) {
 			[statusBarTextField setStringValue:@"Twitter internal error"];
 			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
 		} else if (statusCode == 404) {
 			[statusBarTextField setStringValue:@"Requested resource not found"];
 		} else if (statusCode == 403) {
@@ -1879,9 +1888,7 @@ sender {
 		[statusBarButton setHidden:YES];
 		connectionErrorShown = YES;
 	}
-	
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 }
 
 
@@ -1991,7 +1998,6 @@ sender {
 // This method executes the call to twitpic asynchronously and sends the given
 // file
 - (void) executeAsyncCallToTwitPicWithFile:(NSString *)filename {
-	[charsLeftIndicator setHidden:YES];
 	[indicator startAnimation:self];
 	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
@@ -2013,7 +2019,6 @@ sender {
 // This method executes the call to twitpic asynchronously and sends the given
 // data
 - (void) executeAsyncCallToTwitPicWithData:(NSData *)imageData {
-	[charsLeftIndicator setHidden:YES];
 	[indicator startAnimation:self];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
 	[[ORSAsyncTwitPicDispatcher alloc] init];
@@ -2035,9 +2040,7 @@ sender {
 - (void) printTwitPicURL:(NSNotification *)note {
 	NSString *twitPicURLString = (NSString *)[note object];
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
-	
 	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
 	
 	NSString *msg = [NSString 
 					 stringWithFormat:@"Picture has been sent to Twitpic"];
