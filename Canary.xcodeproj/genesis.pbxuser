@@ -1263,6 +1263,27 @@
 		vrLen = 937;
 		vrLoc = 1197;
 	};
+	053FB9960FA4D4B300DA370E /* Canary License.rtf */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {697, 570}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {697, 570}}";
+		};
+	};
+	053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {697, 570}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {697, 570}}";
+		};
+	};
+	053FB9990FA4D4B300DA370E /* Sparkle License.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 2640}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1576}";
+		};
+	};
 	053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 848}}";
@@ -1293,9 +1314,9 @@
 	};
 	053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 5328}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 5296}}";
 			sepNavSelRange = "{6774, 0}";
-			sepNavVisRange = "{6357, 784}";
+			sepNavVisRange = "{0, 1646}";
 		};
 	};
 	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
@@ -1329,9 +1350,9 @@
 	};
 	053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {960, 44288}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 44176}}";
 			sepNavSelRange = "{78174, 0}";
-			sepNavVisRange = "{77895, 552}";
+			sepNavVisRange = "{77415, 1301}";
 		};
 	};
 	053FBA400FA50EC700DA370E /* iTunes.h */ = {
@@ -1850,14 +1871,14 @@
 	};
 	053FBAEF0FA5139300DA370E /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {711, 410}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 570}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 287}";
 		};
 	};
 	053FBAF00FA5139300DA370E /* Canary_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {711, 410}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 570}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 301}";
 		};
@@ -1871,6 +1892,27 @@
 		rType = 0;
 		vrLen = 1285;
 		vrLoc = 0;
+	};
+	053FBB260FA5150E00DA370E /* Growl Registration Ticket.growlRegDict */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 570}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 486}";
+		};
+	};
+	053FBB880FA5150E00DA370E /* dsa_pub.pem */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 570}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1178}";
+		};
+	};
+	053FBC100FA5154000DA370E /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {683, 593}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 206}";
+		};
 	};
 	053FBC6D0FA5174F00DA370E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
