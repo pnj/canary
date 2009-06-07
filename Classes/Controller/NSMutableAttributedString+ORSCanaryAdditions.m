@@ -519,20 +519,22 @@
 		
 		// Hashtags
 		if (hashtag = [self detectHashtag:scanString]) {
-			NSMutableString *hashtagString = [NSMutableString 
-				stringWithString:@"http://search.twitter.com/search?q=%23"];
-			[hashtagString appendString:[hashtag substringFromIndex:1]];
-			foundURL = [NSURL URLWithString:hashtagString];
-			hashtagAttr = [NSDictionary dictionaryWithObjectsAndKeys:
-				[NSColor blueColor], NSForegroundColorAttributeName,
-					[NSNumber numberWithInt:NSSingleUnderlineStyle], 
-						NSUnderlineStyleAttributeName,
-									   foundURL, NSLinkAttributeName, NULL];
-			NSRange newRange = [scanString rangeOfString:hashtag];
-			NSRange attrRange;
-			attrRange.location = scanRange.location + newRange.location;
-			attrRange.length = newRange.length;
-			[self addAttributes:hashtagAttr range:attrRange];
+			if ([hashtag length] > 1) {
+				NSMutableString *hashtagString = [NSMutableString 
+					stringWithString:@"http://search.twitter.com/search?q=%23"];
+				[hashtagString appendString:[hashtag substringFromIndex:1]];
+				foundURL = [NSURL URLWithString:hashtagString];
+				hashtagAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+					[NSColor blueColor], NSForegroundColorAttributeName,
+							   [NSNumber numberWithInt:NSSingleUnderlineStyle], 
+							   NSUnderlineStyleAttributeName,
+							   foundURL, NSLinkAttributeName, NULL];
+				NSRange newRange = [scanString rangeOfString:hashtag];
+				NSRange attrRange;
+				attrRange.location = scanRange.location + newRange.location;
+				attrRange.length = newRange.length;
+				[self addAttributes:hashtagAttr range:attrRange];
+			}
 		}
 		
 		// DOIs
