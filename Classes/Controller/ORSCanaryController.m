@@ -334,6 +334,7 @@ sender {
 		newStatusTextField.stringValue = @"";
 		[self updateNewStatusTextField];
 		[statusBarTextField setHidden:NO];
+		[statusBarImageView setHidden:YES];
 		[statusBarTextField setStringValue:@"Sending data to Twitter..."];
 		[indicator startAnimation:self];
 	}
@@ -862,6 +863,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFollowingCall) {
 			[twitterEngine getFriendsTimeline];
@@ -877,6 +879,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstArchiveCall) {
 			[twitterEngine getUserTimelineForUser:twitterEngine.sessionUserID];
@@ -892,6 +895,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstPublicCall) {
 			[twitterEngine getPublicTimeline];
@@ -907,6 +911,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstRepliesCall) {
 			[twitterEngine getReplies];
@@ -922,6 +927,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFavoriteCall) {
 			[twitterEngine getFavoritesForUser:twitterEngine.sessionUserID];
@@ -937,6 +943,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstReceivedMessagesCall) {
 			[twitterEngine getReceivedDMs];
@@ -952,6 +959,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[statusBarTextField setHidden:NO];
 		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
+		[statusBarImageView setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstSentMessagesCall) {
 			[twitterEngine getSentDMs];
@@ -1853,17 +1861,15 @@ sender {
 	
 	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
 	NSInteger statusCode = response.statusCode;
+	[indicator stopAnimation:self];
 	
 	if (statusCode != 200 && statusCode != 304) {
 		if (statusCode == 503) {
 			[statusBarTextField setStringValue:@"Twitter is overloaded"];
-			[indicator stopAnimation:self];
 		} else if (statusCode == 502) {
 			[statusBarTextField setStringValue:@"Twitter is down"];
-			[indicator stopAnimation:self];
 		} else if (statusCode == 500) {
 			[statusBarTextField setStringValue:@"Twitter internal error"];
-			[indicator stopAnimation:self];
 		} else if (statusCode == 404) {
 			[statusBarTextField setStringValue:@"Requested resource not found"];
 		} else if (statusCode == 403) {
@@ -1888,7 +1894,6 @@ sender {
 		[statusBarButton setHidden:YES];
 		connectionErrorShown = YES;
 	}
-	[indicator stopAnimation:self];
 }
 
 
@@ -1940,7 +1945,7 @@ sender {
 	}
 }
 
-// This method executes the call to twitpic and adds the resulting url in the
+// This method executes the call to TwitPic and adds the resulting url in the
 // text field
 - (void) executeCallToTwitPicWithFile:(NSString *)filename {
 	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
@@ -1954,7 +1959,7 @@ sender {
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
 	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to Twitpic"];
+					 stringWithFormat:@"Picture has been sent to TwitPic"];
 	[statusBarTextField setStringValue:msg];
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
@@ -1981,7 +1986,7 @@ sender {
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
 	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to Twitpic"];
+					 stringWithFormat:@"Picture has been sent to TwitPic"];
 	[statusBarTextField setStringValue:msg];
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
@@ -1998,6 +2003,7 @@ sender {
 // This method executes the call to twitpic asynchronously and sends the given
 // file
 - (void) executeAsyncCallToTwitPicWithFile:(NSString *)filename {
+	[statusBarImageView setHidden:YES];
 	[indicator startAnimation:self];
 	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
@@ -2007,9 +2013,9 @@ sender {
 							  password:twitterEngine.sessionPassword
 							  filename:filename];
 	NSString *msg = [NSString 
-					 stringWithFormat:@"Sending picture to Twitpic..."];
+					 stringWithFormat:@"Sending picture to TwitPic..."];
 	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
+	//[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
 	[statusBarButton setEnabled:NO];
@@ -2019,17 +2025,18 @@ sender {
 // This method executes the call to twitpic asynchronously and sends the given
 // data
 - (void) executeAsyncCallToTwitPicWithData:(NSData *)imageData {
+	[statusBarImageView setHidden:YES];
 	[indicator startAnimation:self];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
-	[[ORSAsyncTwitPicDispatcher alloc] init];
+		[[ORSAsyncTwitPicDispatcher alloc] init];
 	[asyncTwitPicDispatcher uploadData:imageData
 						  withUsername:twitterEngine.sessionUserID
 							  password:twitterEngine.sessionPassword
 							  filename:@"user_selection.jpeg"];
 	NSString *msg = [NSString 
-					 stringWithFormat:@"Sending picture to Twitpic..."];
+					 stringWithFormat:@"Sending picture to TwitPic..."];
 	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
+	//[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
 	[statusBarButton setEnabled:NO];
@@ -2043,7 +2050,7 @@ sender {
 	[indicator stopAnimation:self];
 	
 	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to Twitpic"];
+					 stringWithFormat:@"Picture has been sent to TwitPic"];
 	[statusBarTextField setStringValue:msg];
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];

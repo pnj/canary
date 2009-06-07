@@ -29,7 +29,7 @@
 
 @implementation ORSAsyncTwitPicDispatcher
 
-// Uploads the picture data to Twitpic
+// Uploads the picture data to TwitPic
 - (void) uploadData:(NSData *)imageData
 	   withUsername:(NSString *)username
 		   password:(NSString *)password 

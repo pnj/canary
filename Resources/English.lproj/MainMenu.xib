@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="372"/>
+			<integer value="371"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1981,13 +1981,13 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								<object class="NSMutableString" key="NSToolbarItemIdentifier">
 									<characters key="NS.bytes">1ABDCCA0-6BE9-452F-8CB0-C6D72156F870</characters>
 								</object>
-								<string key="NSToolbarItemLabel">View Options</string>
-								<string key="NSToolbarItemPaletteLabel">View Options</string>
+								<string key="NSToolbarItemLabel">Filters</string>
+								<string key="NSToolbarItemPaletteLabel">Filters</string>
 								<nil key="NSToolbarItemToolTip"/>
 								<object class="NSButton" key="NSToolbarItemView" id="710854905">
 									<nil key="NSNextResponder"/>
 									<int key="NSvFlags">268</int>
-									<string key="NSFrame">{{24, 14}, {31, 25}}</string>
+									<string key="NSFrame">{{5, 14}, {31, 25}}</string>
 									<bool key="NSEnabled">YES</bool>
 									<object class="NSButtonCell" key="NSCell" id="945727693">
 										<int key="NSCellFlags">67239424</int>
@@ -1997,9 +1997,9 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<reference key="NSControlView" ref="710854905"/>
 										<int key="NSButtonFlags">-926138113</int>
 										<int key="NSButtonFlags2">268435619</int>
-										<object class="NSCustomResource" key="NSNormalImage" id="949380981">
+										<object class="NSCustomResource" key="NSNormalImage" id="430955301">
 											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">filterTemplate</string>
+											<string key="NSResourceName">sieveTemplate</string>
 										</object>
 										<string key="NSAlternateContents"/>
 										<string key="NSKeyEquivalent">f</string>
@@ -2007,7 +2007,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSPeriodicInterval">75</int>
 									</object>
 								</object>
-								<reference key="NSToolbarItemImage" ref="949380981"/>
+								<reference key="NSToolbarItemImage" ref="430955301"/>
 								<nil key="NSToolbarItemTarget"/>
 								<nil key="NSToolbarItemAction"/>
 								<string key="NSToolbarItemMinSize">{31, 25}</string>
@@ -2408,7 +2408,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="196338544"/>
-									<reference key="NSNextKeyView" ref="73709233"/>
 									<reference key="NSDocView" ref="73709233"/>
 									<object class="NSColor" key="NSBGColor">
 										<int key="NSColorSpace">1</int>
@@ -2440,7 +2439,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="475840668"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="213564487"/>
 							<reference key="NSHScroller" ref="441622477"/>
