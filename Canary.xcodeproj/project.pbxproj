@@ -189,7 +189,7 @@
 		053FBCCA0FA51DA300DA370E /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053FBC260FA515E100DA370E /* BWToolkitFramework.framework */; };
 		0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573D7330DA6650B002D1CCF /* Security.framework */; };
 		057E321C0F91E19A0055B843 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057E321B0F91E19A0055B843 /* ScriptingBridge.framework */; };
-		05A216A70FDD3FB1004748C4 /* ORSPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */; };
+		05A216A70FDD3FB1004748C4 /* ORSCanaryPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */; };
 		05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A5D7810F03F0D100B596A9 /* Quartz.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -444,8 +444,8 @@
 		053FBC660FA516A600DA370E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0573D7330DA6650B002D1CCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		057E321B0F91E19A0055B843 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		05A216A50FDD3FB1004748C4 /* ORSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSPreferences.h; path = Classes/Controller/ORSPreferences.h; sourceTree = "<group>"; };
-		05A216A60FDD3FB1004748C4 /* ORSPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSPreferences.m; path = Classes/Controller/ORSPreferences.m; sourceTree = "<group>"; };
+		05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSCanaryPreferences.h; path = Classes/Controller/ORSCanaryPreferences.h; sourceTree = "<group>"; };
+		05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSCanaryPreferences.m; path = Classes/Controller/ORSCanaryPreferences.m; sourceTree = "<group>"; };
 		05A5D7810F03F0D100B596A9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -775,8 +775,8 @@
 				053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */,
 				053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */,
 				053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */,
-				05A216A50FDD3FB1004748C4 /* ORSPreferences.h */,
-				05A216A60FDD3FB1004748C4 /* ORSPreferences.m */,
+				05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */,
+				05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */,
 				053FBA400FA50EC700DA370E /* iTunes.h */,
 				05E2461C0EC22BC500410548 /* Controls */,
 				0591A9610EC8E73800BF3CAD /* Other Controllers */,
@@ -1143,7 +1143,7 @@
 				053FBAE20FA5128900DA370E /* ORSUrlborgShortener.m in Sources */,
 				053FBAEE0FA512C600DA370E /* ORSCredentialsManager.m in Sources */,
 				053FBAF10FA5139300DA370E /* main.m in Sources */,
-				05A216A70FDD3FB1004748C4 /* ORSPreferences.m in Sources */,
+				05A216A70FDD3FB1004748C4 /* ORSCanaryPreferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

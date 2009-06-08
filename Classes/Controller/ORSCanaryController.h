@@ -32,7 +32,7 @@
 #import "ORSShortener.h"
 #import "ORSCredentialsManager.h"
 #import "ORSTwitterEngine.h"
-#import "ORSPreferences.h"
+#import "ORSCanaryPreferences.h"
 #import "ORSShortenerFactory.h"
 #import "ORSUpdateDispatcher.h"
 #import "ORSDateDifferenceFormatter.h"
@@ -58,7 +58,7 @@
 	id <ORSShortener> urlShortener;
 	ORSUpdateDispatcher *updateDispatcher;
 	ORSTimelineCacheManager *cacheManager;
-	ORSPreferences *preferences;
+	ORSCanaryPreferences *preferences;
 	// Extra Windows
 	IBOutlet NSWindow *aboutWindow;
 	IBOutlet NSWindow *newUserWindow;
@@ -275,7 +275,7 @@
 
 @property (assign) ORSCredentialsManager *authenticator;
 @property (assign) ORSTwitterEngine *twitterEngine;
-@property (assign) ORSPreferences *preferences;
+@property (assign) ORSCanaryPreferences *preferences;
 @property (assign) id <ORSShortener> urlShortener;
 @property (assign) ORSUpdateDispatcher *updateDispatcher;
 @property (assign) ORSTimelineCacheManager *cacheManager;

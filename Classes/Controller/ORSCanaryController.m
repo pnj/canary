@@ -133,7 +133,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				defaults = [NSUserDefaults standardUserDefaults];
 				authenticator = [[ORSCredentialsManager alloc] init];
 				cacheManager = [[ORSTimelineCacheManager alloc] init];
-				preferences = [[ORSPreferences alloc] init];
+				preferences = [[ORSCanaryPreferences alloc] init];
 		
 				// NotificationCenter stuff -- need to determine a way to find
 				// which method to call

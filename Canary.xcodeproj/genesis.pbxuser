@@ -403,7 +403,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 954";
 		rLen = 0;
-		rLoc = 36493;
+		rLoc = 36499;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 37814;
@@ -453,7 +453,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2047";
 		rLen = 0;
-		rLoc = 76857;
+		rLoc = 76863;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 77622;
@@ -493,7 +493,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2034";
 		rLen = 0;
-		rLoc = 75879;
+		rLoc = 75885;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 1898;
@@ -503,7 +503,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 184";
 		rLen = 0;
-		rLoc = 6809;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 6357;
@@ -589,7 +589,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2051";
 		rLen = 0;
-		rLoc = 76726;
+		rLoc = 76732;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 77415;
@@ -603,7 +603,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2051";
 		rLen = 0;
-		rLoc = 76726;
+		rLoc = 76732;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 77415;
@@ -727,7 +727,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 184";
 		rLen = 0;
-		rLoc = 6809;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1646;
 		vrLoc = 0;
@@ -737,7 +737,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2051";
 		rLen = 0;
-		rLoc = 76726;
+		rLoc = 76732;
 		rType = 0;
 		vrLen = 1402;
 		vrLoc = 0;
@@ -917,7 +917,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2332";
 		rLen = 36;
-		rLoc = 86786;
+		rLoc = 86792;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 87389;
@@ -927,7 +927,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 235";
 		rLen = 0;
-		rLoc = 9015;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 10876;
@@ -937,7 +937,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2332";
 		rLen = 36;
-		rLoc = 86786;
+		rLoc = 86792;
 		rType = 0;
 		vrLen = 1100;
 		vrLoc = 87389;
@@ -947,7 +947,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 235";
 		rLen = 0;
-		rLoc = 9015;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 10876;
@@ -957,7 +957,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2332";
 		rLen = 36;
-		rLoc = 86786;
+		rLoc = 86792;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 87389;
@@ -1104,7 +1104,7 @@
 	};
 	053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 570}}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 593}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1415}";
 		};
@@ -1113,14 +1113,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {683, 3056}}";
 			sepNavSelRange = "{1867, 0}";
-			sepNavVisRange = "{4460, 1589}";
+			sepNavVisRange = "{2328, 1699}";
 		};
 	};
 	053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 5024}}";
-			sepNavSelRange = "{10500, 57}";
-			sepNavVisRange = "{9801, 1762}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 5136}}";
+			sepNavSelRange = "{780, 0}";
+			sepNavVisRange = "{0, 1560}";
 		};
 	};
 	053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
@@ -1154,9 +1154,9 @@
 	};
 	053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 42127}}";
-			sepNavSelRange = "{38742, 0}";
-			sepNavVisRange = "{38786, 1255}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 41492}}";
+			sepNavSelRange = "{42641, 0}";
+			sepNavVisRange = "{42372, 1499}";
 		};
 	};
 	053FBA400FA50EC700DA370E /* iTunes.h */ = {
@@ -1787,7 +1787,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 769";
 		rLen = 115;
-		rLoc = 31755;
+		rLoc = 31761;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 29220;
@@ -2208,7 +2208,7 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		rLen = 9;
-		rLoc = 36086;
+		rLoc = 36092;
 		rType = 0;
 	};
 	05A216070FDD0F54004748C4 /* PBXTextBookmark */ = {
@@ -2216,7 +2216,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 949";
 		rLen = 9;
-		rLoc = 36086;
+		rLoc = 36092;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 35665;
@@ -2283,7 +2283,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 949";
 		rLen = 9;
-		rLoc = 36086;
+		rLoc = 36092;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 35665;
@@ -2373,7 +2373,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 401";
 		rLen = 0;
-		rLoc = 15437;
+		rLoc = 15443;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 14803;
@@ -2383,7 +2383,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1181";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 43461;
@@ -2393,7 +2393,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1181";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 43461;
@@ -2403,7 +2403,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1181";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1402;
 		vrLoc = 43461;
@@ -2413,7 +2413,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 403";
 		rLen = 0;
-		rLoc = 15261;
+		rLoc = 15267;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 14483;
@@ -2423,7 +2423,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 404";
 		rLen = 0;
-		rLoc = 15437;
+		rLoc = 15443;
 		rType = 0;
 		vrLen = 1441;
 		vrLoc = 14429;
@@ -2433,7 +2433,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 728";
 		rLen = 0;
-		rLoc = 28639;
+		rLoc = 28645;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 27921;
@@ -2443,7 +2443,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1183";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 43475;
@@ -2453,7 +2453,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1183";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 43475;
@@ -2463,7 +2463,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1182";
 		rLen = 0;
-		rLoc = 42479;
+		rLoc = 42485;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 43475;
@@ -2473,7 +2473,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1191";
 		rLen = 0;
-		rLoc = 42671;
+		rLoc = 42677;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 43952;
@@ -2483,7 +2483,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1188";
 		rLen = 0;
-		rLoc = 42671;
+		rLoc = 42677;
 		rType = 0;
 		vrLen = 1306;
 		vrLoc = 43952;
@@ -2493,7 +2493,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1188";
 		rLen = 0;
-		rLoc = 42671;
+		rLoc = 42677;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 43952;
@@ -2503,7 +2503,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1190";
 		rLen = 0;
-		rLoc = 42671;
+		rLoc = 42677;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 43952;
@@ -2513,7 +2513,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1580";
 		rLen = 0;
-		rLoc = 59744;
+		rLoc = 59750;
 		rType = 0;
 		vrLen = 1629;
 		vrLoc = 60082;
@@ -2523,7 +2523,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1580";
 		rLen = 0;
-		rLoc = 59744;
+		rLoc = 59750;
 		rType = 0;
 		vrLen = 1629;
 		vrLoc = 60082;
@@ -2533,7 +2533,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1182";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 44079;
@@ -2569,7 +2569,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 235";
 		rLen = 0;
-		rLoc = 9015;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1271;
 		vrLoc = 9480;
@@ -2579,7 +2579,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2246";
 		rLen = 1;
-		rLoc = 83913;
+		rLoc = 83919;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 99486;
@@ -2609,7 +2609,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1182";
 		rLen = 0;
-		rLoc = 42485;
+		rLoc = 42491;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 44084;
@@ -2619,7 +2619,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 235";
 		rLen = 0;
-		rLoc = 9015;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1271;
 		vrLoc = 9480;
@@ -2629,7 +2629,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2246";
 		rLen = 1;
-		rLoc = 83913;
+		rLoc = 83919;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 99486;
@@ -2679,7 +2679,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2662";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 99372;
@@ -2689,7 +2689,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 311";
 		rLen = 44;
-		rLoc = 11700;
+		rLoc = 11718;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 10876;
@@ -2729,7 +2729,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2662";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 99372;
@@ -2769,7 +2769,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 311";
 		rLen = 44;
-		rLoc = 11700;
+		rLoc = 11718;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 10876;
@@ -2828,8 +2828,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 9879;
@@ -2839,7 +2839,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2662";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 99372;
@@ -2858,8 +2858,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1596;
 		vrLoc = 9879;
@@ -2888,8 +2888,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 9879;
@@ -2929,7 +2929,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 191";
 		rLen = 13;
-		rLoc = 7339;
+		rLoc = 7345;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 2597;
@@ -2938,8 +2938,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 3;
@@ -2998,8 +2998,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 3;
@@ -3039,7 +3039,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 191";
 		rLen = 13;
-		rLoc = 7339;
+		rLoc = 7345;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 6663;
@@ -3079,7 +3079,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 191";
 		rLen = 13;
-		rLoc = 7339;
+		rLoc = 7345;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 2597;
@@ -3088,8 +3088,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 3;
@@ -3149,7 +3149,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2677";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 99533;
@@ -3158,8 +3158,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 3;
@@ -3178,8 +3178,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 284";
-		rLen = 51;
-		rLoc = 10267;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 3;
@@ -3189,7 +3189,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2677";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 99533;
@@ -3199,7 +3199,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 266";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 9314;
@@ -3219,7 +3219,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2661";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 99498;
@@ -3229,7 +3229,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 267";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 9371;
@@ -3249,7 +3249,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 266";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 9314;
@@ -3259,7 +3259,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2677";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 468;
 		vrLoc = 99533;
@@ -3279,7 +3279,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 35";
 		rLen = 0;
-		rLoc = 1521;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 2755;
@@ -3289,7 +3289,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 136";
 		rLen = 0;
-		rLoc = 5423;
+		rLoc = 5429;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 4823;
@@ -3309,7 +3309,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2661";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 99498;
@@ -3319,7 +3319,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 267";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 9371;
@@ -3334,18 +3334,18 @@
 		vrLen = 458;
 		vrLoc = 0;
 	};
-	05A216A50FDD3FB1004748C4 /* ORSPreferences.h */ = {
+	05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 593}}";
-			sepNavSelRange = "{270, 0}";
-			sepNavVisRange = "{0, 817}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 800}}";
+			sepNavSelRange = "{16, 0}";
+			sepNavVisRange = "{0, 1546}";
 		};
 	};
-	05A216A60FDD3FB1004748C4 /* ORSPreferences.m */ = {
+	05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {683, 2784}}";
-			sepNavSelRange = "{484, 0}";
-			sepNavVisRange = "{0, 922}";
+			sepNavIntBoundsRect = "{{0, 0}, {683, 3072}}";
+			sepNavSelRange = "{16, 0}";
+			sepNavVisRange = "{0, 940}";
 		};
 	};
 	05A216B00FDD4226004748C4 /* PBXTextBookmark */ = {
@@ -3380,20 +3380,20 @@
 	};
 	05A216B30FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 87";
 		rLen = 30;
-		rLoc = 2463;
+		rLoc = 3603;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 1586;
 	};
 	05A216B40FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 22";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 628;
 		vrLoc = 0;
@@ -3403,7 +3403,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2617";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 97141;
@@ -3413,7 +3413,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 264";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 9536;
@@ -3423,17 +3423,17 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 267";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 9371;
 	};
 	05A216B80FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 22";
 		rLen = 0;
-		rLoc = 816;
+		rLoc = 1950;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 0;
@@ -3443,7 +3443,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2661";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 974;
 		vrLoc = 98718;
@@ -3453,27 +3453,27 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 267";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 9537;
 	};
 	05A216BB0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 43";
 		rLen = 41;
-		rLoc = 979;
+		rLoc = 2119;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 435;
 	};
 	05A216BC0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 18";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 501;
 		vrLoc = 0;
@@ -3490,20 +3490,20 @@
 	};
 	05A216BE0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 18";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 501;
 		vrLoc = 0;
 	};
 	05A216BF0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 49";
 		rLen = 0;
-		rLoc = 1223;
+		rLoc = 2363;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 435;
@@ -3513,7 +3513,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2644";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 98779;
@@ -3523,7 +3523,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 266";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 9537;
@@ -3533,17 +3533,17 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2644";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1325;
 		vrLoc = 98444;
 	};
 	05A216C30FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 62";
 		rLen = 0;
-		rLoc = 5970;
+		rLoc = 7110;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 677;
@@ -3553,7 +3553,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2644";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 98504;
@@ -3563,27 +3563,27 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 266";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 9537;
 	};
 	05A216C60FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 62";
 		rLen = 0;
-		rLoc = 5970;
+		rLoc = 7110;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 618;
 	};
 	05A216C70FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 17";
 		rLen = 0;
-		rLoc = 414;
+		rLoc = 1548;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 0;
@@ -3603,7 +3603,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2639";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 98504;
@@ -3613,7 +3613,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 265";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 9537;
@@ -3623,7 +3623,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2639";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 98058;
@@ -3633,77 +3633,77 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 265";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 9537;
 	};
 	05A216CD0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 65";
 		rLen = 29;
-		rLoc = 1569;
+		rLoc = 2709;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1231;
 	};
 	05A216CE0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 20";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 564;
 		vrLoc = 0;
 	};
 	05A216CF0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 65";
 		rLen = 29;
-		rLoc = 1569;
+		rLoc = 2709;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 738;
 	};
 	05A216D00FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 20";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 564;
 		vrLoc = 0;
 	};
 	05A216D10FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 54";
 		rLen = 0;
-		rLoc = 1331;
+		rLoc = 2471;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 789;
 	};
 	05A216D20FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 20";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 564;
 		vrLoc = 0;
 	};
 	05A216D30FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 69";
 		rLen = 21;
-		rLoc = 1779;
+		rLoc = 2919;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 1261;
@@ -3723,17 +3723,17 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2624";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 98058;
 	};
 	05A216D60FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 11";
 		rLen = 0;
-		rLoc = 270;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 596;
 		vrLoc = 0;
@@ -3743,7 +3743,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2624";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 97769;
@@ -3753,7 +3753,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 264";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 9537;
@@ -3763,7 +3763,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2617";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1216;
 		vrLoc = 97827;
@@ -3773,7 +3773,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 264";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 9536;
@@ -3783,27 +3783,27 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2617";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 97125;
 	};
 	05A216DC0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 87";
 		rLen = 30;
-		rLoc = 2463;
+		rLoc = 3603;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 1586;
 	};
 	05A216DD0FDD4226004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 22";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 628;
 		vrLoc = 0;
@@ -3813,7 +3813,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2617";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 97141;
@@ -3823,7 +3823,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 264";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 9536;
@@ -3833,7 +3833,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 263";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 9536;
@@ -3853,17 +3853,17 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2576";
 		rLen = 0;
-		rLoc = 94706;
+		rLoc = 94712;
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 96459;
 	};
 	05A216E80FDD43BE004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 87";
 		rLen = 30;
-		rLoc = 2463;
+		rLoc = 3603;
 		rType = 0;
 		vrLen = 1320;
 		vrLoc = 1529;
@@ -3873,7 +3873,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 263";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 9536;
@@ -3883,7 +3883,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2603";
 		rLen = 0;
-		rLoc = 94667;
+		rLoc = 94673;
 		rType = 0;
 		vrLen = 663;
 		vrLoc = 97295;
@@ -3903,7 +3903,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 492";
 		rLen = 58;
-		rLoc = 18914;
+		rLoc = 18920;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 18593;
@@ -3923,37 +3923,37 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2576";
 		rLen = 0;
-		rLoc = 94706;
+		rLoc = 94712;
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 96459;
 	};
 	05A216EF0FDD43BE004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 125";
 		rLen = 0;
-		rLoc = 5970;
+		rLoc = 7110;
 		rType = 0;
 		vrLen = 1368;
 		vrLoc = 2676;
 	};
 	05A216F20FDD4442004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 102";
 		rLen = 31;
-		rLoc = 2965;
+		rLoc = 4105;
 		rType = 0;
 		vrLen = 1368;
 		vrLoc = 2676;
 	};
 	05A216F30FDD4442004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 23";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 661;
 		vrLoc = 0;
@@ -3963,7 +3963,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 260";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 9536;
@@ -3978,20 +3978,20 @@
 	};
 	05A216F60FDD4442004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 102";
 		rLen = 31;
-		rLoc = 2965;
+		rLoc = 4105;
 		rType = 0;
 		vrLen = 1368;
 		vrLoc = 2676;
 	};
 	05A216F70FDD4442004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 23";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 661;
 		vrLoc = 0;
@@ -4001,7 +4001,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 2573";
 		rLen = 0;
-		rLoc = 94666;
+		rLoc = 94672;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 95787;
@@ -4011,7 +4011,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 260";
 		rLen = 0;
-		rLoc = 9702;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 9536;
@@ -4021,7 +4021,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 433";
 		rLen = 0;
-		rLoc = 16381;
+		rLoc = 16387;
 		rType = 0;
 		vrLen = 820;
 		vrLoc = 15953;
@@ -4031,7 +4031,7 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 282";
 		rLen = 57;
-		rLoc = 10476;
+		rLoc = 10494;
 		rType = 0;
 		vrLen = 948;
 		vrLoc = 10008;
@@ -4048,20 +4048,20 @@
 	};
 	05A217010FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 20";
 		rLen = 0;
-		rLoc = 484;
+		rLoc = 1624;
 		rType = 0;
 		vrLen = 276;
 		vrLoc = 0;
 	};
 	05A217020FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 29";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 0;
@@ -4071,27 +4071,27 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1041";
 		rLen = 0;
-		rLoc = 39098;
+		rLoc = 39104;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 38644;
 	};
 	05A217040FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 128";
 		rLen = 20;
-		rLoc = 4168;
+		rLoc = 5308;
 		rType = 0;
 		vrLen = 1605;
 		vrLoc = 3420;
 	};
 	05A217050FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 24";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -4101,7 +4101,7 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1083";
 		rLen = 0;
-		rLoc = 39098;
+		rLoc = 39104;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 38484;
@@ -4111,17 +4111,17 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 182";
 		rLen = 0;
-		rLoc = 6661;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 763;
 		vrLoc = 5969;
 	};
 	05A217080FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 130";
 		rLen = 51;
-		rLoc = 4253;
+		rLoc = 5393;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 4097;
@@ -4131,27 +4131,27 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1083";
 		rLen = 0;
-		rLoc = 39098;
+		rLoc = 39104;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 39090;
 	};
 	05A2170A0FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 130";
 		rLen = 51;
-		rLoc = 4253;
+		rLoc = 5393;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 4097;
 	};
 	05A2170B0FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 24";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 480;
 		vrLoc = 203;
@@ -4160,8 +4160,8 @@
 		isa = PBXTextBookmark;
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 60";
-		rLen = 38;
-		rLoc = 2392;
+		rLen = 0;
+		rLoc = 1507;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 1833;
@@ -4171,17 +4171,17 @@
 		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1083";
 		rLen = 0;
-		rLoc = 39098;
+		rLoc = 39104;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 39090;
 	};
 	05A2170E0FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 16";
 		rLen = 0;
-		rLoc = 411;
+		rLoc = 1545;
 		rType = 0;
 		vrLen = 515;
 		vrLoc = 203;
@@ -4191,47 +4191,47 @@
 		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 282";
 		rLen = 57;
-		rLoc = 10476;
+		rLoc = 10494;
 		rType = 0;
 		vrLen = 948;
 		vrLoc = 10008;
 	};
 	05A217100FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 29";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 532;
 		vrLoc = 87;
 	};
 	05A217110FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 13";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 1399;
 		rType = 0;
 		vrLen = 318;
 		vrLoc = 0;
 	};
 	05A217120FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 29";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 0;
 	};
 	05A217130FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 13";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 1399;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 178;
@@ -4248,32 +4248,432 @@
 	};
 	05A217150FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 29";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 0;
 	};
 	05A217160FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A60FDD3FB1004748C4 /* ORSPreferences.m */;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
 		name = "ORSPreferences.m: 20";
 		rLen = 0;
-		rLoc = 484;
+		rLoc = 1624;
 		rType = 0;
 		vrLen = 276;
 		vrLoc = 0;
 	};
 	05A217170FDD47BC004748C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 05A216A50FDD3FB1004748C4 /* ORSPreferences.h */;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
 		name = "ORSPreferences.h: 12";
 		rLen = 0;
-		rLoc = 270;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 415;
+		vrLoc = 0;
+	};
+	05A2171C0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA80FA511A900DA370E /* ORSSession.m */;
+		name = "ORSSession.m: 90";
+		rLen = 0;
+		rLoc = 3380;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 2766;
+	};
+	05A2171D0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 101";
+		rLen = 0;
+		rLoc = 3498;
+		rType = 0;
+		vrLen = 1315;
+		vrLoc = 3141;
+	};
+	05A2171E0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 0;
+	};
+	05A2171F0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 44";
+		rLen = 0;
+		rLoc = 1867;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 2328;
+	};
+	05A217200FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1415;
+		vrLoc = 0;
+	};
+	05A217210FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1142";
+		rLen = 0;
+		rLoc = 42647;
+		rType = 0;
+		vrLen = 1351;
+		vrLoc = 42316;
+	};
+	05A217220FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 19";
+		rLen = 0;
+		rLoc = 780;
+		rType = 0;
+		vrLen = 1560;
+		vrLoc = 0;
+	};
+	05A217230FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSCanaryPreferences.h: 2";
+		rLen = 0;
+		rLoc = 16;
+		rType = 0;
+		vrLen = 1546;
+		vrLoc = 0;
+	};
+	05A217240FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSCanaryPreferences.m: 21";
+		rLen = 0;
+		rLoc = 875;
+		rType = 0;
+		vrLen = 1452;
+		vrLoc = 0;
+	};
+	05A217250FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSPreferences.h: 12";
+		rLen = 0;
+		rLoc = 1398;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	05A217260FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1576;
+		vrLoc = 0;
+	};
+	05A217270FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 139";
+		rLen = 0;
+		rLoc = 5503;
+		rType = 0;
+		vrLen = 1385;
+		vrLoc = 4605;
+	};
+	05A217280FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSPreferences.h: 12";
+		rLen = 0;
+		rLoc = 1398;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	05A217290FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSPreferences.m: 20";
+		rLen = 0;
+		rLoc = 1624;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 0;
+	};
+	05A2172A0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 124";
+		rLen = 0;
+		rLoc = 4927;
+		rType = 0;
+		vrLen = 1385;
+		vrLoc = 4605;
+	};
+	05A2172B0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBAA80FA511A900DA370E /* ORSSession.m */;
+		name = "ORSSession.m: 90";
+		rLen = 0;
+		rLoc = 3380;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 2766;
+	};
+	05A2172C0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 124";
+		rLen = 0;
+		rLoc = 4927;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 15764;
+	};
+	05A2172D0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSPreferences.m: 20";
+		rLen = 0;
+		rLoc = 1624;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 0;
+	};
+	05A2172E0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSPreferences.h: 12";
+		rLen = 0;
+		rLoc = 1398;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	05A2172F0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 432";
+		rLen = 0;
+		rLoc = 16351;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 15764;
+	};
+	05A217300FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 0;
+	};
+	05A217310FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 282";
+		rLen = 57;
+		rLoc = 10494;
+		rType = 0;
+		vrLen = 1762;
+		vrLoc = 9801;
+	};
+	05A217320FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 101";
+		rLen = 0;
+		rLoc = 3498;
+		rType = 0;
+		vrLen = 1315;
+		vrLoc = 3141;
+	};
+	05A217330FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 29";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 0;
+	};
+	05A217340FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1028";
+		rLen = 0;
+		rLoc = 38748;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 38610;
+	};
+	05A217350FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 181";
+		rLen = 0;
+		rLoc = 1507;
+		rType = 0;
+		vrLen = 1158;
+		vrLoc = 9052;
+	};
+	05A217360FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1142";
+		rLen = 0;
+		rLoc = 42647;
+		rType = 0;
+		vrLen = 1333;
+		vrLoc = 42111;
+	};
+	05A217370FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1415;
+		vrLoc = 0;
+	};
+	05A217380FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 44";
+		rLen = 0;
+		rLoc = 1867;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 2328;
+	};
+	05A217390FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1415;
+		vrLoc = 0;
+	};
+	05A2173A0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1142";
+		rLen = 0;
+		rLoc = 42647;
+		rType = 0;
+		vrLen = 1351;
+		vrLoc = 42316;
+	};
+	05A2173B0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSPreferences.h: 12";
+		rLen = 0;
+		rLoc = 1398;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	05A2173C0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 1";
+		rLen = 1275;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1554;
+		vrLoc = 0;
+	};
+	05A2173D0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSPreferences.h: 1";
+		rLen = 1276;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1534;
+		vrLoc = 0;
+	};
+	05A2173E0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSPreferences.m: 2";
+		rLen = 0;
+		rLoc = 29;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 0;
+	};
+	05A2173F0FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSCanaryPreferences.h: 29";
+		rLen = 0;
+		rLoc = 1321;
+		rType = 0;
+		vrLen = 1580;
+		vrLoc = 148;
+	};
+	05A217400FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSCanaryPreferences.m: 21";
+		rLen = 0;
+		rLoc = 875;
+		rType = 0;
+		vrLen = 1452;
+		vrLoc = 0;
+	};
+	05A217410FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 19";
+		rLen = 0;
+		rLoc = 780;
+		rType = 0;
+		vrLen = 1560;
+		vrLoc = 0;
+	};
+	05A217420FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */;
+		name = "ORSCanaryPreferences.h: 2";
+		rLen = 0;
+		rLoc = 16;
+		rType = 0;
+		vrLen = 1546;
+		vrLoc = 0;
+	};
+	05A217430FDD5480004748C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */;
+		name = "ORSCanaryPreferences.m: 2";
+		rLen = 0;
+		rLoc = 16;
+		rType = 0;
+		vrLen = 1458;
 		vrLoc = 0;
 	};
 	05A951F10E8959F6000B98BC /* PBXTextBookmark */ = {
@@ -5292,6 +5692,46 @@
 			05A217150FDD47BC004748C4 /* PBXTextBookmark */ = 05A217150FDD47BC004748C4 /* PBXTextBookmark */;
 			05A217160FDD47BC004748C4 /* PBXTextBookmark */ = 05A217160FDD47BC004748C4 /* PBXTextBookmark */;
 			05A217170FDD47BC004748C4 /* PBXTextBookmark */ = 05A217170FDD47BC004748C4 /* PBXTextBookmark */;
+			05A2171C0FDD5480004748C4 /* PBXTextBookmark */ = 05A2171C0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2171D0FDD5480004748C4 /* PBXTextBookmark */ = 05A2171D0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2171E0FDD5480004748C4 /* PBXTextBookmark */ = 05A2171E0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2171F0FDD5480004748C4 /* PBXTextBookmark */ = 05A2171F0FDD5480004748C4 /* PBXTextBookmark */;
+			05A217200FDD5480004748C4 /* PBXTextBookmark */ = 05A217200FDD5480004748C4 /* PBXTextBookmark */;
+			05A217210FDD5480004748C4 /* PBXTextBookmark */ = 05A217210FDD5480004748C4 /* PBXTextBookmark */;
+			05A217220FDD5480004748C4 /* PBXTextBookmark */ = 05A217220FDD5480004748C4 /* PBXTextBookmark */;
+			05A217230FDD5480004748C4 /* PBXTextBookmark */ = 05A217230FDD5480004748C4 /* PBXTextBookmark */;
+			05A217240FDD5480004748C4 /* PBXTextBookmark */ = 05A217240FDD5480004748C4 /* PBXTextBookmark */;
+			05A217250FDD5480004748C4 /* PBXTextBookmark */ = 05A217250FDD5480004748C4 /* PBXTextBookmark */;
+			05A217260FDD5480004748C4 /* PBXTextBookmark */ = 05A217260FDD5480004748C4 /* PBXTextBookmark */;
+			05A217270FDD5480004748C4 /* PBXTextBookmark */ = 05A217270FDD5480004748C4 /* PBXTextBookmark */;
+			05A217280FDD5480004748C4 /* PBXTextBookmark */ = 05A217280FDD5480004748C4 /* PBXTextBookmark */;
+			05A217290FDD5480004748C4 /* PBXTextBookmark */ = 05A217290FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172A0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172A0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172B0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172B0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172C0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172C0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172D0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172D0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172E0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172E0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2172F0FDD5480004748C4 /* PBXTextBookmark */ = 05A2172F0FDD5480004748C4 /* PBXTextBookmark */;
+			05A217300FDD5480004748C4 /* PBXTextBookmark */ = 05A217300FDD5480004748C4 /* PBXTextBookmark */;
+			05A217310FDD5480004748C4 /* PBXTextBookmark */ = 05A217310FDD5480004748C4 /* PBXTextBookmark */;
+			05A217320FDD5480004748C4 /* PBXTextBookmark */ = 05A217320FDD5480004748C4 /* PBXTextBookmark */;
+			05A217330FDD5480004748C4 /* PBXTextBookmark */ = 05A217330FDD5480004748C4 /* PBXTextBookmark */;
+			05A217340FDD5480004748C4 /* PBXTextBookmark */ = 05A217340FDD5480004748C4 /* PBXTextBookmark */;
+			05A217350FDD5480004748C4 /* PBXTextBookmark */ = 05A217350FDD5480004748C4 /* PBXTextBookmark */;
+			05A217360FDD5480004748C4 /* PBXTextBookmark */ = 05A217360FDD5480004748C4 /* PBXTextBookmark */;
+			05A217370FDD5480004748C4 /* PBXTextBookmark */ = 05A217370FDD5480004748C4 /* PBXTextBookmark */;
+			05A217380FDD5480004748C4 /* PBXTextBookmark */ = 05A217380FDD5480004748C4 /* PBXTextBookmark */;
+			05A217390FDD5480004748C4 /* PBXTextBookmark */ = 05A217390FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173A0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173A0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173B0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173B0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173C0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173C0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173D0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173D0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173E0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173E0FDD5480004748C4 /* PBXTextBookmark */;
+			05A2173F0FDD5480004748C4 /* PBXTextBookmark */ = 05A2173F0FDD5480004748C4 /* PBXTextBookmark */;
+			05A217400FDD5480004748C4 /* PBXTextBookmark */ = 05A217400FDD5480004748C4 /* PBXTextBookmark */;
+			05A217410FDD5480004748C4 /* PBXTextBookmark */ = 05A217410FDD5480004748C4 /* PBXTextBookmark */;
+			05A217420FDD5480004748C4 /* PBXTextBookmark */ = 05A217420FDD5480004748C4 /* PBXTextBookmark */;
+			05A217430FDD5480004748C4 /* PBXTextBookmark */ = 05A217430FDD5480004748C4 /* PBXTextBookmark */;
 			05A951F10E8959F6000B98BC = 05A951F10E8959F6000B98BC /* PBXTextBookmark */;
 			05A951F50E8959F6000B98BC = 05A951F50E8959F6000B98BC /* PBXTextBookmark */;
 			05B4BA6B0FDBC0C30002085D = 05B4BA6B0FDBC0C30002085D /* PBXTextBookmark */;
