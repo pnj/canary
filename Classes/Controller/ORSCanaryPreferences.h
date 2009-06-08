@@ -36,6 +36,8 @@
 	ORSTimelineCacheManager *cacheManager;
 }
 
+- (id) initWithEngine:(ORSTwitterEngine *)engine
+		 cacheManager:(ORSTimelineCacheManager *)manager;
 - (NSString *) receivedDMIDSinceLastExecution;
 - (NSString *) statusIDSinceLastExecution;
 - (BOOL) willRetrieveAllUpdates;

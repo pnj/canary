@@ -29,11 +29,13 @@
 #import "ORSCanaryController.h"
 #import "ORSTwitterEngine.h"
 #import "ORSCredentialsManager.h"
+#import "ORSCanaryPreferences.h"
 
 @interface ORSCanaryLoginController : NSWindowController {
 	ORSCredentialsManager *authenticator;
 	NSUserDefaults *defaults;
 	ORSTwitterEngine *twitterEngine;
+	ORSCanaryPreferences *preferences;
 	
 	IBOutlet NSComboBox *userIDComboBox;
 	IBOutlet NSSecureTextField *passwordSecureTextField;

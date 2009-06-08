@@ -133,7 +133,6 @@ static ORSCanaryController *sharedCanaryController = nil;
 				defaults = [NSUserDefaults standardUserDefaults];
 				authenticator = [[ORSCredentialsManager alloc] init];
 				cacheManager = [[ORSTimelineCacheManager alloc] init];
-				preferences = [[ORSCanaryPreferences alloc] init];
 		
 				// NotificationCenter stuff -- need to determine a way to find
 				// which method to call
@@ -233,6 +232,9 @@ static ORSCanaryController *sharedCanaryController = nil;
 				previousUpdateText = @"";
 			}
 		}
+		preferences = [[ORSCanaryPreferences alloc] 
+					   initWithEngine:twitterEngine
+					   cacheManager:cacheManager];
 	}
 	return sharedCanaryController;
 }

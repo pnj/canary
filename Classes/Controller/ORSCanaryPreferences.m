@@ -26,17 +26,19 @@
 //  IN THE SOFTWARE.
 
 #import "ORSCanaryPreferences.h"
+#import "ORSCanaryController.h"
 
 @implementation ORSCanaryPreferences
 
 @synthesize defaults, twitterEngine, cacheManager;
 
-- (id) init {
+- (id) initWithEngine:(ORSTwitterEngine *)engine
+		 cacheManager:(ORSTimelineCacheManager *)manager {
 	self = [super init];
 	if (self != nil) {
 		defaults = [NSUserDefaults standardUserDefaults];
-		twitterEngine = [ORSTwitterEngine sharedTwitterEngine];
-		cacheManager = [[ORSTimelineCacheManager alloc] init];
+		twitterEngine = engine;
+		cacheManager = manager;
 	}
 	return self;
 }
@@ -172,6 +174,7 @@
 		cacheManager.lastReceivedMessageID != nil) {
 		if (lastReceivedDMIDs = [NSMutableDictionary dictionaryWithDictionary:
 								 [defaults dictionaryForKey:@"CanaryLastReceivedDMID"]]) {
+			NSLog(@"%@", twitterEngine);
 			if (twitterEngine.sessionUserID != nil) {
 				[lastReceivedDMIDs setValue:cacheManager.lastReceivedMessageID 
 									 forKey:twitterEngine.sessionUserID];

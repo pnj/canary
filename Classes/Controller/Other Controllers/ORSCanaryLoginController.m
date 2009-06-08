@@ -35,6 +35,7 @@
 		twitterEngine = [ORSTwitterEngine sharedTwitterEngine];
 		defaults = [NSUserDefaults standardUserDefaults];
 		authenticator = [[ORSCredentialsManager alloc] init];
+		preferences = [[ORSCanaryPreferences alloc] init];
 	}
 	return self;
 }
@@ -78,7 +79,7 @@
 - (IBAction) login:sender {
 	ORSCanaryController *canaryController = [ORSCanaryController 
 											 sharedController];
-	[canaryController saveLastIDs];
+	[preferences saveLastIDs];
 	[twitterEngine endSession];
 	[twitterEngine setSessionUserID:NULL];
 	[twitterEngine setSessionPassword:NULL];
