@@ -335,7 +335,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05A216240FDD0FE0004748C4</string>
+										<string>05A216480FDD1CC5004748C4</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -529,18 +529,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {744, 349}}</string>
+								<string>{{0, 0}, {744, 610}}</string>
 								<key>RubberWindowFrame</key>
 								<string>151 122 1021 656 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>349pt</string>
+							<string>610pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>261pt</string>
+							<string>0pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -570,7 +570,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {744, 234}}</string>
+										<string>{{10, 27}, {744, -27}}</string>
 										<key>RubberWindowFrame</key>
 										<string>151 122 1021 656 0 0 1280 778 </string>
 									</dict>
@@ -824,7 +824,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>05A216250FDD0FE0004748C4</string>
 		<string>05A216120FDD0F54004748C4</string>
 		<string>05A216130FDD0F54004748C4</string>
 		<string>/Users/genesis/Projects/Ocean Road Software/Canary/source/Canary.xcodeproj</string>
