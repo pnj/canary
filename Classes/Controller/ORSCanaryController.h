@@ -232,6 +232,7 @@
 - (IBAction) switchViewOptions:sender;
 - (IBAction) followMacsphere:sender;
 - (IBAction) visitCanaryWebsite:sender;
+- (IBAction) visitCanaryRepo:sender;
 - (IBAction) switchFontSize:sender;
 - (void) changeToSmallFont;
 - (void) changeToLargeFont;

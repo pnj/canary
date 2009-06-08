@@ -59,10 +59,9 @@
 					&passwordLength, &passwordData, &loginItem);
 		}
 	}
-	NSString *password = [[NSString alloc] initWithBytes:passwordData 
-												  length:passwordLength
-												encoding:NSASCIIStringEncoding];
-	return password;
+	return [[NSString alloc] initWithBytes:passwordData 
+									length:passwordLength
+								  encoding:NSASCIIStringEncoding];
 }
 
 // Adds a password to the keychain manager for the specified username.
@@ -134,18 +133,16 @@
 				&twitterPasswordLength, &twitterPasswordData, NULL);
 		}
 	}
-	NSString *password = [[NSString alloc] initWithBytes:twitterPasswordData 
-												  length:twitterPasswordLength
-												encoding:NSASCIIStringEncoding];
-	return password;
+	return [[NSString alloc] initWithBytes:twitterPasswordData 
+									length:twitterPasswordLength
+								  encoding:NSASCIIStringEncoding];
 }
 
 // Returns the previously retrieved password. 
 - (NSString *) fetchedPassword {
-	NSString *password = [[NSString alloc] initWithBytes:passwordData 
-												  length:passwordLength
-												encoding:NSASCIIStringEncoding];
-	return password;
+	return [[NSString alloc] initWithBytes:passwordData 
+									length:passwordLength
+								  encoding:NSASCIIStringEncoding];
 }
 
 // Frees the data buffer. 

@@ -42,9 +42,9 @@
 // XML tags.
 - (NSData *) shortURLDataFromRequestURL:(NSString *)requestURL {
 	NSURLRequest *request = 
-	[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]
-					 cachePolicy:NSURLRequestUseProtocolCachePolicy
-				 timeoutInterval:21.0];
+		[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]
+						 cachePolicy:NSURLRequestUseProtocolCachePolicy
+					 timeoutInterval:21.0];
 	NSURLResponse *response = nil;
 	NSError *error = nil;
 	return [NSURLConnection sendSynchronousRequest:request 

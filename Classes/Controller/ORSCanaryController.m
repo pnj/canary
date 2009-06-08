@@ -398,7 +398,7 @@ sender {
 			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
 		}
 		[self getReceivedMessages];
-		[statusBarTextField setHidden:YES];
+		//[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
 		[statusBarButton setHidden:YES];
@@ -685,6 +685,8 @@ sender {
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
+		[statusBarTextField setHidden:YES];
+		[statusBarTextField setStringValue:@""];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
@@ -712,6 +714,8 @@ sender {
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
+		[statusBarTextField setHidden:YES];
+		[statusBarTextField setStringValue:@""];
 	} else {
 		if (((NSArray *)note.object).count > 0) {
 			if (firstBackgroundReceivedDMRetrieval) {
@@ -763,8 +767,6 @@ sender {
 			connectionErrorShown = NO;
 		}
 	}
-	[statusBarTextField setHidden:YES];
-	[statusBarTextField setStringValue:@""];
 	[indicator stopAnimation:self];
 	[self controlTextDidChange:note];
 }
@@ -2326,6 +2328,11 @@ sender {
 // Action: Visit Canary website
 - (IBAction) visitCanaryWebsite:sender {
 	[self openUserURL:@"http://www.canaryapp.com"];
+}
+
+// Action: Visit Canary Repository on GitHub
+- (IBAction) visitCanaryRepo:sender {
+	[self openUserURL:@"http://github.com/macsphere/canary"];
 }
 
 - (IBAction) switchFontSize:sender {
