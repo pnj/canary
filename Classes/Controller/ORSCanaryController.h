@@ -32,6 +32,7 @@
 #import "ORSShortener.h"
 #import "ORSCredentialsManager.h"
 #import "ORSTwitterEngine.h"
+#import "ORSPreferences.h"
 #import "ORSShortenerFactory.h"
 #import "ORSUpdateDispatcher.h"
 #import "ORSDateDifferenceFormatter.h"
@@ -57,6 +58,7 @@
 	id <ORSShortener> urlShortener;
 	ORSUpdateDispatcher *updateDispatcher;
 	ORSTimelineCacheManager *cacheManager;
+	ORSPreferences *preferences;
 	// Extra Windows
 	IBOutlet NSWindow *aboutWindow;
 	IBOutlet NSWindow *newUserWindow;
@@ -177,7 +179,6 @@
 - (IBAction) shortenURL:sender;
 - (IBAction) openUserURL:sender; 
 - (void) applicationWillTerminate:(NSNotification *)notification;
-- (void) saveLastIDs;
 - (void) retweetStatus:(NSString *)statusText
 		fromUserWithID:(NSString *)userID;
 - (void) updateNewStatusTextField;
@@ -257,14 +258,6 @@
 // Favorite methods
 - (void) favoriteStatusWithID:(NSString *)statusID;
 
-// Methods using the main preferences
-- (float) timelineRefreshPeriod ;
-- (NSUInteger) maxShownUpdates;
-- (int) selectedURLShortener;
-- (BOOL) willRetrieveAllUpdates;
-- (NSString *) statusIDSinceLastExecution;
-- (NSString *) receivedDMIDSinceLastExecution;
-
 - (IBAction) paste:sender;
 
 - (void) setStatuses:(NSArray *)theStatuses;
@@ -282,6 +275,7 @@
 
 @property (assign) ORSCredentialsManager *authenticator;
 @property (assign) ORSTwitterEngine *twitterEngine;
+@property (assign) ORSPreferences *preferences;
 @property (assign) id <ORSShortener> urlShortener;
 @property (assign) ORSUpdateDispatcher *updateDispatcher;
 @property (assign) ORSTimelineCacheManager *cacheManager;

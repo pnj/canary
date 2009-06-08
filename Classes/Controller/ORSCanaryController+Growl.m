@@ -58,7 +58,7 @@
 	NSMutableArray *newStatuses = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
 		if (node.ID.intValue > 
-			self.statusIDSinceLastExecution.intValue) {
+			[preferences statusIDSinceLastExecution].intValue) {
 			[newStatuses addObject:node];
 		}
 	}
@@ -100,7 +100,7 @@
 	NSMutableArray *newReplies = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
 		if (node.ID.intValue > 
-			self.statusIDSinceLastExecution.intValue) {
+			[preferences statusIDSinceLastExecution].intValue) {
 			[newReplies addObject:node];
 		}
 	}
@@ -143,7 +143,7 @@
 	NSMutableArray *newReceivedMessages = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
 		if (node.ID.intValue > 
-			self.receivedDMIDSinceLastExecution.intValue) {
+			[preferences receivedDMIDSinceLastExecution].intValue) {
 			[newReceivedMessages addObject:node];
 		}
 	}

@@ -31,7 +31,7 @@
 
 @implementation ORSCanaryController
 
-@synthesize visibleUserID,
+@synthesize visibleUserID, preferences,
 			previousTimeline, authenticator, twitterEngine, urlShortener, 
 			updateDispatcher, cacheManager, aboutWindow, statusTextField, 
 			statusView, statusBox, dateDifferenceTextField, indicator,
@@ -133,6 +133,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				defaults = [NSUserDefaults standardUserDefaults];
 				authenticator = [[ORSCredentialsManager alloc] init];
 				cacheManager = [[ORSTimelineCacheManager alloc] init];
+				preferences = [[ORSPreferences alloc] init];
 		
 				// NotificationCenter stuff -- need to determine a way to find
 				// which method to call
@@ -214,16 +215,16 @@ static ORSCanaryController *sharedCanaryController = nil;
 				updateDispatcher = [[ORSUpdateDispatcher alloc] 
 										initWithEngine:twitterEngine];
 		
-				if ([self willRetrieveAllUpdates]) {
+				if ([preferences willRetrieveAllUpdates]) {
 					cacheManager.firstFollowingCall = NO;
 					cacheManager.lastFollowingStatusID = 
-						[self statusIDSinceLastExecution];
+						[preferences statusIDSinceLastExecution];
 				}
 		
 				firstBackgroundReceivedDMRetrieval = YES;
 				firstFollowingTimelineRun = YES;
 		
-				NSString *lastExecutionID = [self 
+				NSString *lastExecutionID = [preferences 
 								receivedDMIDSinceLastExecution];
 				cacheManager.lastReceivedMessageID = lastExecutionID;
 		
@@ -429,7 +430,7 @@ sender {
 
 // Updates the current timer (according to the user's settings)
 - (void) updateTimer {
-	float refreshPeriod = [self timelineRefreshPeriod];
+	float refreshPeriod = [preferences timelineRefreshPeriod];
 	[refreshTimer invalidate];
 	refreshTimer = nil;
 	if (![backgroundReceivedDMTimer isValid])
@@ -488,13 +489,13 @@ sender {
 // Updates the maximum number of shown updates (according to the user's 
 // settings)
 - (void) updateMaxNoOfShownUpdates {
-	int maxNoOfShownUpdates = [self maxShownUpdates];
+	int maxNoOfShownUpdates = [preferences maxShownUpdates];
 	[mainTimelineCollectionView setMaxNumberOfRows:maxNoOfShownUpdates];
 }
 
 // Updates the selected URL shortener (according to the user's settings)
 - (void) updateSelectedURLShortener {
-	urlShortener = [ORSShortenerFactory getShortener:[self
+	urlShortener = [ORSShortenerFactory getShortener:[preferences
 													  selectedURLShortener]];
 }
 
@@ -522,7 +523,7 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		if ((firstFollowingTimelineRun) && [self willRetrieveAllUpdates]) {
+		if ((firstFollowingTimelineRun) && [preferences willRetrieveAllUpdates]) {
 			NSArray *newStatuses = [cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 									withNotification:note];
@@ -721,7 +722,7 @@ sender {
 		[statusBarTextField setStringValue:@""];
 		if (((NSArray *)note.object).count > 0) {
 			if (firstBackgroundReceivedDMRetrieval) {
-				NSString *lastExecutionID = [self 
+				NSString *lastExecutionID = [preferences 
 					receivedDMIDSinceLastExecution];
 				NSString *currentExecutionID = [[(NSArray *)note.object
 												 objectAtIndex:0] ID];
@@ -745,7 +746,7 @@ sender {
 				}
 				firstBackgroundReceivedDMRetrieval = NO;
 			} else {
-				NSString *lastExecutionID = [self 
+				NSString *lastExecutionID = [preferences 
 											 receivedDMIDSinceLastExecution];
 				NSString *currentExecutionID = [[(NSArray *)note.object objectAtIndex:0] ID];
 				if (lastExecutionID.intValue < currentExecutionID.intValue) {
@@ -1024,7 +1025,7 @@ sender {
 				forKey:@"CanaryWindowWidth"];
 	[defaults setFloat:self.window.frame.size.height
 				forKey:@"CanaryWindowHeight"];
-	[self saveLastIDs];
+	[preferences saveLastIDs];
 	[twitterEngine endSession];
 	
 	NSMutableArray *toBeRemoved = [[NSMutableArray alloc] init];
@@ -1035,50 +1036,6 @@ sender {
 	}
 	[filterArrayController setSelectedObjects:toBeRemoved];
 	[filterArrayController remove:self];
-}
-
-// Saves the last IDs in the user preferences when called
-- (void) saveLastIDs {
-	NSMutableDictionary *followingStatusIDs, *lastReceivedDMIDs;
-	if (cacheManager.lastFollowingStatusID != NULL &&
-		cacheManager.lastFollowingStatusID != @"" &&
-		cacheManager.lastFollowingStatusID != nil) {
-		if (followingStatusIDs = [NSMutableDictionary dictionaryWithDictionary:
-			[defaults dictionaryForKey:@"CanaryLastFollowingStatusID"]]) {
-			if (twitterEngine.sessionUserID != nil) {
-				[followingStatusIDs setValue:cacheManager.lastFollowingStatusID 
-								  forKey:twitterEngine.sessionUserID];
-				[defaults setObject:followingStatusIDs 
-						 forKey:@"CanaryLastFollowingStatusID"];
-			}
-		} else {
-			followingStatusIDs = [NSMutableDictionary dictionaryWithCapacity:1];
-			[followingStatusIDs setValue:cacheManager.lastFollowingStatusID 
-								  forKey:twitterEngine.sessionUserID];
-			[defaults setObject:followingStatusIDs 
-						 forKey:@"CanaryLastFollowingStatusID"];
-		}
-	}
-	if (cacheManager.lastReceivedMessageID != NULL &&
-		cacheManager.lastReceivedMessageID != @"" &&
-		cacheManager.lastReceivedMessageID != @" " &&
-		cacheManager.lastReceivedMessageID != nil) {
-		if (lastReceivedDMIDs = [NSMutableDictionary dictionaryWithDictionary:
-			[defaults dictionaryForKey:@"CanaryLastReceivedDMID"]]) {
-			if (twitterEngine.sessionUserID != nil) {
-				[lastReceivedDMIDs setValue:cacheManager.lastReceivedMessageID 
-								 forKey:twitterEngine.sessionUserID];
-				[defaults setObject:lastReceivedDMIDs 
-						 forKey:@"CanaryLastReceivedDMID"];
-			}
-		} else {
-			lastReceivedDMIDs = [NSMutableDictionary dictionaryWithCapacity:1];
-			[lastReceivedDMIDs setValue:cacheManager.lastReceivedMessageID 
-								 forKey:twitterEngine.sessionUserID];
-			[defaults setObject:lastReceivedDMIDs 
-						 forKey:@"CanaryLastReceivedDMID"];
-		}
-	}
 }
 
 // Retweets the given status text from the given userID
@@ -2572,111 +2529,6 @@ sender {
 }
 
 
-// Methods using the main preferences
-
-// Returns the refresh rate selected by the user.
-- (float) timelineRefreshPeriod {
-	NSString *timelineRefreshPeriodString = (NSString *)[defaults 
-									objectForKey:@"CanaryRefreshPeriod"];
-	if ([timelineRefreshPeriodString isEqualToString:@"Manually"] ||
-		[timelineRefreshPeriodString isEqualToString:@"Manuell"])
-		return -1.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every minute"] ||
-			 [timelineRefreshPeriodString isEqualToString:@"Minütlich"])
-		return 60.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every two minutes"] ||
-			 [timelineRefreshPeriodString isEqualToString:@"Alle zwei Minuten"])
-		return 120.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every three minutes"] ||
-			 [timelineRefreshPeriodString isEqualToString:@"Alle drei Minuten"])
-		return 180.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every five minutes"] ||
-			 [timelineRefreshPeriodString isEqualToString:@"Alle fünf Minuten"])
-		return 300.0;
-	else if ([timelineRefreshPeriodString isEqualToString:@"Every ten minutes"] ||
-			 [timelineRefreshPeriodString isEqualToString:@"Alle zehn Minuten"])
-		return 600.0;
-	else
-		return -1.0;
-}
-
-// Returns the number of number of updates kept in the timeline
-- (NSUInteger) maxShownUpdates {
-	NSString *maxShownUpdatesString = (NSString *)[defaults 
-						objectForKey:@"CanaryMaxShownUpdates"];
-	// code to compensate for old preferences
-	if (maxShownUpdatesString.integerValue != 40 &&
-		maxShownUpdatesString.integerValue != 80 &&
-		maxShownUpdatesString.integerValue != 120 &&
-		maxShownUpdatesString.integerValue != 160) {
-		return 80;
-	} else {
-		return maxShownUpdatesString.integerValue;
-	}
-}
-
-// Returns the selected URL shortener
-- (int) selectedURLShortener {
-	NSString *selectedURLShortener = (NSString *)[defaults 
-								objectForKey:@"CanarySelectedURLShortener"];
-	if ([selectedURLShortener isEqualToString:@"Adjix"])
-		return ORSAdjixShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"Bit.ly"])
-		return ORSBitlyShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"Cli.gs"])
-		return ORSCligsShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"Is.gd"])
-		return ORSIsgdShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"SnipURL"])
-		return ORSSnipURLShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"TinyURL"])
-		return ORSTinyURLShortenerType;
-	else if ([selectedURLShortener isEqualToString:@"tr.im"])
-		return ORSTrimShortenerType;
-	else
-		return ORSUrlborgShortenerType;
-}
-
-// Returns whether Canary is set to retrieve all updates since last execution
-- (BOOL) willRetrieveAllUpdates {
-	return [defaults boolForKey:@"CanaryWillRetrieveAllUpdates"];
-}
-
-// Returns the last status id shown
-- (NSString *) statusIDSinceLastExecution {
-	NSDictionary *lastFollowingStatusIDs;
-	if (lastFollowingStatusIDs = 
-			[defaults dictionaryForKey:@"CanaryLastFollowingStatusID"]) {
-		NSString *statusID;
-		if (statusID = [lastFollowingStatusIDs 
-						valueForKey:twitterEngine.sessionUserID]) {
-			return statusID;
-		} else {
-			return NULL;
-		}
-	} else {
-		return NULL;
-	}
-}
-
-// Returns the id of the last received direct message since last execution
-- (NSString *) receivedDMIDSinceLastExecution {
-	NSDictionary *lastReceivedDMIDs;
-	if (lastReceivedDMIDs = 
-		[defaults dictionaryForKey:@"CanaryLastReceivedDMID"]) {
-		NSString *messageID;
-		if (messageID = [lastReceivedDMIDs 
-						 valueForKey:twitterEngine.sessionUserID]) {
-			return messageID;
-		} else {
-			return NULL;
-		}
-	} else {
-		return NULL;
-	}
-}
-
-
 // ACTIONS
 
 // Action: paste
@@ -2713,12 +2565,12 @@ sender {
 
 // Access methods for the status timeline array
 - (void) setStatuses:(NSArray *)theStatuses {
-	if (theStatuses.count > [self maxShownUpdates]) {
+	if (theStatuses.count > [preferences maxShownUpdates]) {
 		NSMutableArray *mutableStatuses = [NSMutableArray 
 										   arrayWithArray:theStatuses];
 		unsigned int count = mutableStatuses.count;
-		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
-			[mutableStatuses removeObjectAtIndex:[self maxShownUpdates]];
+		for (unsigned int i = [preferences maxShownUpdates]; i < count; i++) {
+			[mutableStatuses removeObjectAtIndex:[preferences maxShownUpdates]];
 		}
 		statuses = mutableStatuses;
 	} else {
@@ -2732,11 +2584,11 @@ sender {
 
 // Access methods for the received direct messages array
 - (void) setReceivedDirectMessages:(NSArray *)receivedDMs {
-	if (receivedDMs.count > [self maxShownUpdates]) {
+	if (receivedDMs.count > [preferences maxShownUpdates]) {
 		NSMutableArray *mutableReceivedDMs = [NSMutableArray 
 										   arrayWithArray:receivedDMs];
 		unsigned int count = mutableReceivedDMs.count;
-		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
+		for (unsigned int i = [preferences maxShownUpdates]; i < count; i++) {
 			[mutableReceivedDMs removeObjectAtIndex:i];
 		}
 		receivedDirectMessages = mutableReceivedDMs;
@@ -2751,11 +2603,11 @@ sender {
 
 // Access methods for the sent direct messages array
 - (void) setSentDirectMessages:(NSArray *)sentDMs {
-	if (sentDMs.count > [self maxShownUpdates]) {
+	if (sentDMs.count > [preferences maxShownUpdates]) {
 		NSMutableArray *mutableSentDMs = [NSMutableArray 
 											  arrayWithArray:sentDMs];
 		unsigned int count = mutableSentDMs.count;
-		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
+		for (unsigned int i = [preferences maxShownUpdates]; i < count; i++) {
 			[mutableSentDMs removeObjectAtIndex:i];
 		}
 		sentDirectMessages = mutableSentDMs;
