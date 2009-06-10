@@ -216,7 +216,6 @@
 				contextInfo:(void *)contextInfo;
 - (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
 					 hasVisibleWindows:(BOOL)flag;
-- (void) hideStatusBar;
 - (IBAction) insertITunesCurrentTrackFull:sender;
 - (IBAction) insertITunesCurrentTrackName:sender;
 - (IBAction) insertITunesCurrentTrackAlbum:sender;
@@ -251,12 +250,14 @@
 - (void) blockUserWithID:(NSString *)userID;
 - (void) unblockUserWithID:(NSString *)userID;
 
-// Notification methods
-- (void) followUserWithID:(NSString *)userID;
-- (void) leaveUserWithID:(NSString *)userID;
-
 // Favorite methods
 - (void) favoriteStatusWithID:(NSString *)statusID;
+
+// Status bar methods
+- (void) showStatusBarMessage:(NSString *)message
+			   withImageNamed:(NSString *)imageName;
+- (void) showAnimatedStatusBarMessage:(NSString *)message;
+- (void) hideStatusBar;
 
 - (IBAction) paste:sender;
 

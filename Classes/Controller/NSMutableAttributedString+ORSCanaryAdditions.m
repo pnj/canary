@@ -62,7 +62,7 @@
 // Returns a delimiting character set for twitter hashtag
 - (NSCharacterSet *) hashtagDelimitingCharset {
 	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
-	[charset addCharactersInString:@"±§!$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
+	[charset addCharactersInString:@"±§!$%^&*()+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
 	[charset addCharactersInString:@"¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ"];
 	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷⁄€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
 	[charset addCharactersInString:@"»¸˛Ç◊ı˜Â¯˘¿"];

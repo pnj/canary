@@ -336,10 +336,11 @@ sender {
 		}
 		newStatusTextField.stringValue = @"";
 		[self updateNewStatusTextField];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:YES];
-		[statusBarTextField setStringValue:@"Sending data to Twitter..."];
-		[indicator startAnimation:self];
+		//[statusBarTextField setHidden:NO];
+		//[statusBarImageView setHidden:YES];
+		//[statusBarTextField setStringValue:@"Sending data to Twitter..."];
+		//[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Sending data to Twitter..."];
 	}
 }
 
@@ -401,10 +402,11 @@ sender {
 			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
 		}
 		[self getReceivedMessages];
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		//[statusBarTextField setHidden:YES];
+		//[statusBarImageView setHidden:YES];
+		//[statusBarButton setEnabled:NO];
+		//[statusBarButton setHidden:YES];
+		[self hideStatusBar];
 	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]
 		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Gesendete Nachrichten"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -504,10 +506,11 @@ sender {
 // Sets the statuses asynchronously
 - (void) setStatusesAsynchronously:(NSNotification *)note {	
 	if (connectionErrorShown) {
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		//[statusBarTextField setHidden:YES];
+		//[statusBarImageView setHidden:YES];
+		//[statusBarButton setEnabled:NO];
+		//[statusBarButton setHidden:YES];
+		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
 	
@@ -623,9 +626,10 @@ sender {
 	if ([newStatusTextField.stringValue isEqualToString:@"d "]) {
 		[newStatusTextField setStringValue:@""];
 	}
-	[statusBarTextField setHidden:YES];
-	[statusBarTextField setStringValue:@""];
-	[indicator stopAnimation:self];
+	[self hideStatusBar];
+	//[statusBarTextField setHidden:YES];
+	//[statusBarTextField setStringValue:@""];
+	//[indicator stopAnimation:self];
 	[self controlTextDidChange:note];
 }
 
@@ -633,27 +637,17 @@ sender {
 - (void) setUsersAsynchronously:(NSNotification *)note {
 	// Not implemented yet
 	if (connectionErrorShown) {
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
-	
 	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-	[statusBarTextField setHidden:YES];
-	[statusBarTextField setStringValue:@""];
-	[indicator stopAnimation:self];
+	[self hideStatusBar];
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 }
 
 // Sets the DMs asynchronously
 - (void) setDMsAsynchronously:(NSNotification *)note {
 	if (connectionErrorShown) {
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
 	
@@ -679,7 +673,6 @@ sender {
 			setItemPrototype:receivedDMsCollectionViewItem];
 		[self performSelectorInBackground:@selector(postDMsReceived:) withObject:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
 			[self scrollToTop];
@@ -688,8 +681,7 @@ sender {
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
-		[statusBarTextField setHidden:YES];
-		[statusBarTextField setStringValue:@""];
+		[self hideStatusBar];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
@@ -717,11 +709,9 @@ sender {
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
-		[statusBarTextField setHidden:YES];
-		[statusBarTextField setStringValue:@""];
+		[self hideStatusBar];
 	} else {
-		[statusBarTextField setHidden:YES];
-		[statusBarTextField setStringValue:@""];
+		[self hideStatusBar];
 		if (((NSArray *)note.object).count > 0) {
 			if (firstBackgroundReceivedDMRetrieval) {
 				NSString *lastExecutionID = [preferences 
@@ -729,13 +719,9 @@ sender {
 				NSString *currentExecutionID = [[(NSArray *)note.object
 												 objectAtIndex:0] ID];
 				if (lastExecutionID.intValue < currentExecutionID.intValue) {
-					[statusBarTextField 
-						setStringValue:@"New direct message received"];
-					[statusBarTextField setHidden:NO];
-					[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
-					[statusBarImageView setHidden:NO];
+					[self showStatusBarMessage:@"New direct message received"
+								withImageNamed:@"email"];
 					[statusBarButton setEnabled:YES];
-					[statusBarButton setHidden:NO];
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 											 withNotification:note];
@@ -750,19 +736,17 @@ sender {
 			} else {
 				NSString *lastExecutionID = [preferences 
 											 receivedDMIDSinceLastExecution];
-				NSString *currentExecutionID = [[(NSArray *)note.object objectAtIndex:0] ID];
+				NSString *currentExecutionID = [[(NSArray *)note.object 
+												 objectAtIndex:0] ID];
 				if (lastExecutionID.intValue < currentExecutionID.intValue) {
-					[statusBarTextField 
-						setStringValue:@"New direct message received"];
-					[statusBarTextField setHidden:NO];
-					[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
-					[statusBarImageView setHidden:NO];
+					[self showStatusBarMessage:@"New direct message received"
+								withImageNamed:@"email"];
 					[statusBarButton setEnabled:YES];
-					[statusBarButton setHidden:NO];
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
-					[self performSelectorInBackground:@selector(postDMsReceived:) withObject:note];
+					[self performSelectorInBackground:@selector(postDMsReceived:) 
+										   withObject:note];
 					messageDurationTimer = [NSTimer 
 						scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -772,22 +756,16 @@ sender {
 			connectionErrorShown = NO;
 		}
 	}
-	[indicator stopAnimation:self];
 	[self controlTextDidChange:note];
 }
 
 // Sets the sent status asynchronously
 - (void) addSentStatusAsynchronously:(NSNotification *)note {
 	[newStatusTextField setStringValue:@""];
-	
 	if (connectionErrorShown) {
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
-	
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]
 		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Archive"] ) {
 		NSPoint oldScrollOrigin = 
@@ -797,39 +775,22 @@ sender {
 		self.statuses = cache;
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	}
-	
-	NSString *msg = [NSString stringWithFormat:@"Update sent"];
-	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"comment"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	
+	[self showStatusBarMessage:@"Update sent"
+				withImageNamed:@"comment"];
 	messageDurationTimer = [NSTimer scheduledTimerWithTimeInterval:60 
 		target:self selector:@selector(hideStatusBar) 
 			userInfo:nil repeats:NO];
-	
-	//[self performSelectorInBackground:@selector(postStatusUpdatesSent:) withObject:note];
 	[self postStatusUpdatesSent:note];
-	[statusBarTextField setHidden:YES];
-	[statusBarTextField setStringValue:@""];
-	[indicator stopAnimation:self];
 	[self controlTextDidChange:nil];
 }
 
 // Sets the sent direct messages asynchronously
 - (void) addSentDMsAsynchronously:(NSNotification *)note {
 	[newStatusTextField setStringValue:@""];
-	
 	if (connectionErrorShown) {
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
-	
 	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Sent Messages"]) {		
 		NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
@@ -839,39 +800,22 @@ sender {
 		[cache insertObject:note.object atIndex:0];
 		self.sentDirectMessages = cache;
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		[statusBarTextField setHidden:YES];
-		[statusBarTextField setStringValue:@""];
-		[indicator stopAnimation:self];
+		[self hideStatusBar];
 	}
-
 	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
-	[statusBarTextField setHidden:YES];
-	[statusBarTextField setStringValue:@""];
-	[indicator stopAnimation:self];
-	
-	NSString *msg = [NSString stringWithFormat:@"Direct message sent"];
-	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	
+	[self showStatusBarMessage:@"Direct message sent"
+				withImageNamed:@"email"];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
 							userInfo:nil repeats:NO];
-	
 	[self controlTextDidChange:nil];
 }
 
 // Gets the friends timeline
 - (void) getFriendsTimeline {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstFollowingCall) {
 			[twitterEngine getFriendsTimeline];
 		} else {
@@ -884,10 +828,7 @@ sender {
 // Gets the user timeline
 - (void) getUserTimeline {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstArchiveCall) {
 			[twitterEngine getUserTimelineForUser:twitterEngine.sessionUserID];
 		} else {
@@ -900,10 +841,7 @@ sender {
 // Gets the public timeline
 - (void) getPublicTimeline {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstPublicCall) {
 			[twitterEngine getPublicTimeline];
 		} else {
@@ -916,10 +854,7 @@ sender {
 // Gets the replies
 - (void) getReplies {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstRepliesCall) {
 			[twitterEngine getReplies];
 		} else {
@@ -932,10 +867,7 @@ sender {
 // Gets the favorites
 - (void) getFavorites {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstFavoriteCall) {
 			[twitterEngine getFavoritesForUser:twitterEngine.sessionUserID];
 		} else {
@@ -948,10 +880,7 @@ sender {
 // Gets the received messages
 - (void) getReceivedMessages {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstReceivedMessagesCall) {
 			[twitterEngine getReceivedDMs];
 		} else {
@@ -964,10 +893,7 @@ sender {
 // Gets the sent messages
 - (void) getSentMessages {
 	if (twitterEngine.sessionUserID) {
-		[statusBarTextField setHidden:NO];
-		[statusBarTextField setStringValue:@"Downloading from Twitter..."];
-		[statusBarImageView setHidden:YES];
-		[indicator startAnimation:self];
+		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstSentMessagesCall) {
 			[twitterEngine getSentDMs];
 		} else {
@@ -1043,8 +969,8 @@ sender {
 // Retweets the given status text from the given userID
 - (void) retweetStatus:(NSString *)statusText
 		fromUserWithID:(NSString *)userID {
-	NSString *message = [NSString stringWithFormat:@"♺ from @%@: %@", 
-						 userID, statusText];
+	NSString *message = [NSString stringWithFormat:@"%@ (via @%@)", 
+						 statusText, userID];
 	[self insertStringTokenInNewStatusTextField:message];
 }
 
@@ -1587,6 +1513,8 @@ sender {
 		} else {
 			return NO;
 		}
+	} else if (item.tag == 115223) {
+		return [item isEnabled];
 	} else  {
 		return YES;
 	}
@@ -1613,11 +1541,7 @@ sender {
 		[self createFriendshipWithUser:userScreenName];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Leave"]) {
 		[self destroyFriendshipWithUser:userScreenName];
-	}/* else if ([[sender titleOfSelectedItem] isEqualToString:@"Follow"]) {
-		[self followUserWithID:userScreenName];	
-	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Leave"]) {
-		[self leaveUserWithID:userScreenName];	
-	}*/ else if ([[sender titleOfSelectedItem] isEqualToString:@"Block"]) {
+	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Block"]) {
 		[self showUserBlockAlertSheet:userScreenName];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Unblock"]) {
 		[self unblockUserWithID:userScreenName];
@@ -1676,13 +1600,15 @@ sender {
 
 // Action: This is called when the about window needs to be shown.
 - (IBAction) showAboutWindow:sender {
-	ORSCanaryAboutController *aboutController = [ORSCanaryAboutController sharedAboutController];
+	ORSCanaryAboutController *aboutController = [ORSCanaryAboutController 
+												 sharedAboutController];
 	[aboutController.window makeKeyAndOrderFront:sender];
 }
 
 // Action: This is called when the preferences window needs to be shown.
 - (IBAction) showPreferencesWindow:sender {
-	ORSCanaryPreferencesController *preferencesController = [ORSCanaryPreferencesController sharedPreferencesController];
+	ORSCanaryPreferencesController *preferencesController = 
+		[ORSCanaryPreferencesController sharedPreferencesController];
 	[preferencesController.window makeKeyAndOrderFront:sender];
 }
 
@@ -1784,31 +1710,18 @@ sender {
 	return YES;
 }
 
-// This hides the status bar message
-- (void) hideStatusBar {
-	[statusBarTextField setHidden:YES];
-	[statusBarImageView setHidden:YES];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-}
-
 
 // Front-end error handling
 
 // Shows that there is a connection problem
 - (void) showConnectionFailure:(NSNotification *)note {
-	[statusBarTextField setStringValue:@"Connection problem"];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
+	[self showStatusBarMessage:@"Connection problem"
+				withImageNamed:@"error"];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
 							userInfo:nil repeats:NO];
 	connectionErrorShown = YES;
-	[indicator stopAnimation:self];
 }
 
 // Shows the server response when there is an error
@@ -1817,44 +1730,35 @@ sender {
 		betweenUsers = NO;
 		return;
 	}
-	
 	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
 	NSInteger statusCode = response.statusCode;
-	[indicator stopAnimation:self];
-	
+	//[indicator stopAnimation:self];
+	NSString *msg;
 	if (statusCode != 200 && statusCode != 304) {
 		if (statusCode == 503) {
-			[statusBarTextField setStringValue:@"Twitter is overloaded"];
+			msg = @"Twitter is overloaded";
 		} else if (statusCode == 502) {
-			[statusBarTextField setStringValue:@"Twitter is down"];
+			msg = @"Twitter is down";
 		} else if (statusCode == 500) {
-			[statusBarTextField setStringValue:@"Twitter internal error"];
+			msg = @"Twitter internal error";
 		} else if (statusCode == 404) {
-			[statusBarTextField setStringValue:@"Requested resource not found"];
+			msg = @"Requested resource not found";
 		} else if (statusCode == 403) {
-			[statusBarTextField 
-			 setStringValue:@"Request not allowed by Twitter"];
+			msg = @"Request not allowed by Twitter";
 		} else if (statusCode == 401) {
-			[statusBarTextField 
-			 setStringValue:@"Authorization required or invalid"];
+			msg = @"Authorization required or invalid";
 		} else if (statusCode == 400) {
-			[statusBarTextField 
-			 setStringValue:@"Request invalid or rate exceeded"];
+			msg = @"Request invalid or rate exceeded";
 		}
-		
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
-		[statusBarImageView setHidden:NO];
+		[self showStatusBarMessage:msg
+					withImageNamed:@"error"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
 								userInfo:nil repeats:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
 		connectionErrorShown = YES;
 	}
 }
-
 
 
 // TwitPic functionality
@@ -1871,7 +1775,7 @@ sender {
 	[pictureTaker beginPictureTakerSheetForWindow:self.window
 									 withDelegate:self
 								   didEndSelector:@selector(
-															pictureTakerDidEnd:returnCode:contextInfo:)
+										pictureTakerDidEnd:returnCode:contextInfo:)
 									  contextInfo:nil];
 }
 
@@ -1914,18 +1818,9 @@ sender {
 												  withUsername:twitterEngine.sessionUserID
 													  password:twitterEngine.sessionPassword
 													  filename:filename];
-	
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
-	
-	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to TwitPic"];
-	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	
+	[self showStatusBarMessage:@"Picture has been sent to TwitPic"
+				withImageNamed:@"picture_link"];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -1938,21 +1833,12 @@ sender {
 	ORSTwitPicDispatcher *twitPicDispatcher = [[ORSTwitPicDispatcher alloc]
 											   init];
 	NSString *twitPicURLString = [twitPicDispatcher uploadData:imageData
-												  withUsername:twitterEngine.sessionUserID
-													  password:twitterEngine.sessionPassword
-													  filename:@"user_selection.jpeg"];
-	
+									withUsername:twitterEngine.sessionUserID
+							password:twitterEngine.sessionPassword
+										filename:@"user_selection.jpeg"];
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
-	
-	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to TwitPic"];
-	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	
+	[self showStatusBarMessage:@"Picture has been sent to TwitPic"
+				withImageNamed:@"picture_link"];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -1962,61 +1848,34 @@ sender {
 // This method executes the call to twitpic asynchronously and sends the given
 // file
 - (void) executeAsyncCallToTwitPicWithFile:(NSString *)filename {
-	[statusBarImageView setHidden:YES];
-	[indicator startAnimation:self];
+	[self showAnimatedStatusBarMessage:@"Sending picture to TwitPic..."];
 	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
-	[[ORSAsyncTwitPicDispatcher alloc] init];
+		[[ORSAsyncTwitPicDispatcher alloc] init];
 	[asyncTwitPicDispatcher uploadData:imageData
 						  withUsername:twitterEngine.sessionUserID
 							  password:twitterEngine.sessionPassword
 							  filename:filename];
-	NSString *msg = [NSString 
-					 stringWithFormat:@"Sending picture to TwitPic..."];
-	[statusBarTextField setStringValue:msg];
-	//[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
 }
 
 // This method executes the call to twitpic asynchronously and sends the given
 // data
 - (void) executeAsyncCallToTwitPicWithData:(NSData *)imageData {
-	[statusBarImageView setHidden:YES];
-	[indicator startAnimation:self];
+	[self showAnimatedStatusBarMessage:@"Sending picture to TwitPic..."];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
 		[[ORSAsyncTwitPicDispatcher alloc] init];
 	[asyncTwitPicDispatcher uploadData:imageData
 						  withUsername:twitterEngine.sessionUserID
 							  password:twitterEngine.sessionPassword
 							  filename:@"user_selection.jpeg"];
-	NSString *msg = [NSString 
-					 stringWithFormat:@"Sending picture to TwitPic..."];
-	[statusBarTextField setStringValue:msg];
-	//[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
 }
 
 // Prints the TwitPic URL in the status text box (called asynchronously)
 - (void) printTwitPicURL:(NSNotification *)note {
 	NSString *twitPicURLString = (NSString *)[note object];
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
-	[indicator stopAnimation:self];
-	
-	NSString *msg = [NSString 
-					 stringWithFormat:@"Picture has been sent to TwitPic"];
-	[statusBarTextField setStringValue:msg];
-	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	
+	[self showStatusBarMessage:@"Picture has been sent to TwitPic"
+				withImageNamed:@"picture_link"];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -2418,12 +2277,8 @@ sender {
 		[twitterEngine createFriendshipWithUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"Following %@",
 						 userID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"user_add"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self showStatusBarMessage:msg
+					withImageNamed:@"user_add"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -2437,12 +2292,8 @@ sender {
 		[twitterEngine destroyFriendshipWithUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"No longer following %@",
 						 userID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"user_delete"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self showStatusBarMessage:msg
+					withImageNamed:@"user_delete"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -2459,12 +2310,8 @@ sender {
 		[twitterEngine blockUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"%@ has been blocked",
 			userID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"user_red"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self showStatusBarMessage:msg
+					withImageNamed:@"user_red"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -2478,33 +2325,11 @@ sender {
 		[twitterEngine unblockUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"%@ has been unblocked",
 			userID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"user_green"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self showStatusBarMessage:msg withImageNamed:@"user_green"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
 								userInfo:nil repeats:NO];
-	}
-}
-
-
-// Notification methods
-
-// Follow the user owning the status
-- (void) followUserWithID:(NSString *)userID {
-	if (twitterEngine.sessionUserID) {
-		[twitterEngine followUser:userID];
-	}
-}
-
-// Leave the user owning the status
-- (void) leaveUserWithID:(NSString *)userID {
-	if (twitterEngine.sessionUserID) {
-		[twitterEngine leaveUser:userID];
 	}
 }
 
@@ -2515,19 +2340,44 @@ sender {
 - (void) favoriteStatusWithID:(NSString *)statusID {
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine createBlindFavorite:statusID];
-		NSString *msg = [NSString 
-			stringWithFormat:@"A new favorite has been added", statusID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"fave_star"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
+		[self showStatusBarMessage:@"A new favorite has been added" 
+					withImageNamed:@"fave_star"];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
 								userInfo:nil repeats:NO];
 	}
+}
+
+
+// STATUS BAR METHODS
+
+- (void) showStatusBarMessage:(NSString *)message
+			   withImageNamed:(NSString *)imageName {
+	[indicator stopAnimation:self];
+	[statusBarTextField setStringValue:message];
+	[statusBarImageView setImage:[NSImage imageNamed:imageName]];
+	[statusBarTextField setHidden:NO];
+	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
+}
+
+- (void) showAnimatedStatusBarMessage:(NSString *)message {
+	[statusBarImageView setHidden:YES];
+	[indicator startAnimation:self];
+	[statusBarTextField setStringValue:message];
+	[statusBarTextField setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
+}
+
+- (void) hideStatusBar {
+	[indicator stopAnimation:self];
+	[statusBarTextField setHidden:YES];
+	[statusBarImageView setHidden:YES];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 }
 
 
