@@ -494,7 +494,7 @@ sender {
 													  selectedURLShortener]];
 }
 
-// Sets thepostDMsReceived:<#(NSNotification *)note#>tuses asynchronously
+// Sets statuses asynchronously
 - (void) setStatusesAsynchronously:(NSNotification *)note {	
 	if (connectionErrorShown) {
 		[self hideStatusBar];
@@ -529,8 +529,8 @@ sender {
 			self.statuses = [cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 										   withNotification:note];
-			//[self performSelector:@selector(postStatusUpdatesReceived:) withObject:note];
-			[self postStatusUpdatesReceived:note];
+			[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) 
+								   withObject:note];
 		}
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
@@ -567,9 +567,8 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		//[self performSelector:@selector(postStatusUpdatesReceived:) 
-		//		   withObject:note];
-		[self postStatusUpdatesReceived:note];
+		[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) 
+							   withObject:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 		self.statuses = [cacheManager 
@@ -587,9 +586,8 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		// [self performSelector:@selector(postRepliesReceived:) withObject:note];
-		[self postRepliesReceived:note];
-		
+		[self performSelectorInBackground:@selector(postRepliesReceived:) 
+							   withObject:note];		
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 		self.statuses = [cacheManager 
@@ -660,8 +658,8 @@ sender {
 								 options:nil];
 		[mainTimelineCollectionView 
 			setItemPrototype:receivedDMsCollectionViewItem];
-		//[self performSelector:@selector(postDMsReceived:) withObject:note];
-		[self postDMsReceived:note];
+		[self performSelectorInBackground:@selector(postDMsReceived:) 
+							   withObject:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
@@ -715,8 +713,11 @@ sender {
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 											 withNotification:note];
-					[self postDMsReceived:note
-								  afterID:lastExecutionID];
+					//[self postDMsReceived:note
+					//			  afterID:lastExecutionID];
+					[self performSelector:@selector(postDMsReceived:afterID:) 
+							   withObject:note 
+							   withObject:lastExecutionID];
 					messageDurationTimer = [NSTimer 
 						scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -735,9 +736,8 @@ sender {
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
-					//[self performSelector:@selector(postDMsReceived:) 
-					//					   withObject:note];
-					[self postDMsReceived:note];
+					[self performSelectorInBackground:@selector(postDMsReceived:) 
+										   withObject:note];
 					messageDurationTimer = [NSTimer 
 						scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -771,7 +771,8 @@ sender {
 	messageDurationTimer = [NSTimer scheduledTimerWithTimeInterval:60 
 		target:self selector:@selector(hideStatusBar) 
 			userInfo:nil repeats:NO];
-	[self postStatusUpdatesSent:note];
+	[self performSelectorInBackground:@selector(postStatusUpdatesSent:) 
+						   withObject:note];
 	[self controlTextDidChange:nil];
 }
 
@@ -793,8 +794,7 @@ sender {
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		[self hideStatusBar];
 	}
-	//[self performSelector:@selector(postDMsSent:) withObject:note];
-	[self postDMsSent:note];
+	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
 	[self showStatusBarMessage:@"Direct message sent"
 				withImageNamed:@"email"];
 	messageDurationTimer = [NSTimer 

@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController+Growl.m</string>
+								<string>ORSCanaryController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController+Growl.m</string>
+										<string>ORSCanaryController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>055D467A1039D0B5007B23B0</string>
+										<string>055D46881039D2F6007B23B0</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -420,12 +420,12 @@
 											<string>0597FF0A10170B21009CCA14</string>
 											<string>05CFA29B102A9E5200520202</string>
 											<string>057B84521039BF5000C965D5</string>
-											<string>057B84531039BF5000C965D5</string>
 											<string>05ADB8C91039C1AB0094AE7A</string>
 											<string>055D45E91039C4C7007B23B0</string>
 											<string>055D46041039C5E8007B23B0</string>
-											<string>055D461A1039C6B1007B23B0</string>
-											<string>055D46711039CEF5007B23B0</string>
+											<string>055D46821039D2F6007B23B0</string>
+											<string>055D46831039D2F6007B23B0</string>
+											<string>055D46841039D2F6007B23B0</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -526,6 +526,8 @@
 											<string>055D461D1039C6B1007B23B0</string>
 											<string>055D461E1039C6B1007B23B0</string>
 											<string>055D461F1039C6B1007B23B0</string>
+											<string>055D46851039D2F6007B23B0</string>
+											<string>055D46861039D2F6007B23B0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
