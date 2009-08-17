@@ -805,13 +805,13 @@ TiBUSEUgU09GVFdBUkUuA</bytes>
 						<object class="NSTextField" id="592986619">
 							<reference key="NSNextResponder" ref="652800899"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{209, 157}, {120, 17}}</string>
+							<string key="NSFrame">{{209, 157}, {152, 17}}</string>
 							<reference key="NSSuperview" ref="652800899"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="433610119">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Public beta.</string>
+								<string key="NSContents">Public beta. Scary stuff.</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.300000e+01</double>
@@ -825,13 +825,13 @@ TiBUSEUgU09GVFdBUkUuA</bytes>
 						<object class="NSTextField" id="845419717">
 							<reference key="NSNextResponder" ref="652800899"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{314, 182}, {90, 22}}</string>
+							<string key="NSFrame">{{314, 182}, {107, 22}}</string>
 							<reference key="NSSuperview" ref="652800899"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="626411159">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string type="base64-UTF8" key="NSContents">zrIyICgwLjcuMSk</string>
+								<string type="base64-UTF8" key="NSContents">zrIyICgwLjcuMS41KQ</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.800000e+01</double>

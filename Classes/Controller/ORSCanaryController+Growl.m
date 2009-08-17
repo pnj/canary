@@ -57,8 +57,8 @@
 - (void) postStatusUpdatesReceived:(NSNotification *)note {
 	NSMutableArray *newStatuses = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
-		if (node.ID.intValue > 
-			[preferences statusIDSinceLastExecution].intValue) {
+		if ([node.ID substringFromIndex:3].intValue > 
+				[[preferences statusIDSinceLastExecution] substringFromIndex:3].intValue) {
 			[newStatuses addObject:node];
 		}
 	}
@@ -77,13 +77,8 @@
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
 			[contextDict setObject:@"Friends" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData;
-			//if ([node.userProfileImageURL hasSuffix:@".gif"]) {
-			//	iconData = nil;
-			//} else {
-				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 					URLWithString:node.userProfileImageURL]];
-			//}
 			[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
 		description:[NSString replaceHTMLEntities:node.text]
 								   notificationName:@"Status Updates Received"
@@ -99,12 +94,11 @@
 - (void) postRepliesReceived:(NSNotification *)note {
 	NSMutableArray *newReplies = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
-		if (node.ID.intValue > 
-			[preferences statusIDSinceLastExecution].intValue) {
+		if ([node.ID substringFromIndex:3].intValue > 
+			[[preferences statusIDSinceLastExecution] substringFromIndex:3].intValue) {
 			[newReplies addObject:node];
 		}
 	}
-	//if (((NSArray *)note.object).count > 10) {
 	if (newReplies.count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Replies Received"
 			description:[NSString stringWithFormat:@"%i replies received", 
@@ -115,18 +109,12 @@
 									   isSticky:NO
 								   clickContext:@""];
 	} else {
-		//for (NSXMLNode *node in (NSArray *)note.object) {
 		for (NSXMLNode *node in newReplies) {
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
 			[contextDict setObject:@"Replies" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData;
-			//if ([node.userProfileImageURL hasSuffix:@".gif"]) {
-			//	iconData = nil;
-			//} else {
-				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 					URLWithString:node.userProfileImageURL]];
-			//}
 			[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
 				description:[NSString replaceHTMLEntities:node.text]
 								   notificationName:@"Replies Received"
@@ -142,12 +130,11 @@
 - (void) postDMsReceived:(NSNotification *)note {
 	NSMutableArray *newReceivedMessages = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
-		if (node.ID.intValue > 
-			[preferences receivedDMIDSinceLastExecution].intValue) {
+		if ([node.ID substringFromIndex:3].intValue > 
+			[[preferences receivedDMIDSinceLastExecution] substringFromIndex:3].intValue) {
 			[newReceivedMessages addObject:node];
 		}
 	}
-	//if (((NSArray *)note.object).count > 10) {
 	if (newReceivedMessages.count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Direct Messages Received"
 				description:[NSString 
@@ -159,18 +146,12 @@
 									   isSticky:YES
 								   clickContext:@""];
 	} else {
-		//for (NSXMLNode *node in (NSArray *)note.object) {
 		for (NSXMLNode *node in newReceivedMessages) {
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
 			[contextDict setObject:@"Received messages" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData;
-			//if ([node.senderProfileImageURL hasSuffix:@".gif"]) {
-			//	iconData = nil;
-			//} else {
-				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 					URLWithString:node.senderProfileImageURL]];
-			//}
 			[GrowlApplicationBridge notifyWithTitle:[self senderIdentifier:node]
 				description:[NSString replaceHTMLEntities:node.text]
 								   notificationName:@"Direct Messages Received"
@@ -206,17 +187,12 @@
 								   clickContext:@""];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
-			if (node.ID.intValue > messageID.intValue) {
+			if ([node.ID substringFromIndex:3].intValue > [messageID substringFromIndex:3].intValue) {
 				NSMutableDictionary *contextDict = [NSMutableDictionary new];
 				[contextDict setObject:@"Received messages" forKey:@"Timeline"];
 				[contextDict setObject:node.ID forKey:@"ID"];
-				NSData *iconData;
-				//if ([node.senderProfileImageURL hasSuffix:@".gif"]) {
-				//	iconData = nil;
-				//} else {
-					iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 						URLWithString:node.senderProfileImageURL]];
-				//}
 				[GrowlApplicationBridge notifyWithTitle:[self senderIdentifier:node]
 					description:[NSString replaceHTMLEntities:node.text]
 									   notificationName:@"Direct Messages Received"
@@ -245,13 +221,8 @@
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
 			[contextDict setObject:@"Friends" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData;
-			//if ([node.userProfileImageURL hasSuffix:@".gif"]) {
-			//	iconData = nil;
-			//} else {
-				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 					URLWithString:node.userProfileImageURL]];
-			//}
 			[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
 				description:[NSString replaceHTMLEntities:node.text]
 								   notificationName:@"Status Updates Sent"
@@ -279,13 +250,8 @@
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
 			[contextDict setObject:@"Sent messages" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData;
-			//if ([node.recipientProfileImageURL hasSuffix:@".gif"]) {
-			//	iconData = nil;
-			//} else {
-				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-					URLWithString:node.recipientProfileImageURL]];
-			//}
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.recipientProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:[self 
 											recipientIdentifier:node]
 				description:[NSString replaceHTMLEntities:node.text]

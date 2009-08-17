@@ -336,10 +336,6 @@ sender {
 		}
 		newStatusTextField.stringValue = @"";
 		[self updateNewStatusTextField];
-		//[statusBarTextField setHidden:NO];
-		//[statusBarImageView setHidden:YES];
-		//[statusBarTextField setStringValue:@"Sending data to Twitter..."];
-		//[indicator startAnimation:self];
 		[self showAnimatedStatusBarMessage:@"Sending data to Twitter..."];
 	}
 }
@@ -363,7 +359,6 @@ sender {
 		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Freunde"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
-			//[self setStatuses:cacheManager.followingStatusCache];
 			self.statuses = cacheManager.followingStatusCache;
 		}
 		[self getFriendsTimeline];
@@ -402,10 +397,6 @@ sender {
 			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
 		}
 		[self getReceivedMessages];
-		//[statusBarTextField setHidden:YES];
-		//[statusBarImageView setHidden:YES];
-		//[statusBarButton setEnabled:NO];
-		//[statusBarButton setHidden:YES];
 		[self hideStatusBar];
 	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]
 		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Gesendete Nachrichten"]) {
@@ -503,13 +494,9 @@ sender {
 													  selectedURLShortener]];
 }
 
-// Sets the statuses asynchronously
+// Sets thepostDMsReceived:<#(NSNotification *)note#>tuses asynchronously
 - (void) setStatusesAsynchronously:(NSNotification *)note {	
 	if (connectionErrorShown) {
-		//[statusBarTextField setHidden:YES];
-		//[statusBarImageView setHidden:YES];
-		//[statusBarButton setEnabled:NO];
-		//[statusBarButton setHidden:YES];
 		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
@@ -542,7 +529,8 @@ sender {
 			self.statuses = [cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 										   withNotification:note];
-			[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
+			//[self performSelector:@selector(postStatusUpdatesReceived:) withObject:note];
+			[self postStatusUpdatesReceived:note];
 		}
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
@@ -579,7 +567,9 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
+		//[self performSelector:@selector(postStatusUpdatesReceived:) 
+		//		   withObject:note];
+		[self postStatusUpdatesReceived:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 		self.statuses = [cacheManager 
@@ -597,7 +587,9 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self performSelectorInBackground:@selector(postRepliesReceived:) withObject:note];
+		// [self performSelector:@selector(postRepliesReceived:) withObject:note];
+		[self postRepliesReceived:note];
+		
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 		self.statuses = [cacheManager 
@@ -627,9 +619,6 @@ sender {
 		[newStatusTextField setStringValue:@""];
 	}
 	[self hideStatusBar];
-	//[statusBarTextField setHidden:YES];
-	//[statusBarTextField setStringValue:@""];
-	//[indicator stopAnimation:self];
 	[self controlTextDidChange:note];
 }
 
@@ -671,7 +660,8 @@ sender {
 								 options:nil];
 		[mainTimelineCollectionView 
 			setItemPrototype:receivedDMsCollectionViewItem];
-		[self performSelectorInBackground:@selector(postDMsReceived:) withObject:note];
+		//[self performSelector:@selector(postDMsReceived:) withObject:note];
+		[self postDMsReceived:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
@@ -745,8 +735,9 @@ sender {
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
-					[self performSelectorInBackground:@selector(postDMsReceived:) 
-										   withObject:note];
+					//[self performSelector:@selector(postDMsReceived:) 
+					//					   withObject:note];
+					[self postDMsReceived:note];
 					messageDurationTimer = [NSTimer 
 						scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -802,7 +793,8 @@ sender {
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		[self hideStatusBar];
 	}
-	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
+	//[self performSelector:@selector(postDMsSent:) withObject:note];
+	[self postDMsSent:note];
 	[self showStatusBarMessage:@"Direct message sent"
 				withImageNamed:@"email"];
 	messageDurationTimer = [NSTimer 
@@ -2453,7 +2445,6 @@ sender {
 	return receivedDirectMessages;
 }
 
-// Access methods for the sent direct messages array
 - (void) setSentDirectMessages:(NSArray *)sentDMs {
 	if (sentDMs.count > [preferences maxShownUpdates]) {
 		NSMutableArray *mutableSentDMs = [NSMutableArray 
