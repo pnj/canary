@@ -207,31 +207,49 @@
 
 // Posts a notification that a status update has been sent
 - (void) postStatusUpdatesSent:(NSNotification *)note {
-	if (((NSArray *)note.object).count > 10) {
-		[GrowlApplicationBridge notifyWithTitle:@"Status Updates Sent"
-			description:[NSString stringWithFormat:@"%i status updates sent", 
-												 ((NSArray *)note.object).count]
-							   notificationName:@"Status Updates Sent"
-									   iconData:nil
-									   priority:1
-									   isSticky:NO
-								   clickContext:@""];
-	} else {
-		for (NSXMLNode *node in (NSArray *)note.object) {
-			NSMutableDictionary *contextDict = [NSMutableDictionary new];
-			[contextDict setObject:@"Friends" forKey:@"Timeline"];
-			[contextDict setObject:node.ID forKey:@"ID"];
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-					URLWithString:node.userProfileImageURL]];
-			[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
-				description:[NSString replaceHTMLEntities:node.text]
+	//if (((NSArray *)note.object).count > 10) {
+	if ([[note.object class] isEqualTo:[NSArray class]]) {
+		if (((NSArray *)note.object).count > 10) {
+			[GrowlApplicationBridge notifyWithTitle:@"Status Updates Sent"
+										description:[NSString stringWithFormat:@"%i status updates sent", 
+													 ((NSArray *)note.object).count]
 								   notificationName:@"Status Updates Sent"
-										   iconData:iconData
-										   priority:0
+										   iconData:nil
+										   priority:1
 										   isSticky:NO
-									   clickContext:contextDict];
+									   clickContext:@""];
+		} else {
+			for (NSXMLNode *node in (NSArray *)note.object) {
+				NSMutableDictionary *contextDict = [NSMutableDictionary new];
+				[contextDict setObject:@"Friends" forKey:@"Timeline"];
+				[contextDict setObject:node.ID forKey:@"ID"];
+				NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+																		  URLWithString:node.userProfileImageURL]];
+				[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
+											description:[NSString replaceHTMLEntities:node.text]
+									   notificationName:@"Status Updates Sent"
+											   iconData:iconData
+											   priority:0
+											   isSticky:NO
+										   clickContext:contextDict];
+			}
 		}
+	} else {
+		NSXMLNode *node = (NSXMLNode *)note.object;
+		NSMutableDictionary *contextDict = [NSMutableDictionary new];
+		[contextDict setObject:@"Friends" forKey:@"Timeline"];
+		[contextDict setObject:node.ID forKey:@"ID"];
+		NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+																  URLWithString:node.userProfileImageURL]];
+		[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
+									description:[NSString replaceHTMLEntities:node.text]
+							   notificationName:@"Status Updates Sent"
+									   iconData:iconData
+									   priority:0
+									   isSticky:NO
+								   clickContext:contextDict];
 	}
+	
 }
 
 // Posts a notification that a message has been sent
