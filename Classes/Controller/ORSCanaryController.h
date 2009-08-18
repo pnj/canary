@@ -147,6 +147,10 @@
 	
 	BOOL firstFollowingTimelineRun;
 	BOOL showScreenNames;
+	
+	NSInteger activeSegment;
+	
+	IBOutlet NSSegmentedControl *timelineSegControl;
 }
 
 + (ORSCanaryController *) sharedController;
@@ -156,6 +160,11 @@
 - (IBAction) sendUpdate:sender;
 - (IBAction) retypePreviousUpdate:sender;
 - (IBAction) changeTimeline:sender;
+- (IBAction) changeSegmentedControlTimeline:sender;
+- (IBAction) friendsTimelineMenuItemClicked:sender;
+- (IBAction) repliesTimelineMenuItemClicked:sender;
+- (IBAction) messagesTimelineMenuItemClicked:sender;
+- (IBAction) favoritesTimelineMenuItemClicked:sender;
 - (void) scrollToTop;
 - (void) updateTimer;
 - (void) setupReceivedDMTimer;

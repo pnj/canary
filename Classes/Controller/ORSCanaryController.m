@@ -230,6 +230,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 				betweenUsers = NO;
 				
 				previousUpdateText = @"";
+				
+				activeSegment = 0;
 			}
 		}
 		preferences = [[ORSCanaryPreferences alloc] 
@@ -407,6 +409,67 @@ sender {
 		[self getSentMessages];
 	}
 	[self updateTimer];
+}
+
+- (IBAction) changeSegmentedControlTimeline:sender {
+	NSSegmentedControl *timelineControl = (NSSegmentedControl *)sender;
+	if (timelineControl.selectedSegment == activeSegment) {
+		return;
+	}
+	if (showScreenNames) {
+		[self changeToScreenNames];
+	} else {
+		[self changeToUsernames];
+	}
+	
+	if (timelineControl.selectedSegment == 0) {
+		if ([cacheManager.followingStatusCache count] > 0) {
+			self.statuses = cacheManager.followingStatusCache;
+		}
+		[self getFriendsTimeline];
+		[self.window setTitle:@"Canary: Friends"];
+	} else if (timelineControl.selectedSegment == 1) {
+		if ([cacheManager.repliesStatusCache count] > 0) {
+			self.statuses = cacheManager.repliesStatusCache;
+		}
+		[self getReplies];
+		[self.window setTitle:@"Canary: Replies"];
+	} else if (timelineControl.selectedSegment == 2) {
+		if ([[cacheManager receivedMessagesCache] count] > 0) {
+			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
+		}
+		[self getReceivedMessages];
+		[self.window setTitle:@"Canary: Messages"];
+		[self hideStatusBar];
+	} else if (timelineControl.selectedSegment == 3) {
+		if ([cacheManager.favoritesStatusCache count] > 0) {
+			self.statuses = cacheManager.favoritesStatusCache;
+		}
+		[self getFavorites];
+		[self.window setTitle:@"Canary: Favorites"];
+	}
+	activeSegment = timelineControl.selectedSegment;
+	[self updateTimer];
+}
+
+- (IBAction) friendsTimelineMenuItemClicked:sender {
+	[timelineSegControl setSelectedSegment:0];
+	[self changeSegmentedControlTimeline:timelineSegControl];
+}
+
+- (IBAction) repliesTimelineMenuItemClicked:sender {
+	[timelineSegControl setSelectedSegment:1];
+	[self changeSegmentedControlTimeline:timelineSegControl];
+}
+
+- (IBAction) messagesTimelineMenuItemClicked:sender {
+	[timelineSegControl setSelectedSegment:2];
+	[self changeSegmentedControlTimeline:timelineSegControl];
+}
+
+- (IBAction) favoritesTimelineMenuItemClicked:sender {
+	[timelineSegControl setSelectedSegment:3];
+	[self changeSegmentedControlTimeline:timelineSegControl];
 }
 
 // Scrolls timeline to the top
@@ -640,7 +703,7 @@ sender {
 	
 	NSPoint oldScrollOrigin;
 	if ([timelineButton.titleOfSelectedItem 
-			isEqualToString:@"Received messages"]) {
+			isEqualToString:@"Received messages"] || (activeSegment == 2)) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		self.receivedDirectMessages = [cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
@@ -661,16 +724,16 @@ sender {
 		[self performSelectorInBackground:@selector(postDMsReceived:) 
 							   withObject:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
-													previousTimeline]]) {
+		//if (![timelineButton.titleOfSelectedItem isEqualToString:[self
+		//											previousTimeline]]) {
 			[self scrollToTop];
-		}
+		//}
 		previousTimeline = timelineButton.titleOfSelectedItem;
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
 		[self hideStatusBar];
-	} else if ([timelineButton.titleOfSelectedItem 
+	/*} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		self.sentDirectMessages = [cacheManager
@@ -697,7 +760,7 @@ sender {
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
-		[self hideStatusBar];
+		[self hideStatusBar];*/
 	} else {
 		[self hideStatusBar];
 		if (((NSArray *)note.object).count > 0) {
