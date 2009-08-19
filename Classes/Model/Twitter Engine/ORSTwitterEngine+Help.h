@@ -1,8 +1,8 @@
 //
-//  ORSTwitterEngine+HelpAndAccountAdditions.h
+//  ORSTwitterEngine+Help.h
 //  Twitter Engine
 //
-//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Created by Nicholas Toumpelis on 19/08/2009.
 //  Copyright 2008-2009 Ocean Road Software, Nick Toumpelis.
 //
 //  Version 0.7.1
@@ -28,14 +28,9 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( HelpAndAccountAdditions )
+@interface ORSTwitterEngine ( HelpMethods )
 
-// Account methods
-- (BOOL) specifyLocation:(NSString *)location;
-- (BOOL) updateDeliveryDeviceWith:(NSString *)device;
-- (NSXMLNode *) getRateLimitStatus;
-
-// Help methods
-- (NSXMLNode *) getDowntimeSchedule;
+- (BOOL) isTwitterOnline;
+- (NSXMLNode *) getTwitterError;
 
 @end

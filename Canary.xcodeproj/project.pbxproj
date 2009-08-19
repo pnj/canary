@@ -104,6 +104,7 @@
 		057E321C0F91E19A0055B843 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057E321B0F91E19A0055B843 /* ScriptingBridge.framework */; };
 		05A216A70FDD3FB1004748C4 /* ORSCanaryPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */; };
 		05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A5D7810F03F0D100B596A9 /* Quartz.framework */; };
+		05C05A00103C08FE00C70832 /* ORSTwitterEngine+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C059FF103C08FE00C70832 /* ORSTwitterEngine+Help.m */; };
 		05FF7474103AAE0200E053E0 /* filterTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7472103AAE0200E053E0 /* filterTemplate.pdf */; };
 		05FF7475103AAE0200E053E0 /* sieveTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -275,6 +276,8 @@
 		05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSCanaryPreferences.h; path = Classes/Controller/ORSCanaryPreferences.h; sourceTree = "<group>"; };
 		05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSCanaryPreferences.m; path = Classes/Controller/ORSCanaryPreferences.m; sourceTree = "<group>"; };
 		05A5D7810F03F0D100B596A9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		05C059FE103C08FE00C70832 /* ORSTwitterEngine+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Help.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Help.h"; sourceTree = "<group>"; };
+		05C059FF103C08FE00C70832 /* ORSTwitterEngine+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Help.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Help.m"; sourceTree = "<group>"; };
 		05FF7472103AAE0200E053E0 /* filterTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = filterTemplate.pdf; path = Resources/Images/filterTemplate.pdf; sourceTree = "<group>"; };
 		05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sieveTemplate.pdf; path = Resources/Images/sieveTemplate.pdf; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -319,6 +322,8 @@
 				053FBA9C0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m */,
 				053FBA9D0FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.h */,
 				053FBAA20FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m */,
+				05C059FE103C08FE00C70832 /* ORSTwitterEngine+Help.h */,
+				05C059FF103C08FE00C70832 /* ORSTwitterEngine+Help.m */,
 				053FBAA30FA511A900DA370E /* ORSUpdateDispatcher.h */,
 				053FBAA00FA511A900DA370E /* ORSUpdateDispatcher.m */,
 				053FBAA40FA511A900DA370E /* ORSTimelineCacheManager.h */,
@@ -763,6 +768,7 @@
 				053FBAEE0FA512C600DA370E /* ORSCredentialsManager.m in Sources */,
 				053FBAF10FA5139300DA370E /* main.m in Sources */,
 				05A216A70FDD3FB1004748C4 /* ORSCanaryPreferences.m in Sources */,
+				05C05A00103C08FE00C70832 /* ORSTwitterEngine+Help.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

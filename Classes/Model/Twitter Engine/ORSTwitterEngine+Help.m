@@ -1,8 +1,8 @@
 //
-//  ORSTwitterEngine+HelpAndAccountAdditions.h
+//  ORSTwitterEngine+Help.h
 //  Twitter Engine
 //
-//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Created by Nicholas Toumpelis on 19/08/2009.
 //  Copyright 2008-2009 Ocean Road Software, Nick Toumpelis.
 //
 //  Version 0.7.1
@@ -25,17 +25,32 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import <Cocoa/Cocoa.h>
-#import "ORSTwitterEngine.h"
+#import "ORSTwitterEngine+Help.h"
 
-@interface ORSTwitterEngine ( HelpAndAccountAdditions )
+@implementation ORSTwitterEngine ( HelpMethods )
 
-// Account methods
-- (BOOL) specifyLocation:(NSString *)location;
-- (BOOL) updateDeliveryDeviceWith:(NSString *)device;
-- (NSXMLNode *) getRateLimitStatus;
+// tests whether Twitter is up
+- (BOOL) isTwitterOnline {
+	NSString *path = @"help/text.xml";
+	NSXMLNode *node = [self getNodeFromData:[self 
+		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
+	if ([[node name] isEqualToString:@"ok"]) {
+		return YES;
+	} else {
+		return NO;
+	}
+}
 
-// Help methods
-- (NSXMLNode *) getDowntimeSchedule;
+// gets Twitter error state
+- (NSXMLNode *) getTwitterError {
+	NSString *path = @"help/text.xml";
+	NSXMLNode *node = [self getNodeFromData:[self 
+		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
+	if ([[node name] isEqualToString:@"ok"]) {
+		return NULL;
+	} else {
+		return node;
+	}
+}
 
 @end

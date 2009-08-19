@@ -79,33 +79,6 @@
 
 #pragma mark Help methods
 
-// Help methods
-
-// tests whether Twitter is active
-- (BOOL) isTwitterOnline {
-	NSString *path = @"help/text.xml";
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"GET" atPath:path 
-			 synchronously:synchronously]];
-	if ([[node name] isEqualToString:@"ok"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}
-
-// gets Twitter error state
-- (NSXMLNode *) getTwitterError {
-	NSString *path = @"help/text.xml";
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	if ([[node name] isEqualToString:@"ok"]) {
-		return NULL;
-	} else {
-		return node;
-	}
-}
-
 // gets Twitter downtime schedule
 - (NSXMLNode *) getDowntimeSchedule {
 	NSString *path = @"help/downtime_schedule.xml";
