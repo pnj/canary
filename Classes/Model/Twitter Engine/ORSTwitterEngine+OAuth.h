@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+Help.h
+//  ORSTwitterEngine+OAuth.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 19/08/2009.
@@ -28,9 +28,8 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( HelpMethods )
+@interface ORSTwitterEngine ( OAuthMethods )
 
-- (BOOL) isTwitterUp;
-- (NSXMLNode *) twitterError;
+// Placeholder for later
 
 @end

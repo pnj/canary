@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+Help.h
+//  ORSTwitterEngine+Block.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 19/08/2009.
@@ -28,9 +28,14 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( HelpMethods )
+@interface ORSTwitterEngine ( BlockMethods )
 
-- (BOOL) isTwitterUp;
-- (NSXMLNode *) twitterError;
+// Block methods
+- (BOOL) blockUser:(NSString *)userID;
+- (BOOL) unblockUser:(NSString *)userID;
+- (BOOL) blocksUserWithID:(NSString *)identifier;
+- (BOOL) blocksUserWithScreenName:(NSString *)screenName;
+- (NSArray *) blockedUsers;
+- (NSArray *) blockedIDs;
 
 @end

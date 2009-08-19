@@ -63,7 +63,9 @@
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
 - (NSXMLNode *) getNodeFromData:(NSData *)userData;
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses;
-- (NSArray *) getAllUsersFromData:(NSData *)users;
+- (NSArray *) usersFromData:(NSData *)data;
+- (NSArray *) savedSearchesFromData:(NSData *)data;
+- (NSArray *) IDsFromData:(NSData *)data;
 - (NSArray *) getAllDMsFromData:(NSData *)directMessages;
 
 // Status methods
@@ -100,10 +102,6 @@
 // Notification methods
 - (BOOL) followUser:(NSString *)userID;
 - (BOOL) leaveUser:(NSString *)userID;
-
-// Block methods
-- (BOOL) blockUser:(NSString *)userID;
-- (BOOL) unblockUser:(NSString *)userID;
 
 @property (copy) NSMutableData *dataReceived;
 @property BOOL synchronously;

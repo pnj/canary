@@ -30,7 +30,7 @@
 @implementation ORSTwitterEngine ( HelpMethods )
 
 // tests whether Twitter is up
-- (BOOL) isTwitterOnline {
+- (BOOL) isTwitterUp {
 	NSString *path = @"help/text.xml";
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
@@ -42,7 +42,7 @@
 }
 
 // gets Twitter error state
-- (NSXMLNode *) getTwitterError {
+- (NSXMLNode *) twitterError {
 	NSString *path = @"help/text.xml";
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];

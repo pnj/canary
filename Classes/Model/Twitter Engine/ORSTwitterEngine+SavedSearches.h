@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+Help.h
+//  ORSTwitterEngine+SavedSearches.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 19/08/2009.
@@ -28,9 +28,11 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( HelpMethods )
+@interface ORSTwitterEngine ( SavedSearchesMethods )
 
-- (BOOL) isTwitterUp;
-- (NSXMLNode *) twitterError;
+- (NSArray *) savedSearches;
+- (NSXMLNode *) savedSearchWithID:(NSString *)identifier;
+- (NSXMLNode *) createSavedSearchFor:(NSString *)queryStr;
+- (NSXMLNode *) destroySavedSearchWithID:(NSString *)identifier;
 
 @end

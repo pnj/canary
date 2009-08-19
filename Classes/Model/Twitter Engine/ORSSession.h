@@ -53,7 +53,9 @@
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
 - (NSXMLNode *) getNodeFromData:(NSData *)userData;
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses;
-- (NSArray *) getAllUsersFromData:(NSData *)users;
+- (NSArray *) usersFromData:(NSData *)data;
+- (NSArray *) savedSearchesFromData:(NSData *)data;
+- (NSArray *) IDsFromData:(NSData *)data;
 - (NSArray *) getAllDMsFromData:(NSData *)directMessages;
 
 // NSURLConnection delegates for asynchronous connections

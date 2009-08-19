@@ -159,8 +159,18 @@ static ORSTwitterEngine *sharedEngine = nil;
 
 // Returns all the users as an array from the data received from the
 // connection.
-- (NSArray *) getAllUsersFromData:(NSData *)users {
-	return [session getAllUsersFromData:users];
+- (NSArray *) usersFromData:(NSData *)data {
+	return [session usersFromData:data];
+}
+
+// Returns all the saved searches as an array from the data received from the 
+// connection.
+- (NSArray *) savedSearchesFromData:(NSData *)data {
+	return [session savedSearchesFromData:data];
+}
+
+- (NSArray *) IDsFromData:(NSData *)data {
+	return [session IDsFromData:data];
 }
 
 // Returns all the users as an array from the data received from the
@@ -681,45 +691,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:userID];
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
-																atPath:path 
-											 // synchronously:YES]];
-														 synchronously:NO]];
-	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}
-
-
-#pragma mark Block methods
-
-// Block methods (ignore the results)
-
-// blocks the user with the specified id
-- (BOOL) blockUser:(NSString *)userID {
-	NSMutableString *path = [NSMutableString 
-		 stringWithString:@"blocks/create/"];
-	[path appendString:userID];
-	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
-																atPath:path 
-											 // synchronously:YES]];
-														 synchronously:NO]];
-	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}
-
-// unblocks the user with the specified id
-- (BOOL) unblockUser:(NSString *)userID {
-	NSMutableString *path = [NSMutableString 
-		stringWithString:@"blocks/destroy/"];
-	[path appendString:userID];
-	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path 
 											 // synchronously:YES]];
 														 synchronously:NO]];

@@ -272,17 +272,31 @@
 // Returns all the statuses as an array from the data received from the
 // connection.
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses {
-	NSError *error = NULL;
+	NSError *error = nil;
 	NSXMLNode *root = [self getNodeFromData:statuses];
 	return [root nodesForXPath:@".//status" error:&error];
 }
 
 // Returns all the users as an array from the data received from the
 // connection.
-- (NSArray *) getAllUsersFromData:(NSData *)users {
-	NSError *error = NULL;
-	NSXMLNode *root = [self getNodeFromData:users];
+- (NSArray *) usersFromData:(NSData *)data {
+	NSError *error = nil;
+	NSXMLNode *root = [self getNodeFromData:data];
 	return [root nodesForXPath:@".//user" error:&error];
+}
+
+// Returns all the saved searches as an array from the data received from the
+// connectiom.
+- (NSArray *) savedSearchesFromData:(NSData *)data {
+	NSError *error = nil;
+	NSXMLNode *root = [self getNodeFromData:data];
+	return [root nodesForXPath:@".//saved_search" error:&error];
+}
+
+- (NSArray *) IDsFromData:(NSData *)data {
+	NSError *error = nil;
+	NSXMLNode *root = [self getNodeFromData:data];
+	return [root nodesForXPath:@".//id" error:&error];
 }
 
 // Returns all the users as an array from the data received from the

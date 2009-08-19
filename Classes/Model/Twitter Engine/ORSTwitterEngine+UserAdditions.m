@@ -40,7 +40,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -56,7 +56,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -71,7 +71,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -84,7 +84,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -99,7 +99,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -115,7 +115,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -133,7 +133,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -149,7 +149,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -168,7 +168,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -181,7 +181,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) { 
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -197,7 +197,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -212,7 +212,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -225,7 +225,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -243,7 +243,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -259,7 +259,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
@@ -272,7 +272,7 @@
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
-		return [self getAllUsersFromData:data];
+		return [self usersFromData:data];
 	} else {
 		return NULL;
 	}
