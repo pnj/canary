@@ -74,7 +74,6 @@
 	IBOutlet NSTextField *newStatusTextField;
 	IBOutlet NSButton *tweetButton;
 	IBOutlet NSLevelIndicator *charsLeftIndicator;
-	IBOutlet NSPopUpButton *timelineButton;
 	IBOutlet NSProgressIndicator *indicator;
 	IBOutlet NSView *contentView;
 	IBOutlet NSCollectionViewItem *statusTimelineCollectionViewItem;
@@ -159,7 +158,6 @@
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification;
 - (IBAction) sendUpdate:sender;
 - (IBAction) retypePreviousUpdate:sender;
-- (IBAction) changeTimeline:sender;
 - (IBAction) changeSegmentedControlTimeline:sender;
 - (IBAction) friendsTimelineMenuItemClicked:sender;
 - (IBAction) repliesTimelineMenuItemClicked:sender;
@@ -299,7 +297,6 @@
 @property (assign) NSTextField *newStatusTextField;
 @property (assign) NSButton *tweetButton;
 @property (assign) NSLevelIndicator *charsLeftIndicator;
-@property (assign) NSPopUpButton *timelineButton;
 @property (assign) NSProgressIndicator *indicator;
 @property (assign) NSView *contentView;
 @property (assign) NSCollectionViewItem *statusTimelineCollectionViewItem;

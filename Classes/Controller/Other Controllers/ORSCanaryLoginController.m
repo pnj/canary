@@ -153,7 +153,8 @@
 		[canaryController.statusBarImageView setHidden:YES];
 		[canaryController.statusBarButton setEnabled:NO];
 		[canaryController.statusBarButton setHidden:YES];
-		[canaryController changeTimeline:nil];
+		//[canaryController changeTimeline:nil];
+		[canaryController changeSegmentedControlTimeline:nil];
 	}
 	[authenticator freeBuffer];
 }

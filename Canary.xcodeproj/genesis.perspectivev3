@@ -273,8 +273,6 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>05DF56720E3E60DE00B8B4DE</string>
-								<string>05DF56710E3E608700B8B4DE</string>
-								<string>051A4B700E7ACC770040D9F3</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -334,7 +332,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05BBA23C103AF2450089F49D</string>
+										<string>05BBA2D6103BFBC20089F49D</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -393,7 +391,6 @@
 											<string>05A216160FDD0FE0004748C4</string>
 											<string>05A216B20FDD4226004748C4</string>
 											<string>05A217750FDD5975004748C4</string>
-											<string>05A217760FDD5975004748C4</string>
 											<string>05A218110FDD62D2004748C4</string>
 											<string>05B7B63C0FDEDE3A0019425B</string>
 											<string>058A0B1C0FF10A0B003C07F1</string>
@@ -409,7 +406,6 @@
 											<string>059B82C71010803D008925FF</string>
 											<string>0597FF0110170B21009CCA14</string>
 											<string>0597FF0210170B21009CCA14</string>
-											<string>0597FF0310170B21009CCA14</string>
 											<string>0597FF0410170B21009CCA14</string>
 											<string>0597FF0510170B21009CCA14</string>
 											<string>0597FF0710170B21009CCA14</string>
@@ -420,7 +416,6 @@
 											<string>055D45E91039C4C7007B23B0</string>
 											<string>05656CF6103ACB930095BF38</string>
 											<string>05656CF7103ACB930095BF38</string>
-											<string>05656D2B103AD6090095BF38</string>
 											<string>05656D2F103AD6090095BF38</string>
 											<string>05656D3C103ADB6F0095BF38</string>
 											<string>05656D3E103ADB6F0095BF38</string>
@@ -431,8 +426,11 @@
 											<string>05BBA1B9103AE35D0089F49D</string>
 											<string>05BBA20A103AEA3A0089F49D</string>
 											<string>05BBA21F103AEBF30089F49D</string>
-											<string>05BBA236103AF17C0089F49D</string>
-											<string>05BBA237103AF17C0089F49D</string>
+											<string>05BBA25C103BF0320089F49D</string>
+											<string>05BBA25D103BF0320089F49D</string>
+											<string>05BBA25E103BF0320089F49D</string>
+											<string>05BBA25F103BF0320089F49D</string>
+											<string>05BBA2D3103BF8D10089F49D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -572,6 +570,24 @@
 											<string>05BBA230103AF0DC0089F49D</string>
 											<string>05BBA231103AF0DC0089F49D</string>
 											<string>05BBA238103AF17C0089F49D</string>
+											<string>05BBA261103BF0320089F49D</string>
+											<string>05BBA262103BF0320089F49D</string>
+											<string>05BBA263103BF0320089F49D</string>
+											<string>05BBA264103BF0320089F49D</string>
+											<string>05BBA265103BF0320089F49D</string>
+											<string>05BBA266103BF0320089F49D</string>
+											<string>05BBA267103BF0320089F49D</string>
+											<string>05BBA268103BF0320089F49D</string>
+											<string>05BBA269103BF0320089F49D</string>
+											<string>05BBA26A103BF0320089F49D</string>
+											<string>05BBA26B103BF0320089F49D</string>
+											<string>05BBA26C103BF0320089F49D</string>
+											<string>05BBA26D103BF0320089F49D</string>
+											<string>05BBA26E103BF0320089F49D</string>
+											<string>05BBA26F103BF0320089F49D</string>
+											<string>05BBA270103BF0320089F49D</string>
+											<string>05BBA271103BF0320089F49D</string>
+											<string>05BBA272103BF0320089F49D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -610,9 +626,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {698, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>260 122 1021 656 0 0 1280 778 </string>
+										<string>{{10, 27}, {698, 156}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -667,6 +681,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {698, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>260 122 1021 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>

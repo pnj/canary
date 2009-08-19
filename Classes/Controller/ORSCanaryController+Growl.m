@@ -297,8 +297,11 @@
 				}
 			}
 		} else if ([timeline isEqualToString:@"Received messages"]) {
-			if (![timelineButton.titleOfSelectedItem 
+			/*if (![timelineButton.titleOfSelectedItem 
 				  isEqualToString:@"Received messages"]) {
+				[self changeToReceivedDMs:self];
+			}*/
+			if (!(timelineSegControl.selectedSegment == 2)) {
 				[self changeToReceivedDMs:self];
 			}
 			for (NSXMLNode *node in [receivedDMsArrayController 

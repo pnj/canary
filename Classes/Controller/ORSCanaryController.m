@@ -36,7 +36,7 @@
 			updateDispatcher, cacheManager, aboutWindow, statusTextField, 
 			statusView, statusBox, dateDifferenceTextField, indicator,
 			mainTimelineCollectionView, mainTimelineScrollView, tweetButton,
-			newStatusTextField, charsLeftIndicator, timelineButton, sentDMBox,
+			newStatusTextField, charsLeftIndicator, sentDMBox, //timelineButton,
 			contentView, statusTimelineCollectionViewItem, sentDMTextField,
 			sentDMView, receivedDMTextField, betweenUsers, realSelectedRange,
 			receivedDMView, receivedDMBox, receivedDMDateDifferenceTextField,
@@ -231,7 +231,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				
 				previousUpdateText = @"";
 				
-				activeSegment = 0;
+				activeSegment = -1;
 			}
 		}
 		preferences = [[ORSCanaryPreferences alloc] 
@@ -285,9 +285,10 @@ static ORSCanaryController *sharedCanaryController = nil;
 		@"scribble your pithy words »", @"scrawl an incantation »", 
 		@"write a polemic »", @"write stuff »", @"formulate an opinion »", 
 		@"drop a line »", @"register your sentiment »",
-		@"stay in touch with your fans »", @"compose a song »", nil];
+		@"stay in touch with your fans »", @"compose a song »", 
+		@"put forward a theory »", @"share an interesting link »", nil];
 	srandom([NSDate timeIntervalSinceReferenceDate]);
-	NSInteger rNumb = random() % 12;
+	NSInteger rNumb = random() % 14;
 	[[newStatusTextField cell] setPlaceholderString:[placeholders 
 													 objectAtIndex:rNumb]];
 	NSLog(@"%i", rNumb);
@@ -301,7 +302,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 		[defaults setObject:[NSNumber numberWithBool:NO]
 					 forKey:@"CanaryFirstTimeUser"];
 	}
-	[self changeTimeline:self];
+	[timelineSegControl setSelectedSegment:0];
+	[self changeSegmentedControlTimeline:timelineSegControl];
 }
 
 // Delegate: closes the application when the window is closed
@@ -347,70 +349,6 @@ sender {
 }
 
 // Action: allows the user to change the active timeline
-- (IBAction) changeTimeline:sender {
-	if (([timelineButton.titleOfSelectedItem isEqualToString:[self
-			previousTimeline]]) && [sender isEqualTo:timelineButton]) {
-		return;
-	}
-	if (showScreenNames) {
-		[self changeToScreenNames];
-	} else {
-		[self changeToUsernames];
-	}
-	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Freunde"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.followingStatusCache count] > 0) {
-			self.statuses = cacheManager.followingStatusCache;
-		}
-		[self getFriendsTimeline];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Replies"] 
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Repliken"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.repliesStatusCache count] > 0) {
-			self.statuses = cacheManager.repliesStatusCache;
-		}
-		[self getReplies];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Public"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Öffentlich"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.publicStatusCache count] > 0) {
-			self.statuses = cacheManager.publicStatusCache;
-		}
-		[self getPublicTimeline];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Favorites"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Favoriten"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.favoritesStatusCache count] > 0) {
-			self.statuses = cacheManager.favoritesStatusCache;
-		}
-		[self getFavorites];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Archive"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Archiv"]) {
-		if ([sender isEqualTo:timelineButton] && 
-			[cacheManager.archiveStatusCache count] > 0) {
-			self.statuses = cacheManager.archiveStatusCache;
-		}
-		[self getUserTimeline];
-	}  else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Received messages"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Empfangene Nachrichten"]) {
-		if ([sender isEqualTo:timelineButton] && 
-			[[cacheManager receivedMessagesCache] count] > 0) {
-			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
-		}
-		[self getReceivedMessages];
-		[self hideStatusBar];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Gesendete Nachrichten"]) {
-		if ([sender isEqualTo:timelineButton] && 
-			[cacheManager.sentMessagesCache count] > 0) {
-			self.sentDirectMessages = cacheManager.sentMessagesCache;
-		}
-		[self getSentMessages];
-	}
-	[self updateTimer];
-}
-
 - (IBAction) changeSegmentedControlTimeline:sender {
 	NSSegmentedControl *timelineControl = (NSSegmentedControl *)sender;
 	if (timelineControl.selectedSegment == activeSegment) {
@@ -448,7 +386,6 @@ sender {
 		[self getFavorites];
 		[self.window setTitle:@"Canary: Favorites"];
 	}
-	activeSegment = timelineControl.selectedSegment;
 	[self updateTimer];
 }
 
@@ -494,39 +431,21 @@ sender {
 	if (![backgroundReceivedDMTimer isValid])
 		[self setupReceivedDMTimer];
 	if (refreshPeriod > -1.0) {
-		if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
+		if (timelineSegControl.selectedSegment == 0) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod 
 				target:self selector:@selector(getFriendsTimeline) userInfo:nil 
 														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Archive"]) {
-			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
-					target:self selector:@selector(getUserTimeline) userInfo:nil 
-														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Public"]) {
-			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
-				target:self selector:@selector(getPublicTimeline) userInfo:nil
-														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Replies"]) {
+		} else if (timelineSegControl.selectedSegment == 1) { 
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 					target:self selector:@selector(getReplies) userInfo:nil 
 														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Favorites"]) {
+		} else if (timelineSegControl.selectedSegment == 3) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getFavorites) userInfo:nil 
 														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Received messages"]) {
+		} else if (timelineSegControl.selectedSegment == 2) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getReceivedMessages) userInfo:nil 
-														   repeats:YES];
-		} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Sent messages"]) {
-			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
-				target:self selector:@selector(getSentMessages) userInfo:nil 
 														   repeats:YES];
 		}
 	}
@@ -565,7 +484,7 @@ sender {
 	}
 	
 	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
+	if (timelineSegControl.selectedSegment == 0) {
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -596,44 +515,7 @@ sender {
 								   withObject:note];
 		}
 		firstFollowingTimelineRun = NO;
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Archive"]) {
-		self.statuses = [cacheManager 
-			setStatusesForTimelineCache:ORSArchiveTimelineCacheType
-						 withNotification:note];
-		[mainTimelineCollectionView unbind:@"content"];
-		[mainTimelineCollectionView unbind:@"selectionIndexes"];
-		[mainTimelineCollectionView setItemPrototype:NULL];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Public"]) {
-		self.statuses = [cacheManager 
-						   setStatusesForTimelineCache:ORSPublicTimelineCacheType
-						   withNotification:note];
-		[mainTimelineCollectionView unbind:@"content"];
-		[mainTimelineCollectionView unbind:@"selectionIndexes"];
-		[mainTimelineCollectionView setItemPrototype:NULL];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) 
-							   withObject:note];
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Replies"]) {
+	} else if (timelineSegControl.selectedSegment == 1) {
 		self.statuses = [cacheManager 
 				setStatusesForTimelineCache:ORSRepliesTimelineCacheType
 											withNotification:note];
@@ -651,8 +533,7 @@ sender {
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self performSelectorInBackground:@selector(postRepliesReceived:) 
 							   withObject:note];		
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Favorites"]) {
+	} else if (timelineSegControl.selectedSegment == 3) {
 		self.statuses = [cacheManager 
 			setStatusesForTimelineCache:ORSFavoritesTimelineCacheType 
 						   withNotification:note];
@@ -670,11 +551,10 @@ sender {
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	}
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-	if (![timelineButton.titleOfSelectedItem isEqualToString:[self
-														previousTimeline]]) {
+	if (!(timelineSegControl.selectedSegment == activeSegment)) {
 		[self scrollToTop];
 	}
-	previousTimeline = timelineButton.titleOfSelectedItem;
+	activeSegment = timelineSegControl.selectedSegment;
 	
 	if ([newStatusTextField.stringValue isEqualToString:@"d "]) {
 		[newStatusTextField setStringValue:@""];
@@ -702,8 +582,7 @@ sender {
 	}
 	
 	NSPoint oldScrollOrigin;
-	if ([timelineButton.titleOfSelectedItem 
-			isEqualToString:@"Received messages"] || (activeSegment == 2)) {
+	if (timelineSegControl.selectedSegment == 2) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		self.receivedDirectMessages = [cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
@@ -724,43 +603,14 @@ sender {
 		[self performSelectorInBackground:@selector(postDMsReceived:) 
 							   withObject:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		//if (![timelineButton.titleOfSelectedItem isEqualToString:[self
-		//											previousTimeline]]) {
+		if (!(timelineSegControl.selectedSegment == activeSegment)) {
 			[self scrollToTop];
-		//}
-		previousTimeline = timelineButton.titleOfSelectedItem;
+		}
+		activeSegment = timelineSegControl.selectedSegment;
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
 		[self hideStatusBar];
-	/*} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Sent messages"]) {
-		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-		self.sentDirectMessages = [cacheManager
-			setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
-								 withNotification:note];
-		[mainTimelineCollectionView unbind:@"content"];
-		[mainTimelineCollectionView unbind:@"selectionIndexes"];
-		[mainTimelineCollectionView setItemPrototype:NULL];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
-		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
-												previousTimeline]]) {
-			[self scrollToTop];
-		}
-		previousTimeline = timelineButton.titleOfSelectedItem;
-		if (newStatusTextField.stringValue.length == 0) {
-			[newStatusTextField setStringValue:@"d "];
-		}
-		[self hideStatusBar];*/
 	} else {
 		[self hideStatusBar];
 		if (((NSArray *)note.object).count > 0) {
@@ -776,8 +626,6 @@ sender {
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 											 withNotification:note];
-					//[self postDMsReceived:note
-					//			  afterID:lastExecutionID];
 					[self performSelector:@selector(postDMsReceived:afterID:) 
 							   withObject:note 
 							   withObject:lastExecutionID];
@@ -820,8 +668,7 @@ sender {
 		[self hideStatusBar];
 		connectionErrorShown = NO;
 	}
-	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]
-		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Archive"] ) {
+	if (timelineSegControl.selectedSegment == 0) {
 		NSPoint oldScrollOrigin = 
 			mainTimelineScrollView.contentView.bounds.origin;
 		NSMutableArray *cache = [NSMutableArray arrayWithArray:self.statuses];
@@ -845,17 +692,6 @@ sender {
 	if (connectionErrorShown) {
 		[self hideStatusBar];
 		connectionErrorShown = NO;
-	}
-	if ([timelineButton.titleOfSelectedItem 
-			isEqualToString:@"Sent Messages"]) {		
-		NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-		NSMutableArray *cache = [NSMutableArray 
-							 arrayWithArray:self.sentDirectMessages];
-	
-		[cache insertObject:note.object atIndex:0];
-		self.sentDirectMessages = cache;
-		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		[self hideStatusBar];
 	}
 	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
 	[self showStatusBarMessage:@"Direct message sent"
@@ -1579,14 +1415,9 @@ sender {
 // or user.
 - (IBAction) invokeActionOnUser:sender {
 	NSString *userScreenName, *userURL;
-	if ([timelineButton.titleOfSelectedItem 
-			isEqualToString:@"Received messages"]) {
+	if (timelineSegControl.selectedSegment == 2) {
 		userScreenName = [(NSXMLNode *)[sender toolTip] senderScreenName];
 		userURL = [(NSXMLNode *)[sender toolTip] senderURL];
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Sent messages"]) {
-		userScreenName = [(NSXMLNode *)[sender toolTip] recipientScreenName];
-		userURL = [(NSXMLNode *)[sender toolTip] recipientURL];
 	} else {
 		userScreenName = [(NSXMLNode *)[sender toolTip] userScreenName];
 		userURL = [(NSXMLNode *)[sender toolTip] userURL];
@@ -1748,8 +1579,7 @@ sender {
 // Action: This is called when the user clicks on the message that new messages
 // have been received
 - (IBAction) changeToReceivedDMs:sender {
-	[timelineButton selectItemWithTitle:@"Received messages"];
-	[self changeTimeline:self];
+	[self messagesTimelineMenuItemClicked:nil];
 }
 
 // Action: This creates a new Twitter account
@@ -1787,7 +1617,6 @@ sender {
 	}
 	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
 	NSInteger statusCode = response.statusCode;
-	//[indicator stopAnimation:self];
 	NSString *msg;
 	if (statusCode != 200 && statusCode != 304) {
 		if (statusCode == 503) {
@@ -2062,19 +1891,11 @@ sender {
 			return;
 		}
 	}
-	if ([timelineButton.titleOfSelectedItem 
-		 isEqualToString:@"Received messages"]) {
+	if (timelineSegControl.selectedSegment == 2) {
 		[mainTimelineCollectionView setContent:NULL];
 		[mainTimelineCollectionView setNeedsDisplay:YES];
 		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
 		[self performSelector:@selector(populateWithReceivedDMs)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithSentDMs)
 				   withObject:nil
 				   afterDelay:0.5];
 	} else {
@@ -2089,8 +1910,7 @@ sender {
 
 // Changes the binding of the main timeline collection to usernames
 - (void) changeToUsernames {
-	if ([timelineButton.titleOfSelectedItem 
-		 isEqualToString:@"Received messages"]) {
+	if (timelineSegControl.selectedSegment == 2) {
 		[receivedDMButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderScreenName"
@@ -2098,15 +1918,6 @@ sender {
 		[receivedDMButton bind:@"toolTip"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderName"
-				 options:nil];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
-		[sentDMButton bind:@"title"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientScreenName"
-				 options:nil];
-		[sentDMButton bind:@"toolTip"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientName"
 				 options:nil];
 	} else {
 		[statusNameButton bind:@"title"
@@ -2123,8 +1934,7 @@ sender {
 
 // Changes the binding of the main timeline collection to screen names
 - (void) changeToScreenNames {
-	if ([timelineButton.titleOfSelectedItem 
-			isEqualToString:@"Received messages"]) {
+	if (timelineSegControl.selectedSegment == 2) {
 		[receivedDMButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderName"
@@ -2132,15 +1942,6 @@ sender {
 		[receivedDMButton bind:@"toolTip"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderScreenName"
-				 options:nil];
-	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
-		[sentDMButton bind:@"title"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientName"
-				 options:nil];
-		[sentDMButton bind:@"toolTip"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientScreenName"
 				 options:nil];
 	} else {
 		[statusNameButton bind:@"title"
@@ -2318,7 +2119,8 @@ sender {
 		return;
 	}
 	if ([(NSString *)command isEqualToString:@"Refresh"]) {
-		[self changeTimeline:sender];
+		//[self changeTimeline:sender];
+		[self changeSegmentedControlTimeline:sender];
 		return;
 	}
 }
