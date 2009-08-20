@@ -89,11 +89,6 @@
 - (NSArray *) getSentDMs;
 - (NSArray *) getSentDMsSinceDM:(NSString *)dmID;
 
-// Friendship methods
-- (BOOL) createFriendshipWithUser:(NSString *)userID;
-- (BOOL) destroyFriendshipWithUser:(NSString *)userID;
-- (BOOL) user:(NSString *)userIDA isFriendWithUser:(NSString *)userIDB;
-
 - (NSXMLNode *) getDowntimeSchedule;
 
 @property (copy) NSMutableData *dataReceived;

@@ -111,6 +111,8 @@
 		05C05BB4103D32F000C70832 /* ORSTwitterEngine+Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05BB3103D32F000C70832 /* ORSTwitterEngine+Favorite.m */; };
 		05C05C67103D3C9A00C70832 /* ORSTwitterEngine+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */; };
 		05C05CCE103D4FF500C70832 /* NSColor+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05CCD103D4FF500C70832 /* NSColor+Hexadecimal.m */; };
+		05C05D74103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05D73103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m */; };
+		05C05DB6103D996100C70832 /* ORSTwitterEngine+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05DB5103D996100C70832 /* ORSTwitterEngine+Friendship.m */; };
 		05FF7474103AAE0200E053E0 /* filterTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7472103AAE0200E053E0 /* filterTemplate.pdf */; };
 		05FF7475103AAE0200E053E0 /* sieveTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -296,6 +298,10 @@
 		05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Account.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Account.m"; sourceTree = "<group>"; };
 		05C05CCC103D4FF500C70832 /* NSColor+Hexadecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Hexadecimal.h"; path = "Classes/Model/Twitter Engine/NSColor+Hexadecimal.h"; sourceTree = "<group>"; };
 		05C05CCD103D4FF500C70832 /* NSColor+Hexadecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Hexadecimal.m"; path = "Classes/Model/Twitter Engine/NSColor+Hexadecimal.m"; sourceTree = "<group>"; };
+		05C05D72103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+SocialGraph.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+SocialGraph.h"; sourceTree = "<group>"; };
+		05C05D73103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+SocialGraph.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+SocialGraph.m"; sourceTree = "<group>"; };
+		05C05DB4103D996100C70832 /* ORSTwitterEngine+Friendship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Friendship.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Friendship.h"; sourceTree = "<group>"; };
+		05C05DB5103D996100C70832 /* ORSTwitterEngine+Friendship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Friendship.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Friendship.m"; sourceTree = "<group>"; };
 		05FF7472103AAE0200E053E0 /* filterTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = filterTemplate.pdf; path = Resources/Images/filterTemplate.pdf; sourceTree = "<group>"; };
 		05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sieveTemplate.pdf; path = Resources/Images/sieveTemplate.pdf; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -338,6 +344,10 @@
 				053FBA990FA511A900DA370E /* ORSTwitterEngine+UserAdditions.m */,
 				053FBA9B0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.h */,
 				053FBA9C0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m */,
+				05C05DB4103D996100C70832 /* ORSTwitterEngine+Friendship.h */,
+				05C05DB5103D996100C70832 /* ORSTwitterEngine+Friendship.m */,
+				05C05D72103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.h */,
+				05C05D73103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m */,
 				05C05C65103D3C9A00C70832 /* ORSTwitterEngine+Account.h */,
 				05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */,
 				05C05BB2103D32F000C70832 /* ORSTwitterEngine+Favorite.h */,
@@ -805,6 +815,8 @@
 				05C05BB4103D32F000C70832 /* ORSTwitterEngine+Favorite.m in Sources */,
 				05C05C67103D3C9A00C70832 /* ORSTwitterEngine+Account.m in Sources */,
 				05C05CCE103D4FF500C70832 /* NSColor+Hexadecimal.m in Sources */,
+				05C05D74103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m in Sources */,
+				05C05DB6103D996100C70832 /* ORSTwitterEngine+Friendship.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

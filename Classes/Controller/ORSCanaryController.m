@@ -2132,7 +2132,7 @@ sender {
 // Add user with given ID from friends list (following)
 - (void) createFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine createFriendshipWithUser:userID];
+		[twitterEngine makeFriendUserWithID:userID];
 		NSString *msg = [NSString stringWithFormat:@"Following %@",
 						 userID];
 		[self showStatusBarMessage:msg
