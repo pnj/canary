@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+Block.h
+//  ORSTwitterEngine+Block.m
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 19/08/2009.
@@ -31,34 +31,34 @@
 
 // Change these two.
 // blocks the user with the specified id
-- (BOOL) blockUser:(NSString *)userID {
+- (NSXMLNode *) blockUser:(NSString *)user {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"blocks/create/"];
-	[path appendString:userID];
+	[path appendString:user];
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
+		return node;
 	} else {
-		return NO;
+		return NULL;
 	}
 }
 
 // unblocks the user with the specified id
-- (BOOL) unblockUser:(NSString *)userID {
+- (NSXMLNode *) unblockUser:(NSString *)user {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"blocks/destroy/"];
-	[path appendString:userID];
+	[path appendString:user];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"DELETE" 
 																atPath:path 
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
+		return node;
 	} else {
-		return NO;
+		return NULL;
 	}
 }
 

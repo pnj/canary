@@ -1,8 +1,8 @@
 //
-//  ORSTwitterEngine+HelpAndAccountAdditions.h
+//  ORSTwitterEngine+Favorite.h
 //  Twitter Engine
 //
-//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Created by Nicholas Toumpelis on 20/08/2009.
 //  Copyright 2008-2009 Ocean Road Software, Nick Toumpelis.
 //
 //  Version 0.7.1
@@ -28,14 +28,16 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( HelpAndAccountAdditions )
+@interface ORSTwitterEngine ( FavoritesMethods )
 
-// Account methods
-- (BOOL) specifyLocation:(NSString *)location;
-- (BOOL) updateDeliveryDeviceWith:(NSString *)device;
-- (NSXMLNode *) getRateLimitStatus;
-
-// Help methods
-- (NSXMLNode *) getDowntimeSchedule;
+- (NSArray *) favorites;
+- (NSArray *) favoritesSinceStatusWithID:(NSString *)identifier; //unofficial
+- (NSArray *) favoritesForUser:(NSString *)user;
+- (NSArray *) favoritesAtPage:(NSString *)page;
+- (NSArray *) favoritesForUser:(NSString *)user 
+						atPage:(NSString *)page;
+- (NSXMLNode *) favoriteStatusWithID:(NSString *)identifier;
+- (void) blindFavoriteStatusWithID:(NSString *)identifier;
+- (NSXMLNode *) unfavoriteStatusWithID:(NSString *)identifier;
 
 @end

@@ -286,9 +286,10 @@ static ORSCanaryController *sharedCanaryController = nil;
 		@"write a polemic »", @"write stuff »", @"formulate an opinion »", 
 		@"drop a line »", @"register your sentiment »",
 		@"stay in touch with your fans »", @"compose a song »", 
-		@"put forward a theory »", @"share an interesting link »", nil];
+		@"put forward a theory »", @"share an interesting link »", 
+		@"speculate »", nil];
 	srandom([NSDate timeIntervalSinceReferenceDate]);
-	NSInteger rNumb = random() % 14;
+	NSInteger rNumb = random() % 15;
 	[[newStatusTextField cell] setPlaceholderString:[placeholders 
 													 objectAtIndex:rNumb]];
 	NSLog(@"%i", rNumb);
@@ -760,10 +761,10 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstFavoriteCall) {
-			[twitterEngine getFavoritesForUser:twitterEngine.sessionUserID];
+			[twitterEngine favoritesForUser:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
-			 getFavoritesSinceStatus:cacheManager.lastFavoriteStatusID];
+			 favoritesSinceStatusWithID:cacheManager.lastFavoriteStatusID];
 		}
 	}
 }
@@ -2196,7 +2197,7 @@ sender {
 // Favorite the selected status
 - (void) favoriteStatusWithID:(NSString *)statusID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine createBlindFavorite:statusID];
+		[twitterEngine blindFavoriteStatusWithID:statusID];
 		[self showStatusBarMessage:@"A new favorite has been added" 
 					withImageNamed:@"fave_star"];
 		messageDurationTimer = [NSTimer 

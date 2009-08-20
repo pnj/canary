@@ -141,6 +141,19 @@ static ORSTwitterEngine *sharedEngine = nil;
 						   synchronously:synchr];
 }
 
+- (NSData *) uploadImageFile:(NSString *)filename
+			   toTwitterPath:(NSString *)path
+			   synchronously:(BOOL)synchr {
+	ORSSession *tempSession = (ORSSession *)[session copy];
+	[sessionQueue addObject:tempSession];
+	if ([sessionQueue count] > 4) {
+		[sessionQueue removeObjectAtIndex:0];
+	}
+	return [tempSession uploadImageFile:filename 
+						  toTwitterPath:path
+						  synchronously:synchr];
+}
+
 // Returns an XML document from the given data
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data {
 	return [session getXMLDocumentFromData:data];
@@ -582,122 +595,15 @@ static ORSTwitterEngine *sharedEngine = nil;
 	}
 }
 
-
-#pragma mark Account methods
-
-// Account methods
-
-// verifies the user credentials
-- (BOOL) verifyCredentials {
-	NSString *path = @"account/verify_credentials.xml";
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
-																atPath:path 
-														 synchronously:YES]];
-	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}
-
-// ends the session of the authenticating user
-- (BOOL) endSession {
-	NSString *path = @"account/end_session";
+// gets Twitter downtime schedule
+- (NSXMLNode *) getDowntimeSchedule {
+	NSString *path = @"help/downtime_schedule.xml";
 	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"GET" 
-					  atPath:path 
-			   synchronously:synchronously]];
-	if (node) {
-		return YES;
+											 executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
+	if (![[[node childAtIndex:0] name] isEqualToString:@"error"]) {
+		return node;
 	} else {
-		return NO;
-	}
-}
-
-
-#pragma mark Favorite methods
-
-// Favorite methods
-
-// gets the favorites for the current user
-- (NSArray *) getFavorites {
-	NSString *path = @"favorites.xml";
-	if (synchronously) {
-		NSData *data = [self executeRequestOfType:@"GET" 
-										   atPath:path 
-									synchronously:synchronously];
-		NSXMLNode *node = [self getNodeFromData:data];
-		if ([[node name] isEqualToString:@"statuses"]) {
-			return [self getAllStatusesFromData:data];
-		} else {
-			return NULL;
-		}
-	} else {
-		[self executeRequestOfType:@"GET" 
-							atPath:path synchronously:synchronously];
 		return NULL;
-	}
-}
-
-// gets the favorites for the current user since the given ID
-- (NSArray *) getFavoritesSinceStatus:(NSString *)statusID {
-	NSString *path = [NSString 
-		//stringWithFormat:@"favorites.xml?since_id=%@", statusID];
-		stringWithFormat:@"favorites.xml?since_id=%@&count=200", statusID];
-	if (synchronously) {
-		NSData *data = [self executeRequestOfType:@"GET"
-										   atPath:path 
-									synchronously:synchronously];
-		NSXMLNode *node = [self getNodeFromData:data];
-		if ([[node name] isEqualToString:@"statuses"]) {
-			return [self getAllStatusesFromData:data];
-		} else {
-			return NULL;
-		}
-	} else {
-		[self executeRequestOfType:@"GET"
-							atPath:path 
-					 synchronously:synchronously];
-		return NULL;
-	}
-}
-
-
-#pragma mark Notification methods
-
-// Notification Methods
-
-// follow the user with the specified id
-- (BOOL) followUser:(NSString *)userID  {
-	NSMutableString *path = [NSMutableString 
-		stringWithString:@"notifications/follow/"];
-	[path appendString:userID];
-	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
-																atPath:path 
-											 // synchronously:YES]];
-														 synchronously:NO]];
-	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}
-
-// leave the user with the specified id
-- (BOOL) leaveUser:(NSString *)userID {
-	NSMutableString *path = [NSMutableString 
-		stringWithString:@"notifications/leave/"];
-	[path appendString:userID];
-	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
-																atPath:path 
-											 // synchronously:YES]];
-														 synchronously:NO]];
-	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
-	} else {
-		return NO;
 	}
 }
 

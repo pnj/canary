@@ -31,8 +31,8 @@
 @interface ORSTwitterEngine ( BlockMethods )
 
 // Block methods
-- (BOOL) blockUser:(NSString *)userID;
-- (BOOL) unblockUser:(NSString *)userID;
+- (NSXMLNode *) blockUser:(NSString *)user;
+- (NSXMLNode *) unblockUser:(NSString *)user;
 - (BOOL) blocksUserWithID:(NSString *)identifier;
 - (BOOL) blocksUserWithScreenName:(NSString *)screenName;
 - (NSArray *) blockedUsers;

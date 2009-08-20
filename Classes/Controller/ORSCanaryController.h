@@ -51,6 +51,8 @@
 #import "ORSFilterArrayTransformer.h"
 #import "ORSScreenNameToBoolTransformer.h"
 #import "ORSTwitterEngine+Block.h"
+#import "ORSTwitterEngine+Favorite.h"
+#import "ORSTwitterEngine+Account.h"
 
 @interface ORSCanaryController : NSWindowController < GrowlApplicationBridgeDelegate > {
 	// Fundamentals

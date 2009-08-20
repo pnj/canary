@@ -238,6 +238,98 @@
 	}
 }
 
+// Uploads the image data to Twitter
+- (NSData *) uploadImageFile:(NSString *)filename
+			   toTwitterPath:(NSString *)path 
+			   synchronously:(BOOL)synchr{
+	@synchronized(self) {
+		NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
+		NSURL *url = [NSURL URLWithString:[NSString 
+				stringWithFormat:@"http://twitter.com/%@", path]];
+		NSMutableURLRequest *postRequest = [NSMutableURLRequest 
+			requestWithURL:url
+				cachePolicy:NSURLRequestUseProtocolCachePolicy 
+					timeoutInterval:21.0];
+		
+		[postRequest setHTTPMethod:@"POST"];
+		
+		NSString *stringBoundary = [NSString 
+									stringWithString:@"0xKhTmLbOuNdArY"];
+		NSString *contentType = [NSString 
+			stringWithFormat:@"multipart/form-data; boundary=%@", 
+								 stringBoundary];
+		[postRequest addValue:contentType forHTTPHeaderField:@"Content-Type"];
+		
+		// Credentials
+		NSString *creds = [NSString stringWithFormat:@"%@:%@", userID, password];
+		[postRequest addValue:[NSString stringWithFormat:@"Basic %@", 
+				[creds base64Encoding]] forHTTPHeaderField:@"Authorization"];
+		
+		NSMutableData *postBody = [NSMutableData data];
+		[postBody appendData:[[NSString stringWithFormat:@"\r\n\r\n--%@\r\n", 
+				stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:[[NSString stringWithString:
+				@"Content-Disposition: form-data; name=\"source\"\r\n\r\n"] 
+							  dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:[[NSString stringWithString:@"canary"] 
+							  dataUsingEncoding:NSUTF8StringEncoding]];
+		
+		NSString *mimeType = NULL;
+		if ([filename hasSuffix:@".jpeg"] || [filename hasSuffix:@".jpg"] || 
+			[filename hasSuffix:@".jpe"]) {
+			mimeType = @"image/jpeg";
+		} else if ([filename hasSuffix:@".png"]) {
+			mimeType = @"image/png";
+		} else if ([filename hasSuffix:@".gif"]) {
+			mimeType = @"image/gif";
+		}	
+		
+		[postBody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",
+			stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:[[NSString stringWithFormat:
+			@"Content-Disposition: form-data; name=\"media\"; filename=\"%@\"\r\n", 
+							   filename] dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:[[NSString stringWithFormat:
+			@"Content-Type: %@\r\n", mimeType] 
+							  dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:[[NSString stringWithString:
+							   @"Content-Transfer-Encoding: binary\r\n\r\n"] 
+							  dataUsingEncoding:NSUTF8StringEncoding]];
+		[postBody appendData:imageData];
+		[postBody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",
+			stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
+		
+		[postRequest setHTTPBody:postBody];
+		
+		// Checking whether the request should be synchronous or asynchronous
+		if (!synchr) {
+			// If asynchronous... setting up the connection
+			mainConnection = [[NSURLConnection alloc] 
+				initWithRequest:postRequest delegate:self];
+			if (mainConnection) {
+				// the data buffer
+				dataReceived = [NSMutableData data];
+			} else {
+			}
+			return NULL;
+		} else { 
+			// If synchronous
+			NSURLResponse *response = NULL;
+			NSError *error = NULL;
+			// the data is returned "immediately"
+			NSData *data = [NSURLConnection sendSynchronousRequest:postRequest 
+												 returningResponse:&response 
+															 error:&error];
+			if (data) {
+				return data;
+			} else {
+			}
+			return NULL;
+		}
+	}
+	return NULL;
+}
+
 // Returns an XML document from the given data
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data {
 	NSError *error = NULL;
@@ -366,7 +458,7 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 							object:[self getAllStatusesFromData:dataReceived]];
 		} else if ([[node name] isEqualToString:@"users"]) {
 			[nc postNotificationName:@"OTEUsersDidFinishLoading"
-						  object:[self getAllUsersFromData:dataReceived]];
+						  object:[self usersFromData:dataReceived]];
 		} else if ([[node name] isEqualToString:@"direct-messages"] || 
 				   [[node name] isEqualToString:@"nilclasses"]) {
 			[nc postNotificationName:@"OTEDMsDidFinishLoading"

@@ -38,7 +38,6 @@
 		053FBAAD0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA9C0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m */; };
 		053FBAAE0FA511A900DA370E /* ORSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA9E0FA511A900DA370E /* ORSTwitterEngine.m */; };
 		053FBAAF0FA511A900DA370E /* ORSUpdateDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBAA00FA511A900DA370E /* ORSUpdateDispatcher.m */; };
-		053FBAB00FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBAA20FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m */; };
 		053FBAB10FA511A900DA370E /* ORSTimelineCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBAA50FA511A900DA370E /* ORSTimelineCacheManager.m */; };
 		053FBAB20FA511A900DA370E /* ORSTwitPicDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBAA70FA511A900DA370E /* ORSTwitPicDispatcher.m */; };
 		053FBAB30FA511A900DA370E /* ORSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBAA80FA511A900DA370E /* ORSSession.m */; };
@@ -108,6 +107,10 @@
 		05C05A22103C09AC00C70832 /* ORSTwitterEngine+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05A21103C09AC00C70832 /* ORSTwitterEngine+OAuth.m */; };
 		05C05A2D103C248A00C70832 /* ORSTwitterEngine+SavedSearches.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05A2C103C248A00C70832 /* ORSTwitterEngine+SavedSearches.m */; };
 		05C05AAD103C2CF600C70832 /* ORSTwitterEngine+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05AAC103C2CF600C70832 /* ORSTwitterEngine+Block.m */; };
+		05C05B52103D2EF600C70832 /* ORSTwitterEngine+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05B51103D2EF600C70832 /* ORSTwitterEngine+Notification.m */; };
+		05C05BB4103D32F000C70832 /* ORSTwitterEngine+Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05BB3103D32F000C70832 /* ORSTwitterEngine+Favorite.m */; };
+		05C05C67103D3C9A00C70832 /* ORSTwitterEngine+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */; };
+		05C05CCE103D4FF500C70832 /* NSColor+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05CCD103D4FF500C70832 /* NSColor+Hexadecimal.m */; };
 		05FF7474103AAE0200E053E0 /* filterTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7472103AAE0200E053E0 /* filterTemplate.pdf */; };
 		05FF7475103AAE0200E053E0 /* sieveTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -183,12 +186,10 @@
 		053FBA9A0FA511A900DA370E /* ORSTwitterEngine+StatusAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+StatusAdditions.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+StatusAdditions.m"; sourceTree = "<group>"; };
 		053FBA9B0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+FavoritesAndDMAdditions.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+FavoritesAndDMAdditions.h"; sourceTree = "<group>"; };
 		053FBA9C0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+FavoritesAndDMAdditions.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+FavoritesAndDMAdditions.m"; sourceTree = "<group>"; };
-		053FBA9D0FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+HelpAndAccountAdditions.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+HelpAndAccountAdditions.h"; sourceTree = "<group>"; };
 		053FBA9E0FA511A900DA370E /* ORSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSTwitterEngine.m; path = "Classes/Model/Twitter Engine/ORSTwitterEngine.m"; sourceTree = "<group>"; };
 		053FBA9F0FA511A900DA370E /* ORSTwitterEngine+StatusAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+StatusAdditions.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+StatusAdditions.h"; sourceTree = "<group>"; };
 		053FBAA00FA511A900DA370E /* ORSUpdateDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSUpdateDispatcher.m; path = "Classes/Model/Twitter Engine/ORSUpdateDispatcher.m"; sourceTree = "<group>"; };
 		053FBAA10FA511A900DA370E /* ORSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSTwitterEngine.h; path = "Classes/Model/Twitter Engine/ORSTwitterEngine.h"; sourceTree = "<group>"; };
-		053FBAA20FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+HelpAndAccountAdditions.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+HelpAndAccountAdditions.m"; sourceTree = "<group>"; };
 		053FBAA30FA511A900DA370E /* ORSUpdateDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSUpdateDispatcher.h; path = "Classes/Model/Twitter Engine/ORSUpdateDispatcher.h"; sourceTree = "<group>"; };
 		053FBAA40FA511A900DA370E /* ORSTimelineCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSTimelineCacheManager.h; path = "Classes/Model/Twitter Engine/ORSTimelineCacheManager.h"; sourceTree = "<group>"; };
 		053FBAA50FA511A900DA370E /* ORSTimelineCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSTimelineCacheManager.m; path = "Classes/Model/Twitter Engine/ORSTimelineCacheManager.m"; sourceTree = "<group>"; };
@@ -287,6 +288,14 @@
 		05C05A2C103C248A00C70832 /* ORSTwitterEngine+SavedSearches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+SavedSearches.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+SavedSearches.m"; sourceTree = "<group>"; };
 		05C05AAB103C2CF600C70832 /* ORSTwitterEngine+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Block.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Block.h"; sourceTree = "<group>"; };
 		05C05AAC103C2CF600C70832 /* ORSTwitterEngine+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Block.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Block.m"; sourceTree = "<group>"; };
+		05C05B50103D2EF600C70832 /* ORSTwitterEngine+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Notification.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Notification.h"; sourceTree = "<group>"; };
+		05C05B51103D2EF600C70832 /* ORSTwitterEngine+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Notification.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Notification.m"; sourceTree = "<group>"; };
+		05C05BB2103D32F000C70832 /* ORSTwitterEngine+Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Favorite.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Favorite.h"; sourceTree = "<group>"; };
+		05C05BB3103D32F000C70832 /* ORSTwitterEngine+Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Favorite.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Favorite.m"; sourceTree = "<group>"; };
+		05C05C65103D3C9A00C70832 /* ORSTwitterEngine+Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Account.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Account.h"; sourceTree = "<group>"; };
+		05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Account.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Account.m"; sourceTree = "<group>"; };
+		05C05CCC103D4FF500C70832 /* NSColor+Hexadecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Hexadecimal.h"; path = "Classes/Model/Twitter Engine/NSColor+Hexadecimal.h"; sourceTree = "<group>"; };
+		05C05CCD103D4FF500C70832 /* NSColor+Hexadecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Hexadecimal.m"; path = "Classes/Model/Twitter Engine/NSColor+Hexadecimal.m"; sourceTree = "<group>"; };
 		05FF7472103AAE0200E053E0 /* filterTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = filterTemplate.pdf; path = Resources/Images/filterTemplate.pdf; sourceTree = "<group>"; };
 		05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sieveTemplate.pdf; path = Resources/Images/sieveTemplate.pdf; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -317,20 +326,24 @@
 		051A4B700E7ACC770040D9F3 /* Twitter Engine */ = {
 			isa = PBXGroup;
 			children = (
+				05C05CCC103D4FF500C70832 /* NSColor+Hexadecimal.h */,
+				05C05CCD103D4FF500C70832 /* NSColor+Hexadecimal.m */,
 				053FBAAA0FA511A900DA370E /* ORSSession.h */,
 				053FBAA80FA511A900DA370E /* ORSSession.m */,
 				053FBAA10FA511A900DA370E /* ORSTwitterEngine.h */,
 				053FBA9E0FA511A900DA370E /* ORSTwitterEngine.m */,
-				053FBA970FA511A900DA370E /* ORSAsyncTwitPicDispatcher.h */,
-				053FBAA90FA511A900DA370E /* ORSAsyncTwitPicDispatcher.m */,
 				053FBA9F0FA511A900DA370E /* ORSTwitterEngine+StatusAdditions.h */,
 				053FBA9A0FA511A900DA370E /* ORSTwitterEngine+StatusAdditions.m */,
 				053FBA980FA511A900DA370E /* ORSTwitterEngine+UserAdditions.h */,
 				053FBA990FA511A900DA370E /* ORSTwitterEngine+UserAdditions.m */,
 				053FBA9B0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.h */,
 				053FBA9C0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m */,
-				053FBA9D0FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.h */,
-				053FBAA20FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m */,
+				05C05C65103D3C9A00C70832 /* ORSTwitterEngine+Account.h */,
+				05C05C66103D3C9A00C70832 /* ORSTwitterEngine+Account.m */,
+				05C05BB2103D32F000C70832 /* ORSTwitterEngine+Favorite.h */,
+				05C05BB3103D32F000C70832 /* ORSTwitterEngine+Favorite.m */,
+				05C05B50103D2EF600C70832 /* ORSTwitterEngine+Notification.h */,
+				05C05B51103D2EF600C70832 /* ORSTwitterEngine+Notification.m */,
 				05C05AAB103C2CF600C70832 /* ORSTwitterEngine+Block.h */,
 				05C05AAC103C2CF600C70832 /* ORSTwitterEngine+Block.m */,
 				05C05A2B103C248A00C70832 /* ORSTwitterEngine+SavedSearches.h */,
@@ -339,6 +352,8 @@
 				05C05A21103C09AC00C70832 /* ORSTwitterEngine+OAuth.m */,
 				05C059FE103C08FE00C70832 /* ORSTwitterEngine+Help.h */,
 				05C059FF103C08FE00C70832 /* ORSTwitterEngine+Help.m */,
+				053FBA970FA511A900DA370E /* ORSAsyncTwitPicDispatcher.h */,
+				053FBAA90FA511A900DA370E /* ORSAsyncTwitPicDispatcher.m */,
 				053FBAA30FA511A900DA370E /* ORSUpdateDispatcher.h */,
 				053FBAA00FA511A900DA370E /* ORSUpdateDispatcher.m */,
 				053FBAA40FA511A900DA370E /* ORSTimelineCacheManager.h */,
@@ -762,7 +777,6 @@
 				053FBAAD0FA511A900DA370E /* ORSTwitterEngine+FavoritesAndDMAdditions.m in Sources */,
 				053FBAAE0FA511A900DA370E /* ORSTwitterEngine.m in Sources */,
 				053FBAAF0FA511A900DA370E /* ORSUpdateDispatcher.m in Sources */,
-				053FBAB00FA511A900DA370E /* ORSTwitterEngine+HelpAndAccountAdditions.m in Sources */,
 				053FBAB10FA511A900DA370E /* ORSTimelineCacheManager.m in Sources */,
 				053FBAB20FA511A900DA370E /* ORSTwitPicDispatcher.m in Sources */,
 				053FBAB30FA511A900DA370E /* ORSSession.m in Sources */,
@@ -787,6 +801,10 @@
 				05C05A22103C09AC00C70832 /* ORSTwitterEngine+OAuth.m in Sources */,
 				05C05A2D103C248A00C70832 /* ORSTwitterEngine+SavedSearches.m in Sources */,
 				05C05AAD103C2CF600C70832 /* ORSTwitterEngine+Block.m in Sources */,
+				05C05B52103D2EF600C70832 /* ORSTwitterEngine+Notification.m in Sources */,
+				05C05BB4103D32F000C70832 /* ORSTwitterEngine+Favorite.m in Sources */,
+				05C05C67103D3C9A00C70832 /* ORSTwitterEngine+Account.m in Sources */,
+				05C05CCE103D4FF500C70832 /* NSColor+Hexadecimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

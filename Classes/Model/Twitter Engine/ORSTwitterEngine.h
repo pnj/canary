@@ -60,6 +60,9 @@
 - (void) simpleExecuteRequestOfType:(NSString *)type
 							 atPath:(NSString *)path
 					  synchronously:(BOOL)synchr;
+- (NSData *) uploadImageFile:(NSString *)filename
+			   toTwitterPath:(NSString *)path
+			   synchronously:(BOOL)synchr;
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
 - (NSXMLNode *) getNodeFromData:(NSData *)userData;
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses;
@@ -91,17 +94,7 @@
 - (BOOL) destroyFriendshipWithUser:(NSString *)userID;
 - (BOOL) user:(NSString *)userIDA isFriendWithUser:(NSString *)userIDB;
 
-// Account methods
-- (BOOL) verifyCredentials;
-- (BOOL) endSession;
-
-// Favorite methods
-- (NSArray *) getFavorites;
-- (NSArray *) getFavoritesSinceStatus:(NSString *)statusID;
-
-// Notification methods
-- (BOOL) followUser:(NSString *)userID;
-- (BOOL) leaveUser:(NSString *)userID;
+- (NSXMLNode *) getDowntimeSchedule;
 
 @property (copy) NSMutableData *dataReceived;
 @property BOOL synchronously;

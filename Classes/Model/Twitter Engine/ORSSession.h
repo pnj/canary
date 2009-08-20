@@ -50,6 +50,9 @@
 - (void) simpleExecuteRequestOfType:(NSString *)type
 							 atPath:(NSString *)path
 					  synchronously:(BOOL)synchr;
+- (NSData *) uploadImageFile:(NSString *)filename
+			   toTwitterPath:(NSString *)path
+			   synchronously:(BOOL)synchr;
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
 - (NSXMLNode *) getNodeFromData:(NSData *)userData;
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses;
