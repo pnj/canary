@@ -32,7 +32,7 @@
 // tests whether Twitter is up
 - (BOOL) isTwitterUp {
 	NSString *path = @"help/text.xml";
-	NSXMLNode *node = [self getNodeFromData:[self 
+	NSXMLNode *node = [self nodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"ok"]) {
 		return YES;
@@ -44,12 +44,24 @@
 // gets Twitter error state
 - (NSXMLNode *) twitterError {
 	NSString *path = @"help/text.xml";
-	NSXMLNode *node = [self getNodeFromData:[self 
+	NSXMLNode *node = [self nodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"ok"]) {
 		return NULL;
 	} else {
 		return node;
+	}
+}
+
+// gets Twitter downtime schedule
+- (NSXMLNode *) getDowntimeSchedule {
+	NSString *path = @"help/downtime_schedule.xml";
+	NSXMLNode *node = [self nodeFromData:[self 
+											 executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
+	if (![[[node childAtIndex:0] name] isEqualToString:@"error"]) {
+		return node;
+	} else {
+		return NULL;
 	}
 }
 

@@ -31,8 +31,8 @@
 @interface ORSTwitterEngine ( SavedSearchesMethods )
 
 - (NSArray *) savedSearches;
-- (NSXMLNode *) savedSearchWithID:(NSString *)identifier;
+- (NSXMLNode *) savedSearch:(NSString *)identifier;
 - (NSXMLNode *) createSavedSearchFor:(NSString *)queryStr;
-- (NSXMLNode *) destroySavedSearchWithID:(NSString *)identifier;
+- (NSXMLNode *) destroySavedSearch:(NSString *)identifier;
 
 @end

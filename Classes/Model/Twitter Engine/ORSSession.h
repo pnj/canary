@@ -53,13 +53,13 @@
 - (NSData *) uploadImageFile:(NSString *)filename
 			   toTwitterPath:(NSString *)path
 			   synchronously:(BOOL)synchr;
-- (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
-- (NSXMLNode *) getNodeFromData:(NSData *)userData;
-- (NSArray *) getAllStatusesFromData:(NSData *)statuses;
+- (NSXMLDocument *) xmlDocumentFromData:(NSData *)data;
+- (NSXMLNode *) nodeFromData:(NSData *)userData;
+- (NSArray *) statusesFromData:(NSData *)statuses;
 - (NSArray *) usersFromData:(NSData *)data;
 - (NSArray *) savedSearchesFromData:(NSData *)data;
-- (NSArray *) IDsFromData:(NSData *)data;
-- (NSArray *) getAllDMsFromData:(NSData *)directMessages;
+- (NSArray *) idsFromData:(NSData *)data;
+- (NSArray *) dmsFromData:(NSData *)directMessages;
 
 // NSURLConnection delegates for asynchronous connections
 - (void) connection:(NSURLConnection *)connection

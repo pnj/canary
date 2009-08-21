@@ -33,7 +33,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"notifications/follow.xml?user_id="];
 	[path appendString:identifier];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
 												synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -47,7 +47,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"notifications/follow.xml?screen_name="];
 	[path appendString:screenName];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
 												synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -61,7 +61,7 @@
 	NSMutableString *path = [NSMutableString 
 			stringWithString:@"notifications/leave.xml?user_id="];
 	[path appendString:identifier];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
 												synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -75,7 +75,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"notifications/leave.xml?screen_name="];
 	[path appendString:screenName];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
 												synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {

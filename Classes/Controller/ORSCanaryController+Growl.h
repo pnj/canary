@@ -35,7 +35,7 @@
 - (NSString *) senderIdentifier:(NSXMLNode *)node;
 - (NSString *) recipientIdentifier:(NSXMLNode *)node;
 - (void) postStatusUpdatesReceived:(NSNotification *)note;
-- (void) postRepliesReceived:(NSNotification *)note;
+- (void) postMentionsReceived:(NSNotification *)note;
 - (void) postDMsReceived:(NSNotification *)note;
 - (void) postDMsReceived:(NSNotification *)note
 				 afterID:(NSString *)messageID;

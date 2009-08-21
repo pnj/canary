@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+FavoritesAndDMAdditions.h
+//  ORSTwitterEngine+Status.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 12/04/2009.
@@ -28,14 +28,20 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( FavoritesAndDMAdditions )
+@interface ORSTwitterEngine ( StatusMethods ) 
 
-// Direct Message Methods
-- (NSArray *) getReceivedDMsSince:(NSString *)date;
-- (NSArray *) getReceivedDMsAtPage:(NSString *)page;
-- (NSArray *) getSentDMsSince:(NSString *)date;
-- (NSArray *) getSentDMsAtPage:(NSString *)page;
-- (BOOL) newDM:(NSString *)message toUser:(NSString *)userID;
-- (BOOL) destroyDM:(NSString *)messageID;
+- (NSXMLNode *) status:(NSString *)identifier;
+- (NSXMLNode *) postStatus:(NSString *)text;
+- (NSXMLNode *) postStatus:(NSString *)text
+				atLatitude:(NSString *)latitude
+				 longitude:(NSString *)longitude;
+- (NSXMLNode *) postStatus:(NSString *)text 
+				 inReplyTo:(NSString *)identifier;
+- (NSXMLNode *) postStatus:(NSString *)text 
+				 inReplyTo:(NSString *)identifier
+				atLatitude:(NSString *)latitude
+				 longitude:(NSString *)longitude;
+- (NSXMLNode *) deleteStatus:(NSString *)identifier;
+- (NSXMLNode *) retweetStatus:(NSString *)identifier;
 
 @end

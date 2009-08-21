@@ -36,7 +36,7 @@
 		stringWithString:@"blocks/create/"];
 	[path appendString:user];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -52,7 +52,7 @@
 							 stringWithString:@"blocks/destroy/"];
 	[path appendString:user];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"DELETE" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"DELETE" 
 																atPath:path 
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -66,7 +66,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"blocks/exists.xml?user_id="];
 	[path appendString:identifier];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET"
 																atPath:path 
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -80,7 +80,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"blocks/exists.xml?screen_name="];
 	[path appendString:screenName];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET"
 																atPath:path 
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -95,7 +95,7 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self usersFromData:data];
 	} else {
@@ -108,9 +108,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"ids"]) {
-		return [self IDsFromData:data];
+		return [self idsFromData:data];
 	} else {
 		return NULL;
 	}

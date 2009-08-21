@@ -30,9 +30,13 @@
 
 @interface ORSTwitterEngine ( FriendshipMethods )
 
-- (NSXMLNode *) makeFriendUserWithID:(NSString *)identifier;
-- (NSXMLNode *) makeFriendUserWithScreenName:(NSString *)screenName;
-- (BOOL) destroyFriendshipWithUser:(NSString *)userID;
+- (NSXMLNode *) befriendUserWithID:(NSString *)identifier;
+- (NSXMLNode *) befriendUserWithScreenName:(NSString *)screenName;
+- (NSXMLNode *) unfriendUserWithID:(NSString *)identifier;
+- (NSXMLNode *) unfriendUserWithScreenName:(NSString *)screenName;
 - (BOOL) user:(NSString *)userIDA isFriendWithUser:(NSString *)userIDB;
+- (NSXMLNode *) friendshipBetweenUserWithID:(NSString *)identifierA
+							  andUserWithID:(NSString *)identifierB;
+- (NSXMLNode *) friendshipOfAuthdUserToUserWithID:(NSString *)identifier;
 
 @end

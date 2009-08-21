@@ -36,9 +36,9 @@
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
 									synchronously:synchronously];
-		NSXMLNode *node = [self getNodeFromData:data];
+		NSXMLNode *node = [self nodeFromData:data];
 		if ([[node name] isEqualToString:@"statuses"]) {
-			return [self getAllStatusesFromData:data];
+			return [self statusesFromData:data];
 		} else {
 			return NULL;
 		}
@@ -50,16 +50,16 @@
 }
 
 // unofficial - gets the favorites for the current user since the given ID
-- (NSArray *) favoritesSinceStatusWithID:(NSString *)identifier {
+- (NSArray *) favoritesSinceStatus:(NSString *)identifier {
 	NSString *path = [NSString 
 		stringWithFormat:@"favorites.xml?since_id=%@&count=200", identifier];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET"
 										   atPath:path 
 									synchronously:synchronously];
-		NSXMLNode *node = [self getNodeFromData:data];
+		NSXMLNode *node = [self nodeFromData:data];
 		if ([[node name] isEqualToString:@"statuses"]) {
-			return [self getAllStatusesFromData:data];
+			return [self statusesFromData:data];
 		} else {
 			return NULL;
 		}
@@ -79,9 +79,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								 synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"statuses"]) {
-		return [self getAllStatusesFromData:data];
+		return [self statusesFromData:data];
 	} else {
 		return NULL;
 	}
@@ -94,9 +94,9 @@
 	[path appendString:page];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"statuses"]) {
-		return [self getAllStatusesFromData:data];
+		return [self statusesFromData:data];
 	} else {
 		return NULL;
 	}
@@ -112,21 +112,21 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"statuses"]) {
-		return [self getAllStatusesFromData:data];
+		return [self statusesFromData:data];
 	} else {
 		return NULL;
 	}
 }
 
 // creates a favorite status
-- (NSXMLNode *) favoriteStatusWithID:(NSString *)identifier {
+- (NSXMLNode *) favoriteStatus:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"favorites/create/"];
 	[path appendString:identifier];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 											 synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"status"]) {
@@ -137,7 +137,7 @@
 }
 
 // creates a favorite status with no data
-- (void) blindFavoriteStatusWithID:(NSString *)identifier {
+- (void) blindFavoriteStatus:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"favorites/create/"];
 	[path appendString:identifier];
@@ -148,12 +148,12 @@
 }
 
 // unfavorites the specified status
-- (NSXMLNode *) unfavoriteStatusWithID:(NSString *)identifier {
+- (NSXMLNode *) unfavoriteStatus:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"favorites/destroy/"];
 	[path appendString:identifier];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"DELETE" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"DELETE" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"status"]) {

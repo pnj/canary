@@ -1358,7 +1358,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								</object>
 								<object class="NSMenuItem" id="564852904">
 									<reference key="NSMenu" ref="1044251761"/>
-									<string key="NSTitle">Replies</string>
+									<string key="NSTitle">Mentions</string>
 									<string key="NSKeyEquiv">2</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -2189,10 +2189,10 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 												<double key="NSSegmentItemWidth">3.100000e+01</double>
 												<object class="NSCustomResource" key="NSSegmentItemImage">
 													<string key="NSClassName">NSImage</string>
-													<string key="NSResourceName">repliesTemplate</string>
+													<string key="NSResourceName">mentionsTemplate</string>
 												</object>
 												<string key="NSSegmentItemLabel"/>
-												<string key="NSSegmentItemTooltip">Replies</string>
+												<string key="NSSegmentItemTooltip">Mentions</string>
 												<int key="NSSegmentItemTag">1</int>
 												<int key="NSSegmentItemImageScaling">0</int>
 											</object>
@@ -2379,6 +2379,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="196338544"/>
+									<reference key="NSNextKeyView" ref="73709233"/>
 									<reference key="NSDocView" ref="73709233"/>
 									<object class="NSColor" key="NSBGColor">
 										<int key="NSColorSpace">1</int>
@@ -2410,6 +2411,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView" ref="475840668"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="213564487"/>
 							<reference key="NSHScroller" ref="441622477"/>
@@ -5940,14 +5942,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">repliesTimelineMenuItemClicked:</string>
-						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="564852904"/>
-					</object>
-					<int key="connectionID">2336</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">messagesTimelineMenuItemClicked:</string>
 						<reference key="source" ref="204190209"/>
 						<reference key="destination" ref="480599994"/>
@@ -5969,6 +5963,14 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<reference key="destination" ref="973587817"/>
 					</object>
 					<int key="connectionID">2339</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">mentionsTimelineMenuItemClicked:</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="564852904"/>
+					</object>
+					<int key="connectionID">2340</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -9148,7 +9150,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">2339</int>
+			<int key="maxID">2340</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -9217,12 +9219,12 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>invokeActionOnUser:</string>
 							<string>listen:</string>
 							<string>loginCall:</string>
+							<string>mentionsTimelineMenuItemClicked:</string>
 							<string>messagesTimelineMenuItemClicked:</string>
 							<string>openUserURL:</string>
 							<string>paste:</string>
 							<string>performInstaFiltering:</string>
 							<string>quitCall:</string>
-							<string>repliesTimelineMenuItemClicked:</string>
 							<string>retypePreviousUpdate:</string>
 							<string>sendFeedback:</string>
 							<string>sendImageToTwitPic:</string>

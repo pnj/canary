@@ -29,11 +29,11 @@
 
 @implementation ORSTimelineCacheManager
 
-@synthesize followingStatusCache, repliesStatusCache, publicStatusCache, 
+@synthesize followingStatusCache, mentionsStatusCache, publicStatusCache, 
 	archiveStatusCache, receivedMessagesCache, sentMessagesCache,
-	firstFollowingCall, firstRepliesCall, firstPublicCall, 
+	firstFollowingCall, firstMentionsCall, firstPublicCall, 
 	firstArchiveCall, firstReceivedMessagesCall, firstSentMessagesCall,
-	lastFollowingStatusID, lastReplyStatusID, lastPublicStatusID,
+	lastFollowingStatusID, lastMentionStatusID, lastPublicStatusID,
 	lastArchiveStatusID, lastReceivedMessageID, lastSentMessageID, 
 	favoritesStatusCache, firstFavoriteCall, lastFavoriteStatusID;
 
@@ -43,10 +43,10 @@
 		followingStatusCache = [NSMutableArray array];
 		firstFollowingCall = YES;
 		lastFollowingStatusID = [NSString string];
-		// Replies cache
-		repliesStatusCache = [NSMutableArray array];
-		firstRepliesCall = YES;
-		lastReplyStatusID = [NSString string];
+		// Mentions cache
+		mentionsStatusCache = [NSMutableArray array];
+		firstMentionsCall = YES;
+		lastMentionStatusID = [NSString string];
 		// Public cache
 		publicStatusCache = [NSMutableArray array];
 		firstPublicCall = YES;
@@ -74,7 +74,7 @@
 - (void) resetAllCaches {
 	[favoritesStatusCache removeAllObjects];
 	[followingStatusCache removeAllObjects];
-	[repliesStatusCache removeAllObjects];
+	[mentionsStatusCache removeAllObjects];
 	[publicStatusCache removeAllObjects];
 	[archiveStatusCache removeAllObjects];
 	[receivedMessagesCache removeAllObjects];
@@ -82,7 +82,7 @@
 	
 	firstFavoriteCall = YES;
 	firstFollowingCall = YES;
-	firstRepliesCall = YES;
+	firstMentionsCall = YES;
 	firstPublicCall = YES;
 	firstArchiveCall = YES;
 	firstReceivedMessagesCall = YES;
@@ -106,10 +106,10 @@
 		firstCall = &firstPublicCall;
 		cache = publicStatusCache;
 		lastStatusID = &lastPublicStatusID;
-	} else if (timelineCacheType == ORSRepliesTimelineCacheType) {
-		firstCall = &firstRepliesCall;
-		cache = repliesStatusCache;
-		lastStatusID = &lastReplyStatusID;
+	} else if (timelineCacheType == ORSMentionsTimelineCacheType) {
+		firstCall = &firstMentionsCall;
+		cache = mentionsStatusCache;
+		lastStatusID = &lastMentionStatusID;
 	} else if (timelineCacheType == ORSFavoritesTimelineCacheType) {
 		firstCall = &firstFavoriteCall;
 		cache = favoritesStatusCache;

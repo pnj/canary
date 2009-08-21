@@ -96,7 +96,7 @@
 - (void) initiateStatusDispatch:(NSNotification *)note {
 	@synchronized(self) {
 		if ([queueArray count] > 0) {
-			[twitterEngine sendUpdate:[queueArray objectAtIndex:0]
+			[twitterEngine postStatus:[queueArray objectAtIndex:0]
 							inReplyTo:nil];
 			[queueArray removeObjectAtIndex:0];
 			[self performSelector:@selector(initiateStatusDispatch:) 
@@ -109,8 +109,8 @@
 - (void) initiateDMDispatch:(NSNotification *)note {
 	@synchronized(self) {
 		if ([queueArray count] > 0) {
-			[twitterEngine newDM:[queueArray objectAtIndex:0]
-						  toUser:(NSString *)[note object]];
+			[twitterEngine sendDM:[queueArray objectAtIndex:0]
+					 toUserWithID:(NSString *)[note object]];
 			[queueArray removeObjectAtIndex:0];
 			[self performSelector:@selector(initiateDMDispatch:) 
 					   withObject:nil

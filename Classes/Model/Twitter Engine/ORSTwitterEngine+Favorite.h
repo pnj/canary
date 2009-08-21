@@ -31,13 +31,13 @@
 @interface ORSTwitterEngine ( FavoritesMethods )
 
 - (NSArray *) favorites;
-- (NSArray *) favoritesSinceStatusWithID:(NSString *)identifier; //unofficial
+- (NSArray *) favoritesSinceStatus:(NSString *)identifier; //unofficial
 - (NSArray *) favoritesForUser:(NSString *)user;
 - (NSArray *) favoritesAtPage:(NSString *)page;
 - (NSArray *) favoritesForUser:(NSString *)user 
 						atPage:(NSString *)page;
-- (NSXMLNode *) favoriteStatusWithID:(NSString *)identifier;
-- (void) blindFavoriteStatusWithID:(NSString *)identifier;
-- (NSXMLNode *) unfavoriteStatusWithID:(NSString *)identifier;
+- (NSXMLNode *) favoriteStatus:(NSString *)identifier;
+- (void) blindFavoriteStatus:(NSString *)identifier;
+- (NSXMLNode *) unfavoriteStatus:(NSString *)identifier;
 
 @end

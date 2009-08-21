@@ -32,7 +32,7 @@
 // verifies the user credentials
 - (BOOL) verifyCredentials {
 	NSString *path = @"account/verify_credentials.xml";
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET" 
 																atPath:path 
 														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -45,7 +45,7 @@
 // gets the rate limit status
 - (NSXMLNode *) rateLimitStatus {
 	NSString *path = @"account/rate_limit_status.xml";
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET" 
 																atPath:path
 											 synchronously:synchronously]];
 	//if (![[[node childAtIndex:0] name] isEqualToString:@"error"]) {
@@ -59,7 +59,7 @@
 // ends the session of the authenticating user
 - (BOOL) endSession {
 	NSString *path = @"account/end_session.xml";
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path 
 											 synchronously:synchronously]];
 	if (node) {
@@ -74,7 +74,7 @@
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"account/update_delivery_device.xml?device="];
 	[path appendString:device];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 											 synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -87,8 +87,8 @@
 - (NSXMLNode *) setProfileBackgroundColor:(NSColor *)newColor {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_colors.xml?profile_background_color="];
-	[path appendString:[newColor hexadecimalValueOfAnNSColor]];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	[path appendString:[newColor hexadecimalValue]];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -101,8 +101,8 @@
 - (NSXMLNode *) setProfileTextColor:(NSColor *)newColor {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_colors.xml?profile_text_color="];
-	[path appendString:[newColor hexadecimalValueOfAnNSColor]];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	[path appendString:[newColor hexadecimalValue]];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -115,8 +115,8 @@
 - (NSXMLNode *) setProfileLinkColor:(NSColor *)newColor {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_colors.xml?profile_link_color="];
-	[path appendString:[newColor hexadecimalValueOfAnNSColor]];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	[path appendString:[newColor hexadecimalValue]];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -129,8 +129,8 @@
 - (NSXMLNode *) setProfileSidebarFillColor:(NSColor *)newColor {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_colors.xml?profile_sidebar_fill_color="];
-	[path appendString:[newColor hexadecimalValueOfAnNSColor]];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	[path appendString:[newColor hexadecimalValue]];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -143,8 +143,8 @@
 - (NSXMLNode *) setProfileSidebarBorderColor:(NSColor *)newColor {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_colors.xml?profile_sidebar_border_color="];
-	[path appendString:[newColor hexadecimalValueOfAnNSColor]];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	[path appendString:[newColor hexadecimalValue]];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -157,7 +157,7 @@
 - (NSXMLNode *) setProfileImage:(NSString *)filename {
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile_image.xml"];
-	NSXMLNode *node = [self getNodeFromData:[self uploadImageFile:filename 
+	NSXMLNode *node = [self nodeFromData:[self uploadImageFile:filename 
 													toTwitterPath:path
 													synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -170,7 +170,7 @@
 - (NSXMLNode *) setProfileBackgroundImage:(NSString *)filename {
 	NSMutableString *path = [NSMutableString stringWithString:
 							 @"account/update_profile_background_image.xml"];
-	NSXMLNode *node = [self getNodeFromData:[self uploadImageFile:filename 
+	NSXMLNode *node = [self nodeFromData:[self uploadImageFile:filename 
 													toTwitterPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -184,7 +184,7 @@
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile.xml?name="];
 	[path appendString:name];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -198,7 +198,7 @@
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile.xml?email="];
 	[path appendString:email];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -212,7 +212,7 @@
 	NSMutableString *path = [NSMutableString stringWithString:
 		@"account/update_profile.xml?url="];
 	[path appendString:URL];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 													synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -227,7 +227,7 @@
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"account/update_profile.xml?location="];
 	[path appendString:location];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 											 synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -241,7 +241,7 @@
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"account/update_profile.xml?description="];
 	[path appendString:description];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"user"]) {

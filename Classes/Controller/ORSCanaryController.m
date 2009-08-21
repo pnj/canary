@@ -368,11 +368,11 @@ sender {
 		[self getFriendsTimeline];
 		[self.window setTitle:@"Canary: Friends"];
 	} else if (timelineControl.selectedSegment == 1) {
-		if ([cacheManager.repliesStatusCache count] > 0) {
-			self.statuses = cacheManager.repliesStatusCache;
+		if ([cacheManager.mentionsStatusCache count] > 0) {
+			self.statuses = cacheManager.mentionsStatusCache;
 		}
-		[self getReplies];
-		[self.window setTitle:@"Canary: Replies"];
+		[self getMentions];
+		[self.window setTitle:@"Canary: Mentions"];
 	} else if (timelineControl.selectedSegment == 2) {
 		if ([[cacheManager receivedMessagesCache] count] > 0) {
 			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
@@ -395,7 +395,7 @@ sender {
 	[self changeSegmentedControlTimeline:timelineSegControl];
 }
 
-- (IBAction) repliesTimelineMenuItemClicked:sender {
+- (IBAction) mentionsTimelineMenuItemClicked:sender {
 	[timelineSegControl setSelectedSegment:1];
 	[self changeSegmentedControlTimeline:timelineSegControl];
 }
@@ -438,7 +438,7 @@ sender {
 														   repeats:YES];
 		} else if (timelineSegControl.selectedSegment == 1) { 
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
-					target:self selector:@selector(getReplies) userInfo:nil 
+					target:self selector:@selector(getMentions) userInfo:nil 
 														   repeats:YES];
 		} else if (timelineSegControl.selectedSegment == 3) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
@@ -518,7 +518,7 @@ sender {
 		firstFollowingTimelineRun = NO;
 	} else if (timelineSegControl.selectedSegment == 1) {
 		self.statuses = [cacheManager 
-				setStatusesForTimelineCache:ORSRepliesTimelineCacheType
+				setStatusesForTimelineCache:ORSMentionsTimelineCacheType
 											withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
@@ -532,7 +532,7 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self performSelectorInBackground:@selector(postRepliesReceived:) 
+		[self performSelectorInBackground:@selector(postMentionsReceived:) 
 							   withObject:note];		
 	} else if (timelineSegControl.selectedSegment == 3) {
 		self.statuses = [cacheManager 
@@ -709,10 +709,10 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstFollowingCall) {
-			[twitterEngine getFriendsTimeline];
+			[twitterEngine friendsTimeline];
 		} else {
 			[twitterEngine 
-			 getFriendsTimelineSinceStatus:cacheManager.lastFollowingStatusID];
+			 friendsTimelineSinceStatus:cacheManager.lastFollowingStatusID];
 		}
 	}
 }
@@ -722,10 +722,10 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstArchiveCall) {
-			[twitterEngine getUserTimelineForUser:twitterEngine.sessionUserID];
+			[twitterEngine userTimelineForUserWithID:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
-			 getUserTimelineSinceStatus:cacheManager.lastArchiveStatusID];
+			 userTimelineSinceStatus:cacheManager.lastArchiveStatusID];
 		}
 	}
 }
@@ -735,23 +735,23 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstPublicCall) {
-			[twitterEngine getPublicTimeline];
+			[twitterEngine publicTimeline];
 		} else {
 			[twitterEngine 
-			 getPublicTimelineSinceStatus:cacheManager.lastPublicStatusID];
+			 publicTimelineSinceStatus:cacheManager.lastPublicStatusID];
 		}
 	}
 }
 
-// Gets the replies
-- (void) getReplies {
+// Gets the mentions
+- (void) getMentions {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
-		if (cacheManager.firstRepliesCall) {
-			[twitterEngine getReplies];
+		if (cacheManager.firstMentionsCall) {
+			[twitterEngine mentions];
 		} else {
 			[twitterEngine 
-			 getRepliesSinceStatus:cacheManager.lastReplyStatusID];
+			 mentionsSinceStatus:cacheManager.lastMentionStatusID];
 		}
 	}
 }
@@ -764,7 +764,7 @@ sender {
 			[twitterEngine favoritesForUser:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
-			 favoritesSinceStatusWithID:cacheManager.lastFavoriteStatusID];
+			 favoritesSinceStatus:cacheManager.lastFavoriteStatusID];
 		}
 	}
 }
@@ -774,10 +774,10 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstReceivedMessagesCall) {
-			[twitterEngine getReceivedDMs];
+			[twitterEngine receivedDMs];
 		} else {
 			[twitterEngine 
-			 getReceivedDMsSinceDM:cacheManager.lastReceivedMessageID];
+			 receivedDMsSinceDMWithID:cacheManager.lastReceivedMessageID];
 		}
 	}
 }
@@ -787,9 +787,9 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstSentMessagesCall) {
-			[twitterEngine getSentDMs];
+			[twitterEngine sentDMs];
 		} else {
-			[twitterEngine getSentDMsSinceDM:cacheManager.lastSentMessageID];
+			[twitterEngine sentDMsSinceDMWithID:cacheManager.lastSentMessageID];
 		}
 	}
 }
@@ -864,6 +864,18 @@ sender {
 	NSString *message = [NSString stringWithFormat:@"%@ (via @%@)", 
 						 statusText, userID];
 	[self insertStringTokenInNewStatusTextField:message];
+}
+
+- (void) retweetStatus:(NSString *)identifier {
+	if (twitterEngine.sessionUserID) {
+		[twitterEngine retweetStatus:identifier];
+		[self showStatusBarMessage:@"Retweet sent" 
+					withImageNamed:@"comments"];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
+	}
 }
 
 // Updates the new status text field and other related components when the 
@@ -1450,6 +1462,7 @@ sender {
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Retweet this"]) {
 		[self retweetStatus:[(NSXMLNode *)[sender toolTip] text]
 			 fromUserWithID:userScreenName];
+		//[self retweetStatus:[(NSXMLNode *)[sender toolTip] ID]];
 	}
 }
 
@@ -2132,7 +2145,7 @@ sender {
 // Add user with given ID from friends list (following)
 - (void) createFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine makeFriendUserWithID:userID];
+		[twitterEngine befriendUserWithID:userID];
 		NSString *msg = [NSString stringWithFormat:@"Following %@",
 						 userID];
 		[self showStatusBarMessage:msg
@@ -2147,7 +2160,7 @@ sender {
 // Remove user with given ID from friends list (following)
 - (void) destroyFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine destroyFriendshipWithUser:userID];
+		[twitterEngine unfriendUserWithID:userID];
 		NSString *msg = [NSString stringWithFormat:@"No longer following %@",
 						 userID];
 		[self showStatusBarMessage:msg
@@ -2197,7 +2210,7 @@ sender {
 // Favorite the selected status
 - (void) favoriteStatusWithID:(NSString *)statusID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine blindFavoriteStatusWithID:statusID];
+		[twitterEngine blindFavoriteStatus:statusID];
 		[self showStatusBarMessage:@"A new favorite has been added" 
 					withImageNamed:@"fave_star"];
 		messageDurationTimer = [NSTimer 

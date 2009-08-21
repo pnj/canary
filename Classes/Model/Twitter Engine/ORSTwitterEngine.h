@@ -63,33 +63,13 @@
 - (NSData *) uploadImageFile:(NSString *)filename
 			   toTwitterPath:(NSString *)path
 			   synchronously:(BOOL)synchr;
-- (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data;
-- (NSXMLNode *) getNodeFromData:(NSData *)userData;
-- (NSArray *) getAllStatusesFromData:(NSData *)statuses;
+- (NSXMLDocument *) xmlDocumentFromData:(NSData *)data;
+- (NSXMLNode *) nodeFromData:(NSData *)userData;
+- (NSArray *) statusesFromData:(NSData *)statuses;
 - (NSArray *) usersFromData:(NSData *)data;
 - (NSArray *) savedSearchesFromData:(NSData *)data;
-- (NSArray *) IDsFromData:(NSData *)data;
-- (NSArray *) getAllDMsFromData:(NSData *)directMessages;
-
-// Status methods
-- (NSArray *) getPublicTimeline;
-- (NSArray *) getPublicTimelineSinceStatus:(NSString *)statusID;
-- (NSArray *) getFriendsTimeline;
-- (NSArray *) getFriendsTimelineSinceStatus:(NSString *)statusID;
-- (NSArray *) getUserTimeline;
-- (NSArray *) getUserTimelineForUser:(NSString *)userID;
-- (NSArray *) getUserTimelineSinceStatus:(NSString *)statusID;
-- (NSXMLNode *) sendUpdate:(NSString *)text inReplyTo:(NSString *)statusID;
-- (NSArray *) getReplies;
-- (NSArray *) getRepliesSinceStatus:(NSString *)statusID;
-
-// Direct Message methods
-- (NSArray *) getReceivedDMs;
-- (NSArray *) getReceivedDMsSinceDM:(NSString *)dmID;
-- (NSArray *) getSentDMs;
-- (NSArray *) getSentDMsSinceDM:(NSString *)dmID;
-
-- (NSXMLNode *) getDowntimeSchedule;
+- (NSArray *) idsFromData:(NSData *)data;
+- (NSArray *) dmsFromData:(NSData *)directMessages;
 
 @property (copy) NSMutableData *dataReceived;
 @property BOOL synchronously;

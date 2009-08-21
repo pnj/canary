@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+StatusAdditions.h
+//  ORSTwitterEngine+DirectMessage.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 12/04/2009.
@@ -28,27 +28,19 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( StatusAdditions ) 
+@interface ORSTwitterEngine ( DirectMessageMethods )
 
-// Status methods
-- (NSArray *) getFriendsTimelineSince:(NSString *)date;
-- (NSArray *) getFriendsTimelineWithNumberOfStatuses:(NSString *)count;
-- (NSArray *) getFriendsTimelineAtPage:(NSString *)page;
-- (NSArray *) getUserTimelineWithNumberOfStatuses:(NSString *)count;
-- (NSArray *) getUserTimelineSince:(NSString *)date;
-- (NSArray *) getUserTimelineAtPage:(NSString *)page;
-
-- (NSArray *) getUserTimelineForUser:(NSString *)userID 
-				withNumberOfStatuses:(NSString *)count;
-- (NSArray *) getUserTimelineForUser:(NSString*)userID 
-							   since:(NSString *)date;
-- (NSArray *) getUserTimelineForUser:(NSString *)userID
-						 sinceStatus:(NSString *)statusID;
-- (NSArray *) getUserTimelineForUser:(NSString *)userID
-							  atPage:(NSString *)page;
-- (NSXMLNode *) getStatus:(NSString *)statusID;
-- (NSArray *) getRepliesAtPage:(NSString *)page;
-- (NSArray *) getRepliesSince:(NSString *)date;
-- (NSXMLNode *) destroyStatus:(NSString *)statusID;
+- (NSArray *) receivedDMs;
+- (NSArray *) receivedDMsSinceDMWithID:(NSString *)dmID;
+- (NSArray *) receivedDMsSinceDate:(NSString *)date;
+- (NSArray *) receivedDMsAtPage:(NSString *)page;
+- (NSArray *) sentDMs;
+- (NSArray *) sentDMsSinceDMWithID:(NSString *)dmID;
+- (NSArray *) sentDMsSinceDate:(NSString *)date;
+- (NSArray *) sentDMsAtPage:(NSString *)page;
+- (NSXMLNode *) sendDM:(NSString *)message toUserWithID:(NSString *)userID;
+- (NSXMLNode *) sendDM:(NSString *)message 
+  toUserWithScreenName:(NSString *)screenName;
+- (NSXMLNode *) deleteDMWithID:(NSString *)identifier;
 
 @end

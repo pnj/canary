@@ -54,6 +54,7 @@
 #import "ORSTwitterEngine+Favorite.h"
 #import "ORSTwitterEngine+Account.h"
 #import "ORSTwitterEngine+Friendship.h"
+#import "ORSTwitterEngine+Timeline.h"
 
 @interface ORSCanaryController : NSWindowController < GrowlApplicationBridgeDelegate > {
 	// Fundamentals
@@ -164,7 +165,7 @@
 - (IBAction) retypePreviousUpdate:sender;
 - (IBAction) changeSegmentedControlTimeline:sender;
 - (IBAction) friendsTimelineMenuItemClicked:sender;
-- (IBAction) repliesTimelineMenuItemClicked:sender;
+- (IBAction) mentionsTimelineMenuItemClicked:sender;
 - (IBAction) messagesTimelineMenuItemClicked:sender;
 - (IBAction) favoritesTimelineMenuItemClicked:sender;
 - (void) scrollToTop;
@@ -180,7 +181,7 @@
 - (void) getFriendsTimeline;
 - (void) getUserTimeline;
 - (void) getPublicTimeline;
-- (void) getReplies;
+- (void) getMentions;
 - (void) getFavorites;
 - (void) getReceivedMessages;
 - (void) getSentMessages;

@@ -27,7 +27,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
-#import "ORSTwitterEngine+FavoritesAndDMAdditions.h"
+#import "ORSTwitterEngine+DirectMessage.h"
+#import "ORSTwitterEngine+Status.h"
 
 @interface ORSUpdateDispatcher : NSObject {
 

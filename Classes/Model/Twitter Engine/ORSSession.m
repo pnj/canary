@@ -331,7 +331,7 @@
 }
 
 // Returns an XML document from the given data
-- (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data {
+- (NSXMLDocument *) xmlDocumentFromData:(NSData *)data {
 	NSError *error = NULL;
 	NSString *xml = [[NSString alloc] initWithData:data
 										  encoding:NSUTF8StringEncoding];
@@ -356,16 +356,16 @@
 }
 
 // Returns the node from the data received from the connection
-- (NSXMLNode *) getNodeFromData:(NSData *)data {
-	NSXMLDocument *xmlDocument = [self getXMLDocumentFromData:data];
+- (NSXMLNode *) nodeFromData:(NSData *)data {
+	NSXMLDocument *xmlDocument = [self xmlDocumentFromData:data];
 	return [xmlDocument rootElement];
 }
 
 // Returns all the statuses as an array from the data received from the
 // connection.
-- (NSArray *) getAllStatusesFromData:(NSData *)statuses {
+- (NSArray *) statusesFromData:(NSData *)statuses {
 	NSError *error = nil;
-	NSXMLNode *root = [self getNodeFromData:statuses];
+	NSXMLNode *root = [self nodeFromData:statuses];
 	return [root nodesForXPath:@".//status" error:&error];
 }
 
@@ -373,7 +373,7 @@
 // connection.
 - (NSArray *) usersFromData:(NSData *)data {
 	NSError *error = nil;
-	NSXMLNode *root = [self getNodeFromData:data];
+	NSXMLNode *root = [self nodeFromData:data];
 	return [root nodesForXPath:@".//user" error:&error];
 }
 
@@ -381,21 +381,21 @@
 // connectiom.
 - (NSArray *) savedSearchesFromData:(NSData *)data {
 	NSError *error = nil;
-	NSXMLNode *root = [self getNodeFromData:data];
+	NSXMLNode *root = [self nodeFromData:data];
 	return [root nodesForXPath:@".//saved_search" error:&error];
 }
 
-- (NSArray *) IDsFromData:(NSData *)data {
+- (NSArray *) idsFromData:(NSData *)data {
 	NSError *error = nil;
-	NSXMLNode *root = [self getNodeFromData:data];
+	NSXMLNode *root = [self nodeFromData:data];
 	return [root nodesForXPath:@".//id" error:&error];
 }
 
 // Returns all the users as an array from the data received from the
 // connection.
-- (NSArray *) getAllDMsFromData:(NSData *)directMessages {
+- (NSArray *) dmsFromData:(NSData *)directMessages {
 	NSError *error = NULL;
-	NSXMLNode *root = [self getNodeFromData:directMessages];
+	NSXMLNode *root = [self nodeFromData:directMessages];
 	return [root nodesForXPath:@".//direct_message" error:&error];
 }
 
@@ -452,17 +452,17 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection {
 	@synchronized(self) {
 		NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-		NSXMLNode *node = [self getNodeFromData:dataReceived];
+		NSXMLNode *node = [self nodeFromData:dataReceived];
 		if ([[node name] isEqualToString:@"statuses"]) {
 			[nc postNotificationName:@"OTEStatusesDidFinishLoading"
-							object:[self getAllStatusesFromData:dataReceived]];
+							object:[self statusesFromData:dataReceived]];
 		} else if ([[node name] isEqualToString:@"users"]) {
 			[nc postNotificationName:@"OTEUsersDidFinishLoading"
 						  object:[self usersFromData:dataReceived]];
 		} else if ([[node name] isEqualToString:@"direct-messages"] || 
 				   [[node name] isEqualToString:@"nilclasses"]) {
 			[nc postNotificationName:@"OTEDMsDidFinishLoading"
-							  object:[self getAllDMsFromData:dataReceived]];
+							  object:[self dmsFromData:dataReceived]];
 		} else if ([[node name] isEqualToString:@"direct_message"])  {
 			NSError *error = NULL;
 			[nc postNotificationName:@"OTEDMDidFinishSending"

@@ -5,6 +5,6 @@
 
 @interface NSColor ( NSColorHexadecimalValue )
 
-- (NSString *) hexadecimalValueOfAnNSColor;
+- (NSString *) hexadecimalValue;
 
 @end

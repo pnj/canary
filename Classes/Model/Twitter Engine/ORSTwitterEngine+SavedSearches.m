@@ -34,7 +34,7 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"saved_searches"]) {
 		return [self savedSearchesFromData:data];
 	} else {
@@ -42,12 +42,12 @@
 	}
 }
 
-- (NSXMLNode *) savedSearchWithID:(NSString *)identifier {
+- (NSXMLNode *) savedSearch:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"saved_searches/show/"];
 	[path appendString:identifier];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET" 
 																atPath:path
 												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"saved_search"]) {
@@ -67,7 +67,7 @@
 	[path appendString:query];
 	
 	if (synchronously) {
-		NSXMLNode *node = [self getNodeFromData:[self 
+		NSXMLNode *node = [self nodeFromData:[self 
 			executeUnencodedRequestOfType:@"POST" atPath:path 
 				synchronously:synchronously]];
 		if ([[node name] isEqualToString:@"saved_search"]) {
@@ -83,13 +83,13 @@
 	}
 }
 
-- (NSXMLNode *) destroySavedSearchWithID:(NSString *)identifier {
+- (NSXMLNode *) destroySavedSearch:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"saved_searches/destroy/"];
 	[path appendString:identifier];
 	[path appendString:@".xml"];
 	
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"DELETE" 
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"DELETE" 
 		atPath:path synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"saved_search"]) {
 		return node;

@@ -36,9 +36,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"ids"]) {
-		return [self IDsFromData:data];
+		return [self idsFromData:data];
 	} else {
 		return NULL;
 	}
@@ -51,9 +51,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"ids"]) {
-		return [self IDsFromData:data];
+		return [self idsFromData:data];
 	} else {
 		return NULL;
 	}
@@ -66,9 +66,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"ids"]) {
-		return [self IDsFromData:data];
+		return [self idsFromData:data];
 	} else {
 		return NULL;
 	}
@@ -81,9 +81,9 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
-	NSXMLNode *node = [self getNodeFromData:data];
+	NSXMLNode *node = [self nodeFromData:data];
 	if ([[node name] isEqualToString:@"ids"]) {
-		return [self IDsFromData:data];
+		return [self idsFromData:data];
 	} else {
 		return NULL;
 	}

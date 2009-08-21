@@ -1,5 +1,5 @@
 //
-//  ORSTwitterEngine+UserAdditions.h
+//  ORSTwitterEngine+User.h
 //  Twitter Engine
 //
 //  Created by Nicholas Toumpelis on 12/04/2009.
@@ -28,29 +28,26 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSTwitterEngine ( UserAdditions )
+@interface ORSTwitterEngine ( UserMethods )
 
-// User methods
-- (NSArray *) getFriends;
-- (NSArray *) getFriendsOfUser:(NSString *)userID;
-- (NSArray *) getFriendsAtPage:(NSString *)page;
-- (NSArray *) getFriendsLite;
-- (NSArray *) getFriendsLiteAtPage:(int)page;
-- (NSArray *) getFriendsSince:(NSString *)date;
-- (NSArray *) getFriendsOfUser:(NSString *)userID
-						atPage:(NSString *)page;
-- (NSArray *) getFriendsLiteOfUser:(NSString *)userID;
-- (NSArray *) getFriendsOfUser:(NSString *)userID
-						 since:(NSString *)date;
-- (NSArray *) getFollowers;
-- (NSArray *) getFollowersOfUser:(NSString *)userID;
-- (NSArray *) getFollowersAtPage:(NSString *)page;
-- (NSArray *) getFollowersLite;
-- (NSArray *) getFollowersOfUser:(NSString *)userID 
-						  atPage:(NSString *)page;
-- (NSArray *) getFollowersLiteOfUser:(NSString *)userID;
+- (NSXMLNode *) userWithID:(NSString *)identifier;
+- (NSXMLNode *) userWithScreenName:(NSString *)screenName;
+
+- (NSArray *) friends;
+- (NSArray *) friendsOfUserWithID:(NSString *)identifier;
+- (NSArray *) friendsAtPage:(NSString *)page;
+- (NSArray *) friendsSinceDate:(NSString *)date;
+- (NSArray *) friendsOfUserWithID:(NSString *)identifier
+						   atPage:(NSString *)page;
+- (NSArray *) friendsOfUserWithID:(NSString *)identifier
+						sinceDate:(NSString *)date;
+
+- (NSArray *) followers;
+- (NSArray *) followersOfUserWithID:(NSString *)identifier;
+- (NSArray *) followersAtPage:(NSString *)page;
+- (NSArray *) followersOfUserWithID:(NSString *)identifier 
+							 atPage:(NSString *)page;
+
 - (NSArray *) getFeatured;
-- (NSXMLNode *) showUser:(NSString *)userID;
-- (NSXMLNode *) showUserWithEmail:(NSString *)email;
 
 @end

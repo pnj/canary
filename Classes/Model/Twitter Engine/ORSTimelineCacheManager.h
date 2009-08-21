@@ -31,7 +31,7 @@ enum {
 	ORSFollowingTimelineCacheType = 1,
 	ORSArchiveTimelineCacheType = 2,
 	ORSPublicTimelineCacheType = 3,
-	ORSRepliesTimelineCacheType = 4,
+	ORSMentionsTimelineCacheType = 4,
 	ORSFavoritesTimelineCacheType = 5,
 	ORSReceivedMessagesTimelineCacheType = 6,
 	ORSSentMessagesTimelineCacheType = 7
@@ -41,13 +41,13 @@ typedef NSUInteger ORSTimelineCacheTypes;
 @interface ORSTimelineCacheManager : NSObject {
 
 	// Intermediate caches
-	NSMutableArray *followingStatusCache, *repliesStatusCache, 
+	NSMutableArray *followingStatusCache, *mentionsStatusCache, 
 		*publicStatusCache, *archiveStatusCache, *receivedMessagesCache,
 		*sentMessagesCache, *favoritesStatusCache;
-	BOOL firstFollowingCall, firstRepliesCall, firstPublicCall, 
+	BOOL firstFollowingCall, firstMentionsCall, firstPublicCall, 
 		firstArchiveCall, firstReceivedMessagesCall, firstSentMessagesCall,
 		firstFavoriteCall;
-	NSString *lastFollowingStatusID, *lastReplyStatusID, *lastPublicStatusID,
+	NSString *lastFollowingStatusID, *lastMentionStatusID, *lastPublicStatusID,
 		*lastArchiveStatusID, *lastReceivedMessageID, *lastSentMessageID, 
 		*lastFavoriteStatusID;
 	
@@ -57,13 +57,13 @@ typedef NSUInteger ORSTimelineCacheTypes;
 - (NSMutableArray *) setStatusesForTimelineCache:(NSUInteger)timelineCacheType
 					withNotification:(NSNotification *)note;
 
-@property(copy) NSMutableArray *followingStatusCache, *repliesStatusCache,
+@property(copy) NSMutableArray *followingStatusCache, *mentionsStatusCache,
 	*publicStatusCache, *archiveStatusCache, *receivedMessagesCache,
 	*sentMessagesCache, *favoritesStatusCache;
-@property() BOOL firstFollowingCall, firstRepliesCall, firstPublicCall,
+@property() BOOL firstFollowingCall, firstMentionsCall, firstPublicCall,
 	firstArchiveCall, firstReceivedMessagesCall, 
 	firstSentMessagesCall, firstFavoriteCall;
-@property(copy) NSString *lastFollowingStatusID, *lastReplyStatusID,
+@property(copy) NSString *lastFollowingStatusID, *lastMentionStatusID,
 	*lastPublicStatusID, *lastArchiveStatusID, *lastReceivedMessageID, 
 	*lastSentMessageID, *lastFavoriteStatusID;
 

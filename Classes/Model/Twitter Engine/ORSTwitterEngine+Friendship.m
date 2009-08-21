@@ -30,11 +30,11 @@
 @implementation ORSTwitterEngine ( FriendshipMethods )
 
 // creates friendship with user
-- (NSXMLNode *) makeFriendUserWithID:(NSString *)identifier {
+- (NSXMLNode *) befriendUserWithID:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"friendships/create.xml?user_id="];
 	[path appendString:identifier];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -45,11 +45,11 @@
 }
 
 // creates friendship with user
-- (NSXMLNode *) makeFriendUserWithScreenName:(NSString *)screenName {
+- (NSXMLNode *) befriendUserWithScreenName:(NSString *)screenName {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"friendships/create.xml?screen_name="];
 	[path appendString:screenName];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
@@ -60,32 +60,44 @@
 }
 
 // discontinues friendship with user
-- (BOOL) destroyFriendshipWithUser:(NSString *)userID {
+- (NSXMLNode *) unfriendUserWithID:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"friendships/destroy/"];
-	[path appendString:userID];
-	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+		stringWithString:@"friendships/destroy.xml?user_id="];
+	[path appendString:identifier];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"DELETE" 
 																atPath:path 
-											 // synchronously:YES]];
 														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
-		return YES;
+		return node;
 	} else {
-		return NO;
+		return NULL;
+	}
+}
+
+- (NSXMLNode *) unfriendUserWithScreenName:(NSString *)screenName {
+	NSMutableString *path = [NSMutableString 
+		stringWithString:@"friendships/destroy.xml?screen_name="];
+	[path appendString:screenName];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"DELETE" 
+																atPath:path 
+														 synchronously:NO]];
+	if ([[node name] isEqualToString:@"user"]) {
+		return node;
+	} else {
+		return NULL;
 	}
 }
 
 // tests if a friendship exists between two users (one way only)
-- (BOOL) user:(NSString *)userIDA isFriendWithUser:(NSString *)userIDB {
+- (BOOL) user:(NSString *)userA isFriendWithUser:(NSString *)userB {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"friendships/exists.xml?user_a="];
-	[path appendString:userIDA];
+		stringWithString:@"friendships/exists.xml?user_a="];
+	[path appendString:userA];
 	[path appendString:@"&user_b="];
-	[path appendString:userIDB];
-	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET"
+	[path appendString:userB];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET"
 																atPath:path 
-														 synchronously:synchronously]];
+												synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"friends"] &&
 		[[node stringValue] isEqualToString:@"true"]) {
 		return YES;
@@ -93,5 +105,40 @@
 		return NO;
 	}
 }
+
+// returns detailed information about the relationship between two users
+- (NSXMLNode *) friendshipBetweenUserWithID:(NSString *)identifierA
+								  andUserWithID:(NSString *)identifierB {
+	NSMutableString *path = [NSMutableString 
+		stringWithString:@"friendships/show.xml?source_id="];
+	[path appendString:identifierA];
+	[path appendString:@"&target_id="];
+	[path appendString:identifierB];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET"
+																atPath:path
+												synchronously:synchronously]];
+	if ([[node name] isEqualToString:@"relationship"]) {
+		return node;
+	} else {
+		return NULL;
+	}
+}
+
+// returns detailed information about the relationship between two users
+- (NSXMLNode *) friendshipOfAuthdUserToUserWithID:(NSString *)identifier {
+	NSMutableString *path = [NSMutableString 
+						stringWithString:@"friendships/show.xml?target_id="];
+	[path appendString:identifier];
+	NSXMLNode *node = [self nodeFromData:[self executeRequestOfType:@"GET"
+																atPath:path
+												synchronously:synchronously]];
+	if ([[node name] isEqualToString:@"relationship"]) {
+		return node;
+	} else {
+		return NULL;
+	}
+}
+
+// potentially you could have a couple of methods with screen names
 
 @end

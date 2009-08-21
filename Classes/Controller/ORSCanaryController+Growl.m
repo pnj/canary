@@ -90,34 +90,34 @@
 	}
 }
 
-// Posts notifications that replies have been received
-- (void) postRepliesReceived:(NSNotification *)note {
-	NSMutableArray *newReplies = [[NSMutableArray alloc] init];
+// Posts notifications that mentions have been received
+- (void) postMentionsReceived:(NSNotification *)note {
+	NSMutableArray *newMentions = [[NSMutableArray alloc] init];
 	for (NSXMLNode *node in (NSArray *)note.object) {
 		if ([node.ID substringFromIndex:3].intValue > 
 			[[preferences statusIDSinceLastExecution] substringFromIndex:3].intValue) {
-			[newReplies addObject:node];
+			[newMentions addObject:node];
 		}
 	}
-	if (newReplies.count > 10) {
-		[GrowlApplicationBridge notifyWithTitle:@"Replies Received"
-			description:[NSString stringWithFormat:@"%i replies received", 
+	if (newMentions.count > 10) {
+		[GrowlApplicationBridge notifyWithTitle:@"Mentions Received"
+			description:[NSString stringWithFormat:@"%i mentions received", 
 												 ((NSArray *)note.object).count]
-							   notificationName:@"Replies Received"
+							   notificationName:@"Mentions Received"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:@""];
 	} else {
-		for (NSXMLNode *node in newReplies) {
+		for (NSXMLNode *node in newMentions) {
 			NSMutableDictionary *contextDict = [NSMutableDictionary new];
-			[contextDict setObject:@"Replies" forKey:@"Timeline"];
+			[contextDict setObject:@"Mentions" forKey:@"Timeline"];
 			[contextDict setObject:node.ID forKey:@"ID"];
 			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
 					URLWithString:node.userProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:[self userIdentifier:node]
 				description:[NSString replaceHTMLEntities:node.text]
-								   notificationName:@"Replies Received"
+								   notificationName:@"Mentions Received"
 										   iconData:iconData
 										   priority:1
 										   isSticky:NO
@@ -288,7 +288,7 @@
 	NSString *timeline = [contextDict objectForKey:@"Timeline"];
 	if (![statusID isEqualToString:@""]) {
 		if ([timeline isEqualToString:@"Friends"] || 
-			[timeline isEqualToString:@"Replies"]) {
+			[timeline isEqualToString:@"Mentions"]) {
 			for (NSXMLNode *node in [statusArrayController arrangedObjects]) {
 				if ([node.ID isEqualToString:statusID]) {
 					[statusArrayController setSelectedObjects:[NSArray 

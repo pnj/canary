@@ -32,5 +32,6 @@
 
 - (BOOL) isTwitterUp;
 - (NSXMLNode *) twitterError;
+- (NSXMLNode *) getDowntimeSchedule;  // unsupported?
 
 @end
