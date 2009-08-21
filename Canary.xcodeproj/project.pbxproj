@@ -96,9 +96,9 @@
 		05656BA8103AB7B30095BF38 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05656BA4103AB7A70095BF38 /* BWToolkitFramework.framework */; };
 		05656C5D103ABBC20095BF38 /* BWToolkit.ibplugin in Resources */ = {isa = PBXBuildFile; fileRef = 05656BF1103ABBC20095BF38 /* BWToolkit.ibplugin */; };
 		05656D27103AD5C50095BF38 /* favoritesTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D23103AD5C50095BF38 /* favoritesTemplate.pdf */; };
-		05656D28103AD5C50095BF38 /* mentionsTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D24103AD5C50095BF38 /* mentionsTemplate.pdf */; };
+		05656D28103AD5C50095BF38 /* friendsTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D24103AD5C50095BF38 /* friendsTemplate.pdf */; };
 		05656D29103AD5C50095BF38 /* messagesTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D25103AD5C50095BF38 /* messagesTemplate.pdf */; };
-		05656D2A103AD5C50095BF38 /* friendsTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D26103AD5C50095BF38 /* friendsTemplate.pdf */; };
+		05656D2A103AD5C50095BF38 /* mentionsTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D26103AD5C50095BF38 /* mentionsTemplate.pdf */; };
 		0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573D7330DA6650B002D1CCF /* Security.framework */; };
 		057E321C0F91E19A0055B843 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057E321B0F91E19A0055B843 /* ScriptingBridge.framework */; };
 		05A216A70FDD3FB1004748C4 /* ORSCanaryPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A216A60FDD3FB1004748C4 /* ORSCanaryPreferences.m */; };
@@ -114,7 +114,7 @@
 		05C05D74103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05D73103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m */; };
 		05C05DB6103D996100C70832 /* ORSTwitterEngine+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05DB5103D996100C70832 /* ORSTwitterEngine+Friendship.m */; };
 		05C05F0F103E9AF700C70832 /* ORSTwitterEngine+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C05F0E103E9AF700C70832 /* ORSTwitterEngine+Status.m */; };
-		05FF7474103AAE0200E053E0 /* filterTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7472103AAE0200E053E0 /* filterTemplate.pdf */; };
+		05C0613A103ED16000C70832 /* searchTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05C06139103ED16000C70832 /* searchTemplate.pdf */; };
 		05FF7475103AAE0200E053E0 /* sieveTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -275,9 +275,9 @@
 		05656BA4103AB7A70095BF38 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Additional/BWToolkitFramework.framework; sourceTree = "<group>"; };
 		05656BF1103ABBC20095BF38 /* BWToolkit.ibplugin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BWToolkit.ibplugin; path = Resources/BWToolkit.ibplugin; sourceTree = "<group>"; };
 		05656D23103AD5C50095BF38 /* favoritesTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = favoritesTemplate.pdf; path = Resources/Images/favoritesTemplate.pdf; sourceTree = "<group>"; };
-		05656D24103AD5C50095BF38 /* mentionsTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = mentionsTemplate.pdf; path = Resources/Images/mentionsTemplate.pdf; sourceTree = "<group>"; };
+		05656D24103AD5C50095BF38 /* friendsTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = friendsTemplate.pdf; path = Resources/Images/friendsTemplate.pdf; sourceTree = "<group>"; };
 		05656D25103AD5C50095BF38 /* messagesTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = messagesTemplate.pdf; path = Resources/Images/messagesTemplate.pdf; sourceTree = "<group>"; };
-		05656D26103AD5C50095BF38 /* friendsTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = friendsTemplate.pdf; path = Resources/Images/friendsTemplate.pdf; sourceTree = "<group>"; };
+		05656D26103AD5C50095BF38 /* mentionsTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = mentionsTemplate.pdf; path = Resources/Images/mentionsTemplate.pdf; sourceTree = "<group>"; };
 		0573D7330DA6650B002D1CCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		057E321B0F91E19A0055B843 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSCanaryPreferences.h; path = Classes/Controller/ORSCanaryPreferences.h; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 		05C05DB5103D996100C70832 /* ORSTwitterEngine+Friendship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Friendship.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Friendship.m"; sourceTree = "<group>"; };
 		05C05F0D103E9AF700C70832 /* ORSTwitterEngine+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ORSTwitterEngine+Status.h"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Status.h"; sourceTree = "<group>"; };
 		05C05F0E103E9AF700C70832 /* ORSTwitterEngine+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ORSTwitterEngine+Status.m"; path = "Classes/Model/Twitter Engine/ORSTwitterEngine+Status.m"; sourceTree = "<group>"; };
-		05FF7472103AAE0200E053E0 /* filterTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = filterTemplate.pdf; path = Resources/Images/filterTemplate.pdf; sourceTree = "<group>"; };
+		05C06139103ED16000C70832 /* searchTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = searchTemplate.pdf; path = Resources/Images/searchTemplate.pdf; sourceTree = "<group>"; };
 		05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sieveTemplate.pdf; path = Resources/Images/sieveTemplate.pdf; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -454,17 +454,17 @@
 				053FBAFD0FA514E100DA370E /* error.png */,
 				053FBAFE0FA514E100DA370E /* fave_star.png */,
 				05656D23103AD5C50095BF38 /* favoritesTemplate.pdf */,
-				05656D26103AD5C50095BF38 /* friendsTemplate.pdf */,
-				05FF7472103AAE0200E053E0 /* filterTemplate.pdf */,
+				05656D24103AD5C50095BF38 /* friendsTemplate.pdf */,
 				053FBAFF0FA514E100DA370E /* Gradient1.png */,
 				053FBB000FA514E100DA370E /* Gradient2.png */,
 				053FBB010FA514E100DA370E /* information.png */,
 				053FBB020FA514E100DA370E /* isgd.png */,
 				053FBB030FA514E100DA370E /* LightGradient.png */,
-				05656D24103AD5C50095BF38 /* mentionsTemplate.pdf */,
+				05656D26103AD5C50095BF38 /* mentionsTemplate.pdf */,
 				053FBB040FA514E100DA370E /* message.png */,
 				05656D25103AD5C50095BF38 /* messagesTemplate.pdf */,
 				053FBB050FA514E100DA370E /* picture_link.png */,
+				05C06139103ED16000C70832 /* searchTemplate.pdf */,
 				05FF7473103AAE0200E053E0 /* sieveTemplate.pdf */,
 				053FBB060FA514E100DA370E /* tinyurl.png */,
 				053FBB070FA514E100DA370E /* trim.png */,
@@ -750,12 +750,12 @@
 				053FBC190FA5154000DA370E /* MainMenu.xib in Resources */,
 				053FBC1A0FA5154000DA370E /* Preferences.xib in Resources */,
 				053FBC1B0FA5154000DA370E /* About.xib in Resources */,
-				05FF7474103AAE0200E053E0 /* filterTemplate.pdf in Resources */,
 				05FF7475103AAE0200E053E0 /* sieveTemplate.pdf in Resources */,
 				05656D27103AD5C50095BF38 /* favoritesTemplate.pdf in Resources */,
-				05656D28103AD5C50095BF38 /* mentionsTemplate.pdf in Resources */,
+				05656D28103AD5C50095BF38 /* friendsTemplate.pdf in Resources */,
 				05656D29103AD5C50095BF38 /* messagesTemplate.pdf in Resources */,
-				05656D2A103AD5C50095BF38 /* friendsTemplate.pdf in Resources */,
+				05656D2A103AD5C50095BF38 /* mentionsTemplate.pdf in Resources */,
+				05C0613A103ED16000C70832 /* searchTemplate.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
