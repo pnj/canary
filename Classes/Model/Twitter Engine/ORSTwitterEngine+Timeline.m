@@ -271,10 +271,10 @@
 }
 
 // returns the 20 most recent statuses from the specified user
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier {
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName {
 	NSMutableString *path = [NSMutableString 
-		stringWithString:@"statuses/user_timeline.xml?user_id="];
-	[path appendString:identifier];
+		stringWithString:@"statuses/user_timeline.xml?screen_name="];
+	[path appendString:screenName];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -294,11 +294,11 @@
 }
 
 // returns x most recent statuses from the specified user
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier 
-								  count:(NSString *)count {
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName 
+										  count:(NSString *)count {
 	NSMutableString *path = [NSMutableString 
-		stringWithString:@"statuses/user_timeline.xml?user_id="];
-	[path appendString:identifier];
+		stringWithString:@"statuses/user_timeline.xml?screen_name="];
+	[path appendString:screenName];
 	[path appendString:@"&count="];
 	[path appendString:count];
 	NSData *data = [self executeRequestOfType:@"GET" 
@@ -314,11 +314,11 @@
 
 // returns the 20 most recent statuses from the specified user since the given
 // date
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier 
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName 
 							  sinceDate:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
-		stringWithString:@"statuses/user_timeline.xml?user_id="];
-	[path appendString:identifier];
+		stringWithString:@"statuses/user_timeline.xml?screen_name="];
+	[path appendString:screenName];
 	[path appendString:@"&since="];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
@@ -334,11 +334,11 @@
 
 // returns the 20 most recent statuses from the current user since the given
 // status id
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier
-							sinceStatus:(NSString *)statusID {
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName
+									sinceStatus:(NSString *)statusID {
 	NSMutableString *path = [NSMutableString 
-		stringWithString:@"statuses/user_timeline.xml?user_id="];
-	[path appendString:identifier];
+		stringWithString:@"statuses/user_timeline.xml?screen_name="];
+	[path appendString:screenName];
 	[path appendString:@"&since_id="];
 	[path appendString:statusID];
 	[path appendString:@"&count=200"];
@@ -354,11 +354,11 @@
 }
 
 // returns the 20 most recent statuses from the current user for the given page
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier
-								 atPage:(NSString *)page {
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName
+										 atPage:(NSString *)page {
 	NSMutableString *path = [NSMutableString 
-		stringWithString:@"statuses/user_timeline.xml?user_id="];
-	[path appendString:identifier];
+		stringWithString:@"statuses/user_timeline.xml?screen_name="];
+	[path appendString:screenName];
 	[path appendString:@"&page="];
 	[path appendString:page];
 	NSData *data = [self executeRequestOfType:@"GET" 

@@ -44,15 +44,15 @@
 - (NSArray *) userTimelineWithCount:(NSString *)count;
 - (NSArray *) userTimelineSinceDate:(NSString *)date;
 - (NSArray *) userTimelineAtPage:(NSString *)page;
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier;
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier 
-								  count:(NSString *)count;
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier 
-							  sinceDate:(NSString *)date;
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier
-							sinceStatus:(NSString *)statusID;
-- (NSArray *) userTimelineForUserWithID:(NSString *)identifier
-								 atPage:(NSString *)page;
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName;
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName 
+										  count:(NSString *)count;
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName 
+									  sinceDate:(NSString *)date;
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName
+									sinceStatus:(NSString *)statusID;
+- (NSArray *) userTimelineForUserWithScreenName:(NSString *)screenName
+										 atPage:(NSString *)page;
 
 - (NSArray *) mentions;
 - (NSArray *) mentionsSinceStatus:(NSString *)identifier;

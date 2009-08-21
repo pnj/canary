@@ -31,16 +31,16 @@
 @interface ORSTwitterEngine ( DirectMessageMethods )
 
 - (NSArray *) receivedDMs;
-- (NSArray *) receivedDMsSinceDMWithID:(NSString *)dmID;
+- (NSArray *) receivedDMsSinceDM:(NSString *)dmID;
 - (NSArray *) receivedDMsSinceDate:(NSString *)date;
 - (NSArray *) receivedDMsAtPage:(NSString *)page;
 - (NSArray *) sentDMs;
-- (NSArray *) sentDMsSinceDMWithID:(NSString *)dmID;
+- (NSArray *) sentDMsSinceDM:(NSString *)dmID;
 - (NSArray *) sentDMsSinceDate:(NSString *)date;
 - (NSArray *) sentDMsAtPage:(NSString *)page;
 - (NSXMLNode *) sendDM:(NSString *)message toUserWithID:(NSString *)userID;
 - (NSXMLNode *) sendDM:(NSString *)message 
   toUserWithScreenName:(NSString *)screenName;
-- (NSXMLNode *) deleteDMWithID:(NSString *)identifier;
+- (NSXMLNode *) deleteDM:(NSString *)identifier;
 
 @end

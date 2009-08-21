@@ -192,7 +192,7 @@
 - (IBAction) openUserURL:sender; 
 - (void) applicationWillTerminate:(NSNotification *)notification;
 - (void) retweetStatus:(NSString *)statusText
-		fromUserWithID:(NSString *)userID;
+fromUserWithScreenName:(NSString *)userID;
 - (void) updateNewStatusTextField;
 - (void) performAutocomplete;
 - (IBAction) invokeActionOnUser:sender;
@@ -259,11 +259,11 @@
 - (void) destroyFriendshipWithUser:(NSString *)userID;
 
 // Block methods
-- (void) blockUserWithID:(NSString *)userID;
-- (void) unblockUserWithID:(NSString *)userID;
+- (void) blockUserWithScreenName:(NSString *)userID;
+- (void) unblockUserWithScreenName:(NSString *)userID;
 
 // Favorite methods
-- (void) favoriteStatusWithID:(NSString *)statusID;
+- (void) favoriteStatus:(NSString *)statusID;
 
 // Status bar methods
 - (void) showStatusBarMessage:(NSString *)message

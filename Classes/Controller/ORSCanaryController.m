@@ -333,7 +333,7 @@ sender {
 			[self showUserBlockAlertSheet:
 				[newStatusTextField.stringValue substringFromIndex:3]];
 		} else if ([newStatusTextField.stringValue hasPrefix:@"%u "]) {
-			[self unblockUserWithID:
+			[self unblockUserWithScreenName:
 				[newStatusTextField.stringValue substringFromIndex:3]];
 		} else {
 			previousUpdateText = [[newStatusTextField stringValue] copy];
@@ -722,7 +722,7 @@ sender {
 	if (twitterEngine.sessionUserID) {
 		[self showAnimatedStatusBarMessage:@"Downloading from Twitter..."];
 		if (cacheManager.firstArchiveCall) {
-			[twitterEngine userTimelineForUserWithID:twitterEngine.sessionUserID];
+			[twitterEngine userTimelineForUserWithScreenName:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
 			 userTimelineSinceStatus:cacheManager.lastArchiveStatusID];
@@ -777,7 +777,7 @@ sender {
 			[twitterEngine receivedDMs];
 		} else {
 			[twitterEngine 
-			 receivedDMsSinceDMWithID:cacheManager.lastReceivedMessageID];
+			 receivedDMsSinceDM:cacheManager.lastReceivedMessageID];
 		}
 	}
 }
@@ -789,7 +789,7 @@ sender {
 		if (cacheManager.firstSentMessagesCall) {
 			[twitterEngine sentDMs];
 		} else {
-			[twitterEngine sentDMsSinceDMWithID:cacheManager.lastSentMessageID];
+			[twitterEngine sentDMsSinceDM:cacheManager.lastSentMessageID];
 		}
 	}
 }
@@ -860,7 +860,7 @@ sender {
 
 // Retweets the given status text from the given userID
 - (void) retweetStatus:(NSString *)statusText
-		fromUserWithID:(NSString *)userID {
+fromUserWithScreenName:(NSString *)userID {
 	NSString *message = [NSString stringWithFormat:@"%@ (via @%@)", 
 						 statusText, userID];
 	[self insertStringTokenInNewStatusTextField:message];
@@ -1443,7 +1443,7 @@ sender {
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Block"]) {
 		[self showUserBlockAlertSheet:userScreenName];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Unblock"]) {
-		[self unblockUserWithID:userScreenName];
+		[self unblockUserWithScreenName:userScreenName];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Reply to"]) {
 		[self typeUserID:userScreenName];
 	} else if ([[sender titleOfSelectedItem] 
@@ -1451,7 +1451,7 @@ sender {
 		[self dmUserID:userScreenName];
 	} else if ([[sender titleOfSelectedItem] 
 				isEqualToString:@"Favorite this"]) {
-		[self favoriteStatusWithID:[(NSXMLNode *)[sender toolTip] ID]];
+		[self favoriteStatus:[(NSXMLNode *)[sender toolTip] ID]];
 	} else if ([[sender titleOfSelectedItem] 
 				isEqualToString:@"Go to Web page"]) {
 		[self openUserURL:userURL];
@@ -1461,7 +1461,7 @@ sender {
 						   userScreenName]];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Retweet this"]) {
 		[self retweetStatus:[(NSXMLNode *)[sender toolTip] text]
-			 fromUserWithID:userScreenName];
+			 fromUserWithScreenName:userScreenName];
 		//[self retweetStatus:[(NSXMLNode *)[sender toolTip] ID]];
 	}
 }
@@ -1493,7 +1493,7 @@ sender {
 					  contextInfo:(void *)contextInfo {
 	id contextObject = (id)contextInfo;
 	if (returnCode == NSAlertFirstButtonReturn) {
-		[self blockUserWithID:(NSString *)contextInfo];
+		[self blockUserWithScreenName:(NSString *)contextInfo];
 	}
 	CFRelease(contextObject);
 }
@@ -2145,7 +2145,7 @@ sender {
 // Add user with given ID from friends list (following)
 - (void) createFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine befriendUserWithID:userID];
+		[twitterEngine befriendUserWithScreenName:userID];
 		NSString *msg = [NSString stringWithFormat:@"Following %@",
 						 userID];
 		[self showStatusBarMessage:msg
@@ -2160,7 +2160,7 @@ sender {
 // Remove user with given ID from friends list (following)
 - (void) destroyFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
-		[twitterEngine unfriendUserWithID:userID];
+		[twitterEngine unfriendUserWithScreenName:userID];
 		NSString *msg = [NSString stringWithFormat:@"No longer following %@",
 						 userID];
 		[self showStatusBarMessage:msg
@@ -2176,7 +2176,7 @@ sender {
 // Block methods
 
 // Block the user owning the status
-- (void) blockUserWithID:(NSString *)userID { 
+- (void) blockUserWithScreenName:(NSString *)userID { 
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine blockUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"%@ has been blocked",
@@ -2191,7 +2191,7 @@ sender {
 }
 
 // Unblock the user owning the status
-- (void) unblockUserWithID:(NSString *)userID {
+- (void) unblockUserWithScreenName:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine unblockUser:userID];
 		NSString *msg = [NSString stringWithFormat:@"%@ has been unblocked",
@@ -2208,7 +2208,7 @@ sender {
 // Favorite methods
 
 // Favorite the selected status
-- (void) favoriteStatusWithID:(NSString *)statusID {
+- (void) favoriteStatus:(NSString *)statusID {
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine blindFavoriteStatus:statusID];
 		[self showStatusBarMessage:@"A new favorite has been added" 

@@ -52,7 +52,7 @@
 
 // returns a list of the 20 most recent DMs sent to the current user since a
 // status_id
-- (NSArray *) receivedDMsSinceDMWithID:(NSString *)dmID {
+- (NSArray *) receivedDMsSinceDM:(NSString *)dmID {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"direct_messages.xml?since_id="];
 	[path appendString:dmID];
@@ -132,7 +132,7 @@
 
 // returns a list of the 20 most recent DMs sent by the current user since a
 // status_id
-- (NSArray *) sentDMsSinceDMWithID:(NSString *)dmID {
+- (NSArray *) sentDMsSinceDM:(NSString *)dmID {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"direct_messages/sent.xml?since_id="];
 	[path appendString:dmID]; 
@@ -236,7 +236,7 @@
 }
 
 // destroy a specified DM
-- (NSXMLNode *) deleteDMWithID:(NSString *)identifier {
+- (NSXMLNode *) deleteDM:(NSString *)identifier {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"direct_messages/destroy/"];
 	[path appendString:identifier];
