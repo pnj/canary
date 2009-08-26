@@ -110,7 +110,7 @@
 	@synchronized(self) {
 		if ([queueArray count] > 0) {
 			[twitterEngine sendDM:[queueArray objectAtIndex:0]
-					 toUserWithID:(NSString *)[note object]];
+			 toUserWithScreenName:(NSString *)[note object]];
 			[queueArray removeObjectAtIndex:0];
 			[self performSelector:@selector(initiateDMDispatch:) 
 					   withObject:nil
