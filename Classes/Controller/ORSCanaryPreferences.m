@@ -26,7 +26,7 @@
 //  IN THE SOFTWARE.
 
 #import "ORSCanaryPreferences.h"
-#import "ORSCanaryController.h"
+
 
 @implementation ORSCanaryPreferences
 

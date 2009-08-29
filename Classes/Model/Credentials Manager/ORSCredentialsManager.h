@@ -35,7 +35,6 @@
  @updated 2009-04-12
  */
 
-#import <Cocoa/Cocoa.h>
 #import <Security/Security.h>
 #include <CoreServices/CoreServices.h>
 #include <CoreFoundation/CoreFoundation.h>

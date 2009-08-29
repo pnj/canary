@@ -35,7 +35,6 @@
  @updated 2008-12-27
  */
 
-#import <Cocoa/Cocoa.h>
 #import "ORSShortener.h"
 
 /*!

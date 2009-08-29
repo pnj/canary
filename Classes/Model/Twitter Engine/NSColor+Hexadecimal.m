@@ -6,7 +6,7 @@
 @implementation NSColor ( NSColorHexadecimalValue )
 
 - (NSString *) hexadecimalValue {
-	float redFloatValue, greenFloatValue, blueFloatValue;
+	CGFloat redFloatValue, greenFloatValue, blueFloatValue;
 	NSInteger redIntValue, greenIntValue, blueIntValue;
 	NSString *redHexValue, *greenHexValue, *blueHexValue;
 	

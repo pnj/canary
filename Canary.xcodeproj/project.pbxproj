@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051557EC1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */; };
 		053FB99A0FA4D4B300DA370E /* BWToolkit License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */; };
 		053FB99B0FA4D4B300DA370E /* Canary License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9960FA4D4B300DA370E /* Canary License.rtf */; };
 		053FB99C0FA4D4B300DA370E /* Copyright and license info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */; };
 		053FB99D0FA4D4B300DA370E /* Growl License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9980FA4D4B300DA370E /* Growl License.txt */; };
 		053FB99E0FA4D4B300DA370E /* Sparkle License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9990FA4D4B300DA370E /* Sparkle License.txt */; };
-		053FBA410FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */; };
 		053FBA420FA50EC700DA370E /* NSString+ORSCanaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */; };
 		053FBA430FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */; };
 		053FBA440FA50EC700DA370E /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */; };
@@ -135,13 +135,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		051557EA1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBooleanTransformer.h; sourceTree = "<group>"; };
+		051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBooleanTransformer.m; sourceTree = "<group>"; };
 		053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "BWToolkit License.rtf"; sourceTree = "<group>"; };
 		053FB9960FA4D4B300DA370E /* Canary License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Canary License.rtf"; sourceTree = "<group>"; };
 		053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Copyright and license info.rtf"; sourceTree = "<group>"; };
 		053FB9980FA4D4B300DA370E /* Growl License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl License.txt"; sourceTree = "<group>"; };
 		053FB9990FA4D4B300DA370E /* Sparkle License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sparkle License.txt"; sourceTree = "<group>"; };
-		053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSScreenNameToBoolTransformer.m; path = Classes/Controller/ORSScreenNameToBoolTransformer.m; sourceTree = "<group>"; };
-		053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSScreenNameToBoolTransformer.h; path = Classes/Controller/ORSScreenNameToBoolTransformer.h; sourceTree = "<group>"; };
 		053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ORSCanaryAdditions.h"; path = "Classes/Controller/NSString+ORSCanaryAdditions.h"; sourceTree = "<group>"; };
 		053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ORSCanaryAdditions.m"; path = "Classes/Controller/NSString+ORSCanaryAdditions.m"; sourceTree = "<group>"; };
 		053FBA3A0FA50EC700DA370E /* ORSCanaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSCanaryController.h; path = Classes/Controller/ORSCanaryController.h; sourceTree = "<group>"; };
@@ -522,8 +522,8 @@
 				053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */,
 				053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */,
 				053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */,
-				053FBA370FA50EC700DA370E /* ORSScreenNameToBoolTransformer.h */,
-				053FBA360FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m */,
+				051557EA1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.h */,
+				051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */,
 				053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */,
 				053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */,
 				053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */,
@@ -630,8 +630,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				053FBAEF0FA5139300DA370E /* main.m */,
 				053FBAF00FA5139300DA370E /* Canary_Prefix.pch */,
+				053FBAEF0FA5139300DA370E /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -766,7 +766,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				053FBA410FA50EC700DA370E /* ORSScreenNameToBoolTransformer.m in Sources */,
 				053FBA420FA50EC700DA370E /* NSString+ORSCanaryAdditions.m in Sources */,
 				053FBA430FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m in Sources */,
 				053FBA440FA50EC700DA370E /* ORSCanaryController+Growl.m in Sources */,
@@ -823,6 +822,7 @@
 				05C05D74103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m in Sources */,
 				05C05DB6103D996100C70832 /* ORSTwitterEngine+Friendship.m in Sources */,
 				05C05F0F103E9AF700C70832 /* ORSTwitterEngine+Status.m in Sources */,
+				051557EC1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +884,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.7.2;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_OPENMP_SUPPORT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -893,16 +896,26 @@
 					"\"$(SRCROOT)/Resources/BWToolkit.ibplugin/Contents/Frameworks\"",
 					"\"$(SRCROOT)/Additional\"",
 				);
+				GCC_AUTO_VECTORIZATION = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = NO;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/Canary_Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_STRICT_ALIASING = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = Canary;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				VALID_ARCHS = "i386 ppc";
 			};
 			name = Debug;
@@ -913,7 +926,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.7.2;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_OPENMP_SUPPORT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -923,13 +941,28 @@
 					"\"$(SRCROOT)/Resources/BWToolkit.ibplugin/Contents/Frameworks\"",
 					"\"$(SRCROOT)/Additional\"",
 				);
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/Canary_Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_STRICT_ALIASING = YES;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LLVM_LTO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = Canary;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				VALID_ARCHS = "i386 ppc";
 			};
 			name = Release;

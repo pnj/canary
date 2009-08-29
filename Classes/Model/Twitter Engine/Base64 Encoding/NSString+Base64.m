@@ -30,7 +30,7 @@
 @implementation NSString ( Base64 )
 
 - (NSString *) base64Encoding {
-    char *inputString = [self UTF8String];
+    const char *inputString = [self UTF8String];
     char *encodedString;
     base64_encode(inputString, strlen(inputString), &encodedString);
     

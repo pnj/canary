@@ -1,5 +1,5 @@
 //
-//  ORSScreenNameToBoolTransformer.h
+//  ORSScreenNameToBooleanTransformer.h
 //  Canary
 //
 //  Created by Nicholas Toumpelis on 12/04/2009.
@@ -25,10 +25,9 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import <Cocoa/Cocoa.h>
-#import "ORSTwitterEngine.h"
 
-@interface ORSScreenNameToBoolTransformer : NSValueTransformer {
+
+@interface ORSScreenNameToBooleanTransformer : NSValueTransformer {
 
 }
 

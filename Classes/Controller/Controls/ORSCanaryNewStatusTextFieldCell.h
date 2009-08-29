@@ -25,8 +25,6 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import <Cocoa/Cocoa.h>
-
 @interface ORSCanaryNewStatusTextFieldCell : NSTextFieldCell {
 	IBOutlet NSMenuItem *shortenURLMenuItem;
 	IBOutlet NSMenuItem *separatorMenuItem;

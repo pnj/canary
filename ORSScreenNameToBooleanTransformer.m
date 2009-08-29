@@ -1,5 +1,5 @@
 //
-//  ORSScreenNameToBoolTransformer.m
+//  ORSScreenNameToBooleanTransformer.m
 //  Canary
 //
 //  Created by Nicholas Toumpelis on 12/04/2009.
@@ -25,9 +25,9 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import "ORSScreenNameToBoolTransformer.h"
+#import "ORSScreenNameToBooleanTransformer.h"
 
-@implementation ORSScreenNameToBoolTransformer
+@implementation ORSScreenNameToBooleanTransformer
 
 + (Class) transformedValueClass {
     return [NSNumber class];

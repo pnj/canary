@@ -25,7 +25,7 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import "ORSCanaryController.h"
+
 #import "ORSCanaryController+Growl.h"
 #include <math.h>
 
@@ -86,8 +86,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[NSValueTransformer setValueTransformer:filterArrayTransformer
 									forName:@"FilterArrayTransformer"];
 	
-	ORSScreenNameToBoolTransformer *screenNameToBoolTransformer;
-	screenNameToBoolTransformer = [[ORSScreenNameToBoolTransformer alloc] init];
+	ORSScreenNameToBooleanTransformer *screenNameToBoolTransformer;
+	screenNameToBoolTransformer = [[ORSScreenNameToBooleanTransformer alloc] init];
 	[NSValueTransformer setValueTransformer:screenNameToBoolTransformer
 									forName:@"ScreenNameToBoolTransformer"];
 	
@@ -1631,7 +1631,7 @@ fromUserWithScreenName:(NSString *)userID {
 	}
 	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
 	NSInteger statusCode = response.statusCode;
-	NSString *msg;
+	NSString *msg = @"";
 	if (statusCode != 200 && statusCode != 304) {
 		if (statusCode == 503) {
 			msg = @"Twitter is overloaded";
@@ -1701,7 +1701,7 @@ fromUserWithScreenName:(NSString *)userID {
 	int result = [oPanel runModalForDirectory:NSHomeDirectory() 
 										 file:nil
 										types:acceptableFileTypes];
-	if (result = NSOKButton) {
+	if (result == NSOKButton) {
 		[self executeAsyncCallToTwitPicWithFile:[oPanel filename]];
 	}
 }

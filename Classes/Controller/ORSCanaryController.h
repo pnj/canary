@@ -25,13 +25,12 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //  IN THE SOFTWARE.
 
-#import <Cocoa/Cocoa.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <CoreServices/CoreServices.h>
 #import <Quartz/Quartz.h>
 #import "ORSShortener.h"
 #import "ORSCredentialsManager.h"
-#import "ORSTwitterEngine.h"
+
 #import "ORSCanaryPreferences.h"
 #import "ORSShortenerFactory.h"
 #import "ORSUpdateDispatcher.h"
@@ -49,12 +48,12 @@
 #import "ORSFilter.h"
 #import "ORSFilterTransformer.h"
 #import "ORSFilterArrayTransformer.h"
-#import "ORSScreenNameToBoolTransformer.h"
 #import "ORSTwitterEngine+Block.h"
 #import "ORSTwitterEngine+Favorite.h"
 #import "ORSTwitterEngine+Account.h"
 #import "ORSTwitterEngine+Friendship.h"
 #import "ORSTwitterEngine+Timeline.h"
+#import "ORSScreenNameToBooleanTransformer.h"
 
 @interface ORSCanaryController : NSWindowController < GrowlApplicationBridgeDelegate > {
 	// Fundamentals
