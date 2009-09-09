@@ -276,18 +276,27 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>05DF56720E3E60DE00B8B4DE</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>11</integer>
+									<integer>9</integer>
+									<integer>2</integer>
+									<integer>1</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>10</integer>
+									<integer>2</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {303, 600}}</string>
+							<string>{{0, 0}, {303, 620}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -297,14 +306,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {320, 618}}</string>
+						<string>{{0, 0}, {320, 638}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>303</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 118 1280 659 0 0 1280 778 </string>
+						<string>0 99 1280 679 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -322,7 +331,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Canary_Prefix.pch</string>
+								<string>ORSScreenNameToBooleanTransformer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +339,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Canary_Prefix.pch</string>
+										<string>ORSScreenNameToBooleanTransformer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0515583210498BAC00FC1829</string>
+										<string>055990B6105784C2009E3CA8</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -495,7 +504,8 @@
 											<string>051557F81049819900FC1829</string>
 											<string>0515581A104984CF00FC1829</string>
 											<string>0515581B104984CF00FC1829</string>
-											<string>0515581C104984CF00FC1829</string>
+											<string>055990B4105784C2009E3CA8</string>
+											<string>055990B5105784C2009E3CA8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -509,18 +519,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {955, 373}}</string>
+								<string>{{0, 0}, {955, 633}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 118 1280 659 0 0 1280 778 </string>
+								<string>0 99 1280 679 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>373pt</string>
+							<string>633pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>240pt</string>
+							<string>0pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -534,7 +544,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {955, 213}}</string>
+										<string>{{10, 27}, {955, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 99 1280 679 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -589,8 +601,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {955, 213}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 118 1280 659 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -618,11 +628,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>051557701049776500FC1829</string>
+				<string>055990AE1057847E009E3CA8</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>051557711049776500FC1829</string>
+				<string>055990AF1057847E009E3CA8</string>
 				<string>0573D6CD0DA66271002D1CCF</string>
-				<string>051557721049776500FC1829</string>
+				<string>055990B01057847E009E3CA8</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -771,14 +781,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>051557731049776500FC1829</string>
+				<string>05E93CE6105008C60092076C</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>051557741049776500FC1829</string>
-				<string>051557751049776500FC1829</string>
-				<string>051557761049776500FC1829</string>
-				<string>051557771049776500FC1829</string>
-				<string>0573D6CD0DA66271002D1CCF</string>
+				<string>05E93CE7105008C60092076C</string>
+				<string>05E93CE8105008C60092076C</string>
+				<string>05E93CE9105008C60092076C</string>
+				<string>05E93CEA105008C60092076C</string>
+				<string>05E93CEB105008C60092076C</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -797,11 +807,11 @@
 	<key>TimeStamp</key>
 	<real>0.0</real>
 	<key>ToolbarDisplayMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
 	<true/>
 	<key>ToolbarSizeMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>Type</key>
 	<string>Perspectives</string>
 	<key>UpdateMessage</key>
@@ -810,14 +820,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0515583310498BAC00FC1829</string>
-		<string>0515583410498BAC00FC1829</string>
-		<string>0515583510498BAC00FC1829</string>
-		<string>05D9E0370E6B233B001E75DE</string>
 		<string>/Users/genesis/Projects/Ocean Road Software/Canary/source/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 118 1280 659 0 0 1280 778 </string>
+	<string>0 99 1280 679 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

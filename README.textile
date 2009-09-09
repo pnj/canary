@@ -1,0 +1,23 @@
+h1. Canary
+
+By Nick Toumpelis
+
+Canary is an open source twitter client, written in Objective-C and Cocoa, available under an MIT-style license. It was originally conceived about a year and a half ago, as a learning exercise, as I was slowly getting acquainted with Mac development in my free time. I’ve learned a lot since then, especially about the intricacies and strange quirks of Cocoa (and I’m still confronted with more…).
+
+As I’m not a very good or prolific writer (my blog gets updated once a month), this is my small contribution back to the community. It will be useful not only to those developing their own Twitter client but everyone that wishes to deal with remote data and APIs. Canary communicates with the Twitter API, but also sends data to TwitPic and various URL shortening services.
+
+Canary is under heavy development and buggy (and not very well designed, either - but there is some good code in here).
+
+h2. Dependencies
+
+# BWToolkit: Plugin for Interface Builder 3, http://brandonwalkin.com/bwtoolkit/
+
+h2. Compiling Issues
+
+There are a few minor issues to compiling that can be easily resolved:
+
+# The project is being developed with the newest developer tools in Snow Leopard. You might find that the original compiler/build settings (e.g. default compiler is Clang-LLVM 1.0) do not work with older versions on your Mac and you might need to change them.
+# The compiler might ask for a missing dsa_pub.pem certificate that is required by Sparkle for posting updates. This file is not required for building the project so you can remove it or replace it with your own. The latest commits include this file, so the compiler should not have a problem with it.
+# The project requires the BWToolkit framework by Brandon Walkin. You can also find it here: http://brandonwalkin.com/bwtoolkit/
+
+Thanks to Clint Shryock, Stuart Malin and Steve Finkelstein, bjorn and Craig (crw) for pointing out mistakes and omissions.

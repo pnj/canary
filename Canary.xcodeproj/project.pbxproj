@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051557EC1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */; };
 		053FB99A0FA4D4B300DA370E /* BWToolkit License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */; };
 		053FB99B0FA4D4B300DA370E /* Canary License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9960FA4D4B300DA370E /* Canary License.rtf */; };
 		053FB99C0FA4D4B300DA370E /* Copyright and license info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */; };
@@ -92,9 +91,9 @@
 		053FBC280FA515E100DA370E /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053FBC250FA515E100DA370E /* Growl.framework */; };
 		053FBCC80FA51DA300DA370E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053FBC240FA515E100DA370E /* Sparkle.framework */; };
 		053FBCC90FA51DA300DA370E /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053FBC250FA515E100DA370E /* Growl.framework */; };
+		055990B3105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 055990B2105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.m */; };
 		05656BA5103AB7A70095BF38 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05656BA4103AB7A70095BF38 /* BWToolkitFramework.framework */; };
 		05656BA8103AB7B30095BF38 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05656BA4103AB7A70095BF38 /* BWToolkitFramework.framework */; };
-		05656C5D103ABBC20095BF38 /* BWToolkit.ibplugin in Resources */ = {isa = PBXBuildFile; fileRef = 05656BF1103ABBC20095BF38 /* BWToolkit.ibplugin */; };
 		05656D27103AD5C50095BF38 /* favoritesTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D23103AD5C50095BF38 /* favoritesTemplate.pdf */; };
 		05656D28103AD5C50095BF38 /* friendsTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D24103AD5C50095BF38 /* friendsTemplate.pdf */; };
 		05656D29103AD5C50095BF38 /* messagesTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05656D25103AD5C50095BF38 /* messagesTemplate.pdf */; };
@@ -135,8 +134,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		051557EA1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBooleanTransformer.h; sourceTree = "<group>"; };
-		051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBooleanTransformer.m; sourceTree = "<group>"; };
 		053FB9950FA4D4B300DA370E /* BWToolkit License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "BWToolkit License.rtf"; sourceTree = "<group>"; };
 		053FB9960FA4D4B300DA370E /* Canary License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Canary License.rtf"; sourceTree = "<group>"; };
 		053FB9970FA4D4B300DA370E /* Copyright and license info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Copyright and license info.rtf"; sourceTree = "<group>"; };
@@ -272,8 +269,10 @@
 		053FBC240FA515E100DA370E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Additional/Sparkle.framework; sourceTree = "<group>"; };
 		053FBC250FA515E100DA370E /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Additional/Growl.framework; sourceTree = "<group>"; };
 		053FBC660FA516A600DA370E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055990B1105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORSScreenNameToBooleanTransformer.h; path = Classes/Controller/ORSScreenNameToBooleanTransformer.h; sourceTree = "<group>"; };
+		055990B2105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORSScreenNameToBooleanTransformer.m; path = Classes/Controller/ORSScreenNameToBooleanTransformer.m; sourceTree = "<group>"; };
+		055990ED105786D0009E3CA8 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
 		05656BA4103AB7A70095BF38 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Additional/BWToolkitFramework.framework; sourceTree = "<group>"; };
-		05656BF1103ABBC20095BF38 /* BWToolkit.ibplugin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BWToolkit.ibplugin; path = Resources/BWToolkit.ibplugin; sourceTree = "<group>"; };
 		05656D23103AD5C50095BF38 /* favoritesTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = favoritesTemplate.pdf; path = Resources/Images/favoritesTemplate.pdf; sourceTree = "<group>"; };
 		05656D24103AD5C50095BF38 /* friendsTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = friendsTemplate.pdf; path = Resources/Images/friendsTemplate.pdf; sourceTree = "<group>"; };
 		05656D25103AD5C50095BF38 /* messagesTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = messagesTemplate.pdf; path = Resources/Images/messagesTemplate.pdf; sourceTree = "<group>"; };
@@ -522,10 +521,10 @@
 				053FBA3F0FA50EC700DA370E /* ORSCanaryController.m */,
 				053FBA3E0FA50EC700DA370E /* ORSCanaryController+Growl.h */,
 				053FBA3C0FA50EC700DA370E /* ORSCanaryController+Growl.m */,
-				051557EA1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.h */,
-				051557EB1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m */,
 				053FBA380FA50EC700DA370E /* NSString+ORSCanaryAdditions.h */,
 				053FBA390FA50EC700DA370E /* NSString+ORSCanaryAdditions.m */,
+				055990B1105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.h */,
+				055990B2105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.m */,
 				053FBA3D0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.h */,
 				053FBA3B0FA50EC700DA370E /* NSMutableAttributedString+ORSCanaryAdditions.m */,
 				05A216A50FDD3FB1004748C4 /* ORSCanaryPreferences.h */,
@@ -623,6 +622,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				053FB9940FA4D4B300DA370E /* Licenses */,
+				055990ED105786D0009E3CA8 /* README.textile */,
 			);
 			name = Canary;
 			sourceTree = "<group>";
@@ -639,7 +639,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				05656BF1103ABBC20095BF38 /* BWToolkit.ibplugin */,
 				053FBC660FA516A600DA370E /* Info.plist */,
 				056DC6F10ECB63FD00B9F0BB /* Images */,
 				053FBB260FA5150E00DA370E /* Growl Registration Ticket.growlRegDict */,
@@ -713,7 +712,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05656C5D103ABBC20095BF38 /* BWToolkit.ibplugin in Resources */,
 				053FB99A0FA4D4B300DA370E /* BWToolkit License.rtf in Resources */,
 				053FB99B0FA4D4B300DA370E /* Canary License.rtf in Resources */,
 				053FB99C0FA4D4B300DA370E /* Copyright and license info.rtf in Resources */,
@@ -822,7 +820,7 @@
 				05C05D74103D71DC00C70832 /* ORSTwitterEngine+SocialGraph.m in Sources */,
 				05C05DB6103D996100C70832 /* ORSTwitterEngine+Friendship.m in Sources */,
 				05C05F0F103E9AF700C70832 /* ORSTwitterEngine+Status.m in Sources */,
-				051557EC1049811D00FC1829 /* ORSScreenNameToBooleanTransformer.m in Sources */,
+				055990B3105784A8009E3CA8 /* ORSScreenNameToBooleanTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
